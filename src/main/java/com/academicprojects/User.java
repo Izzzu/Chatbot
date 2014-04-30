@@ -5,6 +5,16 @@ import java.util.Map;
 
 public class User {
 	private String name;
+	private String ip;
+	private Map<String, String> info = new HashMap<String,String>();
+	private Personality perType = new Personality();
+	
+	public Personality getPerType() {
+		return perType;
+	}
+	public void setPerType(Personality perType) {
+		this.perType = perType;
+	}
 	public String getName() {
 		return name;
 	}
@@ -23,7 +33,12 @@ public class User {
 	public void setInfo(Map<String, String> info) {
 		this.info = info;
 	}
-	private String ip;
-	private Map<String, String> info = new HashMap<String,String>();
+	
+	public void updatePersonality(String type, int level){
+		
+		perType.setByKey(type.toLowerCase(), perType.getByKey(type)+level);
+		
+	}
+	
 
 }

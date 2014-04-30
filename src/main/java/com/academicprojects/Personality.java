@@ -23,27 +23,31 @@ public class Personality {
 
 	public Personality()
 	{
-		types.put("DOM", 0);
-		types.put("MAK", 0);
-		types.put("INS", 0);
-		types.put("ODK", 0);
-		types.put("WER", 0);
-		types.put("EMP", 10);
-		types.put("ODW", 0);
-		types.put("HOJ", 0);
-		types.put("FAW", 0);
-		types.put("DOS", 0);
-		types.put("MIN", 0);
-		types.put("SYS", 0);
-		types.put("KON", 0);
-		types.put("HAR", 0);
-		types.put("RZE", 0);
-		types.put("ASE", 0);
-		types.put("OSZ", 0);
-		types.put("ROW", 0);
-		
+		types.put("dom", 0);
+		types.put("dos", 0);
+		types.put("mak", 0);
+		types.put("min", 0);
+		types.put("ins", 0);
+		types.put("sys", 0);
+		types.put("odk", 0);
+		types.put("kon", 0);
+		types.put("wer", 0);
+		types.put("har", 0);
+		types.put("emp", 0);
+		types.put("rze", 0);
+		types.put("odw", 0);
+		types.put("ase", 0);
+		types.put("hoj", 0);
+		types.put("osz", 0);
+		types.put("faw", 0);
+		types.put("row", 0);
 	}
 	
+	/**
+	 * 
+	 * @param key
+	 * @param p
+	 */
 	public void setByKey(String key, int p)
 	{
 		if(types.containsKey(key)) {
@@ -53,18 +57,32 @@ public class Personality {
 				throw new UnsupportedOperationException("This personality type doesn't exist");
 			}
 	}
+	
+	/**
+	 * 
+	 * @param key
+	 * @return
+	 */
 	public int getByKey(String key)
 	{
 		return types.get(key).intValue();
 	}
 
-	public String getFirstType()
+	/**
+	 * 
+	 * @return
+	 */
+	public String getMainType()
 	{
 		Map<String, Integer> sortedMap = sortByComparator(types);
 		return sortedMap.keySet().toArray()[0].toString();
 	}
 	
-	
+	/**
+	 * 
+	 * @param unsortMap
+	 * @return
+	 */
 	private static Map<String, Integer> sortByComparator(Map<String, Integer> unsortMap)
     {
 
@@ -88,6 +106,23 @@ public class Personality {
 
         return sortedMap;
     }
+	
+	/**
+	 * 
+	 */
+	public String toString()
+	{
+		StringBuilder sb = new StringBuilder();
+		sb.append(System.getProperty("line.separator"));
+		for (int i = 0; i<types.keySet().size(); i++) {
+			sb.append(types.keySet().toArray()[i].toString().toLowerCase());
+			sb.append(" - ");
+			sb.append(types.get(types.keySet().toArray()[i].toString()));
+			sb.append(System.getProperty("line.separator"));
+		}
+		return sb.toString();
+		
+	}
 	
 
 }

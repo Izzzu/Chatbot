@@ -6,7 +6,7 @@ import java.util.List;
 public class Conversation {
 	
 	public List<String> course = new ArrayList<String>();
-	private User user;
+	public User user = new User();
 
 	public User getUser() {
 		return user;
