@@ -39,7 +39,7 @@ div.container #textarea {
 }
 
 div.container #textarea p {
- height:25px; 
+ height:30px; 
  border:0 none;
  background-color: #FFFFCC; 
  margin-top: 0px;
@@ -49,11 +49,13 @@ div.container #textarea p {
 
 p.user {
  opacity: 0.6;
+ height: auto;
 }
 
 
-p.bot {
+div.container #textarea p.bot {
  opacity: 0.8;
+ height: auto;
 }
 
 form {

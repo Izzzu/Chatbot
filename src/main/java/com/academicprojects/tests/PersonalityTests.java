@@ -3,7 +3,7 @@ package com.academicprojects.tests;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.academicprojects.Personality;
+import com.academicprojects.model.Personality;
 
 /**
  *  A testing class. 

@@ -3,14 +3,9 @@ id_phr INT IDENTITY,
 word VARCHAR(30),
 id_per INT NOT NULL,
 level INT
-)
+);
 
-INSERT INTO phrase (word, id_per, level) VALUES ('ja', 0, 10)
-INSERT INTO phrase (word, id_per, level) VALUES ('moj', 0, 10)
-INSERT INTO phrase (word, id_per, level) VALUES ('on', 1, 10)
-INSERT INTO phrase (word, id_per, level) VALUES ('oni', 1, 10)
-
-CREATE TABLE personality (
+CREATE TABLE IF NOT EXISTS personality (
 id_per INT IDENTITY,
 type VARCHAR(3),
 long_type VARCHAR(30) )
