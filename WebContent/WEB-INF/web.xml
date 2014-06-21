@@ -22,6 +22,10 @@
             <param-name>forceEncoding</param-name>
             <param-value>true</param-value>
         </init-param>
+        <init-param>
+        	<param-name>development</param-name>
+        <param-value>true</param-value>
+    </init-param>
     </filter>
     <filter-mapping>
         <filter-name>SetCharacterEncodingFilter</filter-name>

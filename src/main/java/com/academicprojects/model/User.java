@@ -9,8 +9,23 @@ public class User {
 	private int age = 0;
 	private Gender gender;
 	private int mood = 0;
+	private Map<String, String> info = new HashMap<String,String>();
+	private Personality perType = new Personality();
+	private int lcu = 0;
 	
 	
+	public int getLcu() {
+		return lcu;
+	}
+	public void setLcu(int lcu) {
+		this.lcu = lcu;
+	}
+	public int getMood() {
+		return mood;
+	}
+	public void setMood(int mood) {
+		this.mood = mood;
+	}
 	public int getAge() {
 		return age;
 	}
@@ -18,8 +33,7 @@ public class User {
 		this.age = age;
 	}
 
-	private Map<String, String> info = new HashMap<String,String>();
-	private Personality perType = new Personality();
+	
 	
 	public Personality getPerType() {
 		return perType;
@@ -57,6 +71,7 @@ public class User {
 	public Gender getGender() {
 		return gender;
 	}
+	
 	
 
 }

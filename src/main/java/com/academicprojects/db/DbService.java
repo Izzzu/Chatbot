@@ -10,6 +10,14 @@ public class DbService {
 
 	Connection conn;                                                //our connnection to the db - presist for life of program
 
+	public Connection getConn() {
+		return conn;
+	}
+
+	public void setConn(Connection conn) {
+		this.conn = conn;
+	}
+
 	public DbService(String db_file_name_prefix) throws Exception {    // note more general exception
 
         // Load the HSQL Database Engine JDBC driver
