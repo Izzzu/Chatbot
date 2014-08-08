@@ -62,7 +62,7 @@ public class User {
 	
 	public void updatePersonality(String type, int level){
 		
-		perType.setByKey(type.toLowerCase(), perType.getByKey(type)+level);
+		perType.setNewPersonalityType(type.toLowerCase(), perType.getByPersonalityType(type) + level);
 		
 	}
 	public void setGender(Gender gender) {

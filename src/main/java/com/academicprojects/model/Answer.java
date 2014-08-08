@@ -4,6 +4,7 @@ public class Answer {
 	
 	private String sentence;
 
+
 	public void setSentence(String sentence) {
 		this.sentence = sentence;
 	}
@@ -12,6 +13,11 @@ public class Answer {
 		return sentence;
 	}
 
+    public Answer() {}
+    public Answer(String sentence)
+    {
+        this.sentence = sentence;
+    }
 	
 
 }

@@ -1,42 +1,35 @@
 package com.academicprojects.controller;
 
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.util.ArrayList;
+import com.academicprojects.db.DbService;
+import com.academicprojects.model.Answer;
+import com.academicprojects.model.Chatbot;
+import com.academicprojects.model.TypeOfSentence;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.academicprojects.db.DbService;
-import com.academicprojects.model.Answer;
-import com.academicprojects.model.Chatbot;
-import com.academicprojects.model.Conversation;
-
-import com.academicprojects.model.State;
-import com.academicprojects.model.TypeOfSentence;
-import com.academicprojects.model.User;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.sql.SQLException;
 
 @Controller
 public class ChatController {
-	//Conversation conversation = new Conversation();
+
 	DbService db = null;
 	Logger log = LoggerFactory.getLogger(ChatController.class);
 	Chatbot chatbot = new Chatbot();
-	//User user = new User();
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public ModelAndView student(ModelMap model) {
+	public ModelAndView student(ModelMap model) throws Exception {
 
 		//System.out.println("typ max" + p.getFirstType());
 		runDb();
 		chatbot.db = db;
+        chatbot.brain.db = db;
+        chatbot.brain.setUpBrain();
 		//chatbot.gettingUserMood.db = db;
 
 		if (chatbot.isUserTurn()) 

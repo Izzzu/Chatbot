@@ -6,13 +6,11 @@ import java.util.List;
 
 public class Conversation {
 
-	
-	
 	private String topic = "";
 	private int topicID = -1;
 	private int chatLevel = 1;
 	private int currentStatementNote = 0;
-	private int currentExpAnsTypeId = -1;
+	private int expectedAnswerTypeId = -1;
 	
 
 	private List<String> course = new ArrayList<String>();
@@ -39,11 +37,11 @@ public class Conversation {
 		this.topicID = topicID;
 	}
 
-	public int getCurrentExpAnsTypeId() {
-		return currentExpAnsTypeId;
+	public int getExpectedAnswerTypeId() {
+		return expectedAnswerTypeId;
 	}
-	public void setCurrentExpAnsTypeId(int currentExpAnsTypeId) {
-		this.currentExpAnsTypeId = currentExpAnsTypeId;
+	public void setExpectedAnswerTypeId(int expectedAnswerTypeId) {
+		this.expectedAnswerTypeId = expectedAnswerTypeId;
 	}
 	
 	public String getTopic() {
@@ -54,7 +52,7 @@ public class Conversation {
 		this.topic = topic;
 	}
 	
-	public void add(String s) {
+	public void addUserAnswerToCourse(String s) {
 		course.add(s);
 	}
 
@@ -63,8 +61,8 @@ public class Conversation {
 
 	public String randomWelcomePhrase(String name)
 	{
-		String [] welcome = {"Witaj! Jestem empatycznym chatbotem. Nazywam siê <name>, a Ty?", "Dzieñ dobry, jestem Chatbot <name>, jak Ci na imiê?",
-				"Hej, zapraszam do rozmowy. Mam na imiê <name>, a Ty?", "Witaj, jestem Chatbotem. Chêtnie z Tob¹ porozmawiam. Jak masz na imiê?" };
+		String [] welcome = {"Witaj! Jestem empatycznym chatbotem. Nazywam siï¿½ <name>, a Ty?", "Dzieï¿½ dobry, jestem Chatbot <name>, jak Ci na imiï¿½?",
+				"Hej, zapraszam do rozmowy. Mam na imiï¿½ <name>, a Ty?", "Witaj, jestem Chatbotem. Chï¿½tnie z Tobï¿½ porozmawiam. Jak masz na imiï¿½?" };
 		int r = (int) (Math.random()*welcome.length);
 		return welcome[r].replace("<name>", name);
 	}
@@ -72,14 +70,14 @@ public class Conversation {
 	
 
 	public Conversation() {
-		course.add(randomWelcomePhrase("Mieczys³aw"));
+		course.add(randomWelcomePhrase("Mieczysï¿½aw"));
 	}
 	
 	public Conversation(String name) {
 		course.add(randomWelcomePhrase(name));
 	}
 
-	public String getLast() {
+	public String getLastAnswer() {
 		return course.get(course.size()-1);
 	}
 
@@ -104,6 +102,7 @@ public class Conversation {
 	public int getCurrentStatementNote() {
 		return currentStatementNote;
 	}
-	
-	
+
+
+
 }

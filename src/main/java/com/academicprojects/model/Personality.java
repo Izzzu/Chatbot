@@ -1,14 +1,7 @@
 package com.academicprojects.model;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.TreeMap;
 
 public class Personality {
 	private Map<String, Integer> types = new LinkedHashMap<String,Integer>();
@@ -48,7 +41,7 @@ public class Personality {
 	 * @param key
 	 * @param p
 	 */
-	public void setByKey(String key, int p)
+	public void setNewPersonalityType(String key, int p)
 	{
 		if(types.containsKey(key)) {
 			 types.put(key,p);
@@ -63,7 +56,7 @@ public class Personality {
 	 * @param key
 	 * @return
 	 */
-	public int getByKey(String key)
+	public int getByPersonalityType(String key)
 	{
 		return types.get(key).intValue();
 	}
