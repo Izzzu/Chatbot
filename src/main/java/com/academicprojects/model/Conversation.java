@@ -52,7 +52,7 @@ public class Conversation {
 		this.topic = topic;
 	}
 	
-	public void addUserAnswerToCourse(String s) {
+	public void addChatbotAnswerToCourse(String s) {
 		course.add(s);
 	}
 

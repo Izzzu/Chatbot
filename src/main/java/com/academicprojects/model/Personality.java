@@ -4,15 +4,8 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class Personality {
-	private Map<String, Integer> types = new LinkedHashMap<String,Integer>();
-	
-	public Map<String, Integer> getTypes() {
-		return types;
-	}
 
-	public void setTypes(Map<String, Integer> types) {
-		this.types = types;
-	}
+	private Map<String, Integer> types = new LinkedHashMap<String,Integer>();
 
 	public Personality()
 	{
@@ -35,7 +28,14 @@ public class Personality {
 		types.put("faw", 0);
 		types.put("row", 0);
 	}
-	
+
+    public Map<String, Integer> getTypes() {
+        return types;
+    }
+    public void setTypes(Map<String, Integer> types) {
+        this.types = types;
+    }
+
 	/**
 	 * 
 	 * @param key

@@ -5,7 +5,10 @@ import com.academicprojects.util.PreprocessString;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.*;
 
 public class Chatbot {
@@ -55,24 +58,20 @@ public class Chatbot {
 		String result="";
 		if (user.getMood()==0)
 		{
-			result = "W takim razie mo�e powiesz mi o czym chcesz ze mn� porozmawia�?";
+			result = "W takim razie może powiesz mi o czym chcesz ze mną porozmawiać?";
 		}
 		else if (user.getMood()>0 && user.getMood()<5)
 		{
-			result = "Widz�, �e humor Ci nie dopisuje. O czym chcesz ze mn� porozmawia�?";
+			result = "Widzę, że humor Ci nie dopisuje. O czym chcesz ze mną porozmawiać?";
 		}
 		else {
-			result = "Ciesz� si�, �e masz dobry humor. W takim razie powiedz mi o czym chcesz teraz porozmawia�?";
+			result = "Cieszę się, że masz dobry humor. W takim razie powiedz mi o czym chcesz teraz porozmawiać?";
 		}
 		return result;
 
 	}
 
-	/**
-	 * 
-	 * @param
-	 * @return
-	 */
+
 	public String catchTopic() {
 		// TODO Auto-generated method stub
 		String answer = getLastAnswer();
@@ -113,8 +112,6 @@ public class Chatbot {
 		return result;
 	}
 
-
-
 	public String catchUserAge() {
 		String answer = getLastAnswer();
 		Scanner sc = new Scanner(answer);
@@ -132,51 +129,27 @@ public class Chatbot {
 		return token;
 	}
 
-
 	/*
 	 * 
 	 */
-	public String catchUserMood() {
+	public void catchUserMood() {
 
-		String answer = getLastAnswer();
-		Connection conn = db.getConn();
-		String result = "";
-		String [] words;
-		int note = 0;
+        Connection conn = db.getConn();
+        int note = 0;
+        String answer = pStr.replacePolishCharsAndLowerCase(getLastAnswer());
+        String[] words = answer.split(" ");
+        String result = "";
 
-		words = answer.split("[\',;/.\\s]+");
-		String sql = "SELECT answernote from useranswers as a " +
-		"where uanswer LIKE ?";
-		for (int i = 0; i<words.length; i++)
-		{
-
-			try {
-				PreparedStatement ps = conn.prepareStatement(sql);
-				ps.setString(1, pStr.replacePolishCharsAndLowerCase(pStr.removeWhite(words[i])));
-				//System.out.println("adverb ktory idzie do bazy: "+ (pStr.replacePolishCharsAndLowerCase(pStr.removeWhite(answer))));
-				ResultSet rs = ps.executeQuery();
-				if(rs.next())
-				{
-					note = rs.getInt(1);
-
-					setLevel("gettingUserMood", State.COMPLETED);
-					user.setMood(note);
-					result = "";
-				}
-				else 
-				{
-					setLevel("gettingUserMood", State.IN_PROGRESS);
-					result = "";
-				}
-
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		return result;
-	}
-
+        for (int i = 0; i < words.length; i++) {
+            note = catchUserAnswer(answer);
+            if (note >= 0) {
+                setLevel("gettingUserMood", State.COMPLETED);
+                user.setMood(note);
+            } else {
+                setLevel("gettingUserMood", State.IN_PROGRESS);
+            }
+        }
+    }
 
 	/*
 	 * 
@@ -246,31 +219,15 @@ public class Chatbot {
 		}
 	}
 
-
 	public void updatePersonality() {
 		String [] phrases = conversation.getLastAnswer().split("[\',;/.\\s]+");
 		for(int i = 0; i<phrases.length; i++) {
-			//System.out.println(i);
-			int level = 0;
-			String type = null;
-			//System.out.println(phrases[i]);
-			try {
-				ResultSet rs = db.query("SELECT level, type FROM phrase as ph join personality as pe on ph.id_per=pe.id_per WHERE ph.word LIKE '"+phrases[i]+"'");
 
-				ResultSetMetaData meta   = rs.getMetaData();
-
-				while(rs.next()) {
-					level = rs.getInt(1);
-					type = rs.getString(2);
-					log.info("Level: "+level+ " type: "+type);
-					user.updatePersonality(type, level);
-					log.info(user.getPerType().toString());
-				}
-				rs.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			for(PersonalityRecognizer.Phrase phrase: brain.personalityRecognizer.getPersonalityPhrases())
+            {
+                if (phrases[i].equals(phrase))
+                    user.updatePersonality(phrase.getWord(), phrase.getLevel());
+            }
 		}
 	}
 	private Gender getGender(String name) {
@@ -293,40 +250,14 @@ public class Chatbot {
 		// TODO Auto-generated method stub
 		return (State) taskStates.get(task);
 	}
-	
-	public String prepareAnswer(Conversation conversation, int prevNote)
-	{
-		String result = null;
-		if (conversation.getChatLevel()==4 && taskStates.get("gettingTopic")==State.COMPLETED) {
-			if (user.getLcu()>0 && user.getLcu()<30) result = "To do�� stresuj�ce wydarzenie. ";
-			else if (user.getLcu()<60) result = "To bardzo stresuj�ce wydarzenie. ";
-			else result = "To ekstremalnie stresuj�ce wydarzenie. ";
-		}
-		//if (getLevel("gettingTopic")==State.COMPLETED) {
-		Connection conn = db.getConn();
-			String sql = "SELECT * FROM CHATBOTANSWERS WHERE ID_SIT = ? AND CHATLEVEL = ? AND PREVSTATNOTE = ?";
-			
-			try {
-				PreparedStatement ps = conn.prepareStatement(sql);
-				ps.setInt(1, conversation.getTopicID());
-				ps.setInt(2, conversation.getChatLevel());
-				ps.setInt(3, conversation.getCurrentStatementNote());
-				ResultSet rs = ps.executeQuery();
-				result += rs.getString(2);			
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		return null;
-	}
 
     public String prepareAnswer() throws Exception {
         String userAnswer = preprocessUserAnswer();
         int userAnswerNote = catchUserAnswer(userAnswer);
-        System.out.println("user answer: "+userAnswer);
+        System.out.println("user answer note: "+userAnswerNote);
+
         List<String> suitedAnswers = new LinkedList<String>();
         for(ChatbotAnswer chatbotAnswer : brain.chatbotAnswers ) {
-            System.out.println(chatbotAnswer);
             if (chatbotAnswer.userAnswerNote == userAnswerNote) {
                     suitedAnswers.add(chatbotAnswer.getSentence());
             }
@@ -337,52 +268,14 @@ public class Chatbot {
         }
         else {
 
-            throw new Exception("nie znalazlo odpowiedzi"); //
+            return "Heheszki";
         }
 
     }
-	
-	public String prepareAnswer(int chatLevel, int userAnswerNote, int situationId)
-	{
-		String result = "";
-		int expatyp = -1;
-		Connection conn = db.getConn();
-		//System.out.println("chatLevel "+ chatLevel);
-		//System.out.println("userAnswerNote "+ userAnswerNote);
-		//System.out.println("situationId "+ situationId);
-		//String sql = "SELECT * FROM CHATBOTANSWERS WHERE ID_SIT = ? AND CHATLEVEL = ? AND PREVSTATNOTE = ?";
-		String sql = "SELECT * FROM CHATBOTANSWERS WHERE CHATLEVEL = ? AND PREVSTATNOTE = ?";
-		try {
-			PreparedStatement ps = conn.prepareStatement(sql);
-			//ps.setInt(1, situationId);
-			//ps.setInt(2, chatLevel);
-			//ps.setInt(3, userAnswerNote);
-			//ps.setInt(1, situationId);
-			ps.setInt(1, chatLevel);
-			ps.setInt(2, userAnswerNote);
-			ResultSet rs = ps.executeQuery();
-			//System.out.println(rs.next()==true);
-			if (rs.next()) {
-				result = rs.getString(2);
-				expatyp = rs.getInt(6);
-			}
-			//conversation.setCurrentStatementNote(rs.getInt()
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		conversation.setExpectedAnswerTypeId(expatyp);
-		result.replace("<uname>", user.getName());
-		result.replace("<uage>", String.valueOf(user.getAge()));
-		result.replace("<name>", chatbotName);
-		result.replace("<askmoodok>", askForMood(IS_GOOD));
-		result.replace("<askmoodbad>", askForMood(IS_BAD));
-		return result;
-	}
-	
+
 	public void catchAnswer(int id_answertype) {
 		String answer = preprocessUserAnswer();
-		String sql = "SELECT * FROM USERANSWERS WHERE ID_ATYP= ?";
+		String sql = "SELECT * FROM USERANSWERS WHERE ID= ?";
 		Connection conn = db.getConn();
 		try {
 			PreparedStatement ps;// = conn.prepareStatement(sql);
@@ -410,7 +303,7 @@ public class Chatbot {
 	}
 
     private String preprocessUserAnswer() {
-        return pStr.replacePolishCharsAndLowerCase(conversation.getLastAnswer().replace("  "," "));
+        return pStr.replacePolishCharsAndLowerCase(conversation.getLastAnswer().replace("  "," ").replace("_"," "));
     }
 
     public int catchUserAnswer(String userAnswer) {
@@ -418,22 +311,23 @@ public class Chatbot {
         int weights = 0;
         int average = 0;
 
-
+        System.out.println("-");
         try {
             for (PatternAnswer pattern : brain.patterns) {
-                System.out.println(pattern.getSentence());
 
                 if (userAnswer.contains(pattern.getSentence())) {
-                    noteSum = +pattern.getImportance() * pattern.getNote();
-                    weights = +pattern.getImportance();
+                    noteSum += (pattern.getImportance() * pattern.getNote());
+                    weights += pattern.getImportance();
                 }
-                System.out.println(weights);
-            }
-            if (weights != 0) average = noteSum / weights;
-            else {
-                //nie znaleziono pasujacego patternu
-            }
 
+            }
+            if (weights != 0) average = (noteSum / weights);
+            else {
+                return -1;
+            }
+            System.out.println("weights=" + weights);
+            System.out.println("noteSum=" + noteSum);
+            System.out.println("average=" + average);
             return average;
         }
         catch (Exception e)
@@ -458,7 +352,7 @@ public class Chatbot {
 	
 	public void addUserAnswer(String s)
 	{
-		conversation.addUserAnswerToCourse(s);
+		conversation.addChatbotAnswerToCourse(s);
 	}
 	
 	public void answer() throws Exception {
@@ -467,25 +361,25 @@ public class Chatbot {
 		switch(chatlevel) {
 		case 1:
 			catchUserName();
-			conversation.addUserAnswerToCourse("Witaj " + getUserName() + ". Na pocz�tku naszej rozmowy chcia�bym zada� Ci kilka pyta�. Ile masz lat?");
+			conversation.addChatbotAnswerToCourse("Witaj " + getUserName() + ". Na początku naszej rozmowy chciałbym zadać Ci kilka pytań. Ile masz lat?");
 			break;
 		case 2:
 			catchUserAge();			
 			if (user.getAge()==0)
-			conversation.addUserAnswerToCourse("Nie odpowiadaj je�li nie chcesz. Jak Twoje dzisiejsze samopoczucie?");
-			else conversation.addUserAnswerToCourse("A jak Twoje dzisiejsze samopoczucie?");
+			conversation.addChatbotAnswerToCourse("Nie odpowiadaj jeśli nie chcesz. Jak Twoje dzisiejsze samopoczucie?");
+			else conversation.addChatbotAnswerToCourse("A jak Twoje dzisiejsze samopoczucie?");
 			break;
 		case 3:
 			catchUserMood();
-			conversation.addUserAnswerToCourse(commentMood());
+			conversation.addChatbotAnswerToCourse(commentMood());
 			break;
-		case 4:
+		/*case 4:
 			catchTopic();
-			conversation.addUserAnswerToCourse(prepareAnswer(chatlevel, 0, conversation.getTopicID()));
-			break;
+			conversation.addChatbotAnswerToCourse(prepareAnswer(chatlevel, 0, conversation.getTopicID()));
+			break;*/
 		default:
 			catchAnswer(conversation.getExpectedAnswerTypeId());
-			conversation.addUserAnswerToCourse(prepareAnswer());
+			conversation.addChatbotAnswerToCourse(prepareAnswer());
 			break;
 		}
 		conversation.chatLevelUp();

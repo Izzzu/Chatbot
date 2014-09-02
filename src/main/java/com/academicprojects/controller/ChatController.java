@@ -77,7 +77,7 @@ public class ChatController {
 	public void runDb()
 	{
 		try {
-			db = new DbService("db/db");
+			db = new DbService("db/chatbotDb");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
