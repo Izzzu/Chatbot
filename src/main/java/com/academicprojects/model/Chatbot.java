@@ -2,6 +2,7 @@ package com.academicprojects.model;
 
 import com.academicprojects.db.DbService;
 import com.academicprojects.util.PreprocessString;
+import lombok.Getter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
+@Getter
 public class Chatbot {
 
     private static final int IS_GOOD = 1;
@@ -20,38 +22,31 @@ public class Chatbot {
 	Logger log = LoggerFactory.getLogger(Chatbot.class);
 
 	public Map taskStates = new HashMap<String, State>();
-    public DbService db = null;
 
-	private User user = new User();
+    public Brain brain;
+	private User user;
 	
 	private String chatbotName = "Zbyszek";
 	private Conversation conversation = new Conversation(chatbotName);
-	public Brain brain = new Brain(db);
 
 	public Chatbot() {
 		taskStates.put("gettingTopic", State.START);
 		taskStates.put("gettingUserAge", State.START);
 		taskStates.put("gettingUserName", State.START);
 		taskStates.put("gettingUserMood", State.START);
-
 	}
 
-	
-	public Conversation getConversation() {
-		return conversation;
-	}
+    public Chatbot(DbService db) {
 
-	public void setConversation(Conversation conversation) {
-		this.conversation = conversation;
-	}
+        brain = new Brain(db);
+        brain.setUpBrain();
+        user = new User();
+        taskStates.put("gettingTopic", State.START);
+        taskStates.put("gettingUserAge", State.START);
+        taskStates.put("gettingUserName", State.START);
+        taskStates.put("gettingUserMood", State.START);
+    }
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
 	
 	public String commentMood()
 	{
@@ -68,7 +63,6 @@ public class Chatbot {
 			result = "Cieszę się, że masz dobry humor. W takim razie powiedz mi o czym chcesz teraz porozmawiać?";
 		}
 		return result;
-
 	}
 
 
@@ -76,38 +70,11 @@ public class Chatbot {
 		// TODO Auto-generated method stub
 		String answer = getLastAnswer();
 
-		Connection conn = db.getConn();
+		Connection conn = brain.getDb().getConn();
 		String result = "";
 		int resId;
 		int lcu;
 
-	/*	*//*String sql = "SELECT id_sit, term, lcu from PATTERNS1 as p left join SITUATIONS as s" +
-		" on p.id_sit=s.id_sit where pattern LIKE ?";
-		try {
-			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setString(1, pStr.replacePolishCharsAndLowerCase(pStr.removeWhite(answer)));
-			System.out.println("string ktory idzie do bazy: "+ (pStr.replacePolishCharsAndLowerCase(pStr.removeWhite(answer))));
-			ResultSet rs = ps.executeQuery();
-			if(rs.next())
-			{
-				result = rs.getString(2);
-				resId = rs.getInt(1);
-				lcu = rs.getInt(3);
-				setLevel("gettingTopic", State.COMPLETED);
-				conversation.setTopic(result);
-				conversation.setTopicID(resId);
-				user.setLcu(lcu);
-			}
-			else
-			{
-				setLevel("gettingTopic", State.IN_PROGRESS);
-				result = "Nie rozumiem o czym m�wisz:)";
-			}*//*
-
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
     result = "niewazne";
 		return result;
 	}
@@ -134,7 +101,7 @@ public class Chatbot {
 	 */
 	public void catchUserMood() {
 
-        Connection conn = db.getConn();
+        Connection conn = brain.getDb().getConn();
         int note = 0;
         String answer = pStr.replacePolishCharsAndLowerCase(getLastAnswer());
         String[] words = answer.split(" ");
@@ -157,8 +124,8 @@ public class Chatbot {
 	public String catchUserName() {
 		
 		String answer = getLastAnswer();
-		String[] introduce = {"mam na imi� ", "jestem ", "nazywam si� ","mam na imie ",
-				"nazywam sie ", "zw� si� ", "zwe sie "};
+		String[] introduce = {"mam na imię ", "jestem ", "nazywam się ","mam na imie ",
+				"nazywam sie ", "zwę się ", "zwe sie "};
 		for (int i=0; i<introduce.length; i++)
 		{
 			if (answer.toLowerCase().contains(introduce[i])) {
@@ -199,7 +166,6 @@ public class Chatbot {
 				user.setName("Nieznajomy");
 				return "Nieznajomy";
 			}
-
 		}
 		else  {
 			String [] s = answer.toLowerCase().split(" ");
@@ -225,10 +191,18 @@ public class Chatbot {
 
 			for(PersonalityRecognizer.Phrase phrase: brain.personalityRecognizer.getPersonalityPhrases())
             {
-                if (phrases[i].equals(phrase))
-                    user.updatePersonality(phrase.getWord(), phrase.getLevel());
+                //log.info("outer for - "+phrase.getWord());
+                System.out.println(user.getPersonality().toString());
+                System.out.println("size: - "+String.valueOf(user.getPersonality().getTypes().size()));
+                if (phrases[i].equals(phrase.getWord())) {
+                    System.out.println(phrase.getWord());
+                    user.updatePersonality(phrase.getIdPersonality(), phrase.getLevel());
+                    System.out.println(user.getPersonality().toString());
+                    System.out.println("size: - "+String.valueOf(user.getPersonality().getTypes().size()));
+                }
             }
 		}
+        System.out.println(user.getPersonality());
 	}
 	private Gender getGender(String name) {
 		if (name.charAt(name.length()-1)=='a')
@@ -236,7 +210,6 @@ public class Chatbot {
 			return Gender.FEMALE;
 		}
 		else return Gender.MALE;
-
 	}
 	/*
 	 * 
@@ -267,8 +240,8 @@ public class Chatbot {
             return suitedAnswers.get(randomIndex);
         }
         else {
-
-            return "Heheszki";
+            int randomIndex = (int)(Math.random()*brain.getExceptionsChatbotAnswers().size());
+            return brain.getExceptionsChatbotAnswers().get(randomIndex).getSentence();
         }
 
     }
@@ -276,7 +249,7 @@ public class Chatbot {
 	public void catchAnswer(int id_answertype) {
 		String answer = preprocessUserAnswer();
 		String sql = "SELECT * FROM USERANSWERS WHERE ID= ?";
-		Connection conn = db.getConn();
+		Connection conn = brain.getDb().getConn();
 		try {
 			PreparedStatement ps;// = conn.prepareStatement(sql);
 
@@ -319,7 +292,6 @@ public class Chatbot {
                     noteSum += (pattern.getImportance() * pattern.getNote());
                     weights += pattern.getImportance();
                 }
-
             }
             if (weights != 0) average = (noteSum / weights);
             else {
@@ -335,11 +307,8 @@ public class Chatbot {
 
         }
         return average;
-
     }
 
-
-	
 	public boolean isUserTurn()
 	{
 		return conversation.isUserTurn();
@@ -378,7 +347,6 @@ public class Chatbot {
 			conversation.addChatbotAnswerToCourse(prepareAnswer(chatlevel, 0, conversation.getTopicID()));
 			break;*/
 		default:
-			catchAnswer(conversation.getExpectedAnswerTypeId());
 			conversation.addChatbotAnswerToCourse(prepareAnswer());
 			break;
 		}
@@ -399,19 +367,19 @@ public class Chatbot {
 		//przypuszczenie dobrego nastroju
 		if (suspectedMood==IS_GOOD) {
 			if (moodIsGood()) {
-				if (userIsAFemale()) return " Jednak wydajesz si� smutna. Czym si� martwisz?";
-				else return " Jednak wydajesz si� smutny. Czym si� martwisz?";
+				if (userIsAFemale()) return " Jednak wydajesz się smutna. Czym się martwisz?";
+				else return " Jednak wydajesz się smutny. Czym się martwisz?";
 			}
-			else if (moodIsBad()) return "Widać że tryskasz radości�. Mimo wszystko, jakie masz w zwi�zku z tym obawy? ";
+			else if (moodIsBad()) return "Widać że tryskasz radością. Mimo wszystko, jakie masz w związku z tym obawy? ";
 		}
 		else if (suspectedMood ==IS_BAD) {
 			if (moodIsGood()) {
-				if (userIsAFemale()) return " Wygl�dasz na smutn�. Czym si� martwisz?";
-				else return " Wygl�dasz na smutnego. Czym si� martwisz?";
+				if (userIsAFemale()) return " Wyglądasz na smutną. Czym się martwisz?";
+				else return " Wyglądasz na smutnego. Czym się martwisz?";
 			}
 				else if (moodIsBad()) {
-					if (userIsAFemale()) return " Mimo to wydajesz si� weso�a. Co jest powodem Twojej rado�ci? ";
-					else return " Mimo to wydajesz si� weso�y. Co jest powodem Twojej rado�ci? ";
+					if (userIsAFemale()) return " Mimo to wydajesz się wesoła. Co jest powodem Twojej radości? ";
+					else return " Mimo to wydajesz się wesoły. Co jest powodem Twojej radości? ";
 				}
 		}
 		return "";
@@ -429,5 +397,23 @@ public class Chatbot {
         return (user.getMood()>0 && user.getMood()<5);
     }
 
+    public TypeOfSentence recognizeTypeOfSentence(String s) {
+        String str = s.trim();
+        if (str.charAt(str.length()-1)=='?') {
+            return TypeOfSentence.OPEN_QUESTION;
+        }
+        else if (str.charAt(str.length()-1)=='!')
+        {
+            return TypeOfSentence.EXCLAMATION;
+        }
+        else if (str.charAt(str.length()-1)=='.')
+        {
+            return TypeOfSentence.INDICATIVE;
+        }
+        return TypeOfSentence.OTHER;
+    }
 
+    public void setUpBrain() {
+        brain.setUpBrain();
+    }
 }

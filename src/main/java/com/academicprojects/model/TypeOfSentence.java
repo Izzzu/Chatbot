@@ -1,7 +1,8 @@
 package com.academicprojects.model;
 
 public enum TypeOfSentence {
-	QUESTION,
+    OPEN_QUESTION,
+    CLOSED_QUESTION,
 	INDICATIVE,
 	EXCLAMATION,
 	OTHER
