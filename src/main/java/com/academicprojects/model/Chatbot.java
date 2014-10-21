@@ -1,6 +1,7 @@
 package com.academicprojects.model;
 
 import com.academicprojects.db.DbService;
+import com.academicprojects.model.dictionary.PolishDictionary;
 import com.academicprojects.util.PreprocessString;
 import lombok.Getter;
 import org.slf4j.Logger;
@@ -228,7 +229,47 @@ public class Chatbot {
         String userAnswer = preprocessUserAnswer();
         int userAnswerNote = catchUserAnswer(userAnswer);
         System.out.println("user answer note: "+userAnswerNote);
+        return pharaprasize(userAnswer.toLowerCase()) + getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+    }
 
+    public String pharaprasize(String userAnswer) {
+
+        String[] ar = {userAnswer};
+        String[] sentences = (userAnswer.contains(".") && !userAnswer.endsWith(".")) ? userAnswer.split(".") : ar;
+        for (int i = 0; i < sentences.length; i++) {
+            String[] words = sentences[i].split(" ");
+            for (int j = 0; j < words.length; j++) {
+                PolishDictionary.Record record = findVerbInDictionary(words[j].toLowerCase());
+
+                String changedVerb = findPharaprasizedVerb(record).getWord();
+                StringBuffer sb = new StringBuffer();
+                sb.append("Mówisz, że ");
+                sb.append(changedVerb + " ");
+                for (int k = j + 1; k < words.length; k++) {
+                    sb.append(words[k] + " ");
+                }
+                sb.deleteCharAt(sb.length() - 1);
+                return sb.toString();
+            }
+        }
+        return "";
+
+    }
+
+    private PolishDictionary.Record findVerbInDictionary(String userAnswer) {
+        PolishDictionary.Record record = brain.getDictionary().findVerb(userAnswer);
+        if (record.isRightToPharaprasize()) {
+            return findPharaprasizedVerb(record);
+        }
+        return record;
+    }
+
+    private PolishDictionary.Record findPharaprasizedVerb(PolishDictionary.Record record) {
+        return brain.getDictionary().findVerbFromMainWordAndMatchOppositePerson(record.getMainWord(), record.getForm().getSingularOrPlural(), record.getForm().getVerbForm(), record.getForm().getGenre());
+
+    }
+
+    private String getChatbotAnswerFromAnswerPatterns(int userAnswerNote) {
         List<String> suitedAnswers = new LinkedList<String>();
         for(ChatbotAnswer chatbotAnswer : brain.chatbotAnswers ) {
             if (chatbotAnswer.userAnswerNote == userAnswerNote) {
@@ -243,10 +284,9 @@ public class Chatbot {
             int randomIndex = (int)(Math.random()*brain.getExceptionsChatbotAnswers().size());
             return brain.getExceptionsChatbotAnswers().get(randomIndex).getSentence();
         }
-
     }
 
-	public void catchAnswer(int id_answertype) {
+    public void catchAnswer(int id_answertype) {
 		String answer = preprocessUserAnswer();
 		String sql = "SELECT * FROM USERANSWERS WHERE ID= ?";
 		Connection conn = brain.getDb().getConn();

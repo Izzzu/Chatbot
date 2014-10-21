@@ -2,7 +2,7 @@ package com.academicprojects.util;
 
 public class PreprocessString {
 
-	public String replacePolishCharsAndLowerCase(String a)
+	public static String replacePolishCharsAndLowerCase(String a)
 	{
 
 		String result = a;

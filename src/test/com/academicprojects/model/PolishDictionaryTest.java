@@ -1,5 +1,6 @@
 package com.academicprojects.model;
 
+import com.academicprojects.model.dictionary.*;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,15 +12,21 @@ public class PolishDictionaryTest{
     public void shouldReturnRightDictionarySize()
     {
         PolishDictionary dictionary = new PolishDictionary();
-        assertEquals(98402, dictionary.getRecords().size() );
+        assertEquals(98402, dictionary.getRecordsWithoutVerbs().size() );
     }
 
     @Test
     public void shouldCreateWordForm()
     {
         PolishDictionary dictionary = new PolishDictionary();
-        assertFalse(dictionary.getRecords().isEmpty());
-        assertEquals(dictionary.getRecords().get(0).getForm(), LanguagePart.SUBSTANTIV);
+        assertFalse(dictionary.getRecordsWithoutVerbs().isEmpty());
+        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getLanguagePart(), LanguagePart.SUBSTANTIV);
+        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGenre(), Genre.MALE);
+        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGrade(), Grade.DEFAULT);
+        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGrammaCase(), GrammaCase.NOMINATIV);
+        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGrammaPerson(), GrammaPerson.DEFAULT);
+        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getSingularOrPlural(), SingularOrPlural.SINGULAR);
+        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getVerbForm(), VerbForm.DEFAULT);
     }
 
 }

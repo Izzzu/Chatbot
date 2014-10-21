@@ -1,141 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="dictionary added">
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot.war" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\Chatbot-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Answer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\ChatController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Conversation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Personality$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Personality.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\User.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\controller\ChatController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\db\DbService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Answer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Brain.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Chatbot.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\ChatbotAnswer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Conversation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Gender.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\GettingUserName.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\PatternAnswer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Personality$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Personality.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\StandardAnswers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\State.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Task$State.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Task.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\TypeOfSentence.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\User.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\test\BrainTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\tests\PersonalityTests.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\tests\TasksTests.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\util\PreprocessString.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat2.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat3.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat4.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\commons-io-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\commons-logging-1.1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\hsqldb-2.3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\jcsv-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\join-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\junit-4.11-beta-1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\lombok-1.14.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\opencsv-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\slf4j-api-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\slf4j-simple-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-aop-4.0.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-beans-4.0.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-context-4.0.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-core-4.0.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-expression-4.0.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-web-4.0.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-webmvc-4.0.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\super-csv-2.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\system-rules-1.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\css\styles.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body5.JPG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\gt_favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\js\magister.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Answer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\ChatController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Conversation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Personality$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Personality.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\User.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\controller\ChatController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\db\DbService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Answer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Brain.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Chatbot.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\ChatbotAnswer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Conversation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Gender.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\GettingUserAge.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\GettingUserName.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PatternAnswer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Personality$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Personality.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityRecognizer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityRecognizer$Phrase.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityRecognizer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityType.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PolishDictionary$Record.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PolishDictionary.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\RecognizingMood.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\StandardAnswers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\State.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Task.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\TypeOfSentence.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\User.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\Details.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\Genre.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\Grade.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\GrammaCase.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\GrammaPerson.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\LanguagePart.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\PolishDictionary$Record.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\PolishDictionary.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\SingularOrPlural.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\VerbForm.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\WordDetails.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\test\BrainTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\tests\PersonalityTests.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\tests\TasksTests.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\util\PreprocessString.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\polimorfologik.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\maven-archiver\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\BrainTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\ChatbotTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\model\PolishDictionaryTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\test\BrainTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\test\ChatbotTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\test\PersonalityTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\conf\tomcat-users.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\conf\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\work\localEngine\localhost\Chatbot\SESSIONS.ser" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\work\localEngine\localhost\Chatbot\org\apache\jsp\WEB_002dINF\jsp\chat4_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\work\localEngine\localhost\Chatbot\org\apache\jsp\WEB_002dINF\jsp\chat4_jsp.java" afterPath="" />
+    <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/Details.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/Genre.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/Grade.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/GrammaCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/GrammaPerson.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/SingularOrPlural.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/VerbForm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/WordDetails.java" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\src\main\java\com\academicprojects\model\PolishDictionary.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\src\main\java\com\academicprojects\model\WordDetails.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\src\main\java\com\academicprojects\model\LanguagePart.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/LanguagePart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/chatbotDb.lck" afterPath="$PROJECT_DIR$/db/chatbotDb.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/academicprojects/test/ChatbotTest.java" afterPath="$PROJECT_DIR$/src/test/com/academicprojects/test/ChatbotTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/academicprojects/model/PolishDictionaryTest.java" afterPath="$PROJECT_DIR$/src/test/com/academicprojects/model/PolishDictionaryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/util/PreprocessString.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/util/PreprocessString.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -1072,7 +956,7 @@
       <workItem from="1413315444460" duration="1749000" />
       <workItem from="1413317338188" duration="1211000" />
       <workItem from="1413924973357" duration="1410000" />
-      <workItem from="1413926584716" duration="667000" />
+      <workItem from="1413926584716" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1082,11 +966,15 @@
       <created>1411080371111</created>
       <updated>1411080371111</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit test">
+      <created>1413927296519</created>
+      <updated>1413927296519</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167238000" />
+    <option name="totallyTimeSpent" value="167379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1292" height="776" extended-state="0" />
@@ -1106,6 +994,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60123646" sideWeight="0.24635333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.6142626" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1118,7 +1007,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766616" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.6142626" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1139,7 +1027,8 @@
     </option>
     <MESSAGE value="changes, added brain, changed database" />
     <MESSAGE value="dictionary added" />
-    <option name="LAST_COMMIT_MESSAGE" value="dictionary added" />
+    <MESSAGE value="commit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,4 +1,4 @@
-package com.academicprojects.model;
+package com.academicprojects.model.dictionary;
 /*
 * adj - przymiotnik (np. „niemiecki”)
         * adjc - przymiotnik przedykatywny (np. „ciekaw”, „dłużen”)
@@ -39,23 +39,7 @@ public enum LanguagePart {
     PREDICATIV,
     PRONOUN,
     NUMERAL,
-    DEFAULT,;
-
-    public static LanguagePart matchLAnguagePart(String shortcut) {
-        if (shortcut.equals("conj")) return CONJUCTION;
-        else if (shortcut.equals("ppas") || shortcut.equals("pact") || shortcut.equals("pcon") || shortcut.equals("pant"))
-            return PARTICIPLE;
-        else if (shortcut.equals("adj") || shortcut.equals("adjc") || shortcut.equals("adjp")) return ADJECTIV;
-        else if (shortcut.equals("adv")) return ADVERB;
-        else if (shortcut.equals("subst")) return SUBSTANTIV;
-        else if (shortcut.equals("prep")) return PREPOSITION;
-        else if (shortcut.equals("pred")) return PREDICATIV;
-        else if (shortcut.equals("ppron12") || shortcut.equals("ppron3")) return PRONOUN;
-        else if (shortcut.equals("num")) return PRONOUN;
-        else if (shortcut.equals("verb")) return VERB;
-        else return DEFAULT;
-    }
-
+    DEFAULT,
 
 
 }

@@ -1,6 +1,7 @@
 package com.academicprojects.model;
 
 import com.academicprojects.db.DbService;
+import com.academicprojects.model.dictionary.PolishDictionary;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
