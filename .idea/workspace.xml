@@ -1,41 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/LanguagePart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/academicprojects/test/PersonalityTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PolishDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/academicprojects/model/PolishDictionaryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/WordDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dictionary.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/scripts/phrase.txt" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\db\db.lck" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\db\db.log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\test.lck" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\test.log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\test.script" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\testdb.log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\testdb.properties" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\src\test\com\academicprojects\BrainTest.java" afterPath="$PROJECT_DIR$/src/test/com/academicprojects/test/BrainTest.java" />
-      <change type="MOVED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\src\test\com\academicprojects\ChatbotTest.java" afterPath="$PROJECT_DIR$/src/test/com/academicprojects/test/ChatbotTest.java" />
-      <change type="MOVED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\test.properties" afterPath="$PROJECT_DIR$/db/chatbotDb.properties.new" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/chatbotDb.lck" afterPath="$PROJECT_DIR$/db/chatbotDb.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Personality.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Personality.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/chatbotDb.properties" afterPath="$PROJECT_DIR$/db/chatbotDb.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/chatbotDb.script" afterPath="$PROJECT_DIR$/db/chatbotDb.script" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="dictionary added">
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot.war" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\META-INF\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\Chatbot-servlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Answer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\ChatController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Conversation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Personality$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\Personality.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\User.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\controller\ChatController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\db\DbService.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Answer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Brain.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Chatbot.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\ChatbotAnswer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Conversation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Gender.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\GettingUserName.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\PatternAnswer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Personality$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Personality.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\StandardAnswers.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\State.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Task$State.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\Task.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\TypeOfSentence.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\test\BrainTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\tests\PersonalityTests.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\tests\TasksTests.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\classes\com\academicprojects\util\PreprocessString.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\jsp\chat4.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\commons-logging-1.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\hsqldb-2.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\jcsv-1.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\join-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\junit-4.11-beta-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\lombok-1.14.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\opencsv-2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\slf4j-api-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\slf4j-simple-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-aop-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-beans-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-context-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-core-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-expression-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-web-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\spring-webmvc-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\super-csv-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\lib\system-rules-1.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\WEB-INF\web.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body5.JPG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\body7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\images\gt_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\js\magister.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\Chatbot\assets\screenshots\sshot5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Answer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\ChatController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Conversation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Personality$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\Personality.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\User.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\controller\ChatController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\db\DbService.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Answer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Brain.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Chatbot.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\ChatbotAnswer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Conversation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Gender.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\GettingUserAge.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\GettingUserName.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PatternAnswer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Personality$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Personality.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityRecognizer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityRecognizer$Phrase.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityRecognizer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PersonalityType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PolishDictionary$Record.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\PolishDictionary.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\RecognizingMood.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\StandardAnswers.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\State.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\Task.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\TypeOfSentence.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\Details.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\Genre.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\Grade.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\GrammaCase.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\GrammaPerson.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\LanguagePart.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\PolishDictionary$Record.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\PolishDictionary.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\SingularOrPlural.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\VerbForm.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\model\dictionary\WordDetails.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\test\BrainTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\tests\PersonalityTests.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\tests\TasksTests.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\com\academicprojects\util\PreprocessString.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\classes\polimorfologik.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\BrainTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\ChatbotTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\model\PolishDictionaryTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\test\BrainTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\test\ChatbotTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\test-classes\com\academicprojects\test\PersonalityTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\conf\tomcat-users.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\conf\web.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\work\localEngine\localhost\Chatbot\SESSIONS.ser" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\work\localEngine\localhost\Chatbot\org\apache\jsp\WEB_002dINF\jsp\chat4_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Cookiemonster\workspace\Chatbot\target\tomcat\work\localEngine\localhost\Chatbot\org\apache\jsp\WEB_002dINF\jsp\chat4_jsp.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -65,11 +165,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PolishDictionaryTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/com/academicprojects/model/PolishDictionaryTest.java">
+      <file leaf-file-name="PolishDictionary.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1245136" vertical-offset="0" max-vertical-offset="459">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.48770493" vertical-offset="0" max-vertical-offset="3519">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -84,6 +184,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="b9795d6" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -93,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Answer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternAnswer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/academicprojects/tests/TasksTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/util/PreprocessString.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/tests/ChatbotTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/test/BrainTest.java" />
@@ -104,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/test/com/academicprojects/ChatbotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java" />
-        <option value="$PROJECT_DIR$/src/test/com/academicprojects/test/ChatbotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityRecognizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java" />
@@ -117,11 +220,27 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/log.out" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/LanguagePart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Details.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Genre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/SingularOrPlural.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Verb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/GrammaCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Grade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/VerbForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/GrammaPerson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/WordDetails.java" />
         <option value="$PROJECT_DIR$/src/test/com/academicprojects/model/PolishDictionaryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PolishDictionary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/util/PreprocessString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/WordDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/LanguagePart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/VerbForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" />
+        <option value="$PROJECT_DIR$/src/test/com/academicprojects/test/ChatbotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
       </list>
     </option>
   </component>
@@ -145,7 +264,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
+    <option name="width" value="1292" />
     <option name="height" value="776" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -176,6 +295,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -311,10 +432,6 @@
               <option name="myItemId" value="academicprojects" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -371,41 +488,17 @@
               <option name="myItemId" value="academicprojects" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="academicprojects" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="dictionary" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,6 +525,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last.edited.regexp" value="kdjf+dkjf" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -440,6 +534,12 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.academicprojects.model" />
       <recent name="com.academicprojects.test" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.academicprojects.model.PolishDictionary" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.academicprojects.model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Cookiemonster\workspace\Chatbot\src\main" />
@@ -451,91 +551,7 @@
       <recent name="com.academicprojects" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolishDictionaryTest.shouldCreateWordForm">
-    <configuration default="false" name="PersonalityTest.shouldUpdatePersonality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.academicprojects.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Chatbot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.academicprojects.test" />
-      <option name="MAIN_CLASS_NAME" value="com.academicprojects.test.PersonalityTest" />
-      <option name="METHOD_NAME" value="shouldUpdatePersonality" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PersonalityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.academicprojects.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Chatbot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.academicprojects.test" />
-      <option name="MAIN_CLASS_NAME" value="com.academicprojects.test.PersonalityTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PersonalityTest.shouldBe18PersonalityTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.academicprojects.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Chatbot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.academicprojects.test" />
-      <option name="MAIN_CLASS_NAME" value="com.academicprojects.test.PersonalityTest" />
-      <option name="METHOD_NAME" value="shouldBe18PersonalityTypes" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ChatbotTest.pharaprasizeTest">
     <configuration default="false" name="PolishDictionaryTest.shouldReturnRightDictionarySize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -588,7 +604,103 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PolishDictionaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.academicprojects.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Chatbot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.academicprojects.model" />
+      <option name="MAIN_CLASS_NAME" value="com.academicprojects.model.PolishDictionaryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChatbotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.academicprojects.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Chatbot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.academicprojects.test" />
+      <option name="MAIN_CLASS_NAME" value="com.academicprojects.test.ChatbotTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChatbotTest.pharaprasizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.academicprojects.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Chatbot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.academicprojects.test" />
+      <option name="MAIN_CLASS_NAME" value="com.academicprojects.test.ChatbotTest" />
+      <option name="METHOD_NAME" value="pharaprasizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -828,19 +940,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PersonalityTest.shouldUpdatePersonality" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PersonalityTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PersonalityTest.shouldBe18PersonalityTypes" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldReturnRightDictionarySize" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldCreateWordForm" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldReturnRightDictionarySize" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldCreateWordForm" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ChatbotTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ChatbotTest.pharaprasizeTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldCreateWordForm" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldReturnRightDictionarySize" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PersonalityTest.shouldBe18PersonalityTypes" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PersonalityTest.shouldUpdatePersonality" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PersonalityTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ChatbotTest.pharaprasizeTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChatbotTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldCreateWordForm" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PolishDictionaryTest.shouldReturnRightDictionarySize" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -925,44 +1037,83 @@
       <workItem from="1410822939165" duration="722000" />
       <workItem from="1410977492802" duration="631000" />
       <workItem from="1411079630452" duration="420000" />
-      <workItem from="1411080185632" duration="44000" />
+      <workItem from="1411080185632" duration="1065000" />
+      <workItem from="1411223555061" duration="1001000" />
+      <workItem from="1411225659335" duration="1366000" />
+      <workItem from="1411227534521" duration="1532000" />
+      <workItem from="1411229705032" duration="1056000" />
+      <workItem from="1411317287543" duration="1364000" />
+      <workItem from="1411319048262" duration="1817000" />
+      <workItem from="1411320929959" duration="999000" />
+      <workItem from="1411322984221" duration="594000" />
+      <workItem from="1411333927670" duration="1843000" />
+      <workItem from="1411335824476" duration="1974000" />
+      <workItem from="1411337870695" duration="1867000" />
+      <workItem from="1411339813225" duration="1873000" />
+      <workItem from="1411509121513" duration="1577000" />
+      <workItem from="1411510872741" duration="925000" />
+      <workItem from="1411587755678" duration="587000" />
+      <workItem from="1411807275404" duration="2123000" />
+      <workItem from="1411818243185" duration="669000" />
+      <workItem from="1411823330008" duration="870000" />
+      <workItem from="1412443163247" duration="1534000" />
+      <workItem from="1412444991275" duration="706000" />
+      <workItem from="1412447528259" duration="1206000" />
+      <workItem from="1412450392212" duration="579000" />
+      <workItem from="1412516171771" duration="2309000" />
+      <workItem from="1412520140449" duration="1725000" />
+      <workItem from="1412527562932" duration="1949000" />
+      <workItem from="1412529692658" duration="858000" />
+      <workItem from="1412533967187" duration="1789000" />
+      <workItem from="1412535909990" duration="1576000" />
+      <workItem from="1412537875815" duration="585000" />
+      <workItem from="1413311693700" duration="1687000" />
+      <workItem from="1413313534868" duration="1711000" />
+      <workItem from="1413315444460" duration="1749000" />
+      <workItem from="1413317338188" duration="1211000" />
+      <workItem from="1413924973357" duration="1410000" />
+      <workItem from="1413926584716" duration="667000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
       <updated>1407456806388</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dictionary added">
+      <created>1411080371111</created>
+      <updated>1411080371111</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118929000" />
+    <option name="totallyTimeSpent" value="167238000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="0" />
+    <frame x="-8" y="-8" width="1292" height="776" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.60123646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.60123646" sideWeight="0.7536467" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9907264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.316847" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41112828" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60123646" sideWeight="0.24635333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03311793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39983845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.033225283" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25686592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3122102" sideWeight="0.5210697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2560778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3074627" sideWeight="0.5210697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -987,11 +1138,50 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="changes, added brain, changed database" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes, added brain, changed database" />
+    <MESSAGE value="dictionary added" />
+    <option name="LAST_COMMIT_MESSAGE" value="dictionary added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
+          <line>237</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
+          <line>259</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
+          <line>243</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -999,91 +1189,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PolishDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1054">
-          <caret line="44" column="9" selection-start-line="41" selection-start-column="8" selection-end-line="44" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="289">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="289">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5730" max-vertical-offset="7667">
-          <caret line="380" column="12" selection-start-line="380" selection-start-column="12" selection-end-line="380" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5093" max-vertical-offset="7667">
-          <caret line="343" column="40" selection-start-line="343" selection-start-column="40" selection-end-line="343" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6983" max-vertical-offset="7667">
-          <caret line="472" column="17" selection-start-line="472" selection-start-column="17" selection-end-line="472" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6167" max-vertical-offset="7871">
-          <caret line="398" column="36" selection-start-line="398" selection-start-column="36" selection-end-line="398" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1717">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1921">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6766" max-vertical-offset="7990">
-          <caret line="442" column="18" selection-start-line="442" selection-start-column="18" selection-end-line="442" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Gender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="221">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Personality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="2278">
-          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/StandardAnswers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="255">
@@ -1175,27 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/StandardAnswers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10526316" vertical-offset="0" max-vertical-offset="646">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05263158" vertical-offset="0" max-vertical-offset="646">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/util/PreprocessString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="782">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05263158" vertical-offset="0" max-vertical-offset="646">
@@ -1231,20 +1315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/academicprojects/test/ChatbotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50341684" vertical-offset="0" max-vertical-offset="765">
-          <caret line="18" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/ChatbotAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.309795" vertical-offset="0" max-vertical-offset="439">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityRecognizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6315789" vertical-offset="0" max-vertical-offset="646">
@@ -1252,24 +1322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="646">
-          <caret line="20" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/db/DbService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5971897" vertical-offset="153" max-vertical-offset="1156">
           <caret line="28" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/academicprojects/test/PersonalityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38321996" vertical-offset="273" max-vertical-offset="714">
-          <caret line="33" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1301,13 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5769231" vertical-offset="34" max-vertical-offset="476">
-          <caret line="21" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39473686" vertical-offset="0" max-vertical-offset="1275">
@@ -1329,32 +1378,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/Genre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6508689" vertical-offset="982" max-vertical-offset="6613">
-          <caret line="92" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.2509225" vertical-offset="0" max-vertical-offset="542">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2631579" vertical-offset="34" max-vertical-offset="1394">
-          <caret line="22" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.53321034" vertical-offset="0" max-vertical-offset="542">
+          <caret line="21" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PolishDictionary.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39688715" vertical-offset="306" max-vertical-offset="1326">
-          <caret line="29" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
+        <state vertical-scroll-proportion="0.062730625" vertical-offset="0" max-vertical-offset="542">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/StandardAnswers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12546125" vertical-offset="0" max-vertical-offset="542">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/Details.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09409594" vertical-offset="0" max-vertical-offset="542">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/GrammaCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28228784" vertical-offset="0" max-vertical-offset="542">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/SingularOrPlural.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09409594" vertical-offset="0" max-vertical-offset="542">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/ChatbotAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21052632" vertical-offset="0" max-vertical-offset="646">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/util/PreprocessString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10526316" vertical-offset="0" max-vertical-offset="782">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/GrammaPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18421052" vertical-offset="0" max-vertical-offset="646">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/Grade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="646">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4-sources.jar!/org/junit/internal/runners/JUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33178654" vertical-offset="350" max-vertical-offset="1632">
+          <caret line="50" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4-sources.jar!/org/junit/internal/runners/MethodRoadie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="2244">
+          <caret line="101" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/LanguagePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15765765" vertical-offset="423" max-vertical-offset="867">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/WordDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.118329465" vertical-offset="136" max-vertical-offset="714">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/academicprojects/model/PolishDictionaryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1245136" vertical-offset="0" max-vertical-offset="459">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.4473684" vertical-offset="0" max-vertical-offset="646">
+          <caret line="21" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/VerbForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.114349775" vertical-offset="0" max-vertical-offset="446">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/academicprojects/test/PersonalityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83668905" vertical-offset="68" max-vertical-offset="714">
+          <caret line="33" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69574946" vertical-offset="12" max-vertical-offset="459">
+          <caret line="20" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/academicprojects/test/ChatbotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5778688" vertical-offset="521" max-vertical-offset="918">
+          <caret line="14" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.303279" vertical-offset="2894" max-vertical-offset="7276">
+          <caret line="246" column="19" selection-start-line="232" selection-start-column="19" selection-end-line="232" selection-end-column="19" />
+          <folding>
+            <marker date="1413318159082" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..USERANSWERS..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3934426" vertical-offset="51" max-vertical-offset="1394">
+          <caret line="23" column="0" selection-start-line="2" selection-start-column="7" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48770493" vertical-offset="0" max-vertical-offset="3519">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding />
         </state>
       </provider>
