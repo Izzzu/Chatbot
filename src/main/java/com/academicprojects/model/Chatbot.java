@@ -235,25 +235,53 @@ public class Chatbot {
     public String pharaprasize(String userAnswer) {
 
         String[] ar = {userAnswer};
-        String[] sentences = (userAnswer.contains(".") && !userAnswer.endsWith(".")) ? userAnswer.split(".") : ar;
+        String[] sentences = divideIntoSentences(userAnswer, ar);
+
         for (int i = 0; i < sentences.length; i++) {
             String[] words = sentences[i].split(" ");
             for (int j = 0; j < words.length; j++) {
-                PolishDictionary.Record record = findVerbInDictionary(words[j].toLowerCase());
-
-                String changedVerb = findPharaprasizedVerb(record).getWord();
-                StringBuffer sb = new StringBuffer();
-                sb.append("Mówisz, że ");
-                sb.append(changedVerb + " ");
-                for (int k = j + 1; k < words.length; k++) {
-                    sb.append(words[k] + " ");
-                }
-                sb.deleteCharAt(sb.length() - 1);
-                return sb.toString();
+                String changedVerb = findPharaprasizedVerbIfVerbIsInDictionary(words[j]);
+                if(changedVerb.isEmpty()) continue;
+                boolean negation = (j>0 && words[j-1].toLowerCase().equals("nie"));
+                return createPharaprasizedAnswer(words, j, changedVerb, negation);
             }
         }
         return "";
+    }
 
+    private String[] divideIntoSentences(String userAnswer, String[] ar) {
+        return (userAnswer.contains(".") && !userAnswer.endsWith(".")) ? userAnswer.split(".") : ar;
+    }
+
+    private String findPharaprasizedVerbIfVerbIsInDictionary(String word) {
+        PolishDictionary.Record record = findVerbInDictionary(word.toLowerCase());
+        if (record.isEmpty()) return "";
+        return findPharaprasizedVerb(record).getWord();
+    }
+
+    private String createPharaprasizedAnswer(String[] words, int j, String changedVerb, boolean negation) {
+        StringBuffer sb = new StringBuffer();
+        prepareBeginningOfChatbotAnswer(changedVerb, negation, sb);
+        addRestOfUserAnswerToChatbotAnswer(words, j, sb);
+        return sb.toString();
+    }
+
+    private void addRestOfUserAnswerToChatbotAnswer(String[] words, int j, StringBuffer sb) {
+        for (int k = j + 1; k < words.length; k++) {
+            sb.append(words[k] + " ");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        if(sb.charAt(sb.length() - 1)!='.') {
+            sb.append(". ");
+        }
+    }
+
+    private void prepareBeginningOfChatbotAnswer(String changedVerb, boolean negation, StringBuffer sb) {
+        sb.append("Mówisz, że ");
+        if(negation) {
+            sb.append("nie ");
+        }
+        sb.append(changedVerb + " ");
     }
 
     private PolishDictionary.Record findVerbInDictionary(String userAnswer) {

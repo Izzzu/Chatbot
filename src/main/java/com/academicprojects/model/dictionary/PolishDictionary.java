@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,9 +15,9 @@ import static java.lang.Character.isUpperCase;
 
 @Getter
 public class PolishDictionary {
-    List<Record> recordsWithoutVerbs = new LinkedList<Record>();
-    List<Record> verbs = new LinkedList<Record>();
-    private List<String> names = new LinkedList<String>();
+    List<Record> recordsWithoutVerbs = new ArrayList<Record>();
+    List<Record> verbs = new ArrayList<Record>();
+    private List<String> names = new ArrayList<String>();
 
     public PolishDictionary() {
         File file = new File("C:\\Users\\Cookiemonster\\workspace\\Chatbot\\src\\main\\resources\\dictionary.txt");
@@ -80,8 +81,10 @@ public class PolishDictionary {
                 return new WordDetails(languagePart, Grade.DEFAULT, matchGrammaCase(parts[2]), matchSingularOrPlural(parts[1]),
                         matchGenre(parts[3]), VerbForm.DEFAULT, GrammaPerson.DEFAULT);
         } else if (languagePart.equals(LanguagePart.VERB)) {
+            Genre genre = matchGenre(parts[3]);
             GrammaPerson grammaPerson = parts.length>=5 ? matchGrammaPerson(parts[4]) : GrammaPerson.DEFAULT;
-            return new WordDetails(languagePart, Grade.DEFAULT, GrammaCase.DEFAULT, matchSingularOrPlural(parts[2]), matchGenre(parts[3])
+            if(genre.equals(Genre.NEUTER) && grammaPerson.equals(GrammaPerson.DEFAULT)) grammaPerson = matchGrammaPerson(parts[3]);
+            return new WordDetails(languagePart, Grade.DEFAULT, GrammaCase.DEFAULT, matchSingularOrPlural(parts[2]), genre
                     , matchVerbForm(parts[1]), grammaPerson);
 
 
@@ -125,7 +128,6 @@ public class PolishDictionary {
         else if (part.equals("loc")) return GrammaCase.LOCATIVE;
         else if (part.equals("voc")) return GrammaCase.VOCATIVE;
         else return GrammaCase.DEFAULT;
-
     }
 
     private Grade matchGrade(String part) {
@@ -206,6 +208,12 @@ public class PolishDictionary {
             if(this.getForm().getLanguagePart().equals(LanguagePart.VERB) && this.getForm().getGrammaPerson().equals(GrammaPerson.PRIMARY))
                 return true;
             else return false;
+        }
+
+        public boolean isEmpty()
+        {
+            if(this.getWord().isEmpty()) return true;
+            return false;
         }
     }
 }

@@ -10,20 +10,20 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Brain {
-    List<PatternAnswer> patterns = new LinkedList<PatternAnswer>();
-    List<ChatbotAnswer> chatbotAnswers = new LinkedList<ChatbotAnswer>();
-    List<ChatbotAnswer> exceptionsChatbotAnswers = new LinkedList<ChatbotAnswer>();
+    List<PatternAnswer> patterns = new ArrayList<PatternAnswer>();
+    List<ChatbotAnswer> chatbotAnswers = new ArrayList<ChatbotAnswer>();
+    List<ChatbotAnswer> exceptionsChatbotAnswers = new ArrayList<ChatbotAnswer>();
     PersonalityRecognizer personalityRecognizer = new PersonalityRecognizer();
     PolishDictionary dictionary = new PolishDictionary();
 
     private DbService db = null;
-    public static List<PersonalityType> personalityTypes = new LinkedList<PersonalityType>();
+    public static List<PersonalityType> personalityTypes = new ArrayList<PersonalityType>();
 
     public Brain(DbService database) {
         db = database;
