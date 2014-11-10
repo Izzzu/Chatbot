@@ -7,9 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 import static java.lang.Character.isUpperCase;
 
@@ -17,11 +15,21 @@ import static java.lang.Character.isUpperCase;
 public class PolishDictionary {
     List<Record> recordsWithoutVerbs = new ArrayList<Record>();
     List<Record> verbs = new ArrayList<Record>();
+    Set<String> verbsToPharaprase = new HashSet<String>();
     private List<String> names = new ArrayList<String>();
 
     public PolishDictionary() {
         File file = new File("C:\\Users\\Cookiemonster\\workspace\\Chatbot\\src\\main\\resources\\dictionary.txt");
         createDictionaryFromFile(file);
+        fillVerbsToPharaprase();
+    }
+
+    private void fillVerbsToPharaprase() {
+        for(Record verb: verbs) {
+            if (verb.isRightToPharaprasize()) {
+                verbsToPharaprase.add(verb.getWord());
+            }
+        }
     }
 
     private void createDictionaryFromFile(File file) {

@@ -238,7 +238,14 @@ public class Chatbot {
         String[] sentences = divideIntoSentences(userAnswer, ar);
 
         for (int i = 0; i < sentences.length; i++) {
+            boolean oneVerbToParaphrase = false;
             String[] words = sentences[i].split(" ");
+            for (int j = 0; j < words.length; j++) {
+                if(brain.getDictionary().getVerbsToPharaprase().contains(words[j])) {
+                    if(oneVerbToParaphrase==true) return "";
+                    oneVerbToParaphrase = true;
+                };
+            }
             for (int j = 0; j < words.length; j++) {
                 String changedVerb = findPharaprasizedVerbIfVerbIsInDictionary(words[j]);
                 if(changedVerb.isEmpty()) continue;

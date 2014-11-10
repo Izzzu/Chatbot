@@ -32,7 +32,7 @@ public class ParaphraseTest {
                 {"Mówisz, że chciałaś to naprawić.", "Chciałam to naprawić."},
                 {"Mówisz, że zauważasz poprawę. ", "Zauważam poprawę"},
                 {"Mówisz, że nie zauważasz poprawy. ", "Nie zauważam poprawy"},
-              // {"Mówisz, że nie zauważasz, że coś miałeś. ", "Nie zauważam, że coś miałem."}
+                {"", "Nie wiem, co mam robić."}
         });
     }
     @Test
