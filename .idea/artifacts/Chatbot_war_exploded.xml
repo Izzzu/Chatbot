@@ -2,7 +2,6 @@
   <artifact type="exploded-war" name="Chatbot:war exploded">
     <output-path>$PROJECT_DIR$/target/Chatbot</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Chatbot/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Chatbot" />
@@ -19,19 +18,17 @@
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.0.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.3.2" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.14.4" />
-          <element id="library" level="project" name="Maven: cspl.internship2014:join:1.0-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
-          <element id="library" level="project" name="Maven: net.sf.opencsv:opencsv:2.3" />
-          <element id="library" level="project" name="Maven: com.googlecode.jcsv:jcsv:1.4.0" />
-          <element id="library" level="project" name="Maven: net.sf.supercsv:super-csv:2.1.0" />
-          <element id="library" level="project" name="Maven: com.github.stefanbirkner:system-rules:1.5.0" />
         </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Chatbot/web/Web" />
     </root>
   </artifact>
 </component>
