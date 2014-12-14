@@ -8,9 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.*;
 
 @Getter
@@ -229,7 +226,23 @@ public class Chatbot {
         String userAnswer = preprocessUserAnswer();
         int userAnswerNote = catchUserAnswer(userAnswer);
         System.out.println("user answer note: "+userAnswerNote);
-        return pharaprasize(userAnswer.toLowerCase()) + getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+        int chooseAnswer = (int)(Math.random()*10);
+        switch (chooseAnswer) {
+            case 7:
+                return pharaprasize(userAnswer.toLowerCase()) + getNeutralEngagedAnswer();
+            case 8:
+                return pharaprasize(userAnswer.toLowerCase());
+            case 4:
+                return getNeutralEngagedAnswer();
+            case 2:
+                return getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+            default:
+                return pharaprasize(userAnswer.toLowerCase()) + getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+        }
+    }
+
+    private String getNeutralEngagedAnswer() {
+        return getChatbotAnswerFromAnswerPatterns(0);
     }
 
     public String pharaprasize(String userAnswer) {
@@ -313,42 +326,14 @@ public class Chatbot {
         }
         if (suitedAnswers.size()!=0) {
             int randomIndex = (int)(Math.random()*suitedAnswers.size());
+
             return suitedAnswers.get(randomIndex);
         }
         else {
             int randomIndex = (int)(Math.random()*brain.getExceptionsChatbotAnswers().size());
-            return brain.getExceptionsChatbotAnswers().get(randomIndex).getSentence();
+            return brain.getExceptionsChatbotAnswers().iterator().next().getSentence();
         }
     }
-
-    public void catchAnswer(int id_answertype) {
-		String answer = preprocessUserAnswer();
-		String sql = "SELECT * FROM USERANSWERS WHERE ID= ?";
-		Connection conn = brain.getDb().getConn();
-		try {
-			PreparedStatement ps;// = conn.prepareStatement(sql);
-
-				ps = conn.prepareStatement(sql);
-				ps.setInt(1, id_answertype);
-				ResultSet rs = ps.executeQuery();
-				int minleven = 1000;
-				int currStatNote = -1;
-				while (rs.next()) {
-					int levenDist = pStr.computeLevenshteinDistance(answer, rs.getString(2));
-					
-					if( levenDist<minleven) {
-						minleven = levenDist;
-						currStatNote = rs.getInt(3);
-						if(levenDist==0) break;
-					}
-				}
-				conversation.setCurrentStatementNote(currStatNote);
-
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
     private String preprocessUserAnswer() {
         return pStr.replacePolishCharsAndLowerCase(conversation.getLastAnswer().replace("  "," ").replace("_"," "));

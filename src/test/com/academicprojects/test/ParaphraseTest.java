@@ -50,7 +50,5 @@ public class ParaphraseTest {
 
         Assert.assertEquals(chatbotAnswer, chatbot.pharaprasize(userAnswer));
 
-
-
     }
 }

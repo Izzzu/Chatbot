@@ -11,14 +11,18 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Brain {
+    public static final int NEUTRAL_ANSWER = 0;
     List<PatternAnswer> patterns = new ArrayList<PatternAnswer>();
-    List<ChatbotAnswer> chatbotAnswers = new ArrayList<ChatbotAnswer>();
-    List<ChatbotAnswer> exceptionsChatbotAnswers = new ArrayList<ChatbotAnswer>();
+    Set<ChatbotAnswer> chatbotAnswers = new HashSet<ChatbotAnswer>();
+    Set<ChatbotAnswer> neutralChatbotAnswer = new HashSet<ChatbotAnswer>();
+    Set<ChatbotAnswer> exceptionsChatbotAnswers = new HashSet<ChatbotAnswer>();
     PersonalityRecognizer personalityRecognizer = new PersonalityRecognizer();
     PolishDictionary dictionary = new PolishDictionary();
 
@@ -56,7 +60,15 @@ public class Brain {
 
         PreparedStatement ps = conn.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
-        while (rs.next()) chatbotAnswers.add(new ChatbotAnswer(rs.getNString(2).replace('\\', ' '), rs.getInt(3)));
+        while (rs.next()) {
+            ChatbotAnswer chatbotAnswer = new ChatbotAnswer(rs.getNString(2).replace('\\', ' '), rs.getInt(3));
+            if(chatbotAnswer.userAnswerNote== NEUTRAL_ANSWER) {
+                neutralChatbotAnswer.add(chatbotAnswer);
+            }
+            else {
+                chatbotAnswers.add(chatbotAnswer);
+            }
+        }
     }
 
     public void getPatternsFromDatabase(Connection conn) throws SQLException {
