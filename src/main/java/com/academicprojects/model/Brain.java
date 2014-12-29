@@ -10,10 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -24,8 +21,9 @@ public class Brain {
     Set<ChatbotAnswer> neutralChatbotAnswer = new HashSet<ChatbotAnswer>();
     Set<ChatbotAnswer> exceptionsChatbotAnswers = new HashSet<ChatbotAnswer>();
     PersonalityRecognizer personalityRecognizer = new PersonalityRecognizer();
-    PolishDictionary dictionary = new PolishDictionary();
+    private LinkedList<String> patternAnswersForPersonalQuestion = new LinkedList<String>();
 
+    PolishDictionary dictionary = new PolishDictionary();
     private DbService db = null;
     public static List<PersonalityType> personalityTypes = new ArrayList<PersonalityType>();
 
@@ -41,11 +39,28 @@ public class Brain {
             getPersonalityPhrasesFromDatabase(conn);
             getExceptionsChatbotAnswersFromDatabase(conn);
             getPersonalitiesFromDatabase(conn);
+            fillPatternAnswersForPersonalQuestions();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
 
         }
+    }
+
+    private void fillPatternAnswersForPersonalQuestions() {
+        List<String> chatbotAnswersForQuestions = Arrays.asList(
+                "Wróćmy do rozmowy o Tobie.",
+                "Interesujące pytanie.",
+                "Ciężko powiedzieć, jestem chatbotem:)",
+                "Dlaczego o to pytasz?",
+                "Nie potrafię odpowiedzieć, jestem chatbotem.",
+                "Porozmawiajmy lepiej o Tobie",
+                "Nie wypytuj.",
+                "Ty odpowiedz pierwszy",
+                "Rozmawiamy o Tobie",
+                "Na pytania przyjdzie czas później, teraz rozmawiamy o Tobie.");
+
+        patternAnswersForPersonalQuestion.addAll(chatbotAnswersForQuestions);
     }
 
     private void getPersonalityPhrasesFromDatabase(Connection conn) throws SQLException {
@@ -98,5 +113,6 @@ public class Brain {
         while (rs.next()) personalityTypes.add(new PersonalityType(rs.getInt(1), 0, rs.getNString(2), rs.getNString(3)));
         System.out.println("size: "+personalityTypes.size());
     }
+
 
 }

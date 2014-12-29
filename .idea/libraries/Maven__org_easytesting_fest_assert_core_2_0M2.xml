@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.easytesting:fest-assert-core:2.0M2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/easytesting/fest-assert-core/2.0M2/fest-assert-core-2.0M2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/easytesting/fest-assert-core/2.0M2/fest-assert-core-2.0M2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/easytesting/fest-assert-core/2.0M2/fest-assert-core-2.0M2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

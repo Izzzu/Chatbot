@@ -1,5 +1,3 @@
-package com.academicprojects.test;
-
 import com.academicprojects.db.DbService;
 import com.academicprojects.model.Brain;
 import com.academicprojects.model.Chatbot;

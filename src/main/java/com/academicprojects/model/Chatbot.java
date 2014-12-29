@@ -1,6 +1,7 @@
 package com.academicprojects.model;
 
 import com.academicprojects.db.DbService;
+import com.academicprojects.model.dictionary.GrammaPerson;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import com.academicprojects.util.PreprocessString;
 import lombok.Getter;
@@ -224,24 +225,53 @@ public class Chatbot {
 
     public String prepareAnswer() throws Exception {
         String userAnswer = preprocessUserAnswer();
-        int userAnswerNote = catchUserAnswer(userAnswer);
+		TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswer);
+		if (typeOfSentence.equals(TypeOfSentence.QUESTION)) {
+			return answerQuestion(userAnswer);
+		}
+		int userAnswerNote = catchUserAnswer(userAnswer);
         System.out.println("user answer note: "+userAnswerNote);
         int chooseAnswer = (int)(Math.random()*10);
+		//losowa logika - zwraca -1 gry nie zaleziono patternu - to nie blad
         switch (chooseAnswer) {
+			//question:
+
             case 7:
                 return pharaprasize(userAnswer.toLowerCase()) + getNeutralEngagedAnswer();
             case 8:
                 return pharaprasize(userAnswer.toLowerCase());
-            case 4:
-                return getNeutralEngagedAnswer();
-            case 2:
-                return getChatbotAnswerFromAnswerPatterns(userAnswerNote);
             default:
                 return pharaprasize(userAnswer.toLowerCase()) + getChatbotAnswerFromAnswerPatterns(userAnswerNote);
         }
     }
 
-    private String getNeutralEngagedAnswer() {
+	public String answerQuestion(String userAnswer) {
+		String[] ar = {userAnswer};
+		String[] sentences = userAnswer.split("//?");
+		if(sentences.length>0)  {
+			String sentenceWithReplacedQuestionMarks = sentences[0].replace("?", " ").toLowerCase();
+			for(String word: sentenceWithReplacedQuestionMarks.split(" ")) {
+
+				if (!brain.getDictionary().findMainWord(word).isEmpty() && verbIsInPerson(word, GrammaPerson.SECOND)) {
+
+					return brain.getPatternAnswersForPersonalQuestion().get(generateRandomIndex(brain.getPatternAnswersForPersonalQuestion().size()));
+				}
+			}
+
+		}
+
+		return "";
+	}
+
+	private boolean verbIsInPerson(String word, GrammaPerson grammaPerson) {
+		PolishDictionary.Record verb = brain.getDictionary().findVerb(word);
+		if (verb.getForm().getGrammaPerson().equals(grammaPerson)) {
+			return true;
+		}
+		return false;
+	}
+
+	private String getNeutralEngagedAnswer() {
         return getChatbotAnswerFromAnswerPatterns(0);
     }
 
@@ -325,17 +355,25 @@ public class Chatbot {
             }
         }
         if (suitedAnswers.size()!=0) {
-            int randomIndex = (int)(Math.random()*suitedAnswers.size());
+            int randomIndex = generateRandomIndex(suitedAnswers.size());
 
             return suitedAnswers.get(randomIndex);
         }
         else {
             int randomIndex = (int)(Math.random()*brain.getExceptionsChatbotAnswers().size());
-            return brain.getExceptionsChatbotAnswers().iterator().next().getSentence();
+			String sentence = brain.getExceptionsChatbotAnswers().iterator().next().getSentence();
+			if(sentence.isEmpty()) {
+
+			}
+			return sentence;
         }
     }
 
-    private String preprocessUserAnswer() {
+	private int generateRandomIndex(int size) {
+		return (int)(Math.random()*size);
+	}
+
+	private String preprocessUserAnswer() {
         return pStr.replacePolishCharsAndLowerCase(conversation.getLastAnswer().replace("  "," ").replace("_"," "));
     }
 
@@ -344,7 +382,8 @@ public class Chatbot {
         int weights = 0;
         int average = 0;
 
-        System.out.println("-");
+
+		System.out.println("-");
         try {
             for (PatternAnswer pattern : brain.patterns) {
 
@@ -353,8 +392,11 @@ public class Chatbot {
                     weights += pattern.getImportance();
                 }
             }
-            if (weights != 0) average = (noteSum / weights);
+            if (weights != 0) {
+				average = (noteSum / weights);
+			}
             else {
+
                 return -1;
             }
             System.out.println("weights=" + weights);
@@ -459,17 +501,7 @@ public class Chatbot {
 
     public TypeOfSentence recognizeTypeOfSentence(String s) {
         String str = s.trim();
-        if (str.charAt(str.length()-1)=='?') {
-            return TypeOfSentence.OPEN_QUESTION;
-        }
-        else if (str.charAt(str.length()-1)=='!')
-        {
-            return TypeOfSentence.EXCLAMATION;
-        }
-        else if (str.charAt(str.length()-1)=='.')
-        {
-            return TypeOfSentence.INDICATIVE;
-        }
+        if (s.contains("?")) return TypeOfSentence.QUESTION;
         return TypeOfSentence.OTHER;
     }
 

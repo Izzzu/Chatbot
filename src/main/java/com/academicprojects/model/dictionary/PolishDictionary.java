@@ -19,7 +19,7 @@ public class PolishDictionary {
     private List<String> names = new ArrayList<String>();
 
     public PolishDictionary() {
-        File file = new File("C:\\Users\\Cookiemonster\\workspace\\Chatbot\\src\\main\\resources\\dictionary.txt");
+        File file = new File("/home/izabela/projects/Chatbot/src/main/resources/dictionary.txt");
         createDictionaryFromFile(file);
         fillVerbsToPharaprase();
     }
@@ -196,12 +196,20 @@ public class PolishDictionary {
         return new Record();
     }
 
-    private List<Record> findRecordsByMainWord(String mainWord) {
+    public List<Record> findRecordsByMainWord(String mainWord) {
         List<Record> foundRecords = new LinkedList<Record>();
         for (int i = 0; i < this.getVerbs().size(); i++) {
             if (verbs.get(i).getMainWord().equals(mainWord)) foundRecords.add(verbs.get(i));
         }
         return foundRecords;
+    }
+
+    public String findMainWord(String word) {
+
+        for (int i = 0; i < this.getVerbs().size(); i++) {
+            if (verbs.get(i).getWord().equals(word)) return verbs.get(i).getMainWord();
+        }
+        return "";
     }
 
     @Getter
