@@ -8,6 +8,7 @@ import lombok.Getter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.util.*;
 
@@ -35,7 +36,7 @@ public class Chatbot {
 		taskStates.put("gettingUserMood", State.START);
 	}
 
-    public Chatbot(DbService db) {
+    public Chatbot(DbService db) throws IOException {
 
         brain = new Brain(db);
         brain.setUpBrain();
@@ -252,7 +253,7 @@ public class Chatbot {
 			String sentenceWithReplacedQuestionMarks = sentences[0].replace("?", " ").toLowerCase();
 			for(String word: sentenceWithReplacedQuestionMarks.split(" ")) {
 
-				if (!brain.getDictionary().findMainWord(word).isEmpty() && verbIsInPerson(word, GrammaPerson.SECOND)) {
+				if (verbIsInDictionary(word) && verbIsInPerson(word, GrammaPerson.SECOND)) {
 
 					return brain.getPatternAnswersForPersonalQuestion().get(generateRandomIndex(brain.getPatternAnswersForPersonalQuestion().size()));
 				}
@@ -261,6 +262,10 @@ public class Chatbot {
 		}
 
 		return "";
+	}
+
+	private boolean verbIsInDictionary(String word) {
+		return !brain.getDictionary().findMainVerb(word).isEmpty();
 	}
 
 	private boolean verbIsInPerson(String word, GrammaPerson grammaPerson) {
@@ -505,7 +510,4 @@ public class Chatbot {
         return TypeOfSentence.OTHER;
     }
 
-    public void setUpBrain() {
-        brain.setUpBrain();
-    }
 }

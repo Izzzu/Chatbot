@@ -6,6 +6,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -25,21 +26,26 @@ public class Brain {
 
     PolishDictionary dictionary = new PolishDictionary();
     private DbService db = null;
-    public static List<PersonalityType> personalityTypes = new ArrayList<PersonalityType>();
+    private List<PersonalityType> personalityTypes = new ArrayList<PersonalityType>();
 
     public Brain(DbService database) {
         db = database;
     }
 
-    public void setUpBrain() {
+    public void setUpBrain() throws IOException {
         try {
             Connection conn = db.getConn();
-            getPatternsFromDatabase(conn);
-            getChatbotAnswersFromDatabase(conn);
-            getPersonalityPhrasesFromDatabase(conn);
-            getExceptionsChatbotAnswersFromDatabase(conn);
-            getPersonalitiesFromDatabase(conn);
-            fillPatternAnswersForPersonalQuestions();
+            //getPatternsFromDatabase(conn);
+//            getChatbotAnswersFromDatabase(conn);
+//            getPersonalityPhrasesFromDatabase(conn);
+//            getExceptionsChatbotAnswersFromDatabase(conn);
+//            getPersonalitiesFromDatabase(conn);
+            getUserAnswersFromFile(new File("src/main/resources/useranswers.csv"));
+            getChatbotAnswersFromFile(new File("src/main/resources/chatbotanswers.csv"));
+            getPersonalityPhrasesFromFile(new File("src/main/resources/personalityphrases.csv"));
+            getExceptionAnswersFromFile(new File("src/main/resources/exceptionChatbotAnswers.csv"));
+            getPersonalitiesFromFile(new File("src/main/resources/personalityTypes.csv"));
+            fillPatternAnswersForPersonalQuestions(new File("src/main/resources/patternForPersonalQuestions.csv"));
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -47,21 +53,84 @@ public class Brain {
         }
     }
 
-    private void fillPatternAnswersForPersonalQuestions() {
-        List<String> chatbotAnswersForQuestions = Arrays.asList(
-                "Wróćmy do rozmowy o Tobie.",
-                "Interesujące pytanie.",
-                "Ciężko powiedzieć, jestem chatbotem:)",
-                "Dlaczego o to pytasz?",
-                "Nie potrafię odpowiedzieć, jestem chatbotem.",
-                "Porozmawiajmy lepiej o Tobie",
-                "Nie wypytuj.",
-                "Ty odpowiedz pierwszy",
-                "Rozmawiamy o Tobie",
-                "Na pytania przyjdzie czas później, teraz rozmawiamy o Tobie.");
-
-        patternAnswersForPersonalQuestion.addAll(chatbotAnswersForQuestions);
+    private void getPersonalitiesFromFile(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            personalityTypes.add(new PersonalityType(Integer.valueOf(tab[0]), tab[1], tab[2], 0));
+        }
+        br.close();
     }
+
+    private void getExceptionAnswersFromFile(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            exceptionsChatbotAnswers.add(new ChatbotAnswer(tab[0].replace("_", " "), -1));
+
+        }
+        br.close();
+    }
+
+    private void getPersonalityPhrasesFromFile(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            personalityRecognizer.addPersonalityPhrase(tab[0].replace("_", " "), Integer.valueOf(tab[1]), Integer.valueOf(tab[2]));
+
+
+        }
+        br.close();
+    }
+
+    private void getChatbotAnswersFromFile(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            chatbotAnswers.add(new ChatbotAnswer(tab[0].replace("_", " "), Integer.valueOf(tab[1])));
+        }
+        br.close();
+    }
+
+    private void getUserAnswersFromFile(File filePattern) throws IOException, SQLException {
+        BufferedReader br = new BufferedReader(new FileReader(filePattern));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            patterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0].replace("_", " "), Integer.valueOf(tab[3])));
+        }
+        br.close();
+    }
+
+
+    private void fillPatternAnswersForPersonalQuestions(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            patternAnswersForPersonalQuestion.add(tab[0]);
+        }
+        br.close();
+
+
+    }
+
+
+
+
+
+
+
 
     private void getPersonalityPhrasesFromDatabase(Connection conn) throws SQLException {
         String sql = "SELECT * FROM PHRASE";
@@ -110,7 +179,7 @@ public class Brain {
 
         PreparedStatement ps = conn.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
-        while (rs.next()) personalityTypes.add(new PersonalityType(rs.getInt(1), 0, rs.getNString(2), rs.getNString(3)));
+        while (rs.next()) personalityTypes.add(new PersonalityType(rs.getInt(1), rs.getNString(3), rs.getNString(2), 0));
         System.out.println("size: "+personalityTypes.size());
     }
 

@@ -10,24 +10,24 @@ id_per INT IDENTITY,
 type VARCHAR(3),
 long_type VARCHAR(30) )
 
-INSERT INTO personality (type, long_type) VALUES 	('dom', 'dominujacy')
-INSERT INTO personality (type, long_type) VALUES 	('dos', 'dostosowujacy')
-INSERT INTO personality (type, long_type) VALUES 	('mak', 'maksymalistyczny')
-INSERT INTO personality (type, long_type) VALUES 	('min', 'minimalistyczny')
-INSERT INTO personality (type, long_type) VALUES 	('ins', 'inspirujacy')
-INSERT INTO personality (type, long_type) VALUES 	('sys', 'systematyczny')
-INSERT INTO personality (type, long_type) VALUES 	('odk', 'odkrywczy')
-INSERT INTO personality (type, long_type) VALUES 	('kon', 'konserwatywny')
-INSERT INTO personality (type, long_type) VALUES 	('wer', 'weryfikujacy')
-INSERT INTO personality (type, long_type) VALUES 	('har', 'harmonijny')
-INSERT INTO personality (type, long_type) VALUES 	('emp', 'empiryczny')
-INSERT INTO personality (type, long_type) VALUES 	('rze', 'rzeczowy')
-INSERT INTO personality (type, long_type) VALUES 	('odw', 'odwazny')
-INSERT INTO personality (type, long_type) VALUES 	('ase', 'asekuracyjny')
-INSERT INTO personality (type, long_type) VALUES 	('hoj', 'hojny')
-INSERT INTO personality (type, long_type) VALUES 	('osz', 'oszczedny')
-INSERT INTO personality (type, long_type) VALUES 	('faw', 'faworyzujacy')
-INSERT INTO personality (type, long_type) VALUES 	('row', 'rownowazacy')
-		
+dom dominujacy
+dos dostosowujacy
+mak maksymalistyczny
+min minimalistyczny
+ins inspirujacy
+sys systematyczny
+odk odkrywczy
+kon konserwatywny
+wer weryfikujacy
+har harmonijny
+emp empiryczny
+rze rzeczowy
+odw odwazny
+ase asekuracyjny
+hoj hojny
+osz oszczedny
+faw faworyzujacy
+row rownowazacy
+
 
 

@@ -204,7 +204,7 @@ public class PolishDictionary {
         return foundRecords;
     }
 
-    public String findMainWord(String word) {
+    public String findMainVerb(String word) {
 
         for (int i = 0; i < this.getVerbs().size(); i++) {
             if (verbs.get(i).getWord().equals(word)) return verbs.get(i).getMainWord();

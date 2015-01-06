@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 @EqualsAndHashCode
 public class PersonalityType {
-    public PersonalityType(int id, int level, String shortDescription, String longDescription) {
+    public PersonalityType(int id, String shortDescription, String longDescription, int level) {
         this.id = id;
         this.level = level;
         this.shortDescription = shortDescription;
