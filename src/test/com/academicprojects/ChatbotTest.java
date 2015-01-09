@@ -1,4 +1,4 @@
-package com.academicprojects.test;
+package com.academicprojects;
 
 import com.academicprojects.db.DbService;
 import com.academicprojects.model.Brain;

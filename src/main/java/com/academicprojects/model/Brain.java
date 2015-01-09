@@ -2,11 +2,15 @@ package com.academicprojects.model;
 
 import com.academicprojects.db.DbService;
 import com.academicprojects.model.dictionary.PolishDictionary;
+import com.academicprojects.util.RandomSearching;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -20,13 +24,14 @@ public class Brain {
     List<PatternAnswer> patterns = new ArrayList<PatternAnswer>();
     Set<ChatbotAnswer> chatbotAnswers = new HashSet<ChatbotAnswer>();
     Set<ChatbotAnswer> neutralChatbotAnswer = new HashSet<ChatbotAnswer>();
-    Set<ChatbotAnswer> exceptionsChatbotAnswers = new HashSet<ChatbotAnswer>();
+    List<ChatbotAnswer> exceptionsChatbotAnswers = new LinkedList<ChatbotAnswer>();
     PersonalityRecognizer personalityRecognizer = new PersonalityRecognizer();
     private LinkedList<String> patternAnswersForPersonalQuestion = new LinkedList<String>();
 
+    private ActiveListening activeListening;
     PolishDictionary dictionary = new PolishDictionary();
     private DbService db = null;
-    private List<PersonalityType> personalityTypes = new ArrayList<PersonalityType>();
+
 
     public Brain(DbService database) {
         db = database;
@@ -44,8 +49,8 @@ public class Brain {
             getChatbotAnswersFromFile(new File("src/main/resources/chatbotanswers.csv"));
             getPersonalityPhrasesFromFile(new File("src/main/resources/personalityphrases.csv"));
             getExceptionAnswersFromFile(new File("src/main/resources/exceptionChatbotAnswers.csv"));
-            getPersonalitiesFromFile(new File("src/main/resources/personalityTypes.csv"));
             fillPatternAnswersForPersonalQuestions(new File("src/main/resources/patternForPersonalQuestions.csv"));
+            getParaphrases(new File("src/main/resources/paraphrases.csv"));
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -53,16 +58,19 @@ public class Brain {
         }
     }
 
-    private void getPersonalitiesFromFile(File file) throws IOException {
+    private void getParaphrases(File file) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
         String s = null;
+        List<String> list = new ArrayList<String>();
         while ((s=br.readLine()) != null)
         {
             String [] tab = s.split(" ");
-            personalityTypes.add(new PersonalityType(Integer.valueOf(tab[0]), tab[1], tab[2], 0));
+            list.add(tab[0].replace("_", " "));
         }
+        activeListening = new ActiveListening(list);
         br.close();
     }
+
 
     private void getExceptionAnswersFromFile(File file) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
@@ -83,7 +91,6 @@ public class Brain {
         {
             String [] tab = s.split(" ");
             personalityRecognizer.addPersonalityPhrase(tab[0].replace("_", " "), Integer.valueOf(tab[1]), Integer.valueOf(tab[2]));
-
 
         }
         br.close();
@@ -118,19 +125,12 @@ public class Brain {
         while ((s=br.readLine()) != null)
         {
             String [] tab = s.split(" ");
-            patternAnswersForPersonalQuestion.add(tab[0]);
+            patternAnswersForPersonalQuestion.add(tab[0].replace("_", " "));
         }
         br.close();
 
 
     }
-
-
-
-
-
-
-
 
     private void getPersonalityPhrasesFromDatabase(Connection conn) throws SQLException {
         String sql = "SELECT * FROM PHRASE";
@@ -174,14 +174,21 @@ public class Brain {
             exceptionsChatbotAnswers.add(new ChatbotAnswer(rs.getNString(2).replace('\\', ' '), rs.getInt(3)));
     }
 
-    public void getPersonalitiesFromDatabase(Connection conn) throws SQLException {
+    public String startParaphrase() {
+
+        List<String> paraphraseStart = activeListening.getParaphraseStart();
+        return paraphraseStart.get(RandomSearching.generateRandomIndex(paraphraseStart.size()));
+
+    }
+
+  /*  public void getPersonalitiesFromDatabase(Connection conn) throws SQLException {
         String sql = "SELECT * FROM PERSONALITY";
 
         PreparedStatement ps = conn.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
         while (rs.next()) personalityTypes.add(new PersonalityType(rs.getInt(1), rs.getNString(3), rs.getNString(2), 0));
         System.out.println("size: "+personalityTypes.size());
-    }
+    }*/
 
 
 }

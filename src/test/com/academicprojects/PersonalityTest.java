@@ -1,4 +1,4 @@
-package com.academicprojects.test;
+package com.academicprojects;
 
 import com.academicprojects.db.DbService;
 import com.academicprojects.model.Brain;
@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class PersonalityTest {
@@ -41,4 +42,6 @@ public class PersonalityTest {
         Personality p = new Personality();
         Assert.assertEquals(18, p.getTypes().size());
     }
+
+
 }

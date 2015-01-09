@@ -1,4 +1,4 @@
-package com.academicprojects.test;
+package com.academicprojects;
 
 import com.academicprojects.db.DbService;
 import com.academicprojects.model.Brain;
@@ -6,7 +6,6 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.IOException;
 
 public class BrainTest {
@@ -22,10 +21,6 @@ public class BrainTest {
 
     }
 
-    @Test
-    public void shouldPersonalityTypesFromFile() throws IOException {
-        Assert.assertEquals(18, brain.personalityTypes.size());
-    }
 
     @Test
     public void shouldFillPatternsUserAnswersListFromFile() throws IOException {
@@ -49,7 +44,7 @@ public class BrainTest {
 
     @Test
     public void shouldFilPatternAnswersForPersonalQuestionFromFile() throws IOException {
-        Assert.assertEquals(10, brain.getPatternAnswersForPersonalQuestion().size());
+        Assert.assertEquals(16, brain.getPatternAnswersForPersonalQuestion().size());
     }
 
 }

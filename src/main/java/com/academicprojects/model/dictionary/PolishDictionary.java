@@ -1,6 +1,8 @@
 package com.academicprojects.model.dictionary;
 
 import com.academicprojects.util.PreprocessString;
+import com.google.common.collect.FluentIterable;
+import com.google.common.collect.ImmutableList;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.*;
 import java.util.*;
+import java.util.function.Function;
 
 import static java.lang.Character.isUpperCase;
 
@@ -175,13 +178,33 @@ public class PolishDictionary {
         else return SingularOrPlural.N_A;
     }
 
-    public Record findVerb(String userAnswer) {
 
-        for(int i =0; i< this.getVerbs().size(); i++) {
-            if (verbs.get(i).getWord().equals(userAnswer)) return verbs.get(i);
+    Function<String, Integer> lengthFunction = new Function<String, Integer>() {
+        public Integer apply(String string) {
+            return string.length();
         }
-        return new Record();
+    };
 
+    public Record findVerb(final String userAnswer) {
+
+        ImmutableList<Record> foundVerbs = FluentIterable.from(verbs).filter(filterVerbs(userAnswer)).toList();
+
+        if(!foundVerbs.isEmpty()) return foundVerbs.get(0);
+        else  return new Record();
+       /* for(int i =0; i< verbs.size(); i++) {
+
+            if (verbs.get(i).getWord().equals(userAnswer)) return verbs.get(i);
+        }*/
+
+
+    }
+
+    private com.google.common.base.Predicate<Record> filterVerbs(final String userAnswer) {
+        return new com.google.common.base.Predicate<Record>() {
+            public boolean apply(Record record) {
+                return record.getWord().equals(userAnswer);
+            }
+        };
     }
 
     public Record findVerbFromMainWordAndMatchOppositePerson(String mainWord, SingularOrPlural singularOrPlural, VerbForm verbForm, Genre genre) {
@@ -210,6 +233,10 @@ public class PolishDictionary {
             if (verbs.get(i).getWord().equals(word)) return verbs.get(i).getMainWord();
         }
         return "";
+    }
+
+    public Record getEmptyRecord() {
+        return new Record();
     }
 
     @Getter

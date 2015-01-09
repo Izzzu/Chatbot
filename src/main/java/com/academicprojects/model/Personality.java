@@ -1,11 +1,15 @@
 package com.academicprojects.model;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 import java.util.Map.Entry;
 
 public class Personality {
 
-    private List<PersonalityType> types = new LinkedList<PersonalityType>();
+    private List<PersonalityType> types = new ArrayList<PersonalityType>();
     private int wholePoints;
 
     public int getWholePoints() {
@@ -22,8 +26,24 @@ public class Personality {
         return typePoints / sum * 100;
     }
 
+
     public Personality() {
-        types.addAll(Brain.personalityTypes);
+        try {
+            getPersonalitiesFromFile(new File("src/main/resources/personalityTypes.csv"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void getPersonalitiesFromFile(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            types.add(new PersonalityType(Integer.valueOf(tab[0]), tab[1], tab[2], 0));
+        }
+        br.close();
     }
 
     public List<PersonalityType> getTypes() {
