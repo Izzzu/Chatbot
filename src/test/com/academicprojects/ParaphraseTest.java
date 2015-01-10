@@ -34,9 +34,11 @@ public class ParaphraseTest {
                 {" miałeś problemy finansowe.", "Miałem problemy finansowe."},
                 {" zauważasz poprawę.", "Zauważam poprawę"},
                 {" nie zauważasz poprawy.", "Nie zauważam poprawy"},
-                {" chciałaś to naprawić.", "Chciałam to naprawić."}
+                {" chciałaś to naprawić.", "Chciałam to naprawić."},
+                {" chciałaś zrobić co miałaś.", "Chciałam zrobić co miałam."}
         });
     }
+
     @Test
     public void pharaprasizeTest() throws Exception {
 

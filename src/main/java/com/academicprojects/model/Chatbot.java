@@ -298,9 +298,10 @@ public class Chatbot {
 			String changedVerb = "";
 			Map<Integer, String> mapIndexToChangedVerb = new LinkedHashMap<Integer, String>();
             for (int j = 0; j < words.length; j++) {
-                if(brain.getDictionary().getVerbsToPharaprase().contains(words[j].toLowerCase())) {
+				String tempWord = words[j].toLowerCase().replace(".","");
+                if(brain.getDictionary().getVerbsToPharaprase().contains(tempWord)) {
 
-					changedVerb = findPharaprasizedVerbIfVerbIsInDictionary(words[j]);
+					changedVerb = findPharaprasizedVerbIfVerbIsInDictionary(tempWord);
 					mapIndexToChangedVerb.put(j, changedVerb);
 
                 }
