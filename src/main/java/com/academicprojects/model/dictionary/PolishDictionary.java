@@ -207,10 +207,16 @@ public class PolishDictionary {
         };
     }
 
-    public Record findVerbFromMainWordAndMatchOppositePerson(String mainWord, SingularOrPlural singularOrPlural, VerbForm verbForm, Genre genre) {
+    public Record findVerbFromMainWordAndMatchOppositePerson(GrammaPerson currentGrammaPerson, String mainWord, SingularOrPlural singularOrPlural, VerbForm verbForm, Genre genre) {
         List<Record> recordWithMatchingMainWord = findRecordsByMainWord(mainWord);
+        GrammaPerson oppositeGrammaPerson;
+        if (currentGrammaPerson.equals(GrammaPerson.PRIMARY)) oppositeGrammaPerson = GrammaPerson.SECOND;
+        else {
+            if(currentGrammaPerson.equals(GrammaPerson.SECOND)) oppositeGrammaPerson = GrammaPerson.PRIMARY;
+            else return new Record();
+        }
         for (int i = 0; i<recordWithMatchingMainWord.size(); i++) {
-            if(recordWithMatchingMainWord.get(i).getForm().getGrammaPerson().equals(GrammaPerson.SECOND)
+            if(recordWithMatchingMainWord.get(i).getForm().getGrammaPerson().equals(oppositeGrammaPerson)
                     && recordWithMatchingMainWord.get(i).getForm().getSingularOrPlural().equals(singularOrPlural)
                     && recordWithMatchingMainWord.get(i).getForm().getVerbForm().equals(verbForm)
                     && recordWithMatchingMainWord.get(i).getForm().getGenre().equals(genre))

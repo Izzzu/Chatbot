@@ -47,4 +47,14 @@ public class BrainTest {
         Assert.assertEquals(16, brain.getPatternAnswersForPersonalQuestion().size());
     }
 
+    @Test
+    public void shouldFillMapWithAnswersForFeelingStatements() {
+        Assert.assertEquals(3, brain.getFeelingStatement().values().size());
+    }
+
+    @Test
+    public void shouldFilPatternAnswersForQuestionsAboutOpinionFromFile() throws IOException {
+        Assert.assertEquals(7, brain.getPatternAnswerForOpinionQuestion().size());
+    }
+
 }

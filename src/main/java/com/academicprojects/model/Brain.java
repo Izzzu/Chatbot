@@ -27,7 +27,8 @@ public class Brain {
     List<ChatbotAnswer> exceptionsChatbotAnswers = new LinkedList<ChatbotAnswer>();
     PersonalityRecognizer personalityRecognizer = new PersonalityRecognizer();
     private LinkedList<String> patternAnswersForPersonalQuestion = new LinkedList<String>();
-
+    private LinkedList<String> patternAnswerForOpinionQuestion = new LinkedList<String>();
+    private Map<String, List<String>> feelingStatement = new HashMap<String, List<String>>();
     private ActiveListening activeListening;
     PolishDictionary dictionary = new PolishDictionary();
     private DbService db = null;
@@ -50,12 +51,40 @@ public class Brain {
             getPersonalityPhrasesFromFile(new File("src/main/resources/personalityphrases.csv"));
             getExceptionAnswersFromFile(new File("src/main/resources/exceptionChatbotAnswers.csv"));
             fillPatternAnswersForPersonalQuestions(new File("src/main/resources/patternForPersonalQuestions.csv"));
+            fillPatternAnswersForOpinionQuestions(new File("src/main/resources/patternAnswersForQuestionsAboutOpinion.csv"));
             getParaphrases(new File("src/main/resources/paraphrases.csv"));
+            fillFeelingStatementMap("jestem", new File("src/main/resources/patternAnswersForFeelingStatementsWithBe.csv"));
+            fillFeelingStatementMap("czuję", new File("src/main/resources/patternAnswersForFeelingStatementsWithFeel.csv"));
+            fillFeelingStatementMap("chcę", new File("src/main/resources/patternAnswersForFeelingStatementsWithWant.csv"));
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
 
         }
+    }
+
+    private void fillFeelingStatementMap(String verb, File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        List<String> list = new ArrayList<String>();
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            list.add(tab[0].replace("_", " "));
+        }
+        feelingStatement.put(verb, list);
+        br.close();
+    }
+
+    private void fillPatternAnswersForOpinionQuestions(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            patternAnswerForOpinionQuestion.add(tab[0].replace("_", " "));
+        }
+        br.close();
     }
 
     private void getParaphrases(File file) throws IOException {
@@ -117,7 +146,6 @@ public class Brain {
         }
         br.close();
     }
-
 
     private void fillPatternAnswersForPersonalQuestions(File file) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));

@@ -7,7 +7,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.sql.SQLException;
 
 public class PersonalityTest {
@@ -34,7 +33,7 @@ public class PersonalityTest {
         Personality p = new Personality();
         p.setNewPersonalityType(1, 12);
 
-        Assert.assertEquals(p.getById(1), 12);
+        Assert.assertEquals(p.getById(1).getLevel(), 12);
     }
 
     @Test public void shouldBe18PersonalityTypes() {

@@ -6,6 +6,7 @@ import com.academicprojects.model.Chatbot;
 import com.academicprojects.model.Gender;
 import com.academicprojects.model.User;
 import com.academicprojects.model.dictionary.PolishDictionary;
+import org.fest.assertions.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -13,8 +14,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static junit.framework.Assert.assertEquals;
 
 
 @RunWith(Parameterized.class)
@@ -35,7 +35,12 @@ public class ParaphraseTest {
                 {" zauważasz poprawę.", "Zauważam poprawę"},
                 {" nie zauważasz poprawy.", "Nie zauważam poprawy"},
                 {" chciałaś to naprawić.", "Chciałam to naprawić."},
-                {" chciałaś zrobić co miałaś.", "Chciałam zrobić co miałam."}
+                {" chciałaś zrobić co miałaś.", "Chciałam zrobić co miałam."},
+                {" zauważasz że miałaś rację.", "Zauważam, że miałam rację."},
+                {"nie wiesz co masz robić.","Nie wiem, co mam robić"},
+                {"nie rozumiesz dlaczego działam.","Nie rozumiem, dlaczego działasz"},
+                {" mam dobry gust.", "Masz dobry gust."},
+                {" nie wiem co mówisz.", "Chyba nie wiesz co mówisz."}
         });
     }
 
@@ -53,7 +58,7 @@ public class ParaphraseTest {
         chatbot.brain.setUpBrain();
         PolishDictionary dictionary = new PolishDictionary();
 
-        assertTrue(chatbot.pharaprasize(userAnswer).contains(chatbotAnswer));
+        Assertions.assertThat(chatbot.pharaprasize(userAnswer)).contains(chatbotAnswer);
     }
 
     @Test
@@ -70,9 +75,7 @@ public class ParaphraseTest {
         chatbot.brain.setUpBrain();
         PolishDictionary dictionary = new PolishDictionary();
 
-        assertEquals("",chatbot.pharaprasize("Nie wiem, co mam robić"));
-        assertEquals("", chatbot.pharaprasize("Mam kłopoty finansowe"));
-        assertEquals("", chatbot.pharaprasize("Chyba nie wiesz co mówisz"));
+        assertEquals("", chatbot.pharaprasize("Chyba nie"));
     }
 
 

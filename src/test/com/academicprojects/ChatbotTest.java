@@ -25,8 +25,8 @@ public class ChatbotTest {
     @Test
     public void testCatchUserAnswer() throws Exception {
         String useranswer = "finanse";
-        int actual = chatbot.catchUserAnswer(useranswer);
-        System.out.println("actual: "+ actual);
+        int actual = chatbot.catchUserAnswerNote(useranswer);
+        //System.out.println("actual: "+ actual);
         Assert.assertEquals(5, actual);
     }
 
@@ -58,7 +58,7 @@ public class ChatbotTest {
                 "Ty odpowiedz pierwszy",
                 "Rozmawiamy o Tobie",
                 "Na pytania przyjdzie czas później, teraz rozmawiamy o Tobie.",*/
-                ""
+                "Sformułuj proszę pytanie inaczej."
         };
 
         String[] userAnswers = {
@@ -66,7 +66,7 @@ public class ChatbotTest {
                 "Lubisz mnie?",
                 "Powiedz coś",
                 "Jak wyglądasz?",*/
-                "O czym możesz rozmawiać?"
+                ""
 
 /*
                 "Co słychać?"

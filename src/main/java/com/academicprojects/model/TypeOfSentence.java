@@ -5,5 +5,5 @@ public enum TypeOfSentence {
 	QUESTION,
 	INDICATIVE,
 	EXCLAMATION,
-	OTHER
+	FEELING_STATEMENT, OTHER
 }

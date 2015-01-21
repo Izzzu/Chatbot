@@ -55,10 +55,10 @@ public class Personality {
     }
 
 
-    public void setNewPersonalityType(int id, int p) {
+    public void setNewPersonalityType(int id, int level) {
         for (int i = 0; i < types.size(); i++) {
             if (i == id) {
-                types.get(i).updateType(p);
+                types.get(i).updateType(level);
                 return;
             }
         }
@@ -111,7 +111,6 @@ public class Personality {
         StringBuilder sb = new StringBuilder();
         sb.append(System.getProperty("line.separator"));
         for (int i = 0; i < types.size(); i++) {
-            System.out.println(types.size());
             sb.append(types.get(i).getShortDescription().toLowerCase());
             sb.append(" - ");
             sb.append(types.get(i).getLevel());

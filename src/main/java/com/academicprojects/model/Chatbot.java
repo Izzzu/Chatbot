@@ -3,8 +3,12 @@ package com.academicprojects.model;
 import com.academicprojects.db.DbService;
 import com.academicprojects.model.dictionary.GrammaPerson;
 import com.academicprojects.model.dictionary.PolishDictionary;
+import com.academicprojects.model.dictionary.WordDetails;
 import com.academicprojects.util.PreprocessString;
 import com.academicprojects.util.RandomSearching;
+import com.google.common.base.Function;
+import com.google.common.base.Predicate;
+import com.google.common.collect.FluentIterable;
 import lombok.Getter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +16,12 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static com.academicprojects.model.TypeOfSentence.FEELING_STATEMENT;
+import static com.academicprojects.model.dictionary.VerbForm.INFINITIVE;
+import static com.academicprojects.util.PreprocessString.replacePolishCharsAndLowerCase;
 
 @Getter
 public class Chatbot {
@@ -109,12 +119,12 @@ public class Chatbot {
 
         Connection conn = brain.getDb().getConn();
         int note = 0;
-        String answer = pStr.replacePolishCharsAndLowerCase(getLastAnswer());
+        String answer = replacePolishCharsAndLowerCase(getLastAnswer());
         String[] words = answer.split(" ");
         String result = "";
 
         for (int i = 0; i < words.length; i++) {
-            note = catchUserAnswer(answer);
+            note = catchUserAnswerNote(answer);
             if (note >= 0) {
                 setLevel("gettingUserMood", State.COMPLETED);
                 user.setMood(note);
@@ -198,13 +208,11 @@ public class Chatbot {
 			for(PersonalityRecognizer.Phrase phrase: brain.personalityRecognizer.getPersonalityPhrases())
             {
                 //log.info("outer for - "+phrase.getWord());
-                System.out.println(user.getPersonality().toString());
-                System.out.println("size: - "+String.valueOf(user.getPersonality().getTypes().size()));
+
                 if (phrases[i].equals(phrase.getWord())) {
-                    System.out.println(phrase.getWord());
+
                     user.updatePersonality(phrase.getIdPersonality(), phrase.getLevel());
-                    System.out.println(user.getPersonality().toString());
-                    System.out.println("size: - "+String.valueOf(user.getPersonality().getTypes().size()));
+
                 }
             }
 		}
@@ -232,46 +240,145 @@ public class Chatbot {
 
     public String prepareAnswer() throws Exception {
         String userAnswer = preprocessUserAnswer();
-		TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswer);
+		String userAnswerToLowerCaseWithoutPolishChars = replacePolishCharsAndLowerCase(userAnswer).toLowerCase();
+		TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswerToLowerCaseWithoutPolishChars);
 		if (typeOfSentence.equals(TypeOfSentence.QUESTION)) {
 			return answerQuestion(userAnswer);
 		}
-		int userAnswerNote = catchUserAnswer(userAnswer);
+		if (typeOfSentence.equals(FEELING_STATEMENT)) {
+			return getChatbotResponseForFeelingSentence(userAnswer);
+		}
+		int userAnswerNote = catchUserAnswerNote(userAnswer);
         System.out.println("user answer note: "+userAnswerNote);
         int chooseAnswer = (int)(Math.random()*10);
 		//losowa logika - zwraca -1 gry nie zaleziono patternu - to nie blad
-        switch (chooseAnswer) {
+		String pharaprasizedAnswer = pharaprasize(userAnswer.toLowerCase());
+		String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+		switch (chooseAnswer) {
 			//question:
 
             case 7:
-                return pharaprasize(userAnswer.toLowerCase()) + getNeutralEngagedAnswer();
+                return pharaprasizedAnswer + getNeutralEngagedAnswer();
             case 8:
-                return pharaprasize(userAnswer.toLowerCase());
+                return pharaprasizedAnswer.isEmpty() ? chatbotAnswerFromAnswerPatterns : pharaprasizedAnswer;
             default:
-                return pharaprasize(userAnswer.toLowerCase()) + getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+                return pharaprasizedAnswer + chatbotAnswerFromAnswerPatterns;
         }
     }
+
+	public String getChatbotResponseForFeelingSentence(String userAnswer) {
+		String verb = "";
+		if(userAnswer.toLowerCase().contains("jestem")) {
+			verb = "jestem";
+		}
+		else if (PreprocessString.replacePolishCharsAndLowerCase(userAnswer).contains("czuje")) {
+			verb = "czuję";
+		}
+		else if (PreprocessString.replacePolishCharsAndLowerCase(userAnswer).contains("chce")) {
+			verb = "chcę";
+		}
+		List<String> answerList = brain.getFeelingStatement().get(verb);
+		int size = answerList.size();
+		String sentence = answerList.get(RandomSearching.generateRandomIndex(size));
+		String pharaprasize = pharaprasize(userAnswer);
+		String output = sentence.replace("<paraphrase>", pharaprasize.replace(". ",""));
+		return output;
+	}
 
 	public String answerQuestion(String userAnswer) {
 		String[] ar = {userAnswer};
 		String[] sentences = userAnswer.split("//?");
-		if(sentences.length>0)  {
+		int size = brain.getPatternAnswerForOpinionQuestion().size();
+		try {
+			if(sentences.length>0)  {
 			String sentenceWithReplacedQuestionMarks = sentences[0].replace("?", " ").toLowerCase();
+			String opinionVerb = questionAboutOpinion(sentenceWithReplacedQuestionMarks);
+			if (!opinionVerb.isEmpty()) {
+				return answerForQuestionAboutOpinion(size, sentenceWithReplacedQuestionMarks, opinionVerb);
+			}
 			for(String word: sentenceWithReplacedQuestionMarks.split(" ")) {
 
 				if (verbIsInDictionary(word) && verbIsInPerson(word, GrammaPerson.SECOND)) {
-
-					return brain.getPatternAnswersForPersonalQuestion().get(RandomSearching.generateRandomIndex(brain.getPatternAnswersForPersonalQuestion().size()));
+					return brain.getPatternAnswersForPersonalQuestion().get(RandomSearching.generateRandomIndex(size));
 				}
 			}
-
 		}
+		} catch (UnrecognizeUserAnswerException e1) {
+			return "Bardzo proszę pisz jaśniej. Twoja wypowiedź jest bardzo chaotyczna.";
+		}
+		return "Sformułuj proszę pytanie inaczej.";
+	}
 
-		return "";
+	private String answerForQuestionAboutOpinion(int size, String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizeUserAnswerException {
+		PolishDictionary.Record record = findRecordWithVerbInDictionary(opinionVerb);
+		String randomPattern = brain.getPatternAnswerForOpinionQuestion().get(RandomSearching.generateRandomIndex(size));
+		String patternAnswer = randomPattern;
+		patternAnswer = patternAnswer.replace("<verb>", opinionVerb);
+		patternAnswer = patternAnswer.replace("<verb-infinitive>", record.getMainWord());
+		if (randomPattern.contains("<paraphrase>")) {
+
+            String paraphrasedQuestion = pharapraseQuestion(sentenceWithReplacedQuestionMarks, opinionVerb);
+
+            if (paraphrasedQuestion.isEmpty()) {
+                patternAnswer = patternAnswer.replace("<paraphrase>", "...?");
+            } else {
+                paraphrasedQuestion.replace("?", "");
+                patternAnswer = patternAnswer.replace("<paraphrase>", paraphrasedQuestion);
+            }
+        }
+		return patternAnswer;
+	}
+
+	private String pharapraseQuestion(String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizeUserAnswerException {
+		String[] strings = sentenceWithReplacedQuestionMarks.split(opinionVerb);
+		String readyToParaphrasize = strings.length>=2 ? strings[1] : "";
+		if (replacePolishCharsAndLowerCase(readyToParaphrasize).replace(",","").startsWith(" ze")) {
+            try {
+                readyToParaphrasize = readyToParaphrasize.substring(4);
+            } catch (IndexOutOfBoundsException e) {
+                    throw new UnrecognizeUserAnswerException();
+            }
+        }
+		String[] words = readyToParaphrasize.split(" ");
+		Map<Integer, String> verbsRightToParaphrasize = this.findVerbsRightToParaphrasize(words);
+		if (verbsRightToParaphrasize.values().contains("")) return "";
+		return changeVerbsIntoOpposite(words, verbsRightToParaphrasize, 0).toString();
+	}
+
+	private String questionAboutOpinion(String sentenceWithReplacedQuestionMarks) {
+		Pattern pattern = Pattern.compile("(.*(uwazasz|myslisz|twierdzisz|sadzisz)+.*)");
+		Matcher matcher = pattern.matcher(replacePolishCharsAndLowerCase(sentenceWithReplacedQuestionMarks.toLowerCase()));
+		if(!matcher.matches()) {
+			return "";
+		}
+		else {
+			String s = matcher.group(2);
+			if(s.equals("uwazasz")) {
+					return "uważasz";
+				}
+			if(s.equals("sadzisz")) {
+					return "sądzisz";
+				}
+			if(s.equals("myslisz")){
+					return "myślisz";
+				}
+			return s;
+		}
 	}
 
 	private boolean verbIsInDictionary(String word) {
-		return !brain.getDictionary().findMainVerb(word).isEmpty();
+		Set<String> verbsNonInfinitive = FluentIterable.from(brain.getDictionary().getVerbs())
+				.filter(new Predicate<PolishDictionary.Record>() {
+					public boolean apply(PolishDictionary.Record record) {
+						return !(record.getForm().getVerbForm().equals(INFINITIVE));
+					}
+				})
+				.transform(new Function<PolishDictionary.Record, String>() {
+					public String apply(PolishDictionary.Record record) {
+						return record.getWord();
+					}
+				}).toSet();
+		return verbsNonInfinitive.contains(word);
 	}
 
 	private boolean verbIsInPerson(String word, GrammaPerson grammaPerson) {
@@ -290,22 +397,11 @@ public class Chatbot {
 
         String[] ar = {userAnswer};
         String[] sentences = divideIntoSentences(userAnswer, ar);
-
         for (int i = 0; i < sentences.length; i++) {
-            boolean oneVerbToParaphrase = false;
             String[] words = sentences[i].split(" ");
-			int suspectedIndex =  words.length;
 			String changedVerb = "";
-			Map<Integer, String> mapIndexToChangedVerb = new LinkedHashMap<Integer, String>();
-            for (int j = 0; j < words.length; j++) {
-				String tempWord = words[j].toLowerCase().replace(".","");
-                if(brain.getDictionary().getVerbsToPharaprase().contains(tempWord)) {
-
-					changedVerb = findPharaprasizedVerbIfVerbIsInDictionary(tempWord);
-					mapIndexToChangedVerb.put(j, changedVerb);
-
-                }
-            }
+			Map<Integer, String> mapIndexToChangedVerb;
+			mapIndexToChangedVerb = findVerbsRightToParaphrasize(words);
 			if (mapIndexToChangedVerb.isEmpty() || mapIndexToChangedVerb.values().contains("")) return "";
 
 			return createPharaprasizedAnswer(words, mapIndexToChangedVerb);
@@ -313,16 +409,63 @@ public class Chatbot {
         return "";
     }
 
+	private Map<Integer, String> findVerbsRightToParaphrasize(String[] words) {
+		String changedVerb = "";
+		Map<Integer, String> mapIndexToChangedVerb = new LinkedHashMap<Integer, String>();
+		Set<String> verbsPrimarySecondaryForm = FluentIterable.from(brain.getDictionary().getVerbs())
+				.filter(new Predicate<PolishDictionary.Record>() {
+					public boolean apply(PolishDictionary.Record record) {
+						WordDetails form = record.getForm();
+						return !(form.getVerbForm().equals(INFINITIVE)) && !(form.getGrammaPerson().equals(GrammaPerson.THIRD) || form.getGrammaPerson().equals(GrammaPerson.DEFAULT));
+					}
+				})
+				.transform(new Function<PolishDictionary.Record, String>() {
+					public String apply(PolishDictionary.Record record) {
+						return record.getWord();
+					}
+				}).toSet();
+		for (int j = 0; j < words.length; j++) {
+            String tempWord = words[j].toLowerCase().replace(".","").replace(",","");
+            if(verbsPrimarySecondaryForm.contains(tempWord)) {
+                changedVerb = findPharaprasizedVerbIfVerbIsInDictionary(tempWord);
+                mapIndexToChangedVerb.put(j, changedVerb);
+            }
+        }
+		return mapIndexToChangedVerb;
+	}
+
 	private String createPharaprasizedAnswer(String[] words, Map<Integer, String> mapIndexToChangedVerb) {
+		StringBuffer sb = new StringBuffer();
+		sb.append(PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ");
+
+		sb.append(negativeSentence(words, mapIndexToChangedVerb));
+		LinkedList<Integer> indexes = new LinkedList<Integer>(mapIndexToChangedVerb.keySet());
+		int firstVerb = 0;
+		if(!indexes.isEmpty()) firstVerb = indexes.getFirst();
+		sb.append(changeVerbsIntoOpposite(words, mapIndexToChangedVerb, firstVerb));
+		if(sb.charAt(sb.length()-1) != '.') sb.append(". ");
+		return sb.toString();
+	}
+
+	private StringBuffer negativeSentence(String[] words, Map<Integer, String> mapIndexToChangedVerb) {
 		StringBuffer sb = new StringBuffer();
 		LinkedList<Integer> indexes = new LinkedList<Integer>(mapIndexToChangedVerb.keySet());
 		Collections.sort(indexes);
 		int firstVerb = indexes.getFirst();
-		sb.append(PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ");
 		boolean negation = (firstVerb > 0 && words[firstVerb - 1].toLowerCase().equals("nie"));
 		if (negation) {
 			sb.append("nie ");
 		}
+		return sb;
+	}
+
+	private StringBuffer changeVerbsIntoOpposite(String[] words, Map<Integer, String> mapIndexToChangedVerb, int firstVerb) {
+		StringBuffer sb = new StringBuffer();
+
+		LinkedList<Integer> indexes = new LinkedList<Integer>(mapIndexToChangedVerb.keySet());
+
+		//if(!indexes.isEmpty()) firstVerb =  indexes.getFirst();
+
 		for (int i = firstVerb; i<words.length; i++) {
 			if(indexes.contains(i)) {
 				sb.append(mapIndexToChangedVerb.get(i));
@@ -333,8 +476,7 @@ public class Chatbot {
 			sb.append(" ");
 		}
 		sb.deleteCharAt(sb.length()-1);
-		if(sb.charAt(sb.length()-1) != '.') sb.append(". ");
-		return sb.toString();
+		return sb;
 	}
 
 	private String[] divideIntoSentences(String userAnswer, String[] ar) {
@@ -342,7 +484,7 @@ public class Chatbot {
     }
 
     private String findPharaprasizedVerbIfVerbIsInDictionary(String word) {
-        PolishDictionary.Record record = findVerbInDictionary(word.toLowerCase());
+        PolishDictionary.Record record = findRecordWithVerbInDictionary(word.toLowerCase());
         if (record.isEmpty()) return "";
         return getOppositePersonVerb(record).getWord();
     }
@@ -376,15 +518,13 @@ public class Chatbot {
 		sb.append(changedVerb + " ");
 	}
 
-    private PolishDictionary.Record findVerbInDictionary(String userAnswer) {
+    private PolishDictionary.Record findRecordWithVerbInDictionary(String userAnswer) {
         PolishDictionary.Record record = brain.getDictionary().findVerb(userAnswer);
-
         return record;
     }
 
     private PolishDictionary.Record getOppositePersonVerb(PolishDictionary.Record record) {
-        return brain.getDictionary().findVerbFromMainWordAndMatchOppositePerson(record.getMainWord(), record.getForm().getSingularOrPlural(), record.getForm().getVerbForm(), record.getForm().getGenre());
-
+        return brain.getDictionary().findVerbFromMainWordAndMatchOppositePerson(record.getForm().getGrammaPerson(), record.getMainWord(), record.getForm().getSingularOrPlural(), record.getForm().getVerbForm(), record.getForm().getGenre());
     }
 
     private String getChatbotAnswerFromAnswerPatterns(int userAnswerNote) {
@@ -401,7 +541,6 @@ public class Chatbot {
         }
         else {
             int randomIndex = RandomSearching.generateRandomIndex(brain.getExceptionsChatbotAnswers().size());
-			System.out.println("randomIndexIn getChatbotAnswersFromPattern" + randomIndex);
 			String sentence = brain.getExceptionsChatbotAnswers().get(randomIndex).getSentence();
 			if(sentence.isEmpty()) {
 
@@ -412,34 +551,34 @@ public class Chatbot {
 
 
 	private String preprocessUserAnswer() {
-        return pStr.replacePolishCharsAndLowerCase(conversation.getLastAnswer().replace("  "," ").replace("_"," "));
+        return replacePolishCharsAndLowerCase(conversation.getLastAnswer().replace("  ", " ").replace("_", " "));
     }
 
-    public int catchUserAnswer(String userAnswer) {
+    public int catchUserAnswerNote(String userAnswer) {
         int noteSum = 0;
         int weights = 0;
         int average = 0;
 
-
-		System.out.println("-");
+		//System.out.println("-");
         try {
             for (PatternAnswer pattern : brain.patterns) {
 
                 if (userAnswer.contains(pattern.getSentence())) {
-                    noteSum += (pattern.getImportance() * pattern.getNote());
-                    weights += pattern.getImportance();
-                }
-            }
+					System.out.println(pattern.getSentence() + " : " + pattern.getImportance());
+					noteSum += (pattern.getImportance() * pattern.getNote());
+					weights += pattern.getImportance();
+				}
+			}
             if (weights != 0) {
 				average = (noteSum / weights);
 			}
             else {
-
+				//TODO: jak nie znajduje patternu to nie rozmawia czy li w ogole nie rozmawia !!!!! AAAA
                 return -1;
             }
-            System.out.println("weights=" + weights);
+           /* System.out.println("weights=" + weights);
             System.out.println("noteSum=" + noteSum);
-            System.out.println("average=" + average);
+            System.out.println("average=" + average);*/
             return average;
         }
         catch (Exception e)
@@ -538,8 +677,8 @@ public class Chatbot {
     }
 
     public TypeOfSentence recognizeTypeOfSentence(String s) {
-        String str = s.trim();
         if (s.contains("?")) return TypeOfSentence.QUESTION;
+		if (s.contains("chce") || s.contains("czuje") || s.contains("jestem")) return FEELING_STATEMENT;
         return TypeOfSentence.OTHER;
     }
 
