@@ -12,7 +12,7 @@ public class PolishDictionaryTest{
     public void shouldReturnRightDictionarySize()
     {
         PolishDictionary dictionary = new PolishDictionary();
-        assertEquals(98402, dictionary.getRecordsWithoutVerbs().size() );
+        assertEquals(78262, dictionary.getRecordsWithoutVerbs().size() );
     }
 
     @Test
