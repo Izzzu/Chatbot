@@ -149,7 +149,7 @@
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>0.3.0</version>
 				<configuration>
-						<appName>Chatbot-1</appName>
+						<appName>hidden-brook-8541</appName>
 						<processTypes>
 							<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
 						</processTypes>
