@@ -144,6 +144,18 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>0.3.0</version>
+				<configuration>
+						<appName>Chatbot-1</appName>
+						<processTypes>
+							<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+						</processTypes>
+					<warFile>target/Chatbot.war</warFile>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
