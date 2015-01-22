@@ -1,1 +1,1 @@
-web: sh target/
+web:    java $JAVA_OPTS -jar target/Chatbot.war
