@@ -1,1 +1,1 @@
-mvn tomcat:run
+.maven/bin/mvn tomcat:run
