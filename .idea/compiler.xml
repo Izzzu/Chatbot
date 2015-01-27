@@ -27,7 +27,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Chatbot" target="1.5" />
+      <module name="Chatbot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
