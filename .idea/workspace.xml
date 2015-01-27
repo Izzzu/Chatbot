@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="procfile">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -39,38 +40,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="9450" max-vertical-offset="11520">
               <caret line="555" column="0" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#6213#6214#0" expanded="false" />
-                <element signature="e#6247#6248#0" expanded="false" />
-                <element signature="e#12370#12371#0" expanded="false" />
-                <element signature="e#12408#12409#0" expanded="false" />
-                <element signature="e#12764#12765#0" expanded="false" />
-                <element signature="e#12824#12825#0" expanded="false" />
-                <element signature="e#13592#13609#0" expanded="false" />
-                <element signature="e#14169#14170#0" expanded="false" />
-                <element signature="e#14207#14208#0" expanded="false" />
-                <element signature="e#14977#14986#0" expanded="false" />
-                <element signature="e#15447#15456#0" expanded="false" />
-                <element signature="e#15918#15927#0" expanded="false" />
-                <element signature="e#18432#18440#0" expanded="false" />
-                <element signature="e#20345#20346#0" expanded="false" />
-                <element signature="e#20384#20385#0" expanded="false" />
-                <element signature="e#20420#20421#0" expanded="false" />
-                <element signature="e#20462#20463#0" expanded="false" />
-                <element signature="e#20504#20505#0" expanded="false" />
-                <element signature="e#20551#20552#0" expanded="false" />
-                <element signature="e#21523#21524#0" expanded="false" />
-                <element signature="e#21561#21562#0" expanded="false" />
-                <element signature="e#21595#21596#0" expanded="false" />
-                <element signature="e#21623#21624#0" expanded="false" />
-                <element signature="e#22513#22514#0" expanded="false" />
-                <element signature="e#22568#22569#0" expanded="false" />
-                <element signature="e#22603#22604#0" expanded="false" />
-                <element signature="e#22642#22643#0" expanded="false" />
-                <element signature="e#22678#22679#0" expanded="false" />
-                <element signature="e#22739#22740#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2344" max-vertical-offset="2952">
-              <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.9067358" vertical-offset="2170" max-vertical-offset="3240">
+              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startServer-heroku.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="startServer-heroku.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startServer-heroku.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="144">
               <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
@@ -150,9 +120,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1350">
               <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -231,8 +199,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PolishDictionaryTest.java" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/startServer-heroku.sh" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -308,6 +276,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -491,7 +460,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1202,7 +1170,8 @@
       <workItem from="1422387432260" duration="1217000" />
       <workItem from="1422389903364" duration="715000" />
       <workItem from="1422391860167" duration="1840000" />
-      <workItem from="1422394380418" duration="1169000" />
+      <workItem from="1422394380418" duration="1969000" />
+      <workItem from="1422400114823" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1316,7 +1285,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306513000" />
+    <option name="totallyTimeSpent" value="307373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="3" width="1360" height="730" extended-state="0" />
@@ -1325,7 +1294,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3496063" sideWeight="0.7536467" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2976378" sideWeight="0.6135693" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0783309" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39983845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1348,6 +1316,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2976378" sideWeight="0.6135693" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31811023" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32440946" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1535,13 +1504,13 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.551724" vertical-offset="120" max-vertical-offset="702">
           <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/util/RandomSearching.java">
@@ -1734,13 +1703,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithFeel.csv">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="270">
           <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithBe.csv">
@@ -1794,13 +1763,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dictionary.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1662426" max-vertical-offset="1771632">
           <caret line="92357" column="3" selection-start-line="92357" selection-start-column="0" selection-end-line="92357" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/personalityTypes.csv">
@@ -1850,38 +1819,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="10967" max-vertical-offset="11340">
           <caret line="555" column="0" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#6213#6214#0" expanded="false" />
-            <element signature="e#6247#6248#0" expanded="false" />
-            <element signature="e#12370#12371#0" expanded="false" />
-            <element signature="e#12408#12409#0" expanded="false" />
-            <element signature="e#12764#12765#0" expanded="false" />
-            <element signature="e#12824#12825#0" expanded="false" />
-            <element signature="e#13592#13609#0" expanded="false" />
-            <element signature="e#14169#14170#0" expanded="false" />
-            <element signature="e#14207#14208#0" expanded="false" />
-            <element signature="e#14977#14986#0" expanded="false" />
-            <element signature="e#15447#15456#0" expanded="false" />
-            <element signature="e#15918#15927#0" expanded="false" />
-            <element signature="e#18432#18440#0" expanded="false" />
-            <element signature="e#20345#20346#0" expanded="false" />
-            <element signature="e#20384#20385#0" expanded="false" />
-            <element signature="e#20420#20421#0" expanded="false" />
-            <element signature="e#20462#20463#0" expanded="false" />
-            <element signature="e#20504#20505#0" expanded="false" />
-            <element signature="e#20551#20552#0" expanded="false" />
-            <element signature="e#21523#21524#0" expanded="false" />
-            <element signature="e#21561#21562#0" expanded="false" />
-            <element signature="e#21595#21596#0" expanded="false" />
-            <element signature="e#21623#21624#0" expanded="false" />
-            <element signature="e#22513#22514#0" expanded="false" />
-            <element signature="e#22568#22569#0" expanded="false" />
-            <element signature="e#22603#22604#0" expanded="false" />
-            <element signature="e#22642#22643#0" expanded="false" />
-            <element signature="e#22678#22679#0" expanded="false" />
-            <element signature="e#22739#22740#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1913,9 +1851,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1350">
           <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1935,18 +1871,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2344" max-vertical-offset="2952">
-          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startServer-heroku.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
           <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9067358" vertical-offset="2170" max-vertical-offset="3240">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding />
         </state>
       </provider>
