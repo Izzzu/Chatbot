@@ -150,9 +150,6 @@
 				<version>0.3.0</version>
 				<configuration>
 						<appName>hidden-brook-8541</appName>
-						<processTypes>
-							<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
-						</processTypes>
 					<warFile>target/Chatbot.war</warFile>
 				</configuration>
 			</plugin>

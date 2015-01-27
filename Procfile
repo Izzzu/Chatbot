@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/Chatbot.war
+web: sh ./startServer-heroku.sh
