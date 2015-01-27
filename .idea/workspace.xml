@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="procfile">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startServer-heroku.sh" afterPath="$PROJECT_DIR$/startServer-heroku.sh" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
     <ignored path="Chatbot.iws" />
@@ -106,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5492228" vertical-offset="2344" max-vertical-offset="2952">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2344" max-vertical-offset="2952">
               <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
               <folding />
             </state>
@@ -136,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startServer-heroku.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="startServer-heroku.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/startServer-heroku.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.049861494" vertical-offset="0" max-vertical-offset="361">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -232,8 +231,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PolishDictionaryTest.java" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/startServer-heroku.sh" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/startServer-heroku.sh" />
       </list>
     </option>
   </component>
@@ -1203,7 +1202,7 @@
       <workItem from="1422387432260" duration="1217000" />
       <workItem from="1422389903364" duration="715000" />
       <workItem from="1422391860167" duration="1840000" />
-      <workItem from="1422394380418" duration="524000" />
+      <workItem from="1422394380418" duration="698000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1311,7 +1310,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305868000" />
+    <option name="totallyTimeSpent" value="306042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="3" width="1360" height="730" extended-state="0" />
@@ -1930,18 +1929,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startServer-heroku.sh">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="386">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2344" max-vertical-offset="2952">
+          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/startServer-heroku.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5492228" vertical-offset="2344" max-vertical-offset="2952">
-          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.049861494" vertical-offset="0" max-vertical-offset="361">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
