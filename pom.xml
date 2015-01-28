@@ -171,12 +171,7 @@
 				<groupId>com.smartbear.soapui</groupId>
 				<artifactId>soapui-maven-plugin</artifactId>
 				<version>4.6.1</version>
-				<configuration>
-					<projectFile>simple-test-soapui-project.xml</projectFile>
-					<projectProperties>
-						<value>message=Hello World!</value>
-					</projectProperties>
-				</configuration>
+				
 			</plugin>
 
 		</plugins>
