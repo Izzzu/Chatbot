@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.academicprojects</groupId>
 	<artifactId>Chatbot</artifactId>
@@ -105,24 +105,24 @@
 			<artifactId>hsqldb</artifactId>
 			<version>2.3.2</version>
 		</dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.14.4</version>
-        </dependency>
-        <!--<dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.14.4</version>
+		</dependency>
+		<!--<dependency>
             <groupId>cspl.internship2014</groupId>
             <artifactId>join</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.4</version>
-        </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+		</dependency>
 
 
-    </dependencies>
+	</dependencies>
 
 	<pluginRepositories>
 		<pluginRepository>
@@ -137,7 +137,14 @@
 				<updatePolicy>never</updatePolicy>
 			</releases>
 		</pluginRepository>
+
+		<pluginRepository>
+			<id>smartbear-sweden-plugin-repository</id>
+			<url>http://www.soapui.org/repository/maven2/</url>
+		</pluginRepository>
+
 	</pluginRepositories>
+
 
 	<build>
 		<finalName>Chatbot</finalName>
@@ -157,18 +164,21 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.heroku.sdk</groupId>
-				<artifactId>heroku-maven-plugin</artifactId>
-				<version>0.3.0</version>
-				<configuration>
-						<appName>hidden-brook-8541</appName>
-					<warFile>target/Chatbot.war</warFile>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.smartbear.soapui</groupId>
+				<artifactId>soapui-maven-plugin</artifactId>
+				<version>4.6.1</version>
+				<configuration>
+					<projectFile>simple-test-soapui-project.xml</projectFile>
+					<projectProperties>
+						<value>message=Hello World!</value>
+					</projectProperties>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 </project>
