@@ -10,6 +10,12 @@
 	<!--<properties>
 		<tomcat.version>8.0.3</tomcat.version>
 	</properties>-->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>smartbear-sweden-plugin-repository</id>
+			<url>http://www.soapui.org/repository/maven2/</url>
+		</pluginRepository>
+	</pluginRepositories>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -167,25 +173,15 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>com.smartbear.soapui</groupId>
-				<artifactId>soapui-pro-maven-plugin</artifactId>
-				<version>5.1.1</version>
-				<configuration>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.reflections</groupId>
-						<artifactId>reflections</artifactId>
-						<version>0.9.9-RC1</version>
-					</dependency>
-					<dependency>
-						<groupId>org.apache.poi</groupId>
-						<artifactId>poi-ooxml</artifactId>
-						<version>3.10-FINAL</version>
-					</dependency>
-				</dependencies>
-			</plugin>
+
+				<plugin>
+					<groupId>com.smartbear.soapui</groupId>
+					<artifactId>soapui-maven-plugin</artifactId>
+					<version>4.6.1</version>
+				
+				</plugin>
+
+
 			<!--<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
