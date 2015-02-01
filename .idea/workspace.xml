@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="procfile">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36915886" vertical-offset="3082" max-vertical-offset="4068">
-              <caret line="180" column="16" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.042056076" vertical-offset="0" max-vertical-offset="428">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,8 +113,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Personality.java" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -242,12 +241,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Default" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -515,6 +508,12 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default" />
       </pane>
     </panes>
   </component>
@@ -1267,7 +1266,8 @@
       <workItem from="1422821906875" duration="1977000" />
       <workItem from="1422824103992" duration="1907000" />
       <workItem from="1422826035122" duration="1281000" />
-      <workItem from="1422828503754" duration="1369000" />
+      <workItem from="1422828503754" duration="1829000" />
+      <workItem from="1422830437830" duration="268000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1381,7 +1381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341869000" />
+    <option name="totallyTimeSpent" value="342597000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1961,22 +1961,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028391168" vertical-offset="0" max-vertical-offset="634">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/Chatbot-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1422472254790" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422472254790" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1990,8 +1979,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36915886" vertical-offset="3082" max-vertical-offset="4068">
-          <caret line="180" column="16" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
+        <state vertical-scroll-proportion="-2.4392524" vertical-offset="1782" max-vertical-offset="3888">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <folding>
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422830296948" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.042056076" vertical-offset="0" max-vertical-offset="428">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>

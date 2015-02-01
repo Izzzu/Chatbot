@@ -10,12 +10,7 @@
 	<!--<properties>
 		<tomcat.version>8.0.3</tomcat.version>
 	</properties>-->
-	<pluginRepositories>
-		<pluginRepository>
-			<id>smartbear-sweden-plugin-repository</id>
-			<url>http://www.soapui.org/repository/maven2/</url>
-		</pluginRepository>
-	</pluginRepositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -174,12 +169,7 @@
 				</executions>
 			</plugin>
 
-				<plugin>
-					<groupId>com.smartbear.soapui</groupId>
-					<artifactId>soapui-maven-plugin</artifactId>
-					<version>4.6.1</version>
-				
-				</plugin>
+
 
 
 			<!--<plugin>
