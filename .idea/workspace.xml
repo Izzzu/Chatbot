@@ -1,111 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="procfile">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/AnsweringQuestionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/BrainTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/DictionaryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/FeelingAnswersTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/ParaphraseTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/PersonalityTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/PolishDictionaryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/QuickTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/db/DbService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/db/DbService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/lib/hsqldb-2.3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/db/DbService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/localEngine/localhost/Chatbot/SESSIONS.ser" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/ActiveListening.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/ActiveListening.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Answer.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Answer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Answer.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Answer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Brain.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Brain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Brain.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Brain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/controller/ChatController.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/controller/ChatController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/controller/ChatController.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/controller/ChatController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$1.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$2.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$3.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$4.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Chatbot.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Chatbot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/ChatbotAnswer.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/ChatbotAnswer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/ChatbotAnswer.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/ChatbotAnswer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Conversation.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Conversation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Conversation.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Conversation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/Details.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/Details.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/Details.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/Details.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Gender.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Gender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Gender.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Gender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/Genre.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/Genre.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/Genre.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/Genre.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/Grade.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/Grade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/Grade.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/Grade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/GrammaCase.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/GrammaCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/GrammaCase.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/GrammaCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/GrammaPerson.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/GrammaPerson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/GrammaPerson.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/GrammaPerson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/LanguagePart.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/LanguagePart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/LanguagePart.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/LanguagePart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PatternAnswer.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PatternAnswer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternAnswer.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternAnswer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Personality$1.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Personality$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Personality$1.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Personality$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Personality.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Personality.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Personality.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Personality.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer$1.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer$1.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityType.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityType.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$1.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$2.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/util/PreprocessString.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/util/PreprocessString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/util/PreprocessString.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/util/PreprocessString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/QUESTION.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/QUESTION.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/util/RandomSearching.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/util/RandomSearching.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/SingularOrPlural.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/SingularOrPlural.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/SingularOrPlural.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/SingularOrPlural.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/StandardAnswers.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/StandardAnswers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/StandardAnswers.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/StandardAnswers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/State.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/State.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/State.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/State.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/TypeOfSentence.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/TypeOfSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/TypeOfSentence.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/TypeOfSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/UnrecognizeUserAnswerException.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/UnrecognizeUserAnswerException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/User.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/VerbForm.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/VerbForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/VerbForm.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/VerbForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/WordDetails.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/WordDetails.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/WordDetails.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/WordDetails.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Chatbot_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Chatbot_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternAnswer.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternAnswer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="procfile" />
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
     <ignored path="Chatbot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1365,7 +1261,7 @@
       <workItem from="1422819978271" duration="1904000" />
       <workItem from="1422821906875" duration="1977000" />
       <workItem from="1422824103992" duration="1907000" />
-      <workItem from="1422826035122" duration="683000" />
+      <workItem from="1422826035122" duration="784000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1479,7 +1375,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339902000" />
+    <option name="totallyTimeSpent" value="340003000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
