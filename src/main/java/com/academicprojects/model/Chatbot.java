@@ -1,6 +1,5 @@
 package com.academicprojects.model;
 
-import com.academicprojects.db.DbService;
 import com.academicprojects.model.dictionary.GrammaPerson;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import com.academicprojects.model.dictionary.WordDetails;
@@ -14,7 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.sql.Connection;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -32,7 +30,7 @@ public class Chatbot {
 	private PreprocessString pStr = new PreprocessString();
 	Logger log = LoggerFactory.getLogger(Chatbot.class);
 
-	public Map taskStates = new HashMap<String, State>();
+	public Map taskStates = new HashMap<>();
 
     public Brain brain;
 	private User user;
@@ -40,16 +38,8 @@ public class Chatbot {
 	private String chatbotName = "Zbyszek";
 	private Conversation conversation = new Conversation(chatbotName);
 
-	public Chatbot() {
-		taskStates.put("gettingTopic", State.START);
-		taskStates.put("gettingUserAge", State.START);
-		taskStates.put("gettingUserName", State.START);
-		taskStates.put("gettingUserMood", State.START);
-	}
-
-    public Chatbot(DbService db) throws IOException {
-
-        brain = new Brain(db);
+    public Chatbot() throws IOException {
+		brain = new Brain();
         brain.setUpBrain();
         user = new User();
         taskStates.put("gettingTopic", State.START);
@@ -82,19 +72,6 @@ public class Chatbot {
 	}
 
 
-	public String catchTopic() {
-		// TODO Auto-generated method stub
-		String answer = getLastAnswer();
-
-		Connection conn = brain.getDb().getConn();
-		String result = "";
-		int resId;
-		int lcu;
-
-    result = "niewazne";
-		return result;
-	}
-
 	public String catchUserAge() {
 		String answer = getLastAnswer();
 		Scanner sc = new Scanner(answer);
@@ -117,7 +94,6 @@ public class Chatbot {
 	 */
 	public void catchUserMood() {
 
-        Connection conn = brain.getDb().getConn();
         int note = 0;
         String answer = replacePolishCharsAndLowerCase(getLastAnswer());
         String[] words = answer.split(" ");
@@ -260,7 +236,7 @@ public class Chatbot {
             case 7:
                 return pharaprasizedAnswer + getNeutralEngagedAnswer();
             case 8:
-                return pharaprasizedAnswer.isEmpty() ? chatbotAnswerFromAnswerPatterns : pharaprasizedAnswer;
+                return pharaprasizedAnswer.length()==0 ? chatbotAnswerFromAnswerPatterns : pharaprasizedAnswer;
             default:
                 return pharaprasizedAnswer + chatbotAnswerFromAnswerPatterns;
         }

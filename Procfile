@@ -1,1 +1,1 @@
-web: sh ./startServer-heroku.sh
+java -jar target/dependency/webapp-runner.jar target/*.war

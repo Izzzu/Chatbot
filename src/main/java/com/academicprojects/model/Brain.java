@@ -1,6 +1,5 @@
 package com.academicprojects.model;
 
-import com.academicprojects.db.DbService;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import com.academicprojects.util.RandomSearching;
 import lombok.AccessLevel;
@@ -11,14 +10,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
 @Getter
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class Brain {
     public static final int NEUTRAL_ANSWER = 0;
     List<PatternAnswer> patterns = new ArrayList<PatternAnswer>();
@@ -31,16 +27,11 @@ public class Brain {
     private Map<String, List<String>> feelingStatement = new HashMap<String, List<String>>();
     private ActiveListening activeListening;
     PolishDictionary dictionary = new PolishDictionary();
-    private DbService db = null;
 
 
-    public Brain(DbService database) {
-        db = database;
-    }
 
     public void setUpBrain() throws IOException {
         try {
-            Connection conn = db.getConn();
             //getPatternsFromDatabase(conn);
 //            getChatbotAnswersFromDatabase(conn);
 //            getPersonalityPhrasesFromDatabase(conn);
@@ -160,7 +151,7 @@ public class Brain {
 
     }
 
-    private void getPersonalityPhrasesFromDatabase(Connection conn) throws SQLException {
+    /*private void getPersonalityPhrasesFromDatabase(Connection conn) throws SQLException {
         String sql = "SELECT * FROM PHRASE";
         PreparedStatement ps = conn.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
@@ -201,13 +192,14 @@ public class Brain {
         while (rs.next())
             exceptionsChatbotAnswers.add(new ChatbotAnswer(rs.getNString(2).replace('\\', ' '), rs.getInt(3)));
     }
-
+*/
     public String startParaphrase() {
 
         List<String> paraphraseStart = activeListening.getParaphraseStart();
         return paraphraseStart.get(RandomSearching.generateRandomIndex(paraphraseStart.size()));
 
     }
+
 
   /*  public void getPersonalitiesFromDatabase(Connection conn) throws SQLException {
         String sql = "SELECT * FROM PERSONALITY";

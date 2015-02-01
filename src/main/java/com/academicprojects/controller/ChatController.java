@@ -1,6 +1,5 @@
 package com.academicprojects.controller;
 
-import com.academicprojects.db.DbService;
 import com.academicprojects.model.Answer;
 import com.academicprojects.model.Chatbot;
 import org.slf4j.Logger;
@@ -12,19 +11,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.sql.SQLException;
-
 @Controller
 public class ChatController {
 
-	DbService db;
 	Logger log = LoggerFactory.getLogger(ChatController.class);
 	Chatbot chatbot;
 
     public ChatController() throws Exception {
 
-            db = new DbService("db/chatbotDb");
-            chatbot = new Chatbot(db);
+            chatbot = new Chatbot();
 
     }
 
@@ -56,7 +51,6 @@ public class ChatController {
 	public void runDb()
 	{
 		try {
-			db = new DbService("db/chatbotDb");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -65,12 +59,7 @@ public class ChatController {
 
     protected void finalize()
     {
-        try {
-            db.shutdown();
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+
 
     }
 

@@ -7,6 +7,9 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>Chatbot Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<!--<properties>
+		<tomcat.version>8.0.3</tomcat.version>
+	</properties>-->
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -26,9 +29,9 @@
 			<version>1.7.7</version>
 		</dependency>
 		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.3</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -40,6 +43,12 @@
 			<artifactId>guava</artifactId>
 			<version>18.0</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+
 
 
 		<dependency>
@@ -63,11 +72,7 @@
 			<artifactId>commons-logging</artifactId>
 			<version>1.1.3</version>
 		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -100,21 +105,13 @@
 			<artifactId>spring-expression</artifactId>
 			<version>4.0.3.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>2.3.2</version>
-		</dependency>
+
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.14.4</version>
 		</dependency>
-		<!--<dependency>
-            <groupId>cspl.internship2014</groupId>
-            <artifactId>join</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>-->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -122,57 +119,86 @@
 		</dependency>
 
 
+
+
 	</dependencies>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>central</id>
-			<name>Maven Plugin Repository</name>
-			<url>http://repo1.maven.org/maven2</url>
-			<layout>default</layout>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-		</pluginRepository>
-
-		<pluginRepository>
-			<id>smartbear-sweden-plugin-repository</id>
-			<url>http://www.soapui.org/repository/maven2/</url>
-		</pluginRepository>
-
-	</pluginRepositories>
 
 
 	<build>
 		<finalName>Chatbot</finalName>
 		<plugins>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
 					<warFile>target/Chatbot.war</warFile>
 				</configuration>
-			</plugin>
+			</plugin>-->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.7</source>
+					<target>1.7</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.smartbear.soapui</groupId>
-				<artifactId>soapui-maven-plugin</artifactId>
-				<version>4.6.1</version>
-
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals><goal>copy</goal></goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.github.jsimone</groupId>
+									<artifactId>webapp-runner</artifactId>
+									<version>7.0.57.1</version>
+									<destFileName>webapp-runner.jar</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
+			<!--<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
+					<warName>${project.artifactId}</warName>
+				</configuration>
+			</plugin>-->
+			<!--<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals><goal>copy</goal></goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.github.jsimone</groupId>
+									<artifactId>webapp-runner</artifactId>
+									<version>7.0.57.1</version>
+									<destFileName>webapp-runner.jar</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>-->
+
 
 		</plugins>
 	</build>

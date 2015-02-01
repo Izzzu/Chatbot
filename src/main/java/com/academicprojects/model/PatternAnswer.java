@@ -2,9 +2,6 @@ package com.academicprojects.model;
 
 import lombok.Getter;
 
-/**
- * Created by Cookiemonster on 2014-08-03.
- */
 
 @Getter
 public class PatternAnswer extends Answer{

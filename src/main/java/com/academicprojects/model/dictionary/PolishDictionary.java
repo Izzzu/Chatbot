@@ -1,6 +1,7 @@
 package com.academicprojects.model.dictionary;
 
 import com.academicprojects.util.PreprocessString;
+import com.google.common.base.Function;
 import com.google.common.collect.FluentIterable;
 import com.google.common.collect.ImmutableList;
 import lombok.AccessLevel;
@@ -10,9 +11,10 @@ import lombok.NoArgsConstructor;
 
 import java.io.*;
 import java.util.*;
-import java.util.function.Function;
 
 import static java.lang.Character.isUpperCase;
+
+
 
 @Getter
 public class PolishDictionary {
