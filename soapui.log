@@ -1,7 +1,7 @@
-2015-02-01 23:28:59,991 WARN  [SoapUI] Missing folder [/home/izabela/projects/apps/Chatbot/./ext] for external libraries
-2015-02-01 23:28:59,992 INFO  [DefaultSoapUICore] Creating new settings at [/home/izabela/soapui-settings.xml]
-2015-02-01 23:29:00,890 ERROR [SoapUI] An error occurred [Failed to load project from file [file:/home/izabela/projects/apps/Chatbot/Chatbot-soapui-project.xml]], see error log for details
-2015-02-01 23:29:00,891 ERROR [errorlog] com.eviware.soapui.support.SoapUIException: Failed to load project from file [file:/home/izabela/projects/apps/Chatbot/Chatbot-soapui-project.xml]
+2015-02-02 22:49:11,283 WARN  [SoapUI] Missing folder [/home/izabela/projects/apps/Chatbot/./ext] for external libraries
+2015-02-02 22:49:11,284 INFO  [DefaultSoapUICore] Creating new settings at [/home/izabela/soapui-settings.xml]
+2015-02-02 22:49:12,151 ERROR [SoapUI] An error occurred [Failed to load project from file [file:/home/izabela/projects/apps/Chatbot/Chatbot-soapui-project.xml]], see error log for details
+2015-02-02 22:49:12,152 ERROR [errorlog] com.eviware.soapui.support.SoapUIException: Failed to load project from file [file:/home/izabela/projects/apps/Chatbot/Chatbot-soapui-project.xml]
 com.eviware.soapui.support.SoapUIException: Failed to load project from file [file:/home/izabela/projects/apps/Chatbot/Chatbot-soapui-project.xml]
 	at com.eviware.soapui.impl.wsdl.WsdlProject.loadProject(WsdlProject.java:374)
 	at com.eviware.soapui.impl.wsdl.WsdlProject.<init>(WsdlProject.java:198)
