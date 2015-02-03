@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head> 
-	<title>Chatbot</title>
+	<title>Empatyczny Chatbot</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="description" content="Chatbot rozmawiający o problemach interpersonalnych i doświadczeniach życiowych" />
 	<meta name="keywords" content="chatbot" />
@@ -28,7 +28,7 @@
 	<br>
 	<br>
 	<header>
-		<title>Chatbot</title>
+		<title>Empatyczny Chatbot</title>
 	</header>
 		<section id="main">
 			
@@ -47,7 +47,7 @@
 				</div>
 		
 				
-				<form:form modelAttribute="Answer" method="POST" action="/Chatbot/" >
+				<form:form modelAttribute="Answer" method="POST" action="/" >
 					<form:input class="form-control" path="sentence" />
 					<input class="btn" type="submit" value="Submit"/>
 				</form:form>

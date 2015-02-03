@@ -11,12 +11,6 @@
 		<tomcat.version>8.0.3</tomcat.version>
 	</properties>-->
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>smartbear-sweden-plugin-repository</id>
-			<url>http://www.soapui.org/repository/maven2/</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<dependencies>
 		<dependency>
@@ -56,9 +50,6 @@
 			<artifactId>jsp-api</artifactId>
 			<version>2.0</version>
 		</dependency>
-
-
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -114,7 +105,6 @@
 			<version>4.0.3.RELEASE</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -125,26 +115,10 @@
 			<artifactId>junit</artifactId>
 			<version>4.4</version>
 		</dependency>
-
-
-
-
 	</dependencies>
-
-
-
 	<build>
 		<finalName>Chatbot</finalName>
 		<plugins>
-			<!--<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<warFile>target/Chatbot.war</warFile>
-				</configuration>
-			</plugin>-->
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -175,54 +149,6 @@
 					</execution>
 				</executions>
 			</plugin>
-				<plugin>
-					<groupId>com.smartbear.soapui</groupId>
-					<artifactId>soapui-maven-plugin</artifactId>
-					<version>4.6.1</version>
-					<!--<configuration>
-						<projectFile>simple-test-soapui-project.xml</projectFile>
-						<projectProperties>
-							<value>message=Hello World!</value>
-						</projectProperties>
-					</configuration>-->
-				</plugin>
-
-
-
-
-			<!--<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
-					<warName>${project.artifactId}</warName>
-				</configuration>
-			</plugin>-->
-			<!--<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.3</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals><goal>copy</goal></goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>com.github.jsimone</groupId>
-									<artifactId>webapp-runner</artifactId>
-									<version>7.0.57.1</version>
-									<destFileName>webapp-runner.jar</destFileName>
-								</artifactItem>
-							</artifactItems>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>-->
-
-
 		</plugins>
 	</build>
 </project>
