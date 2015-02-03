@@ -1,16 +1,27 @@
-# Eclipse
-.classpath
-.project
-.settings/
+# Maven-generated files
+**/target
 
-# Intellij
-.idea/
-*.iml
-*.iws
+# Eclipse-generated files
+**/.settings
+**/.project
+**/.classpath
+**/.checkstyle
+**/bin
 
-# Mac
-.DS_Store
+# Idea-generated files
+**/*.iml
+**/.idea
+**/atlassian-ide-plugin.xml
 
-# Maven
-log/*
-target/*
+# FitNesse-generated files
+**/ErrorLogs
+**/testResults
+**/RecentChanges
+**/testProgress
+
+#graph_plotter_generated_files
+**/graph_plotter*.png
+**/graph_plotter*.txt
+
+# Never push any logs
+**/logs/*.log
