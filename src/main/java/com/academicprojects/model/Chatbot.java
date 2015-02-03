@@ -215,21 +215,24 @@ public class Chatbot {
 	}
 
     public String prepareAnswer() throws Exception {
-        String userAnswer = preprocessUserAnswer();
+		String userAnswer = conversation.getLastAnswer().replace("  ", " ").replace("_", " ");
 		String userAnswerToLowerCaseWithoutPolishChars = replacePolishCharsAndLowerCase(userAnswer).toLowerCase();
 		TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswerToLowerCaseWithoutPolishChars);
 		if (typeOfSentence.equals(TypeOfSentence.QUESTION)) {
-			return answerQuestion(userAnswer);
+			return answerQuestion(userAnswerToLowerCaseWithoutPolishChars);
 		}
 		if (typeOfSentence.equals(FEELING_STATEMENT)) {
-			return getChatbotResponseForFeelingSentence(userAnswer);
+			return getChatbotResponseForFeelingSentence(userAnswerToLowerCaseWithoutPolishChars);
 		}
-		int userAnswerNote = catchUserAnswerNote(userAnswer);
+		int userAnswerNote = catchUserAnswerNote(userAnswerToLowerCaseWithoutPolishChars);
         System.out.println("user answer note: "+userAnswerNote);
         int chooseAnswer = (int)(Math.random()*10);
+		System.out.println("chooseAnswer points:" + chooseAnswer);
+		System.out.println("user answer :" + userAnswer.toLowerCase());
 		//losowa logika - zwraca -1 gry nie zaleziono patternu - to nie blad
 		String pharaprasizedAnswer = pharaprasize(userAnswer.toLowerCase());
 		String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+		System.out.println("paraprase: " + pharaprasizedAnswer);
 		switch (chooseAnswer) {
 			//question:
 
@@ -256,7 +259,7 @@ public class Chatbot {
 		List<String> answerList = brain.getFeelingStatement().get(verb);
 		int size = answerList.size();
 		String sentence = answerList.get(RandomSearching.generateRandomIndex(size));
-		String pharaprasize = pharaprasize(userAnswer);
+		String pharaprasize = pharaprasize(userAnswer).toLowerCase();
 		String output = sentence.replace("<paraphrase>", pharaprasize.replace(". ",""));
 		return output;
 	}

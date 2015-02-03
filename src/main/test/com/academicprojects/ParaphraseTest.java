@@ -48,7 +48,7 @@ public class ParaphraseTest {
 
         Brain brain = new Brain();
         User user = new User();
-        user.setGender(Gender.FEMALE);
+        user.setGender(Gender.MALE);
         Chatbot chatbot = new Chatbot(user);
         chatbot.brain = brain;
         chatbot.brain.setUpBrain();
