@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+			<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="ISO-8859-1"%>
 
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
@@ -20,11 +20,15 @@
 		objDiv.scrollTop = objDiv.scrollHeight;
 
 	}
+	function keepFocus() {
+		document.getElementById("answerArea").focus();
+	};
 	
 	</script>
 	</head>
 	
-	<body onload="scrollBox();">
+	<body onload="scrollBox();
+					keepFocus();">
 	<br>
 	<br>
 	<header>
@@ -46,12 +50,10 @@
 
 				</div>
 		
-				
-				<form:form modelAttribute="Answer" method="POST" action="/" >
-					<form:input class="form-control" path="sentence" />
-					<input class="btn" type="submit" value="Submit"/>
-				</form:form>
-		
+					<form:form modelAttribute="Answer" method="POST" action="/" >
+						<form:input class="form-control" path="sentence" id="answerArea"/>
+						<input class="btn" type="submit" value="Submit"/>
+					</form:form>
 			</div>
 				
 				
