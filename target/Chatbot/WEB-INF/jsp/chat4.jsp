@@ -29,7 +29,14 @@
 	
 	<body onload="scrollBox();
 					keepFocus();">
-	<br>
+	<div class="menu">
+		<form:form method="GET" action="/reload" >
+			<input class="btn" type="submit" name="reload" value="Nowa rozmowa" title="Nowa rozmowa"/>
+		</form:form>
+	</div>
+	<%--<div class="menu">
+		<input type="submit" class="button_menu" title="Nowa rozmowa" value=""/>
+	</div>--%>
 	<br>
 	<header>
 		<title>Empatyczny Chatbot</title>
@@ -50,7 +57,7 @@
 
 				</div>
 		
-					<form:form modelAttribute="Answer" method="POST" action="/" >
+					<form:form class="submit" modelAttribute="Answer" method="POST" action="/" >
 						<form:input class="form-control" path="sentence" id="answerArea"/>
 						<input class="btn" type="submit" value="Submit"/>
 					</form:form>
