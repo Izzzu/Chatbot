@@ -263,29 +263,71 @@ public class Chatbot {
 		String output = sentence.replace("<paraphrase>", pharaprasize.replace(". ",""));
 		return output;
 	}
+	
+	private String getQuestionAboutOpinion(String sentenceWithReplacedQuestionMarks) throws UnrecognizeUserAnswerException {
+		String answerForOpinionQuestion = "";
+		int size = brain.getPatternAnswerForOpinionQuestion().size();
+		String opinionVerb = questionAboutOpinion(sentenceWithReplacedQuestionMarks);
+		if (!opinionVerb.isEmpty()) {
+			answerForOpinionQuestion = answerForQuestionAboutOpinion(size, sentenceWithReplacedQuestionMarks, opinionVerb);
+		}
+		return answerForOpinionQuestion;
+	}
 
 	public String answerQuestion(String userAnswer) {
 		String[] ar = {userAnswer};
 		String[] sentences = userAnswer.split("//?");
 		int size = brain.getPatternAnswerForOpinionQuestion().size();
 		try {
-			if(sentences.length>0)  {
-			String sentenceWithReplacedQuestionMarks = sentences[0].replace("?", " ").toLowerCase();
-			String opinionVerb = questionAboutOpinion(sentenceWithReplacedQuestionMarks);
-			if (!opinionVerb.isEmpty()) {
-				return answerForQuestionAboutOpinion(size, sentenceWithReplacedQuestionMarks, opinionVerb);
-			}
-			for(String word: sentenceWithReplacedQuestionMarks.split(" ")) {
-
-				if (verbIsInDictionary(word) && verbIsInPerson(word, GrammaPerson.SECOND)) {
+			if (sentences.length > 0) {
+				String sentenceWithReplacedQuestionMarks = sentences[0].replace("?", " ").toLowerCase();
+				String answerForOpinionQuestion = getQuestionAboutOpinion(sentenceWithReplacedQuestionMarks);
+				if(!answerForOpinionQuestion.isEmpty()) return answerForOpinionQuestion;
+				
+				String[] wordsInSentence = sentenceWithReplacedQuestionMarks.split(" ");
+				if (isPersonalQuestion(wordsInSentence)) {
 					return brain.getPatternAnswersForPersonalQuestion().get(RandomSearching.generateRandomIndex(size));
+					
 				}
+				String answer = getAnswerForQuestion(sentenceWithReplacedQuestionMarks);
+				if (!answer.isEmpty()) return answer;
 			}
-		}
 		} catch (UnrecognizeUserAnswerException e1) {
 			return "Bardzo proszę pisz jaśniej. Twoja wypowiedź jest bardzo chaotyczna.";
 		}
 		return "Sformułuj proszę pytanie inaczej.";
+	}
+
+	private boolean isPersonalQuestion(String[] wordsInSentence) {
+		for (String word : wordsInSentence) {
+
+            if (verbIsInDictionary(word) && verbIsInPerson(word, GrammaPerson.SECOND)) {
+				return true;
+            }
+        }
+		return false;
+	}
+
+	public String getAnswerForQuestion(String sentenceWithReplacedQuestionMarks) {
+		String answer = "";
+		String[] wordsInSentence = sentenceWithReplacedQuestionMarks.split(" ");
+		Map<Integer,String> mapIndexToChangedVerb = findVerbsRightToParaphrasize(wordsInSentence);
+		if (mapIndexToChangedVerb.values().contains("")) return "";
+		StringBuffer paraphrasizedQuestion = changeVerbsIntoOpposite(wordsInSentence, mapIndexToChangedVerb, 0);
+		if (!paraphrasizedQuestion.toString().isEmpty()) {
+            answer = answer + paraphrasizedQuestion + ". "+ getChatbotAnswerFromAnswerPatterns(0);
+        }
+		if (answer.isEmpty()) {
+			return "";
+		}
+		else {
+			List<String> questions = Arrays.asList("czy", "dlaczego", "kiedy", "jak", "po", "czym", "co", "o");
+			if (wordsInSentence.length >= 1 && !questions.contains(wordsInSentence[0])) {
+				answer = "czy " + answer;
+			}
+			answer = "Pytasz "+answer;
+		}
+		return answer;
 	}
 
 	private String answerForQuestionAboutOpinion(int size, String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizeUserAnswerException {
@@ -382,8 +424,8 @@ public class Chatbot {
 			Map<Integer, String> mapIndexToChangedVerb;
 			mapIndexToChangedVerb = findVerbsRightToParaphrasize(words);
 			if (mapIndexToChangedVerb.isEmpty() || mapIndexToChangedVerb.values().contains("")) return "";
-
-			return createPharaprasizedAnswer(words, mapIndexToChangedVerb);
+			String begin = PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ";
+			return createPharaprasizedAnswer(words, mapIndexToChangedVerb, begin);
 		}
         return "";
     }
@@ -413,9 +455,9 @@ public class Chatbot {
 		return mapIndexToChangedVerb;
 	}
 
-	private String createPharaprasizedAnswer(String[] words, Map<Integer, String> mapIndexToChangedVerb) {
+	private String createPharaprasizedAnswer(String[] words, Map<Integer, String> mapIndexToChangedVerb, String begin) {
 		StringBuffer sb = new StringBuffer();
-		sb.append(PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ");
+		sb.append(begin);
 
 		sb.append(negativeSentence(words, mapIndexToChangedVerb));
 		LinkedList<Integer> indexes = new LinkedList<Integer>(mapIndexToChangedVerb.keySet());
@@ -506,14 +548,9 @@ public class Chatbot {
         return brain.getDictionary().findVerbFromMainWordAndMatchOppositePerson(record.getForm().getGrammaPerson(), record.getMainWord(), record.getForm().getSingularOrPlural(), record.getForm().getVerbForm(), record.getForm().getGenre());
     }
 
-    private String getChatbotAnswerFromAnswerPatterns(int userAnswerNote) {
-        List<String> suitedAnswers = new LinkedList<String>();
-        for(ChatbotAnswer chatbotAnswer : brain.chatbotAnswers ) {
-            if (chatbotAnswer.userAnswerNote == userAnswerNote) {
-                    suitedAnswers.add(chatbotAnswer.getSentence());
-            }
-        }
-        if (suitedAnswers.size()!=0) {
+    public String getChatbotAnswerFromAnswerPatterns(int userAnswerNote) {
+        List<String> suitedAnswers = getSuitedAnswersForNote(userAnswerNote);
+		if (suitedAnswers.size()!=0) {
             int randomIndex = RandomSearching.generateRandomIndex(suitedAnswers.size());
 
             return suitedAnswers.get(randomIndex);
@@ -527,6 +564,16 @@ public class Chatbot {
 			return sentence;
         }
     }
+
+	private List<String> getSuitedAnswersForNote(int userAnswerNote) {
+		List<String> suitedAnswers = new LinkedList<>();
+		for(ChatbotAnswer chatbotAnswer : brain.getChatbotAnswers() ) {
+            if (chatbotAnswer.userAnswerNote == userAnswerNote) {
+                    suitedAnswers.add(chatbotAnswer.getSentence());
+            }
+        }
+		return suitedAnswers;
+	}
 
 
 	private String preprocessUserAnswer() {

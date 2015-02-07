@@ -39,13 +39,13 @@ div.container #textarea {
 }
 
 div.container #textarea p {
- height:25px; 
+ height:auto;
+ min-height: 26px;
  border:0 none;
- background-color: #FFFFCC; 
- margin-top: 0px;
+ background-color: #FFFFCC;
+ margin-top: 1px;
  margin-bottom:1px;
  padding-left: 7px;
- min-height: 25px;
 }
 
 p.user {

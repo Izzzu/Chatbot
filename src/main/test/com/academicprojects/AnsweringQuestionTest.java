@@ -3,13 +3,16 @@ package com.academicprojects;
 
 import com.academicprojects.model.Brain;
 import com.academicprojects.model.Chatbot;
+import com.academicprojects.model.ChatbotAnswer;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import org.fest.assertions.api.Assertions;
 import org.junit.Test;
 import org.mockito.Mockito;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Set;
 
 import static org.mockito.Mockito.doReturn;
 
@@ -56,5 +59,19 @@ public class AnsweringQuestionTest {
         chatbot.brain = brain;
         Assertions.assertThat(patternAnswerForOpinionQuestion).hasSize(1);
         Assertions.assertThat(chatbot.answerQuestion(" Czy uważasz, że rozmowa z Tobą mi pomoże?")).isEqualTo("A Ty uważasz, że rozmowa z tobą mi pomoże?");
+    }
+
+
+
+    @Test
+    public void shouldAnswerForStandardQuestionWithParaphrase() throws Exception {
+        chatbot = new Chatbot();
+        PolishDictionary dictionary = new PolishDictionary();
+        ChatbotAnswer chatbotAnswer = new ChatbotAnswer("", 0);
+        Set<ChatbotAnswer> patterns = new HashSet<>(Arrays.asList(chatbotAnswer));
+        doReturn(patterns).when(brain).getChatbotAnswers();
+        doReturn(dictionary).when(brain).getDictionary();
+        chatbot.brain = brain;
+        Assertions.assertThat(chatbot.getAnswerForQuestion("co tam")).isEqualTo("Pytasz co tam.");
     }
 }

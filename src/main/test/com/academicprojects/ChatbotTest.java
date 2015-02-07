@@ -28,6 +28,13 @@ public class ChatbotTest {
         Assert.assertEquals(5, actual);
     }
 
+    @Test
+    public void shouldCatchUserAnswer() throws Exception {
+        String useranswer = "moj syn umarl";
+        int actual = chatbot.catchUserAnswerNote(useranswer);
+        //System.out.println("actual: "+ actual);
+        Assert.assertEquals(1, actual);
+    }
 
     /*@Test
     public void shouldThrowExceptionWhen*/
@@ -71,5 +78,6 @@ public class ChatbotTest {
             org.fest.assertions.api.Assertions.assertThat(answer).isIn(chatbotAnswersForQuestions);
         }
     }
+
 
 }
