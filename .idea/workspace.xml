@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/UserMoodTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/chatbotAnswersForOneWord.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Brain.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Brain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Brain.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Brain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$1.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$2.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$3.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$4.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Chatbot.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Chatbot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PatternAnswer.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PatternAnswer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternAnswer.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternAnswer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/TypeOfSentence.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/TypeOfSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/TypeOfSentence.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/TypeOfSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/AnsweringQuestionTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/AnsweringQuestionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/BrainTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/BrainTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/ParaphraseTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/ParaphraseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternAnswer.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternAnswer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/chatbotanswers.csv" afterPath="$PROJECT_DIR$/src/main/resources/chatbotanswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/chatbotanswers.csv" afterPath="$PROJECT_DIR$/target/classes/chatbotanswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/exceptionChatbotAnswers.csv" afterPath="$PROJECT_DIR$/src/main/resources/exceptionChatbotAnswers.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/useranswers.csv" afterPath="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/useranswers.csv" afterPath="$PROJECT_DIR$/target/classes/useranswers.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -63,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="useranswers.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/useranswers.csv">
+      <file leaf-file-name="patternAnswersForFeelingStatementsWithWant.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithWant.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41588786" vertical-offset="5168" max-vertical-offset="6048">
-              <caret line="297" column="14" selection-start-line="297" selection-start-column="14" selection-end-line="297" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.21028037" vertical-offset="0" max-vertical-offset="428">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -268,9 +242,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -759,6 +730,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default" />
       </pane>
     </panes>
   </component>
@@ -1556,7 +1530,8 @@
       <workItem from="1423416461519" duration="1864000" />
       <workItem from="1423418369092" duration="1884000" />
       <workItem from="1423420731829" duration="1126000" />
-      <workItem from="1423422811727" duration="393000" />
+      <workItem from="1423422811727" duration="1610000" />
+      <workItem from="1423425220516" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1676,7 +1651,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401496000" />
+    <option name="totallyTimeSpent" value="403006000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1952,13 +1927,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0186915" vertical-offset="436" max-vertical-offset="864">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chatbot.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9108434" vertical-offset="378" max-vertical-offset="1026">
@@ -2009,13 +1977,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.classpath">
@@ -2179,6 +2147,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="36" max-vertical-offset="504">
           <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2242,13 +2211,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dictionary.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5684754" vertical-offset="1720886" max-vertical-offset="1771632">
           <caret line="95617" column="8" selection-start-line="95617" selection-start-column="8" selection-end-line="95617" selection-end-column="8" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java">
@@ -2270,6 +2239,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29439253" vertical-offset="0" max-vertical-offset="428">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2295,13 +2265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithWant.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21028037" vertical-offset="0" max-vertical-offset="428">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.751938" vertical-offset="4263" max-vertical-offset="12258">
@@ -2312,8 +2275,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/useranswers.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41588786" vertical-offset="5168" max-vertical-offset="6048">
-          <caret line="297" column="14" selection-start-line="297" selection-start-column="14" selection-end-line="297" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.176" vertical-offset="5330" max-vertical-offset="6048">
+          <caret line="301" column="23" selection-start-line="301" selection-start-column="23" selection-end-line="301" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6253102" vertical-offset="0" max-vertical-offset="576">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithWant.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21028037" vertical-offset="0" max-vertical-offset="428">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
