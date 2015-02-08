@@ -54,7 +54,7 @@ public class ParaphraseTest {
         chatbot.brain.setUpBrain();
         PolishDictionary dictionary = new PolishDictionary();
 
-        Assertions.assertThat(chatbot.pharaprasize(userAnswer)).contains(chatbotAnswer);
+        Assertions.assertThat(chatbot.paraphrase(userAnswer, false)).contains(chatbotAnswer);
     }
 
     @Test
@@ -69,7 +69,7 @@ public class ParaphraseTest {
         chatbot.brain.setUpBrain();
         PolishDictionary dictionary = new PolishDictionary();
 
-        assertEquals("", chatbot.pharaprasize("Chyba nie"));
+        assertEquals("", chatbot.paraphrase("Chyba nie", false));
     }
 
 

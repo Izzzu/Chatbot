@@ -26,7 +26,7 @@ public class BrainTest {
 
     @Test
     public void shouldFillChatbotAnswersListFromFile() throws IOException {
-        Assert.assertEquals(37, brain.getChatbotAnswers().size());
+        Assert.assertEquals(46, brain.getChatbotAnswers().size());
     }
 
     @Test

@@ -6,10 +6,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.sql.SQLException;
 import java.util.*;
 
@@ -18,6 +15,7 @@ import java.util.*;
 public class Brain {
     public static final int NEUTRAL_ANSWER = 0;
     List<PatternAnswer> patterns = new ArrayList<PatternAnswer>();
+    List<PatternAnswer> oneWordPatterns = new ArrayList<PatternAnswer>();
     Set<ChatbotAnswer> chatbotAnswers = new HashSet<ChatbotAnswer>();
     Set<ChatbotAnswer> neutralChatbotAnswer = new HashSet<ChatbotAnswer>();
     List<ChatbotAnswer> exceptionsChatbotAnswers = new LinkedList<ChatbotAnswer>();
@@ -25,6 +23,7 @@ public class Brain {
     private LinkedList<String> patternAnswersForPersonalQuestion = new LinkedList<String>();
     private LinkedList<String> patternAnswerForOpinionQuestion = new LinkedList<String>();
     private Map<String, List<String>> feelingStatement = new HashMap<String, List<String>>();
+    private List<String> patternsForOneWordAnswers = new LinkedList<>();
     private ActiveListening activeListening;
     PolishDictionary dictionary = new PolishDictionary();
 
@@ -47,11 +46,23 @@ public class Brain {
             fillFeelingStatementMap("jestem", new File("src/main/resources/patternAnswersForFeelingStatementsWithBe.csv"));
             fillFeelingStatementMap("czuję", new File("src/main/resources/patternAnswersForFeelingStatementsWithFeel.csv"));
             fillFeelingStatementMap("chcę", new File("src/main/resources/patternAnswersForFeelingStatementsWithWant.csv"));
+            fillPatternsForOneWordAnswer(new File("src/main/resources/chatbotAnswersForOneWord.csv"));
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
 
         }
+    }
+
+    private void fillPatternsForOneWordAnswer(File file) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String s = null;
+        while ((s=br.readLine()) != null)
+        {
+            String [] tab = s.split(" ");
+            patternsForOneWordAnswers.add(tab[0].replace("_", " "));
+        }
+        br.close();
     }
 
     private void fillFeelingStatementMap(String verb, File file) throws IOException {
@@ -133,8 +144,25 @@ public class Brain {
         while ((s=br.readLine()) != null)
         {
             String [] tab = s.split(" ");
-            patterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0].replace("_", " "), Integer.valueOf(tab[3])));
+            if(tab[0].contains("_")) {
+                patterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0].replace("_", " "), Integer.valueOf(tab[3])));
+            }
+            else {
+                oneWordPatterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0], Integer.valueOf(tab[3])));
+            }
         }
+        Comparator<PatternAnswer> comparator = new Comparator<PatternAnswer>() {
+            @Override
+            public int compare(PatternAnswer s, PatternAnswer t1) {
+                int firstSentenceLength = s.getSentence().length();
+                int secondSentenceLength = t1.getSentence().length();
+                if(firstSentenceLength > secondSentenceLength) return -1;
+                if(firstSentenceLength < secondSentenceLength) return 1;
+                return 0;
+            }
+        };
+        Collections.sort(patterns,comparator);
+        Collections.sort(oneWordPatterns, comparator);
         br.close();
     }
 
@@ -198,6 +226,15 @@ public class Brain {
         List<String> paraphraseStart = activeListening.getParaphraseStart();
         return paraphraseStart.get(RandomSearching.generateRandomIndex(paraphraseStart.size()));
 
+    }
+
+    public PatternAnswer getOneWordPattern(String word) {
+        for(PatternAnswer answer: getOneWordPatterns()) {
+            if(answer.getSentence().equals(word)) {
+                return answer;
+            }
+        }
+        return null;
     }
 
 

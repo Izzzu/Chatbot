@@ -72,6 +72,6 @@ public class AnsweringQuestionTest {
         doReturn(patterns).when(brain).getChatbotAnswers();
         doReturn(dictionary).when(brain).getDictionary();
         chatbot.brain = brain;
-        Assertions.assertThat(chatbot.getAnswerForQuestion("co tam")).isEqualTo("Pytasz co tam.");
+        Assertions.assertThat(chatbot.getAnswerForQuestion("co tam")).isEqualTo("Pytasz co tam. ");
     }
 }

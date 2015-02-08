@@ -2,9 +2,12 @@ package com.academicprojects;
 
 import com.academicprojects.model.Brain;
 import com.academicprojects.model.Chatbot;
+import com.academicprojects.model.TypeOfSentence;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class ChatbotTest {
 
@@ -20,28 +23,24 @@ public class ChatbotTest {
         chatbot.brain.setUpBrain();
 
     }
-    @Test
-    public void testCatchUserAnswer() throws Exception {
-        String useranswer = "finanse";
-        int actual = chatbot.catchUserAnswerNote(useranswer);
-        //System.out.println("actual: "+ actual);
-        Assert.assertEquals(5, actual);
-    }
-
-    @Test
-    public void shouldCatchUserAnswer() throws Exception {
-        String useranswer = "moj syn umarl";
-        int actual = chatbot.catchUserAnswerNote(useranswer);
-        //System.out.println("actual: "+ actual);
-        Assert.assertEquals(1, actual);
-    }
-
     /*@Test
     public void shouldThrowExceptionWhen*/
     @Test
     public void testPersonalityRecognizer() throws Exception {
 
         Assert.assertFalse(chatbot.brain.getPersonalityRecognizer().getPersonalityPhrases().isEmpty());
+    }
+
+    @Test
+    public void shouldRecognizeTypeOfSentenceAsSingleWord() {
+        String s = "word ";
+        assertThat(TypeOfSentence.SINGLE_WORD).isEqualTo(chatbot.recognizeTypeOfSentence(s));
+    }
+
+    @Test
+    public void shouldNotRecognizeTypeOfSentenceAsSingleWord() {
+        String s = "word cos";
+        assertThat(TypeOfSentence.SINGLE_WORD).isNotEqualTo(chatbot.recognizeTypeOfSentence(s));
     }
 
 
@@ -75,7 +74,7 @@ public class ChatbotTest {
         };
         for(String userAnswer: userAnswers) {
             String answer = chatbot.answerQuestion(userAnswer);
-            org.fest.assertions.api.Assertions.assertThat(answer).isIn(chatbotAnswersForQuestions);
+            assertThat(answer).isIn(chatbotAnswersForQuestions);
         }
     }
 
