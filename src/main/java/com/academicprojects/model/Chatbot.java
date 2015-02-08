@@ -274,8 +274,8 @@ public class Chatbot {
 		int size = answerList.size();
 		String sentence = answerList.get(RandomSearching.generateRandomIndex(size));
 		String pharaprasize = paraphrase(userAnswer, false).toLowerCase();
-		String output = sentence.replace("<paraphrase>", pharaprasize.replace(". ","").replace(".",""));
-		return output;
+		String output = sentence.replace("<paraphrase>", pharaprasize);
+		return output.replace(". ","").replace(".","");
 	}
 	
 	private String getQuestionAboutOpinion(String sentenceWithReplacedQuestionMarks) throws UnrecognizeUserAnswerException {
