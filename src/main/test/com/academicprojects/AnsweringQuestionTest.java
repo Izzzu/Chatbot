@@ -74,4 +74,16 @@ public class AnsweringQuestionTest {
         chatbot.brain = brain;
         Assertions.assertThat(chatbot.getAnswerForQuestion("co tam")).isEqualTo("Pytasz co tam. ");
     }
+
+    @Test
+    public void shouldAnswerForStandardQuestionWithParaphraseBe() throws Exception {
+        chatbot = new Chatbot();
+        PolishDictionary dictionary = new PolishDictionary();
+        String chatbotAnswer = "<paraphrase>";
+        LinkedList<String> patterns = new LinkedList<>(Arrays.asList(chatbotAnswer));
+        doReturn(patterns).when(brain).getPatternAnswersForPersonalQuestion();
+        doReturn(dictionary).when(brain).getDictionary();
+        chatbot.brain = brain;
+        Assertions.assertThat(chatbot.answerQuestion("Jesteś policjantem?")).isEqualTo(" ");
+    }
 }

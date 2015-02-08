@@ -220,7 +220,7 @@ public class Chatbot {
 		String userAnswerToLowerCaseWithoutPolishChars = replacePolishCharsAndLowerCase(userAnswer).toLowerCase();
 		TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswerToLowerCaseWithoutPolishChars);
 		if (typeOfSentence.equals(TypeOfSentence.QUESTION)) {
-			return answerQuestion(userAnswerToLowerCaseWithoutPolishChars);
+			return answerQuestion(userAnswer.toLowerCase());
 		}
 		if (typeOfSentence.equals(FEELING_STATEMENT)) {
 			return getChatbotResponseForFeelingSentence(userAnswerToLowerCaseWithoutPolishChars);
