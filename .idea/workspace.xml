@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/useranswers.csv" afterPath="$PROJECT_DIR$/target/classes/useranswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
     <ignored path="Chatbot.iws" />
@@ -37,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="patternAnswersForFeelingStatementsWithWant.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithWant.csv">
+      <file leaf-file-name="Chatbot.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21028037" vertical-offset="0" max-vertical-offset="428">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.72289157" vertical-offset="6990" max-vertical-offset="12294">
+              <caret line="438" column="74" selection-start-line="438" selection-start-column="74" selection-end-line="438" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -114,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/chatbotAnswersForOneWord.csv" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/exceptionChatbotAnswers.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
         <option value="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
       </list>
     </option>
   </component>
@@ -1531,7 +1528,7 @@
       <workItem from="1423418369092" duration="1884000" />
       <workItem from="1423420731829" duration="1126000" />
       <workItem from="1423422811727" duration="1610000" />
-      <workItem from="1423425220516" duration="293000" />
+      <workItem from="1423425220516" duration="815000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1651,7 +1648,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="403006000" />
+    <option name="totallyTimeSpent" value="403528000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1777,7 +1774,7 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>536</line>
+          <line>538</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -1796,7 +1793,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>548</line>
+          <line>550</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -1814,13 +1811,13 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>480</line>
+          <line>482</line>
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>521</line>
+          <line>523</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
@@ -1838,13 +1835,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>447</line>
+          <line>449</line>
           <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>468</line>
+          <line>470</line>
           <properties />
           <option name="timeStamp" value="73" />
         </line-breakpoint>
@@ -1868,7 +1865,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>472</line>
+          <line>474</line>
           <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
@@ -1892,25 +1889,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>565</line>
+          <line>567</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>582</line>
+          <line>584</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>600</line>
+          <line>602</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>620</line>
+          <line>622</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
@@ -2265,14 +2262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.751938" vertical-offset="4263" max-vertical-offset="12258">
-          <caret line="276" column="100" selection-start-line="276" selection-start-column="100" selection-end-line="276" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/useranswers.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.176" vertical-offset="5330" max-vertical-offset="6048">
@@ -2292,6 +2281,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21028037" vertical-offset="0" max-vertical-offset="428">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72289157" vertical-offset="6990" max-vertical-offset="12294">
+          <caret line="438" column="74" selection-start-line="438" selection-start-column="74" selection-end-line="438" selection-end-column="74" />
           <folding />
         </state>
       </provider>
