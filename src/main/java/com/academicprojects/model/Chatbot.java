@@ -436,8 +436,6 @@ public class Chatbot {
 			String changedVerb = "";
 			Map<Integer, String> mapIndexToChangedVerb;
 			mapIndexToChangedVerb = findVerbsRightToParaphrasize(words);
-			if(brain.getDictionary().getVerbs().isEmpty()) System.out.println("Empty map");
-			System.out.println(mapIndexToChangedVerb.values().toString());
 			if (mapIndexToChangedVerb.isEmpty() || mapIndexToChangedVerb.values().contains("")) return "";
 			String begin = " ";
 			if(addBeginParaphrase) begin = PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ";

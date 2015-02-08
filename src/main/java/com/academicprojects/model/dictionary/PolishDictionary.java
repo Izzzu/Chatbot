@@ -24,7 +24,7 @@ public class PolishDictionary {
     private List<String> names = new ArrayList<String>();
 
     public PolishDictionary() {
-        File file = new File("/home/izabela/projects/Chatbot/src/main/resources/dictionary.txt");
+        File file = new File("src/main/resources/dictionary.txt");
         createDictionaryFromFile(file);
         fillVerbsToPharaprase();
     }
