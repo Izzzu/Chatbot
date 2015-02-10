@@ -21,12 +21,12 @@ public class BrainTest {
 
     @Test
     public void shouldFillPatternsUserAnswersListFromFile() throws IOException {
-        Assert.assertEquals(329, brain.getPatterns().size());
+        Assert.assertEquals(274, brain.getComplexPatterns().size());
     }
 
     @Test
     public void shouldFillChatbotAnswersListFromFile() throws IOException {
-        Assert.assertEquals(46, brain.getChatbotAnswers().size());
+        Assert.assertEquals(51, brain.getChatbotAnswers().size());
     }
 
     @Test
@@ -36,22 +36,11 @@ public class BrainTest {
 
     @Test
     public void shouldFillExceptionChatbptAnswerListFromFile() throws IOException {
-        Assert.assertEquals(31, brain.getExceptionsChatbotAnswers().size());
+        Assert.assertEquals(24, brain.getExceptionsChatbotAnswers().size());
     }
 
-    @Test
-    public void shouldFilPatternAnswersForPersonalQuestionFromFile() throws IOException {
-        Assert.assertEquals(16, brain.getPatternAnswersForPersonalQuestion().size());
-    }
 
-    @Test
-    public void shouldFillMapWithAnswersForFeelingStatements() {
-        Assert.assertEquals(3, brain.getFeelingStatement().values().size());
-    }
 
-    @Test
-    public void shouldFilPatternAnswersForQuestionsAboutOpinionFromFile() throws IOException {
-        Assert.assertEquals(7, brain.getPatternAnswerForOpinionQuestion().size());
-    }
+
 
 }

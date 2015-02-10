@@ -1,16 +1,14 @@
 package com.academicprojects;
 
-import com.academicprojects.model.Brain;
-import com.academicprojects.model.Chatbot;
-import com.academicprojects.model.Gender;
-import com.academicprojects.model.User;
+import com.academicprojects.model.*;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import java.util.*;
+import java.io.IOException;
 
 import static org.fest.assertions.api.Assertions.assertThat;
+import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.doReturn;
 
 public class FeelingAnswersTest {
@@ -20,39 +18,29 @@ public class FeelingAnswersTest {
 
 
     @Test
-    public void shouldResponseForJestem() {
+    public void shouldResponseForJestem() throws NotFoundResponsesForFeelingSentence, IOException {
         User user = new User();
         user.setGender(Gender.FEMALE);
         Chatbot chatbot = new Chatbot(user);
         chatbot.brain = brain;
-
-        LinkedList<String> patterns = new LinkedList<String>(Arrays.asList("Co jest powodem tego, że<paraphrase>?"));
         doReturn(dictionary).when(brain).getDictionary();
         doReturn("").when(brain).startParaphrase();
-
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
-        map.put("jestem", patterns);
-        map.put("chcę", Arrays.asList("Dlaczego?"));
-        doReturn(map).when(brain).getFeelingStatement();
-
+        String statement = "Co jest powodem tego, że<paraphrase>?";
+        doReturn(statement).when(brain).getRandomFeelingStatementForVerb("jestem");
 
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Jestem piękna")).isEqualTo("Co jest powodem tego, że jesteś piękna?");
     }
 
     @Test
-    public void shouldResponseForChce() {
+    public void shouldResponseForChce() throws NotFoundResponsesForFeelingSentence {
         User user = new User();
         user.setGender(Gender.FEMALE);
         Chatbot chatbot = new Chatbot(user);
-
-        LinkedList<String> patterns = new LinkedList<String>(Arrays.asList("Czy to twoje najważniejsze pragnienie?"));
         doReturn(dictionary).when(brain).getDictionary();
         doReturn("").when(brain).startParaphrase();
 
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
-      //  map.put("jestem", patterns);
-        map.put("chcę", patterns);
-        doReturn(map).when(brain).getFeelingStatement();
+        String statement = "Czy to twoje najważniejsze pragnienie?";
+        doReturn(statement).when(brain).getRandomFeelingStatementForVerb(anyString());
 
         chatbot.brain = brain;
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Chcę zarabiać więcej pieniędzy.")).isEqualTo("Czy to twoje najważniejsze pragnienie?");
@@ -60,43 +48,36 @@ public class FeelingAnswersTest {
     }
 
     @Test
-    public void shouldResponseForCzuje() {
+    public void shouldResponseForCzuje() throws NotFoundResponsesForFeelingSentence {
         User user = new User();
         user.setGender(Gender.FEMALE);
         Chatbot chatbot = new Chatbot(user);
 
 
-        LinkedList<String> patterns = new LinkedList<String>(Arrays.asList("To bardzo ważne, żeby głośno mówić o swoich uczuciach."));
         doReturn(dictionary).when(brain).getDictionary();
         doReturn("").when(brain).startParaphrase();
 
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
-        //  map.put("jestem", patterns);
-        map.put("czuję", patterns);
-        doReturn(map).when(brain).getFeelingStatement();
+        String statement = "To bardzo ważne, żeby głośno mówić o swoich uczuciach.";
+        doReturn(statement).when(brain).getRandomFeelingStatementForVerb(anyString());
+
 
         chatbot.brain = brain;
-        assertThat(chatbot.getChatbotResponseForFeelingSentence("Czuję się fatalnie.")).isEqualTo("To bardzo ważne, żeby głośno mówić o swoich uczuciach.");
-        assertThat(chatbot.getChatbotResponseForFeelingSentence("Czuje się fatalnie.")).isEqualTo("To bardzo ważne, żeby głośno mówić o swoich uczuciach.");
+        assertThat(chatbot.getChatbotResponseForFeelingSentence("Czuję się fatalnie.")).isEqualTo("To bardzo ważne, żeby głośno mówić o swoich uczuciach");
 
     }
 
     @Test
-    public void shouldResponseForJestemNegation() {
+    public void shouldResponseForJestemNegation() throws NotFoundResponsesForFeelingSentence {
         User user = new User();
         user.setGender(Gender.FEMALE);
         Chatbot chatbot = new Chatbot(user);
         chatbot.brain = brain;
 
-        LinkedList<String> patterns = new LinkedList<String>(Arrays.asList("Co jest powodem tego, że<paraphrase>?"));
         doReturn(dictionary).when(brain).getDictionary();
         doReturn("").when(brain).startParaphrase();
 
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
-        map.put("jestem", patterns);
-        map.put("chcę", patterns);
-        map.put("czuję", patterns);
-        doReturn(map).when(brain).getFeelingStatement();
+        String statement = "Co jest powodem tego, że<paraphrase>?";
+        doReturn(statement).when(brain).getRandomFeelingStatementForVerb(anyString());
 
 
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Nie jestem piękna")).isEqualTo("Co jest powodem tego, że nie jesteś piękna?");
@@ -105,25 +86,6 @@ public class FeelingAnswersTest {
 
     }
 
-    @Test(expected=NullPointerException.class)
-    public void shouldNotRecognizeAsFeelingSentence() {
-        User user = new User();
-        user.setGender(Gender.FEMALE);
-        Chatbot chatbot = new Chatbot(user);
-        chatbot.brain = brain;
-
-        LinkedList<String> patterns = new LinkedList<String>(Arrays.asList("Co jest powodem tego, że<paraphrase>?"));
-        doReturn(dictionary).when(brain).getDictionary();
-        doReturn("").when(brain).startParaphrase();
-
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
-        map.put("jestem", patterns);
-        map.put("chcę", Arrays.asList("Dlaczego?"));
-        doReturn(map).when(brain).getFeelingStatement();
-
-
-        assertThat(chatbot.getChatbotResponseForFeelingSentence("Jesteś piękna")).isNotEqualTo("Co jest powodem tego, że jestem piękna?");
-    }
 
 
 }

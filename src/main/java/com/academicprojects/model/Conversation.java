@@ -1,5 +1,6 @@
 package com.academicprojects.model;
 
+import java.rmi.UnexpectedException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -104,5 +105,14 @@ public class Conversation {
 	}
 
 
-
+	public String getLastChatbotAnswer()  {
+		int size = this.getCourse().size();
+		try {
+			if (size <=1)
+				throw new UnexpectedException("Chatbot not responded yet");
+		} catch (UnexpectedException e) {
+			e.printStackTrace();
+		}
+		return this.getCourse().get(size-1);
+	}
 }

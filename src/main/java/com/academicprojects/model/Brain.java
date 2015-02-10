@@ -1,5 +1,6 @@
 package com.academicprojects.model;
 
+import com.academicprojects.model.capabilities.ConversationCapability;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import com.academicprojects.util.RandomSearching;
 import lombok.AccessLevel;
@@ -13,21 +14,14 @@ import java.util.*;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class Brain {
-    public static final int NEUTRAL_ANSWER = 0;
-    List<PatternAnswer> patterns = new ArrayList<PatternAnswer>();
+    private ConversationCapability conversationCapability;
+    List<PatternAnswer> complexPatterns = new ArrayList<PatternAnswer>();
     List<PatternAnswer> oneWordPatterns = new ArrayList<PatternAnswer>();
     Set<ChatbotAnswer> chatbotAnswers = new HashSet<ChatbotAnswer>();
-    Set<ChatbotAnswer> neutralChatbotAnswer = new HashSet<ChatbotAnswer>();
     List<ChatbotAnswer> exceptionsChatbotAnswers = new LinkedList<ChatbotAnswer>();
     PersonalityRecognizer personalityRecognizer = new PersonalityRecognizer();
-    private LinkedList<String> patternAnswersForPersonalQuestion = new LinkedList<String>();
-    private LinkedList<String> patternAnswerForOpinionQuestion = new LinkedList<String>();
-    private Map<String, List<String>> feelingStatement = new HashMap<String, List<String>>();
-    private List<String> patternsForOneWordAnswers = new LinkedList<>();
     private ActiveListening activeListening;
     PolishDictionary dictionary = new PolishDictionary();
-
-
 
     public void setUpBrain() throws IOException {
         try {
@@ -36,17 +30,13 @@ public class Brain {
 //            getPersonalityPhrasesFromDatabase(conn);
 //            getExceptionsChatbotAnswersFromDatabase(conn);
 //            getPersonalitiesFromDatabase(conn);
+            conversationCapability = new ConversationCapability();
             getUserAnswersFromFile(new File("src/main/resources/useranswers.csv"));
             getChatbotAnswersFromFile(new File("src/main/resources/chatbotanswers.csv"));
             getPersonalityPhrasesFromFile(new File("src/main/resources/personalityphrases.csv"));
             getExceptionAnswersFromFile(new File("src/main/resources/exceptionChatbotAnswers.csv"));
-            fillPatternAnswersForPersonalQuestions(new File("src/main/resources/patternForPersonalQuestions.csv"));
-            fillPatternAnswersForOpinionQuestions(new File("src/main/resources/patternAnswersForQuestionsAboutOpinion.csv"));
             getParaphrases(new File("src/main/resources/paraphrases.csv"));
-            fillFeelingStatementMap("jestem", new File("src/main/resources/patternAnswersForFeelingStatementsWithBe.csv"));
-            fillFeelingStatementMap("czuję", new File("src/main/resources/patternAnswersForFeelingStatementsWithFeel.csv"));
-            fillFeelingStatementMap("chcę", new File("src/main/resources/patternAnswersForFeelingStatementsWithWant.csv"));
-            fillPatternsForOneWordAnswer(new File("src/main/resources/chatbotAnswersForOneWord.csv"));
+
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -54,40 +44,6 @@ public class Brain {
         }
     }
 
-    private void fillPatternsForOneWordAnswer(File file) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String s = null;
-        while ((s=br.readLine()) != null)
-        {
-            String [] tab = s.split(" ");
-            patternsForOneWordAnswers.add(tab[0].replace("_", " "));
-        }
-        br.close();
-    }
-
-    private void fillFeelingStatementMap(String verb, File file) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String s = null;
-        List<String> list = new ArrayList<String>();
-        while ((s=br.readLine()) != null)
-        {
-            String [] tab = s.split(" ");
-            list.add(tab[0].replace("_", " "));
-        }
-        feelingStatement.put(verb, list);
-        br.close();
-    }
-
-    private void fillPatternAnswersForOpinionQuestions(File file) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String s = null;
-        while ((s=br.readLine()) != null)
-        {
-            String [] tab = s.split(" ");
-            patternAnswerForOpinionQuestion.add(tab[0].replace("_", " "));
-        }
-        br.close();
-    }
 
     private void getParaphrases(File file) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
@@ -145,7 +101,7 @@ public class Brain {
         {
             String [] tab = s.split(" ");
             if(tab[0].contains("_")) {
-                patterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0].replace("_", " "), Integer.valueOf(tab[3])));
+                complexPatterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0].replace("_", " "), Integer.valueOf(tab[3])));
             }
             else {
                 oneWordPatterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0], Integer.valueOf(tab[3])));
@@ -161,22 +117,9 @@ public class Brain {
                 return 0;
             }
         };
-        Collections.sort(patterns,comparator);
+        Collections.sort(complexPatterns,comparator);
         Collections.sort(oneWordPatterns, comparator);
         br.close();
-    }
-
-    private void fillPatternAnswersForPersonalQuestions(File file) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String s = null;
-        while ((s=br.readLine()) != null)
-        {
-            String [] tab = s.split(" ");
-            patternAnswersForPersonalQuestion.add(tab[0].replace("_", " "));
-        }
-        br.close();
-
-
     }
 
     /*private void getPersonalityPhrasesFromDatabase(Connection conn) throws SQLException {
@@ -208,7 +151,7 @@ public class Brain {
         ps = conn.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
-            patterns.add(new PatternAnswer(rs.getInt(4), rs.getNString(2).replace("_", " "), rs.getInt(5)));
+            complexPatterns.add(new PatternAnswer(rs.getInt(4), rs.getNString(2).replace("_", " "), rs.getInt(5)));
         }
     }
 
@@ -235,6 +178,37 @@ public class Brain {
             }
         }
         return null;
+    }
+
+    public String getRandomFeelingStatementForVerb(String verb) throws NotFoundResponsesForFeelingSentence {
+        List<String> feelingStatementsForVerb = conversationCapability.getFeelingStatementsForVerb(verb);
+        int size = feelingStatementsForVerb.size();
+        if(size<=0) {
+            throw new NotFoundResponsesForFeelingSentence(verb);
+        }
+        int randomIndex = RandomSearching.generateRandomIndex(size);
+        return feelingStatementsForVerb.get(randomIndex);
+    }
+
+    public String getRandomAnswerForOpinionQuestion() throws NotFoundResponsesForOpinionQuestion {
+        List<String> answersForOpinionQuestion = conversationCapability.getPatternAnswerForOpinionQuestion();
+        int size = answersForOpinionQuestion.size();
+        if(size<=0) {
+            throw new NotFoundResponsesForOpinionQuestion();
+        }
+        int randomIndex = RandomSearching.generateRandomIndex(size);
+        return answersForOpinionQuestion.get(randomIndex);
+    }
+
+    public String getRandomPatteRnForOneWordAnswer() throws NotFoundResponseForOneWordAnswer {
+        List<String> answersForOneWordSentence = conversationCapability.getPatternsForOneWordAnswers();
+        int size = answersForOneWordSentence.size();
+        if(size<=0) {
+            throw new NotFoundResponseForOneWordAnswer();
+        }
+        int randomIndex = RandomSearching.generateRandomIndex(size);
+        return answersForOneWordSentence.get(randomIndex);
+
     }
 
 
