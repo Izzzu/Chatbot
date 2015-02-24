@@ -1,0 +1,63 @@
+[
+    {
+      "userAnswer": "dobranoc",
+      "chatbotResponses": ["dobranoc", "Miłej nocy", "Kolorowych snów", "Dziękuję za rozmowę. Dobranoc."]
+    },
+  {
+    "userAnswer": "do widzenia",
+    "chatbotResponses": ["Do widzenia", "Do zobaczenia", "Kolorowych snów", "Dziękuję za rozmowę."]
+  },
+  {
+    "userAnswer": "co slychac",
+    "chatbotResponses": ["Dziękuję, wszystko w porządku. A u Ciebie?", "Wszystko dobrze, dzięki."]
+  },
+  {
+    "userAnswer": "co u ciebie",
+    "chatbotResponses": ["Dziękuję, wszystko w porządku. A u Ciebie?", "Wszystko dobrze, dzięki.", "W porządku, a u Ciebie?"]
+  },
+  {
+    "userAnswer": "co porabiasz",
+    "chatbotResponses": ["Rozmawiam z ludźmi.", "Trochę się nudzę, a Ty?"]
+  },
+  {
+    "userAnswer": "ile masz lat",
+    "chatbotResponses": ["A na ile wyglądam?", "pisiont"]
+  },
+  {
+    "userAnswer": "jaki jest twoj ulubiony kolor",
+    "chatbotResponses": ["czerwony", "żółty", "zielony"]
+  },
+  {
+    "userAnswer": "jaki masz kolor oczu",
+    "chatbotResponses": ["niebieski", "zielony"]
+  },
+  {
+    "userAnswer": "kto cie stworzyl",
+    "chatbotResponses": ["pewien programista:)"]
+  },
+  {
+    "userAnswer": "kto cie napisał",
+    "chatbotResponses": ["pewien programista:)"]
+  },
+  {
+    "userAnswer": "czesc",
+    "chatbotResponses": ["hej", "hejka", "witam"]
+  },
+  {
+    "userAnswer": "0",
+    "chatbotResponses": [
+      "Witaj! Jestem empatycznym chatbotem. Nazywam się Zbyszek, a Ty?",
+      "Dzień dobry, jestem Chatbot Zbyszek, jak Ci na imię?",
+      "Hej, zapraszam do rozmowy. Mam na imię Zbyszek, a Ty?",
+      "Witaj, jestem Chatbotem. Chętnie z Tobę porozmawiam. Jak masz na imię?"
+    ]
+  },
+  {
+    "userAnswer": "2",
+    "chatbotResponses": [
+      "A jak Twoje dzisiejsze samopoczucie?",
+      "A jak się dzisiaj czujesz?",
+      "A jak Twój dzisiejszy nastrój?"
+    ]
+  }
+]

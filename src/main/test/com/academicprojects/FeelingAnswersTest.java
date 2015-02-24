@@ -1,6 +1,7 @@
 package com.academicprojects;
 
 import com.academicprojects.model.*;
+import com.academicprojects.model.capabilities.ActiveListening;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -84,6 +85,22 @@ public class FeelingAnswersTest {
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Nie chcę tego")).isEqualTo("Co jest powodem tego, że nie chcesz tego?");
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Nie czuję tego")).isEqualTo("Co jest powodem tego, że nie czujesz tego?");
 
+    }
+
+    @Test
+    public void shouldResponseForNegativeFeeling() throws Exception {
+        User user = new User();
+        user.setGender(Gender.FEMALE);
+        ActiveListening activeListening = new ActiveListening();
+        Chatbot chatbot = new Chatbot(user);
+        doReturn(dictionary).when(brain).getDictionary();
+        doReturn("").when(brain).startParaphrase();
+        doReturn(false).when(brain).isPronoun(anyString());
+        String statement = "Często czujesz, że<paraphrase>?";
+        doReturn(statement).when(brain).getRandomFeelingStatementForVerb(anyString());
+
+        chatbot.brain = brain;
+        assertThat(chatbot.prepareAnswer("Nie chcę już żyć.")).isEqualTo("Często czujesz, że nie chcesz już żyć?");
     }
 
 

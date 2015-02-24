@@ -6,19 +6,22 @@ import com.academicprojects.model.TypeOfSentence;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import static org.fest.assertions.api.Assertions.assertThat;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.doReturn;
 
 public class ChatbotTest {
 
-    Brain brain;
+    Brain brain = Mockito.spy(new Brain());
     Chatbot chatbot;
 
 
     @Before
     public void setUp() throws Exception {
         chatbot = new Chatbot();
-        brain = new Brain();
         chatbot.brain = brain;
         chatbot.brain.setUpBrain();
 
@@ -45,36 +48,51 @@ public class ChatbotTest {
 
 
     @Test
-    public void shouldRecognizeQuestion() {
-
-        String [] chatbotAnswersForQuestions = {
-/*                "Wróćmy do rozmowy o Tobie.",
-                "Interesujące pytanie.",
-                "Ciężko powiedzieć, jestem chatbotem:)",
-                "Dlaczego o to pytasz?",
-                "Nie potrafię odpowiedzieć, jestem chatbotem.",
-                "Porozmawiajmy lepiej o Tobie",
-                "Nie wypytuj.",
-                "Ty odpowiedz pierwszy",
-                "Rozmawiamy o Tobie",
-                "Na pytania przyjdzie czas później, teraz rozmawiamy o Tobie.",*/
-                "Sformułuj proszę pytanie inaczej."
-        };
+    public void shouldAnswerForOneWordStatement() throws Exception {
 
         String[] userAnswers = {
-/*                "Co robisz?",
-                "Lubisz mnie?",
-                "Powiedz coś",
-                "Jak wyglądasz?",*/
-                ""
-
-/*
-                "Co słychać?"
-*/
+              "Interesujące.",
+                "."
         };
+        String toBeReturned = "Tylko_tyle?";
+        doReturn(toBeReturned).when(brain).getRandomPatternForOneWordAnswer();
+        doReturn(toBeReturned).when(brain).getRandomSuitedAnswersForNote(anyInt());
         for(String userAnswer: userAnswers) {
-            String answer = chatbot.answerQuestion(userAnswer);
-            assertThat(answer).isIn(chatbotAnswersForQuestions);
+            String answer = chatbot.prepareAnswer(userAnswer);
+            assertThat(answer).isEqualTo(toBeReturned);
+        }
+    }
+
+    @Test
+    public void shouldAnswerForPersonalQuestion() throws Exception {
+
+        String[] userAnswers = {
+                "Pomożesz mi?"
+        };
+        String toBeReturned = "";
+        //doReturn(toBeReturned).when(brain).getPatternsForPersonalQuestions();
+        doReturn(toBeReturned).when(brain).getRandomAnswerForPersonalQuestion();
+        for(String userAnswer: userAnswers) {
+            String answer = chatbot.prepareAnswer(userAnswer);
+            assertThat(answer).isEqualTo(toBeReturned);
+        }
+    }
+
+    @Test
+    public void shouldAnswerForStandardDialog() throws Exception {
+
+        String[] userAnswers = {
+                "Dobranoc",
+                "dobranoc",
+                "jaki jest twój ulubiony kolor?",
+                "co porabiasz?"
+        };
+        String toBeReturned = "Dobranoc";
+        doReturn(toBeReturned).when(brain).getRandomStandardAnswer(anyString());
+        //doReturn(toBeReturned).when(brain).get(anyInt());
+        for(String userAnswer: userAnswers) {
+            String answer = chatbot.prepareAnswer(userAnswer);
+            assertThat(answer).isEqualTo(toBeReturned);
         }
     }
 

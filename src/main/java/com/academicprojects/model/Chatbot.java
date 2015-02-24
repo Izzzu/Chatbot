@@ -4,7 +4,6 @@ import com.academicprojects.model.dictionary.GrammaPerson;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import com.academicprojects.model.dictionary.WordDetails;
 import com.academicprojects.util.PreprocessString;
-import com.academicprojects.util.RandomSearching;
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
 import com.google.common.collect.FluentIterable;
@@ -13,20 +12,24 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.academicprojects.model.PatternUtil.*;
 import static com.academicprojects.model.TypeOfSentence.FEELING_STATEMENT;
 import static com.academicprojects.model.TypeOfSentence.SINGLE_WORD;
+import static com.academicprojects.model.TypeOfSentence.STANDARD_DIALOG;
 import static com.academicprojects.model.dictionary.VerbForm.INFINITIVE;
 import static com.academicprojects.util.PreprocessString.replacePolishCharsAndLowerCase;
 
 @Getter
 public class Chatbot {
 
-    private static final int IS_GOOD = 1;
+	private static final int IS_GOOD = 1;
     private static final int IS_BAD = 0;
+	public static final List<String> QUESTION_STARTS = Arrays.asList("czy", "czym", "dlaczego", "kiedy", "jak", "jaka", "jaki", "jakie", "jakiego", "jakiej", "po", "czym", "co", "o");
 
 	private PreprocessString pStr = new PreprocessString();
 	Logger log = LoggerFactory.getLogger(Chatbot.class);
@@ -39,7 +42,7 @@ public class Chatbot {
 	private String chatbotName = "Zbyszek";
 	private Conversation conversation = new Conversation(chatbotName);
 
-    public Chatbot() throws IOException {
+    public Chatbot() throws IOException, SQLException {
 		brain = new Brain();
         brain.setUpBrain();
         user = new User();
@@ -182,14 +185,13 @@ public class Chatbot {
 		String [] phrases = conversation.getLastAnswer().split("[\',;/.\\s]+");
 		for(int i = 0; i<phrases.length; i++) {
 
-			for(PersonalityRecognizer.Phrase phrase: brain.personalityRecognizer.getPersonalityPhrases())
+			for(PersonalityRecognizer.Phrase phrase: brain.getPersonalityPhrases())
             {
                 //log.info("outer for - "+phrase.getWord());
 
                 if (phrases[i].equals(phrase.getWord())) {
 
                     user.updatePersonality(phrase.getIdPersonality(), phrase.getLevel());
-
                 }
             }
 		}
@@ -215,15 +217,18 @@ public class Chatbot {
 		return (State) taskStates.get(task);
 	}
 
-    public String prepareAnswer() throws Exception {
-		String userAnswer = conversation.getLastAnswer().replace("  ", " ").replace("_", " ");
+    public String prepareAnswer(String lastAnswer) throws Exception {
+		String userAnswer = lastAnswer.replace("  ", " ").replace("_", " ");
 		String userAnswerToLowerCaseWithoutPolishChars = replacePolishCharsAndLowerCase(userAnswer).toLowerCase();
 		TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswerToLowerCaseWithoutPolishChars);
+		if(typeOfSentence.equals(TypeOfSentence.STANDARD_DIALOG)) {
+			return answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
+		}
 		if (typeOfSentence.equals(TypeOfSentence.QUESTION)) {
 			return answerQuestion(userAnswer.toLowerCase());
 		}
 		if (typeOfSentence.equals(FEELING_STATEMENT)) {
-			return getChatbotResponseForFeelingSentence(userAnswerToLowerCaseWithoutPolishChars);
+			return getChatbotResponseForFeelingSentence(userAnswer);
 		}
 		if(typeOfSentence.equals(TypeOfSentence.SINGLE_WORD)) {
 			return answerForSingleWord(userAnswerToLowerCaseWithoutPolishChars);
@@ -235,7 +240,7 @@ public class Chatbot {
 			System.out.println("user answer :" + userAnswer.toLowerCase());
 		//losowa logika - zwraca -1 gry nie zaleziono patternu - to nie blad
 			String pharaprasizedAnswer = paraphrase(userAnswer.toLowerCase(), true);
-			String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+			String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromChatbotPatterns(userAnswerNote);
 			System.out.println("paraprase: " + pharaprasizedAnswer);
 		switch (chooseAnswer) {
 			//question:
@@ -248,13 +253,24 @@ public class Chatbot {
         }
     }
 
-	private String answerForSingleWord(String userAnswer) throws NotFoundResponseForOneWordAnswer {
-		String answer = brain.getRandomPatteRnForOneWordAnswer();
+	private String answerForStandardDialog(String userAnswerToLowerCaseWithoutPolishChars) {
+		return brain.getRandomStandardAnswer(userAnswerToLowerCaseWithoutPolishChars.replace("?",""));
+	}
 
-		answer = answer.replace("<word>", userAnswer);
+	private String getChatbotAnswerFromChatbotPatterns(int userAnswerNote) throws NotFoundExceptionAnswer {
+		String chatbotAnswerFromAnswerPatterns = "";
+		do{
+            chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromAnswerPatterns(userAnswerNote);
+        }
+        while (conversation.getLastChatbotAnswer().contains(chatbotAnswerFromAnswerPatterns));
+		return chatbotAnswerFromAnswerPatterns;
+	}
+
+	private String answerForSingleWord(String userAnswer) throws NotFoundResponseForOneWordAnswer, NotFoundExceptionAnswer {
+		String answer = brain.getRandomPatternForOneWordAnswer();
 		int note = catchUserAnswerNote(userAnswer);
-		answer = answer.replace("<answerFromPatterns>", getChatbotAnswerFromAnswerPatterns(note));
-		return answer;
+		String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromAnswerPatterns(note);
+		return replaceTags(answer, userAnswer, chatbotAnswerFromAnswerPatterns);
 	}
 
 	public String getChatbotResponseForFeelingSentence(String userAnswer) throws NotFoundResponsesForFeelingSentence {
@@ -262,16 +278,16 @@ public class Chatbot {
 		if(userAnswer.toLowerCase().contains("jestem")) {
 			verb = "jestem";
 		}
-		else if (PreprocessString.replacePolishCharsAndLowerCase(userAnswer).contains("czuje")) {
+		else if (replacePolishCharsAndLowerCase(userAnswer).contains("czuje")) {
 			verb = "czuję";
 		}
-		else if (PreprocessString.replacePolishCharsAndLowerCase(userAnswer).contains("chce")) {
+		else if (replacePolishCharsAndLowerCase(userAnswer).contains("chce")) {
 			verb = "chcę";
 		}
 		String sentence = brain.getRandomFeelingStatementForVerb(verb);
-		String pharaprasize = paraphrase(userAnswer, false).toLowerCase();
-		String output = sentence.replace("<paraphrase>", pharaprasize);
-		return output.replace(". ","").replace(".","");
+		String paraphrasize = paraphrase(userAnswer, false).toLowerCase();
+		String output = replaceParaphraseTags(sentence, paraphrasize);
+		return removeDots(output);
 	}
 	
 	private String getQuestionAboutOpinion(String sentenceWithReplacedQuestionMarks) throws UnrecognizeUserAnswerException, NotFoundResponsesForOpinionQuestion {
@@ -286,7 +302,6 @@ public class Chatbot {
 	public String answerQuestion(String userAnswer) {
 		String[] ar = {userAnswer};
 		String[] sentences = userAnswer.split("//?");
-		int size;
 		try {
 			if (sentences.length > 0) {
 				String sentenceWithReplacedQuestionMarks = sentences[0].replace("?", " ").toLowerCase();
@@ -295,7 +310,7 @@ public class Chatbot {
 				
 				String[] wordsInSentence = sentenceWithReplacedQuestionMarks.split(" ");
 				if (isPersonalQuestion(wordsInSentence)) {
-					return brain.getRandomAnswerForOpinionQuestion();
+					return brain.getRandomAnswerForPersonalQuestion();
 				}
 				String answer = getAnswerForQuestion(sentenceWithReplacedQuestionMarks);
 				if (!answer.isEmpty()) return answer;
@@ -304,6 +319,8 @@ public class Chatbot {
 			return "Bardzo proszę pisz jaśniej. Twoja wypowiedź jest bardzo chaotyczna.";
 		} catch (NotFoundResponsesForOpinionQuestion notFoundResponsesForOpinionQuestion) {
 			notFoundResponsesForOpinionQuestion.printStackTrace();
+		} catch (NotFoundExceptionAnswer notFoundExceptionAnswer) {
+			notFoundExceptionAnswer.printStackTrace();
 		}
 		return "Sformułuj proszę pytanie inaczej.";
 	}
@@ -317,20 +334,21 @@ public class Chatbot {
 		return false;
 	}
 
-	public String getAnswerForQuestion(String sentenceWithReplacedQuestionMarks) {
+	public String getAnswerForQuestion(String sentenceWithReplacedQuestionMarks) throws NotFoundExceptionAnswer {
 		String answer = "";
 		String[] wordsInSentence = sentenceWithReplacedQuestionMarks.split(" ");
 		Map<Integer,String> mapIndexToChangedVerb = findVerbsRightToParaphrasize(wordsInSentence);
 		if (mapIndexToChangedVerb.values().contains("")) return "";
-		StringBuffer paraphrasizedQuestion = changeVerbsIntoOpposite(wordsInSentence, mapIndexToChangedVerb, 0);
-		if (!paraphrasizedQuestion.toString().isEmpty()) {
-            answer = answer + paraphrasizedQuestion + ". "+ getChatbotAnswerFromAnswerPatterns(0);
+		String changedVerbs = changeVerbsIntoOpposite(wordsInSentence, mapIndexToChangedVerb, 0).toString();
+		String paraphrasedQuestion = changePronouns(changedVerbs);
+		if (!paraphrasedQuestion.isEmpty()) {
+            answer = answer + paraphrasedQuestion + " "+ getChatbotAnswerFromAnswerPatterns(0);
         }
 		if (answer.isEmpty()) {
 			return "";
 		}
 		else {
-			List<String> questions = Arrays.asList("czy", "dlaczego", "kiedy", "jak", "po", "czym", "co", "o");
+			List<String> questions = QUESTION_STARTS;
 			if (wordsInSentence.length >= 1 && !questions.contains(wordsInSentence[0])) {
 				answer = "czy " + answer;
 			}
@@ -419,7 +437,7 @@ public class Chatbot {
 		return false;
 	}
 
-	private String getNeutralEngagedAnswer() {
+	private String getNeutralEngagedAnswer() throws NotFoundExceptionAnswer {
         return getChatbotAnswerFromAnswerPatterns(0);
     }
 
@@ -434,11 +452,39 @@ public class Chatbot {
 			mapIndexToChangedVerb = findVerbsRightToParaphrasize(words);
 			if (mapIndexToChangedVerb.isEmpty() || mapIndexToChangedVerb.values().contains("")) return "";
 			String begin = " ";
-			if(addBeginParaphrase) begin = PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ";
-			return createPharaprasizedAnswer(words, mapIndexToChangedVerb, begin);
+			if(addBeginParaphrase) begin = addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ";
+			String answer = createPharaprasizedAnswer(words, mapIndexToChangedVerb, begin);
+			return changePronouns(answer);
 		}
         return "";
     }
+
+	private String changePronouns(String answer) {
+		String[] words = answer.replace(".", "").replace(",","").split(" ");
+		StringBuffer buffer = new StringBuffer();
+		for (String word : words) {
+			String changedPronoun = "";
+			if(!word.isEmpty() && brain.isPronoun(word)) {
+				changedPronoun = changeToOpposite(word);
+				if(changedPronoun!=null) {
+					buffer.append(changedPronoun);
+				}
+			} else {
+				buffer.append(word);
+			}
+			buffer.append(" ");
+		}
+		int length = buffer.length() - 1;
+		if(buffer.substring(length).equals(" ")) {
+			buffer.replace(length, length+1, ".");
+		}
+		return  buffer.toString();
+	}
+
+	private String changeToOpposite(String word) {
+		return brain.changePronounToOpposite(word);
+	}
+
 
 	private Map<Integer, String> findVerbsRightToParaphrasize(String[] words) {
 		String changedVerb = "";
@@ -522,7 +568,7 @@ public class Chatbot {
 
     private String createPharaprasizedAnswer(String[] words, int j, String changedVerb, boolean negation) {
         StringBuffer sb = new StringBuffer();
-		sb.append(PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ");
+		sb.append(addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale()) + " ");
 		if (negation) {
 			sb.append("nie ");
 		}
@@ -542,7 +588,7 @@ public class Chatbot {
     }
 
     private void prepareBeginningOfChatbotAnswer(String changedVerb, boolean negation, StringBuffer sb) {
-		sb.append(PatternUtil.addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale())+" ");
+		sb.append(addPostfixToVerbAccordingGender(brain.startParaphrase(), userIsAFemale())+" ");
 		if (negation) {
 			sb.append("nie ");
 		}
@@ -558,31 +604,18 @@ public class Chatbot {
         return brain.getDictionary().findVerbFromMainWordAndMatchOppositePerson(record.getForm().getGrammaPerson(), record.getMainWord(), record.getForm().getSingularOrPlural(), record.getForm().getVerbForm(), record.getForm().getGenre());
     }
 
-    public String getChatbotAnswerFromAnswerPatterns(int userAnswerNote) {
-        List<String> suitedAnswers = getSuitedAnswersForNote(userAnswerNote);
-		if (suitedAnswers.size()!=0) {
-            int randomIndex = RandomSearching.generateRandomIndex(suitedAnswers.size());
-            return suitedAnswers.get(randomIndex);
+    public String getChatbotAnswerFromAnswerPatterns(int userAnswerNote) throws NotFoundExceptionAnswer {
+        String suitedAnswer = brain.getRandomSuitedAnswersForNote(userAnswerNote);
+		if (!suitedAnswer.isEmpty()) {
+            return suitedAnswer;
         }
         else {
-			String sentence = "";
-			do {
-				int randomIndex = RandomSearching.generateRandomIndex(brain.getExceptionsChatbotAnswers().size());
-				sentence = brain.getExceptionsChatbotAnswers().get(randomIndex).getSentence();
-			}
-			while(getConversation().getLastChatbotAnswer().contains(sentence));
-			return sentence;
+			return getRandomExceptionAnswer();
         }
     }
 
-	private List<String> getSuitedAnswersForNote(int userAnswerNote) {
-		List<String> suitedAnswers = new LinkedList<>();
-		for(ChatbotAnswer chatbotAnswer : brain.getChatbotAnswers() ) {
-            if (chatbotAnswer.userAnswerNote == userAnswerNote) {
-                    suitedAnswers.add(chatbotAnswer.getSentence());
-            }
-        }
-		return suitedAnswers;
+	private String getRandomExceptionAnswer() throws NotFoundExceptionAnswer {
+		return brain.getRandomExceptionAnswer();
 	}
 
 	private String preprocessUserAnswer() {
@@ -658,8 +691,8 @@ public class Chatbot {
 		case 2:
 			catchUserAge();			
 			if (user.getAge()==0)
-			conversation.addChatbotAnswerToCourse("Nie odpowiadaj jeśli nie chcesz. Jak Twoje dzisiejsze samopoczucie?");
-			else conversation.addChatbotAnswerToCourse("A jak Twoje dzisiejsze samopoczucie?");
+			conversation.addChatbotAnswerToCourse("Nie odpowiadaj jeśli nie chcesz. "+ brain.getRandomStandardAnswer("2"));
+			else conversation.addChatbotAnswerToCourse(brain.getRandomStandardAnswer("2"));
 			break;
 		case 3:
 			catchUserMood();
@@ -670,7 +703,7 @@ public class Chatbot {
 			conversation.addChatbotAnswerToCourse(prepareAnswer(chatlevel, 0, conversation.getTopicID()));
 			break;*/
 		default:
-			conversation.addChatbotAnswerToCourse(prepareAnswer());
+			conversation.addChatbotAnswerToCourse(prepareAnswer(conversation.getLastAnswer()));
 			break;
 		}
 		conversation.chatLevelUp();
@@ -721,6 +754,7 @@ public class Chatbot {
     }
 
     public TypeOfSentence recognizeTypeOfSentence(String s) {
+		if(brain.standardDialogsContainsAnswer(s.replace("?","").replace(".",""))) return STANDARD_DIALOG;
         if(s.split(" ").length == 1) return SINGLE_WORD;
 		if (s.contains("?")) return TypeOfSentence.QUESTION;
 		if (s.contains("chce") || s.contains("czuje") || s.contains("jestem")) return FEELING_STATEMENT;

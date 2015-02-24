@@ -12,21 +12,44 @@ import lombok.NoArgsConstructor;
 import java.io.*;
 import java.util.*;
 
+import static com.academicprojects.model.dictionary.Genre.*;
+import static com.academicprojects.model.dictionary.GrammaCase.*;
+import static com.academicprojects.model.dictionary.LanguagePart.*;
 import static java.lang.Character.isUpperCase;
-
-
 
 @Getter
 public class PolishDictionary {
     List<Record> recordsWithoutVerbs = new ArrayList<Record>();
     List<Record> verbs = new ArrayList<Record>();
+    List<Record> pronouns = new ArrayList<>();
     Set<String> verbsToPharaprase = new HashSet<String>();
     private List<String> names = new ArrayList<String>();
+    private Map<String, List<Record>> mainWordToOtherWords = new HashMap<>();
 
     public PolishDictionary() {
         File file = new File("src/main/resources/dictionary.txt");
         createDictionaryFromFile(file);
         fillVerbsToPharaprase();
+        fillPronouns();
+        matchMainWordToOtherWords();
+    }
+
+    private void matchMainWordToOtherWords() {
+        for (Record record : recordsWithoutVerbs) {
+            List<Record> words = mainWordToOtherWords.get(record.getMainWord());
+            if(words==null) {
+                words = new ArrayList<>();
+            }
+            words.add(record);
+            mainWordToOtherWords.put(record.getMainWord(), words);
+        }
+    }
+
+    private void fillPronouns() {
+        for (Record recordWithoutVerbs : recordsWithoutVerbs) {
+            if(recordWithoutVerbs.getForm().getLanguagePart().equals(PRONOUN))
+                pronouns.add(recordWithoutVerbs);
+        }
     }
 
     private void fillVerbsToPharaprase() {
@@ -40,10 +63,8 @@ public class PolishDictionary {
     private void createDictionaryFromFile(File file) {
         try {
             String line = "";
-
             BufferedReader br = new BufferedReader(new FileReader(file));
             //FileInputStream fis = new FileInputStream(file);
-
             while ((line = br.readLine()) != null) {
                 addRecordToDictionary(line);
             }
@@ -62,7 +83,7 @@ public class PolishDictionary {
             String mainWord = PreprocessString.replacePolishCharsAndLowerCase(cuttedLine[1]);
             if(isUpperCase(mainWord.substring(0, 1).charAt(0))) names.add(mainWord);
             Record record = new Record(cuttedLine[0], cuttedLine[1], createWordDetails(cuttedLine[2]));
-            if (record.getForm().getLanguagePart().equals(LanguagePart.VERB)) {
+            if (record.getForm().getLanguagePart().equals(VERB)) {
                 verbs.add(record);
             }
             else {
@@ -81,30 +102,31 @@ public class PolishDictionary {
     }
 
     private WordDetails createDetails(LanguagePart languagePart, String[] parts) throws Exception {
-        if (languagePart.equals(LanguagePart.ADVERB)) {
+        if (languagePart.equals(ADVERB)) {
             Grade grade = parts.length > 1 ? matchGrade(parts[1]) : Grade.DEFAULT;
-            return new WordDetails(languagePart, grade, GrammaCase.DEFAULT, SingularOrPlural.N_A, Genre.NEUTER, VerbForm.DEFAULT, GrammaPerson.DEFAULT);
-        } else if (languagePart.equals(LanguagePart.ADJECTIV)) {
+            return new WordDetails(languagePart, grade, GrammaCase.DEFAULT, SingularOrPlural.N_A, NEUTER, VerbForm.DEFAULT, GrammaPerson.DEFAULT);
+        } else if (languagePart.equals(ADJECTIV)) {
             if (parts.length >= 5) {
                 return new WordDetails(languagePart, matchGrade(parts[4]), GrammaCase.DEFAULT, matchSingularOrPlural(parts[1]),
-                        Genre.NEUTER, VerbForm.DEFAULT, GrammaPerson.DEFAULT);
+                        NEUTER, VerbForm.DEFAULT, GrammaPerson.DEFAULT);
             } else return new WordDetails(languagePart);
-        } else if (languagePart.equals(LanguagePart.SUBSTANTIV)) {
+        } else if (languagePart.equals(SUBSTANTIV)) {
             if (parts.length >= 4)
                 return new WordDetails(languagePart, Grade.DEFAULT, matchGrammaCase(parts[2]), matchSingularOrPlural(parts[1]),
                         matchGenre(parts[3]), VerbForm.DEFAULT, GrammaPerson.DEFAULT);
-        } else if (languagePart.equals(LanguagePart.VERB)) {
+        } else if (languagePart.equals(VERB)) {
             Genre genre = matchGenre(parts[3]);
             GrammaPerson grammaPerson = parts.length>=5 ? matchGrammaPerson(parts[4]) : GrammaPerson.DEFAULT;
-            if(genre.equals(Genre.NEUTER) && grammaPerson.equals(GrammaPerson.DEFAULT)) grammaPerson = matchGrammaPerson(parts[3]);
+            if(genre.equals(NEUTER) && grammaPerson.equals(GrammaPerson.DEFAULT)) grammaPerson = matchGrammaPerson(parts[3]);
             return new WordDetails(languagePart, Grade.DEFAULT, GrammaCase.DEFAULT, matchSingularOrPlural(parts[2]), genre
                     , matchVerbForm(parts[1]), grammaPerson);
-
-
+        } else if(languagePart.equals(PRONOUN)) {
+            SingularOrPlural singularOrPlural = matchSingularOrPlural(parts[1]);
+            GrammaCase grammaCase = matchGrammaCase(parts[2]);
+            return new WordDetails(languagePart, Grade.DEFAULT, grammaCase, singularOrPlural, NEUTER, VerbForm.DEFAULT, GrammaPerson.DEFAULT);
         } else return new WordDetails(languagePart);
 
         throw TooFewFieldsInRecordException();
-
     }
 
     private GrammaPerson matchGrammaPerson(String part) {
@@ -112,7 +134,6 @@ public class PolishDictionary {
         else if (part.equals("sec")) return GrammaPerson.SECOND;
         else if (part.equals("ter")) return GrammaPerson.THIRD;
         else return GrammaPerson.DEFAULT;
-
     }
 
     private VerbForm matchVerbForm(String part) {
@@ -126,20 +147,20 @@ public class PolishDictionary {
 
     private Genre matchGenre(String part) {
         String[] cases = part.split(".");
-        if (part.contains("m")) return Genre.MALE;
-        else if (part.contains("f")) return Genre.FEMALE;
-        else return Genre.NEUTER;
+        if (part.contains("m")) return MALE;
+        else if (part.contains("f")) return FEMALE;
+        else return NEUTER;
     }
 
     private GrammaCase matchGrammaCase(String part) {
 
-        if (part.equals("nom")) return GrammaCase.NOMINATIV;
-        else if (part.equals("dat")) return GrammaCase.DATIVE;
-        else if (part.equals("gen")) return GrammaCase.GENITIVE;
-        else if (part.equals("acc")) return GrammaCase.ACCUSATIVE;
-        else if (part.equals("inst")) return GrammaCase.INSTRUMENTAL;
-        else if (part.equals("loc")) return GrammaCase.LOCATIVE;
-        else if (part.equals("voc")) return GrammaCase.VOCATIVE;
+        if (part.equals("nom")) return NOMINATIV;
+        else if (part.equals("dat")) return DATIVE;
+        else if (part.equals("gen")) return GENITIVE;
+        else if (part.equals("acc")) return ACCUSATIVE;
+        else if (part.equals("inst")) return INSTRUMENTAL;
+        else if (part.equals("loc")) return LOCATIVE;
+        else if (part.equals("voc")) return VOCATIVE;
         else return GrammaCase.DEFAULT;
     }
 
@@ -159,18 +180,18 @@ public class PolishDictionary {
     }
 
     private LanguagePart matchLanguagePart(String shortcut) {
-        if (shortcut.equals("conj")) return LanguagePart.CONJUCTION;
+        if (shortcut.equals("conj")) return CONJUCTION;
         else if (shortcut.equals("ppas") || shortcut.equals("pact") || shortcut.equals("pcon") || shortcut.equals("pant"))
-            return LanguagePart.PARTICIPLE;
+            return PARTICIPLE;
         else if (shortcut.equals("adj") || shortcut.equals("adjc") || shortcut.equals("adjp"))
-            return LanguagePart.ADJECTIV;
-        else if (shortcut.equals("adv")) return LanguagePart.ADVERB;
-        else if (shortcut.equals("subst") || shortcut.equals("ger")) return LanguagePart.SUBSTANTIV;
-        else if (shortcut.equals("prep")) return LanguagePart.PREPOSITION;
-        else if (shortcut.equals("pred")) return LanguagePart.PREDICATIV;
-        else if (shortcut.equals("ppron12") || shortcut.equals("ppron3")) return LanguagePart.PRONOUN;
-        else if (shortcut.equals("num")) return LanguagePart.NUMERAL;
-        else if (shortcut.equals("verb")) return LanguagePart.VERB;
+            return ADJECTIV;
+        else if (shortcut.equals("adv")) return ADVERB;
+        else if (shortcut.equals("subst") || shortcut.equals("ger")) return SUBSTANTIV;
+        else if (shortcut.equals("prep")) return PREPOSITION;
+        else if (shortcut.equals("pred")) return PREDICATIV;
+        else if (shortcut.equals("ppron12") || shortcut.equals("ppron3")) return PRONOUN;
+        else if (shortcut.equals("num")) return NUMERAL;
+        else if (shortcut.equals("verb")) return VERB;
         else return LanguagePart.DEFAULT;
     }
 
@@ -247,6 +268,8 @@ public class PolishDictionary {
         return new Record();
     }
 
+
+
     @Getter
     @AllArgsConstructor
     @NoArgsConstructor(access = AccessLevel.PUBLIC)
@@ -256,7 +279,7 @@ public class PolishDictionary {
         WordDetails form = new WordDetails(LanguagePart.DEFAULT);
 
         public boolean isRightToPharaprasize() {
-            if(this.getForm().getLanguagePart().equals(LanguagePart.VERB) && this.getForm().getGrammaPerson().equals(GrammaPerson.PRIMARY))
+            if(this.getForm().getLanguagePart().equals(VERB) && this.getForm().getGrammaPerson().equals(GrammaPerson.PRIMARY))
                 return true;
             else return false;
         }

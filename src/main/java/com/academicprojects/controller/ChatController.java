@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 @Scope("session")
 @Controller
@@ -45,7 +46,7 @@ public class ChatController {
 
 
 	@RequestMapping(value = "/reload", method = RequestMethod.GET)
-	public String reload() throws IOException {
+	public String reload() throws IOException, SQLException {
 		chatbot = new Chatbot();
 		return "redirect:/";
 	}

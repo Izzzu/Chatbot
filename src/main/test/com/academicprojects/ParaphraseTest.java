@@ -39,7 +39,8 @@ public class ParaphraseTest {
                 {"nie wiesz co masz robić.","Nie wiem, co mam robić"},
                 {"nie rozumiesz dlaczego działam.","Nie rozumiem, dlaczego działasz"},
                 {" mam dobry gust.", "Masz dobry gust."},
-                {" nie wiem co mówisz.", "Chyba nie wiesz co mówisz."}
+                {" nie wiem co mówisz.", "Chyba nie wiesz co mówisz."},
+                {" nie rozumiesz mnie.", "Nie rozumiem cię."}
         });
     }
 

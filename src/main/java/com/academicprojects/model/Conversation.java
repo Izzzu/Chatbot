@@ -23,9 +23,7 @@ public class Conversation {
 	public void setCourse(List<String> course) {
 		this.course = course;
 	}
-	
 
-	
 	public void chatLevelUp()
 	{
 		chatLevel++;
@@ -71,7 +69,7 @@ public class Conversation {
 	
 
 	public Conversation() {
-		course.add(randomWelcomePhrase("Mieczys�aw"));
+		course.add(randomWelcomePhrase("Mieczysław"));
 	}
 	
 	public Conversation(String name) {
@@ -109,7 +107,7 @@ public class Conversation {
 		int size = this.getCourse().size();
 		try {
 			if (size <=1)
-				throw new UnexpectedException("Chatbot not responded yet");
+				throw new UnexpectedException("Chatbot did not respond yet");
 		} catch (UnexpectedException e) {
 			e.printStackTrace();
 		}

@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-
 public class ConversationCapabilityTest{
 
     ConversationCapability conversationCapability;
@@ -38,5 +37,15 @@ public class ConversationCapabilityTest{
     @Test
     public void shouldFilPatternAnswersForPersonalQuestionFromFile() throws IOException {
         Assert.assertEquals(16, conversationCapability.getPatternAnswersForPersonalQuestion().size());
+    }
+
+    @Test
+    public void shouldFillExceptionChatbptAnswerListFromFile() throws IOException {
+        Assert.assertEquals(24, conversationCapability.getExceptionsChatbotAnswers().size());
+    }
+
+    @Test
+    public void shouldFillStandardDialogs() {
+        org.fest.assertions.api.Assertions.assertThat(conversationCapability.getStandardAnswersFor("dobranoc")).contains("dobranoc");        ;
     }
 }
