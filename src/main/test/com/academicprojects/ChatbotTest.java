@@ -1,8 +1,6 @@
 package com.academicprojects;
 
-import com.academicprojects.model.Brain;
-import com.academicprojects.model.Chatbot;
-import com.academicprojects.model.TypeOfSentence;
+import com.academicprojects.model.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,6 +19,7 @@ public class ChatbotTest {
 
     @Before
     public void setUp() throws Exception {
+
         chatbot = new Chatbot();
         chatbot.brain = brain;
         chatbot.brain.setUpBrain();
@@ -95,6 +94,8 @@ public class ChatbotTest {
             assertThat(answer).isEqualTo(toBeReturned);
         }
     }
+
+
 
 
 }

@@ -17,6 +17,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.academicprojects.model.Gender.*;
 import static com.academicprojects.model.PatternUtil.*;
 import static com.academicprojects.model.TypeOfSentence.FEELING_STATEMENT;
 import static com.academicprojects.model.TypeOfSentence.SINGLE_WORD;
@@ -140,7 +141,7 @@ public class Chatbot {
 				}
 				else {
 					setLevel("getingUserName", State.IN_PROGRESS);
-					user.setGender(Gender.NOTKNOWN);
+					user.setGender(NOTKNOWN);
 					user.setName("Nieznajomy");
 					return "Nieznajomy";
 				}
@@ -158,7 +159,7 @@ public class Chatbot {
 			else 
 			{
 				setLevel("getingUserName", State.IN_PROGRESS);
-				user.setGender(Gender.NOTKNOWN);
+				user.setGender(NOTKNOWN);
 				user.setName("Nieznajomy");
 				return "Nieznajomy";
 			}
@@ -174,9 +175,26 @@ public class Chatbot {
 			}
 			else {
 				setLevel("getingUserName", State.IN_PROGRESS);
-				user.setGender(Gender.NOTKNOWN);
+				user.setGender(NOTKNOWN);
 				user.setName("Nieznajomy");
 				return "Nieznajomy";
+			}
+		}
+	}
+
+	public void updateInformationAboutUser(String answer) {
+		if(user.getGender().equals(NOTKNOWN)) tryToCatchUserGender(answer);
+		updatePersonality();
+
+	}
+
+	private void tryToCatchUserGender(String answer) {
+		String[] words = answer.toLowerCase().split(" ");
+		for (String word : words) {
+			Gender gender = brain.getGenderOfVerb(word);
+			if (!gender.equals(NOTKNOWN)) {
+				user.setGender(gender);
+				return;
 			}
 		}
 	}
@@ -193,6 +211,7 @@ public class Chatbot {
 
                     user.updatePersonality(phrase.getIdPersonality(), phrase.getLevel());
                 }
+
             }
 		}
         System.out.println(user.getPersonality());
@@ -200,9 +219,9 @@ public class Chatbot {
 	private Gender getGender(String name) {
 		if (name.charAt(name.length()-1)=='a')
 		{
-			return Gender.FEMALE;
+			return FEMALE;
 		}
-		else return Gender.MALE;
+		else return MALE;
 	}
 	/*
 	 * 
@@ -742,7 +761,7 @@ public class Chatbot {
 	}
 
     private boolean userIsAFemale() {
-        return user.getGender()== Gender.FEMALE;
+        return user.getGender()== FEMALE;
     }
 
     private boolean moodIsBad() {

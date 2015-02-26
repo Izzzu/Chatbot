@@ -289,5 +289,9 @@ public class PolishDictionary {
             if(this.getWord().isEmpty()) return true;
             return false;
         }
+
+        public Genre getGenre() {
+            return form.getGenre();
+        }
     }
 }

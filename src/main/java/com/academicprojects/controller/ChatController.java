@@ -33,8 +33,9 @@ public class ChatController {
 
 		if (chatbot.isUserTurn()) 
 		{
-			chatbot.recognizeTypeOfSentence(chatbot.getLastAnswer());
-			chatbot.updatePersonality();
+			String lastAnswer = chatbot.getLastAnswer();
+			chatbot.recognizeTypeOfSentence(lastAnswer);
+			chatbot.updateInformationAboutUser(lastAnswer);
 			chatbot.answer();
             log.trace(chatbot.getChatbotName());
 			

@@ -2,68 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/ActiveListening.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/model/ActiveListeningTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/NotFoundExceptionAnswer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/StandardDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/model/capabilities/UnderstandingCapabilityTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/oppositePronouns.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/standardDialogs.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/ActiveListening.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/ActiveListening.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Brain.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Brain.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/model/InformationsAboutUserTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Brain.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Brain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/controller/ChatController.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/controller/ChatController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/controller/ChatController.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/controller/ChatController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$1.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$2.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$3.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$4.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Chatbot.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Chatbot.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Chatbot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Conversation.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/Conversation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Conversation.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/Conversation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PatternUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer$Phrase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/PersonalityRecognizer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/PersonalityRecognizer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$1.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$2.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary$Record.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/dictionary/PolishDictionary.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/dictionary/PolishDictionary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/TypeOfSentence.class" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/com/academicprojects/model/TypeOfSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/TypeOfSentence.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/TypeOfSentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/AnsweringQuestionTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/AnsweringQuestionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/academicprojects/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/academicprojects/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/BrainTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/BrainTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Chatbot_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Chatbot_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/ConversationCapability.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/ConversationCapability.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/model/capabilities/ConversationCapabilityTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/model/capabilities/ConversationCapabilityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/FeelingAnswersTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/FeelingAnswersTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/ParaphraseTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/ParaphraseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityRecognizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityRecognizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/academicprojects/PolishDictionaryTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/academicprojects/PolishDictionaryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/TypeOfSentence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/UnderstandingCapability.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/UnderstandingCapability.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/chatbotAnswersForOneWord.csv" afterPath="$PROJECT_DIR$/src/main/resources/chatbotAnswersForOneWord.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/chatbotanswers.csv" afterPath="$PROJECT_DIR$/src/main/resources/chatbotanswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/chatbotanswers.csv" afterPath="$PROJECT_DIR$/target/classes/chatbotanswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv" afterPath="$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/patternForPersonalQuestions.csv" afterPath="$PROJECT_DIR$/target/classes/patternForPersonalQuestions.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/useranswers.csv" afterPath="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/useranswers.csv" afterPath="$PROJECT_DIR$/target/classes/useranswers.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -96,11 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="patternForPersonalQuestions.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv">
+      <file leaf-file-name="Chatbot.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.80429596" vertical-offset="3143" max-vertical-offset="14520">
+              <caret line="197" column="13" selection-start-line="197" selection-start-column="13" selection-end-line="197" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -124,8 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system.properties" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/WebContent/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" />
@@ -143,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/NotFoundResponsesForOpinionQuestion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/NotFoundResponseForOneWordAnswer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/UnderstandingCapability.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/academicprojects/model/capabilities/UnderstandingCapabilityTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv" />
@@ -165,16 +119,19 @@
         <option value="$PROJECT_DIR$/src/main/test/com/academicprojects/model/capabilities/ConversationCapabilityTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/NotFoundExceptionAnswer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/ConversationCapability.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/oppositePronouns.json" />
         <option value="$PROJECT_DIR$/src/main/resources/standardDialogs.json" />
         <option value="$PROJECT_DIR$/src/main/test/com/academicprojects/AnsweringQuestionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/academicprojects/BrainTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/academicprojects/model/InformationsAboutUserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java" />
       </list>
     </option>
   </component>
@@ -301,12 +258,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1389,6 +1340,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default" />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1454,41 +1411,7 @@
       <recent name="com.academicprojects.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChatbotTest.shouldAnswerForPersonalQuestion">
-    <configuration default="false" name="ConversationCapabilityTest.shouldFillStandardDialogs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.academicprojects.model.capabilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Chatbot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.academicprojects.model.capabilities" />
-      <option name="MAIN_CLASS_NAME" value="com.academicprojects.model.capabilities.ConversationCapabilityTest" />
-      <option name="METHOD_NAME" value="shouldFillStandardDialogs" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.InformationsAboutUserTest.catchUserGender">
     <configuration default="false" name="ChatbotTest.shouldAnswerForStandardDialog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1502,40 +1425,6 @@
       <option name="PACKAGE_NAME" value="com.academicprojects" />
       <option name="MAIN_CLASS_NAME" value="com.academicprojects.ChatbotTest" />
       <option name="METHOD_NAME" value="shouldAnswerForStandardDialog" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="AnsweringQuestionTest.shouldAnswerForMoreDificultStandardQuestionWithParaphrasedPronouns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.academicprojects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Chatbot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.academicprojects" />
-      <option name="MAIN_CLASS_NAME" value="com.academicprojects.AnsweringQuestionTest" />
-      <option name="METHOD_NAME" value="shouldAnswerForMoreDificultStandardQuestionWithParaphrasedPronouns" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1616,6 +1505,68 @@
       <envs />
       <patterns />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChatbotTest.catchUserGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.academicprojects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Chatbot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.academicprojects" />
+      <option name="MAIN_CLASS_NAME" value="com.academicprojects.ChatbotTest" />
+      <option name="METHOD_NAME" value="catchUserGender" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="InformationsAboutUserTest.catchUserGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.academicprojects.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Chatbot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.academicprojects.model" />
+      <option name="MAIN_CLASS_NAME" value="com.academicprojects.model.InformationsAboutUserTest" />
+      <option name="METHOD_NAME" value="catchUserGender" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1960,19 +1911,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FeelingAnswersTest.shouldResponseForChce" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldFillStandardDialogs" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForStandardDialog" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AnsweringQuestionTest.shouldAnswerForMoreDificultStandardQuestionWithParaphrasedPronouns" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BrainTest.shouldRetunrRightRandomStandardAnswer" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForPersonalQuestion" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForStandardDialog" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BrainTest.shouldRetunrRightRandomStandardAnswer" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForPersonalQuestion" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ChatbotTest.catchUserGender" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.InformationsAboutUserTest.catchUserGender" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForPersonalQuestion" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BrainTest.shouldRetunrRightRandomStandardAnswer" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForStandardDialog" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AnsweringQuestionTest.shouldAnswerForMoreDificultStandardQuestionWithParaphrasedPronouns" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldFillStandardDialogs" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.InformationsAboutUserTest.catchUserGender" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChatbotTest.catchUserGender" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForPersonalQuestion" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BrainTest.shouldRetunrRightRandomStandardAnswer" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ChatbotTest.shouldAnswerForStandardDialog" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -2245,7 +2196,11 @@
       <workItem from="1424716443732" duration="598000" />
       <workItem from="1424729710796" duration="1958000" />
       <workItem from="1424731691975" duration="1473000" />
-      <workItem from="1424808436109" duration="445000" />
+      <workItem from="1424808436109" duration="1009000" />
+      <workItem from="1424896563279" duration="605000" />
+      <workItem from="1424975874935" duration="659000" />
+      <workItem from="1424985225248" duration="1460000" />
+      <workItem from="1424990429154" duration="2626000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -2365,7 +2320,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465904000" />
+    <option name="totallyTimeSpent" value="471818000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2389,7 +2344,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="3" width="1360" height="730" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0783309" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2410,7 +2365,7 @@
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31811023" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31811023" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24926254" sideWeight="0.4990366" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2491,13 +2446,13 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>578</line>
+          <line>597</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>590</line>
+          <line>609</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -2515,7 +2470,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>563</line>
+          <line>582</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
@@ -2539,31 +2494,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java</url>
-          <line>45</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>607</line>
+          <line>626</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>630</line>
+          <line>649</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>650</line>
+          <line>669</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>392</line>
+          <line>411</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
@@ -2575,43 +2530,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>456</line>
+          <line>475</line>
           <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>230</line>
+          <line>249</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>286</line>
+          <line>305</line>
           <properties />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>222</line>
+          <line>241</line>
           <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>756</line>
+          <line>775</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>341</line>
+          <line>360</line>
           <properties />
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
-          <line>344</line>
+          <line>363</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
@@ -2621,11 +2576,29 @@
           <properties />
           <option name="timeStamp" value="118" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
+          <line>185</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="119" />
+      <option name="time" value="122" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2634,51 +2607,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/QUESTION.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06309148" vertical-offset="0" max-vertical-offset="634">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/internal/runners/ClassRoadie.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33247423" vertical-offset="411" max-vertical-offset="1700">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/internal/runners/JUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3530928" vertical-offset="343" max-vertical-offset="2360">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3530928" vertical-offset="1103" max-vertical-offset="1800">
-          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/internal/runners/MethodRoadie.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3530928" vertical-offset="1523" max-vertical-offset="3100">
-          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithFeel.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5445545" vertical-offset="0" max-vertical-offset="404">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithWant.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2777778" vertical-offset="0" max-vertical-offset="432">
@@ -2697,14 +2625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16103059" vertical-offset="0" max-vertical-offset="1140">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/FeelingStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1577287" vertical-offset="0" max-vertical-offset="634">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2752,14 +2672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74235106" vertical-offset="39" max-vertical-offset="680">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/WordDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45249596" vertical-offset="219" max-vertical-offset="840">
@@ -2768,33 +2680,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="433" max-vertical-offset="1740">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33258426" vertical-offset="292" max-vertical-offset="1780">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/Genre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09463722" vertical-offset="0" max-vertical-offset="634">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="176" max-vertical-offset="5780">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2839,7 +2728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7294686" vertical-offset="733" max-vertical-offset="2260">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2847,7 +2735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03154574" vertical-offset="360" max-vertical-offset="1400">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2928,14 +2815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/ActiveListening.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66101694" vertical-offset="547" max-vertical-offset="960">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/academicprojects/model/ActiveListeningTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5633803" vertical-offset="0" max-vertical-offset="426">
@@ -2954,7 +2833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76626503" vertical-offset="1422" max-vertical-offset="2200">
           <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2962,24 +2840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44907406" vertical-offset="946" max-vertical-offset="1880">
-          <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
-          <folding>
-            <marker date="1424808721452" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1424808721452" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808721452" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808721452" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808721452" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808721452" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808721452" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808721452" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2987,144 +2847,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8138425" vertical-offset="499" max-vertical-offset="1000">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <marker date="1424808685724" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1424808685724" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808685724" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808685724" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808685724" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424808685724" expanded="true" signature="-1:-1" placeholder="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5704057" vertical-offset="5501" max-vertical-offset="14160">
-          <caret line="312" column="48" selection-start-line="312" selection-start-column="48" selection-end-line="312" selection-end-column="48" />
-          <folding>
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="(Function) (record) → { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="(Function) (record) → { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424732565496" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424732565496" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.50473183" vertical-offset="0" max-vertical-offset="634">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Conversation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37947494" vertical-offset="1861" max-vertical-offset="2900">
-          <caret line="124" column="56" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.33493975" vertical-offset="501" max-vertical-offset="1740">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
           <folding>
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1424730442700" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1424730442700" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424635009908" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424635009908" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/ConversationCapability.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62052506" vertical-offset="120" max-vertical-offset="3120">
+        <state vertical-scroll-proportion="0.62650603" vertical-offset="120" max-vertical-offset="3120">
           <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
           <folding>
             <marker date="1424636079296" expanded="false" signature="-1:-1" placeholder="..." />
@@ -3154,10 +2939,269 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/FeelingStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+        <state vertical-scroll-proportion="0.23364486" vertical-offset="0" max-vertical-offset="428">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <marker date="1423608414404" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1423608414404" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/StandardAnswers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.093457945" vertical-offset="0" max-vertical-offset="428">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PersonalityRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33734939" vertical-offset="0" max-vertical-offset="980">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <marker date="1424610102843" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424610102843" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424610102843" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424610102843" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424610102843" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424610102843" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424610102843" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/PatternUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7445783" vertical-offset="191" max-vertical-offset="680">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <marker date="1424623591983" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424623591983" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424623591983" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424623591983" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1424623591983" expanded="true" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Personality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046728972" vertical-offset="940" max-vertical-offset="2340">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="/**...*/" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="/**...*/" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder="(Comparator) (o1, o2) → {" />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder="}" />
+            <marker date="1422826122534" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="/**...*/" />
+            <marker date="1422826122534" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37850466" vertical-offset="318" max-vertical-offset="1540">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding>
+            <marker date="1424991895378" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424991895378" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1424991895378" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424991895378" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424991895378" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424991895378" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424991895378" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424991895378" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/capabilities/ActiveListening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19323671" vertical-offset="0" max-vertical-offset="960">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <marker date="1424625172623" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424625172623" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424625172623" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424625172623" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424625172623" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424625172623" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424625172623" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424625172623" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424625172623" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424625172623" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/academicprojects/ChatbotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.787037" vertical-offset="0" max-vertical-offset="1940">
+          <caret line="26" column="5" selection-start-line="15" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1424992245738" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424992245738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992245738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992245738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992245738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992245738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992245738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992245738" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23474178" vertical-offset="0" max-vertical-offset="580">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <marker date="1424992371550" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424992371550" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1424992371550" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424992371550" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/academicprojects/model/InformationsAboutUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7268519" vertical-offset="126" max-vertical-offset="640">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <marker date="1424992283086" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424992283086" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992283086" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dictionary.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1968480">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/dictionary/PolishDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18644068" vertical-offset="63" max-vertical-offset="5520">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder="(string) → { " />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder="(record) → { " />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911514" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Brain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33171913" vertical-offset="2623" max-vertical-offset="3220">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
+            <marker date="1424992911506" expanded="false" signature="-1:-1" placeholder="}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/academicprojects/model/Chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80429596" vertical-offset="3143" max-vertical-offset="14520">
+          <caret line="197" column="13" selection-start-line="197" selection-start-column="13" selection-end-line="197" selection-end-column="13" />
           <folding />
         </state>
       </provider>

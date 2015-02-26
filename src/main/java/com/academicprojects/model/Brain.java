@@ -3,10 +3,13 @@ package com.academicprojects.model;
 import com.academicprojects.model.capabilities.ActiveListening;
 import com.academicprojects.model.capabilities.ConversationCapability;
 import com.academicprojects.model.capabilities.UnderstandingCapability;
+import com.academicprojects.model.dictionary.Genre;
 import com.academicprojects.model.dictionary.GrammaPerson;
 import com.academicprojects.model.dictionary.PolishDictionary;
 import com.academicprojects.model.dictionary.WordDetails;
 import com.academicprojects.util.RandomSearching;
+import com.google.common.base.Predicate;
+import com.google.common.collect.FluentIterable;
 import com.google.common.collect.ImmutableList;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -154,6 +157,25 @@ public class Brain {
 
     public boolean standardDialogsContainsAnswer(String s) {
         return !conversationCapability.getStandardAnswersFor(s).isEmpty();
+    }
+
+    public Gender getGenderOfVerb(final String word) {
+        boolean wordIsVerb = FluentIterable.from(dictionary.getVerbs()).anyMatch(new Predicate<PolishDictionary.Record>() {
+            @Override
+            public boolean apply(PolishDictionary.Record record) {
+                return record.getWord().equals(word);
+            }
+        });
+        if(wordIsVerb) {
+            PolishDictionary.Record verb = dictionary.findVerb(word);
+            Genre genre = verb.getGenre();
+            switch (genre) {
+                case MALE: return Gender.MALE;
+                case FEMALE: return Gender.FEMALE;
+                default: return Gender.NOTKNOWN;
+            }
+        }
+        return Gender.NOTKNOWN;
     }
 
   /*  public void getPersonalitiesFromDatabase(Connection conn) throws SQLException {
