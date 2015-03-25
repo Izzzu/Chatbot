@@ -4,7 +4,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2913 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:07:31 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -13,7 +13,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2570 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:17:25 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -22,7 +22,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2609 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:28:28 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -31,7 +31,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2683 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:33:58 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -40,7 +40,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 3576 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:39:26 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -49,7 +49,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 3853 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:45:43 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -58,7 +58,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 5449 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:49:31 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -67,7 +67,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2905 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 13:52:44 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -76,7 +76,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2676 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 14:02:19 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -85,7 +85,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2785 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 14:03:39 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -94,7 +94,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 3612 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 17:25:24 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -103,7 +103,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2571 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 17:47:34 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -112,7 +112,7 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2764 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 19:28:20 CEST 2014]; root of context hierarchy
 FrameworkServlet 'Chatbot': initialization started
@@ -121,6 +121,6 @@ Loading XML bean definitions from ServletContext resource [/WEB-INF/Chatbot-serv
 JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.academicprojects.controller.ChatController.student(org.springframework.ui.ModelMap) throws java.lang.Exception
-Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.Answer,org.springframework.ui.ModelMap)
+Mapped "{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.academicprojects.controller.ChatController.addAnswer(com.academicprojects.model.answer.Answer,org.springframework.ui.ModelMap)
 FrameworkServlet 'Chatbot': initialization completed in 2628 ms
 Closing WebApplicationContext for namespace 'Chatbot-servlet': startup date [Sun Sep 14 19:36:49 CEST 2014]; root of context hierarchy

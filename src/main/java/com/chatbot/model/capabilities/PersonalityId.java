@@ -1,0 +1,22 @@
+package com.chatbot.model.capabilities;
+
+public enum PersonalityId {
+    DOMINUJACY,
+    DOSTOSOWUJACY,
+    MAKSYMALISTYCZNY,
+    MINIMALISTYCZNY,
+    INSPIRUJACY,
+    SYSTEMATYCZNY,
+    ODKRYWCZY,
+    KONSERWATYWNY,
+    WERYFIKUJACY,
+    HARMONIJNY,
+    EMPATYCZNY,
+    RZECZOWY,
+    ODWAZNY,
+    ASEKURACYJNY,
+    HOJNY,
+    OSZCZEDNY,
+    FAWORYZUJACY,
+    ROWNOWAZACY
+}

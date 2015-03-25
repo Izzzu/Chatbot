@@ -1,0 +1,2323 @@
+[
+  {
+    "word": "równo",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "nierówno",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "symetrycznie",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "niesymetrycznie",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "właściwie",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "niewłaściwie",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "sprawiedliwość",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "sprawiedliwy",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "rekompensata",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "równowaga",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "przeciwwaga",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "balansować",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "proporcje",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "równość",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "konsekwencje",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "skutki",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "kara",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "sankcja",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "kompromis",
+    "idPersonality": "ROWNOWAZACY",
+    "level": 10
+  },
+  {
+    "word": "szczególny",
+    "idPersonality": "FAWORYZUJACY",
+    "level": 10
+  },
+  {
+    "word": "indywidualny",
+    "idPersonality": "FAWORYZUJACY",
+    "level": 10
+  },
+  {
+    "word": "faworyt",
+    "idPersonality": "FAWORYZUJACY",
+    "level": 10
+  },
+  {
+    "word": "preferować",
+    "idPersonality": "FAWORYZUJACY",
+    "level": 10
+  },
+  {
+    "word": "promować",
+    "idPersonality": "FAWORYZUJACY",
+    "level": 10
+  },
+  {
+    "word": "wyróżniać",
+    "idPersonality": "FAWORYZUJACY",
+    "level": 10
+  },
+  {
+    "word": "zdywersyfikować",
+    "idPersonality": "FAWORYZUJACY",
+    "level": 10
+  },
+  {
+    "word": "użyteczne",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "potrzebne",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "przydatne",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "wykorzystać",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "zutylizować",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "rozrzutność",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "oszczędność",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "gospodarnie",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "promocja",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "wyprzedaż",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "przecena",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "obniżka",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "okazja",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "grosz do grosza",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "skromnie",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "ekonomicznie",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "roztrwonić",
+    "idPersonality": "OSZCZEDNY",
+    "level": 10
+  },
+  {
+    "word": "dawać",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "obdarować",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "przekazać",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "ufundować",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "gest",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "napiwek",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "wspomagać",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "darowizna",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "obfity",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "charytatywny",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "bogaty",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "królewski",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "luksusowy",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "efektowny",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "wystawny",
+    "idPersonality": "HOJNY",
+    "level": 10
+  },
+  {
+    "word": "nie jestem pewien",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "może lepiej",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "czy możemy być tego pewni",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "pewny",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "pewność",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "być pewnym",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "problem",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "niebezpieczeństwo",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "ryzyko",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "gwarancja",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "przestrzegać",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "uważnie",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "zaufany",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "kalkulować",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "sprawdzać",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "kontrolować",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "zachować bezpieczeństwo",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "dowód zakupu",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "mieć możliwość wycofania się",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "droga bezpieczeństwa",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "kopia zapasowa",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "koło ratunkowe",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "opcje",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "środki zapobiegawcze",
+    "idPersonality": "ASEKURACYJNY",
+    "level": 10
+  },
+  {
+    "word": "brawura",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "wyzwanie",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "ryzyko",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "niebezpieczeństwo",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "odwaga",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "adrenalina",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "walka",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "udowodnić",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "wygrać",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "bronić się",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "wyprzedzić",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "pokazać",
+    "idPersonality": "ODWAZNY",
+    "level": 10
+  },
+  {
+    "word": "konkretnie",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "meritum",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "konkluzja",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "kwintesencja",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "sedno",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "istota",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "w punktach",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "hasłowo",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "zwięźle",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "na temat",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "skupmy się na tym",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "co masz dokładnie na myśli",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "merytorycznie",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "praca",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "zadanie",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "sumiennie",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "przydatne",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "przyspieszyć",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "pospieszyć",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "zakończyć",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "efektywnie",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "produktywnie",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "mieć z głowy",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "do dzieła",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "do pracy",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "zakasać rękawy",
+    "idPersonality": "RZECZOWY",
+    "level": 10
+  },
+  {
+    "word": "wysłucham",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "słucham",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "powiedz mi o swoim problemie",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "czegoś ci trzeba",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "co się stało",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "opowiedz mi o tym",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "jak do tego doszło",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "zwierzyć się",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "opowiadać",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "otworzyć się",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "serce",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "kotek",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "piesek",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "słonko",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "kwiatuszek",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "kochanie",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "współczuję",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "rozumiem",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "przykro mi",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "żałuję",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "litować się",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "współczucie",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "cierpieć",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "ranić",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "nieprzyjemnie",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "przyjemnie",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "bliski ",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "obojętność",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "miły",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "sympatyczny",
+    "idPersonality": "EMPIRYCZNY",
+    "level": 10
+  },
+  {
+    "word": "ok",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "zgadzam się",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "niech tak będzie",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "niech stracę",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "dobrze",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "nie ma problemu",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "nie ma sprawy",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "nieważne",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "zapomnijmy o tym",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "każdemu się może zdarzyć",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "załatwmy to bez kłótni",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "zgoda",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "kompromis",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "pogodzić",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "zawrzyjmy ugodę",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "uniknąć kłótni",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "przepraszam",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "nie gniewaj się",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "zastanowię się jeszcze",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "nie obraź się",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "nie będę się upierał",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "odpuścić",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "zrezygnować",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "darować",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "nie uraziłem cię",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "może rzeczywiście jest tak jak mówisz",
+    "idPersonality": "HARMONIJNY",
+    "level": 10
+  },
+  {
+    "word": "detal",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "szczegół",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "uszczegółowić",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "uściślić",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "sprecyzować",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "sprostować",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "zweryfikować",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "popatrz",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "spójrz",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "zwróć uwagę",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "sprawdź",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "zweryfikuj",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "przyjrzyj się",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "porównaj",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "dziura",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "luka",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "nieścisłość",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "niedokładność",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "niedbałość",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "plama",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "skaza",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "krzywe",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "nierówne",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "różnica",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "kontrprzykład",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "nieścisły",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "detal",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "dwuznaczny",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "wieloznaczny",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "popsuty",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "niesprawny",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "nie dopilnowano",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "nie zwrócono uwagi na",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "zaniedbano",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "udoskonalić",
+    "idPersonality": "WERYFIKUJACY",
+    "level": 10
+  },
+  {
+    "word": "tradycja",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "sentyment",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "pamiątki",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "z dzida pradziada",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "zasady",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "reguły",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "ideologia",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "zasady",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "wiara",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "konserwatywnie",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "bez zmian",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "nie będę nic zmieniać",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "przyzwyczajenie",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "przywiązanie",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "rutyna",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "tradycja",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "sprawdzone",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "pewne",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "temat tabu",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "typowy",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "stabilny",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "stały",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "wypróbowane",
+    "idPersonality": "KONSERWATYWNY",
+    "level": 10
+  },
+  {
+    "word": "dlaczego",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "po co",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "czemu",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "przyczyny",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "chciałbym zapytać",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "czy możesz mi wyjaśnić",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "jak to działa",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "pokaż mi jak",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "powiedz mi jak",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "chciałbym zrozumieć",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "spróbować",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "zrozumieć",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "wyjaśnić",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "zagadka",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "tajemnica",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "sekret",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "twierdzenie",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "powody",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "przyczyny",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "skutki",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "analiza",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "klasyfikować",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "powiązania",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "relacje",
+    "idPersonality": "ODKRYWCZY",
+    "level": 10
+  },
+  {
+    "word": "porządek",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "bałagan",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "schludność",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "ład",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "ułożyć",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "segregować",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "na swoim miejscu",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "kolej rzeczy",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "klasyfikować",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "organizować",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "systematycznie",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "czas",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "godzina",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "minut",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "sekunda",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "punktualność",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "w swoim czasie",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wcześniej",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "później",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "na początku",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "w środku",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "na końcu",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "po pierwsze",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "po drugie",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "po trzecie",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "teraz",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "najpierw",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "poprzednio",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "od a do z",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "harmonogram",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "plan",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "schemat",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "grafik",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "chronologicznie",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "krok po kroku",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "systematyzować",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "kolejność",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "podsumowanie",
+    "idPersonality": "SYSTEMATYCZNY",
+    "level": 10
+  },
+  {
+    "word": "niespodziewany",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "niezaplanowany",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "nieszablonowy",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "niespotykany",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "unikatowy",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "odmienny",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "nowoczesny",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "oryginalny",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "ciekawy",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "pomysł",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "pomysłowy",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "fascynujący",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "szczególny",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "piekny",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "lubiany",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "tajemniczy",
+    "idPersonality": "INSPIRUJACY",
+    "level": 10
+  },
+  {
+    "word": "projekt",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "projektować",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "malować",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "błahe",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "nieistotne",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "bez znaczenia",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wystarczy",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "niewiele",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "może być",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "minimalnie",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "dowolnie",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "trochę",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "najtańszy",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "tani",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "najmniejszy",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wcale",
+    "idPersonality": "MINIMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "pomysł",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wyzwanie",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wizja",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "marzenie",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "projekt",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "konkurencja",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "zwyciężać",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "rywalizacja",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wyprzedzać",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wspaniały",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wzniosły",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "szczytny",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "hojny",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "królewski",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "najlepszy",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "perfekcyjny",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "wspaniały",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "luksusowy",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "nieskończenie",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "nieprzeciętny",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "rewolucyjny",
+    "idPersonality": "MAKSYMALISTYCZNY",
+    "level": 10
+  },
+  {
+    "word": "ty",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "oni",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "on",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "wy",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "twoje",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "wasze",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "ich",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "dla nich",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "a co by mi pan doradził",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "co o tym myślisz",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "co zrobiłbyś na moim miejscu",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "co jest twoim zdaniem najlepsze dla mnie",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "jeszcze się nie zdecydowałem",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "muszę się zastanowić",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+  {
+    "word": "razem wybierzmy",
+    "idPersonality": "DOSTOSOWUJACY",
+    "level": 10
+  },
+
+
+
+
+
+  {
+    "word": "ja",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "mój",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "my",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "nam",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "nasz",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "w moim",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "twardo",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "dobitnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "bezwzględnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "kategorycznie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "stanowczo",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "definitywnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "nie ma opcji",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "nie ma takiej opcji",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "nie ma takiej możliwości",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "własność",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "posiadać",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "właściciel",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "przywłaszczać",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "siła",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "potęga",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "władza",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "niezależnie od",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "wolny",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "nieskrępowany",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "samowystarczalny",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "samowolny",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "być sobą",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "niepodległość",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "według mnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "moim zdaniem",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "uważam",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "myślę",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "z mojego punktu widzenia",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "kontrolować",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "sterować",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "prowadzić",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "kierować",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "programować",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "ustawić",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "ustawiać",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "dyktować",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "pod_dyktando",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "według_rozkazów",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "według_moich_wskazówek",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "według_mojej_woli",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "zgodnie_z_moją_wolą",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "według_mojej_dyspozycji",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "dyspozycja",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "według_mojego_planu",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "pod_dyktando",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "według_rozkazów",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "musisz",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "musicie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "musieć",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "powinieneś",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "powinniście",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "żądam",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "żądać",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "upierać_się",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "upieram_się",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "moje_polecenie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "domagać_się",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "domagam_się",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "samodzielnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "samemu",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "sam",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "niezależnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "niezależny",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "suwerenność",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "niepodległość",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "sugeruję",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "sugerować",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "radzę",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "na_twoim_miejscu",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "na_jej_miejscu",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "posłuchaj_mnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "zdecydowałem",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "postanowiłem",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "postanowiłam",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "zdecydowałam",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "zamówiłem",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "zamówiłam",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "kategorycznie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "dobitnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "bezwzględnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "definitywnie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "stanowczo",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "masz_rację",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "mam_rację",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "zgadzam_się",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "potrzebuję",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "chciałbym",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "chciałabym",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "wybory",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "referendum",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "głosowanie",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "mieć_wpływ",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+  {
+    "word": "mam_wpływ",
+    "idPersonality": "DOMINUJACY",
+    "level": 10
+  },
+
+]
