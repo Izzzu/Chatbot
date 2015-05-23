@@ -1,6 +1,8 @@
 {
   "ja":"ty",
   "ty":"ja",
+  "tobie":"mi",
+  "mi":"tobie",
   "ci":"mi",
   "mi":"ci",
   "mnie":"cię",
@@ -9,7 +11,12 @@
   "ciebie":"mnie",
   "cię":"mnie",
   "twój":"mój",
+  "twoją":"moją",
   "mój":"twój",
+  "moje":"twoje",
+  "moją":"twoją",
   "nasz":"wasz",
-  "wasz":"nasz"
+  "naszą":"waszą",
+  "wasz":"nasz",
+  "waszą":"naszą"
 }

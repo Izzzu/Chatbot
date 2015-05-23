@@ -41,5 +41,4 @@ public enum LanguagePart {
     NUMERAL,
     DEFAULT,
 
-
 }

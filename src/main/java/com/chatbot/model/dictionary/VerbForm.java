@@ -8,6 +8,4 @@ public enum VerbForm {
     PAST,
     PRESENT,
     DEFAULT,
-
-
 }

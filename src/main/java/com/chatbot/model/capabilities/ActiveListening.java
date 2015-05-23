@@ -1,6 +1,10 @@
 package com.chatbot.model.capabilities;
 
+import com.chatbot.model.util.PreprocessString;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.Optional;
+import com.google.common.base.Predicate;
+import com.google.common.collect.FluentIterable;
 import com.google.common.collect.ImmutableList;
 import lombok.Getter;
 
@@ -8,7 +12,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 
 @Getter
@@ -45,8 +52,32 @@ public class ActiveListening {
     }
 
     public String getOppositePronounOf(String word) {
-        return oppositePronouns.containsKey(word) ? oppositePronouns.get(word) : null;
+        return oppositePronouns.containsKey(word) ? oppositePronouns.get(word) : tryToGetOppositePronounMatchingWithoutPolishChars(word);
     }
 
-    public boolean wordIsPronounWhichCanBeParaphrased(String word) {
-        return oppositePronouns.containsKey(word); } }
+    private String tryToGetOppositePronounMatchingWithoutPolishChars(final String singleWord) {
+        Predicate<String> stringPredicate = filterWithoutPolishWords(singleWord);
+        Optional<String> matchingWithoutPolishChars = pronouns().filter(stringPredicate).first();
+        if(!matchingWithoutPolishChars.isPresent()) {
+            return null;
+        }
+        return oppositePronouns.get(matchingWithoutPolishChars.get());
+    }
+
+    private FluentIterable<String> pronouns() {
+        return FluentIterable.from(oppositePronouns.keySet());
+    }
+
+    public boolean wordIsPronounWhichCanBeParaphrased(final String singleWord) {
+        Predicate<String> stringPredicate = filterWithoutPolishWords(singleWord);
+        return oppositePronouns.containsKey(singleWord) || pronouns().anyMatch(stringPredicate); }
+
+    private Predicate<String> filterWithoutPolishWords(final String singleWord) {
+        return new Predicate<String>() {
+                @Override
+                public boolean apply(String s) {
+                    return PreprocessString.replacePolishCharsAndLowerCase(s).equals(singleWord);
+                }
+            };
+    }
+}

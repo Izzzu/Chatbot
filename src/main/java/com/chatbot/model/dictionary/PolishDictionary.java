@@ -24,7 +24,7 @@ public class PolishDictionary {
     List<Record> recordsWithoutVerbs = new ArrayList<Record>();
     List<Record> verbs = new ArrayList<Record>();
     List<Record> pronouns = new ArrayList<>();
-    Set<String> verbsToPharaprase = new HashSet<String>();
+    Set<String> verbsToParaphrase = new HashSet<String>();
     private List<String> names = new ArrayList<String>();
     private Map<String, List<Record>> mainWordToOtherWords = new HashMap<>();
     List<Record> allRecords = new ArrayList<>();
@@ -69,7 +69,7 @@ public class PolishDictionary {
     private void fillVerbsToPharaprase() {
         for (Record verb : verbs) {
             if (verb.isRightToPharaprasize()) {
-                verbsToPharaprase.add(verb.getWord());
+                verbsToParaphrase.add(verb.getWord());
             }
         }
     }

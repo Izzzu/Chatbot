@@ -85,6 +85,7 @@ public class AnsweringQuestionTest {
         Assertions.assertThat(chatbot.answerQuestion("Jaki jest twój zawód?")).isEqualTo("Pytasz jaki jest mój zawód.  ");
     }
 
+
     @Test
     public void shouldRecognizeQuestion() throws IOException, SQLException {
         chatbot = new Chatbot(brain);
@@ -93,7 +94,8 @@ public class AnsweringQuestionTest {
                 "Co robisz?",
                 "Lubisz mnie?",
                 //"Powiesz coś?",
-                "Jak wyglądasz?"
+                "Jak wyglądasz?",
+                "Jestem kobietą, a Ty?"
 /*
                 "Co słychać?"
 */

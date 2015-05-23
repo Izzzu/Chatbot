@@ -34,7 +34,6 @@ public class ChatController {
 		if (chatbot.isUserTurn()) 
 		{
 			String lastAnswer = chatbot.getLastAnswer();
-			chatbot.recognizeTypeOfSentence(lastAnswer);
 			chatbot.updateInformationAboutUser(lastAnswer);
 			chatbot.answer();
             log.trace(chatbot.getChatbotName());
@@ -55,7 +54,7 @@ public class ChatController {
 
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-	public String addAnswer(@ModelAttribute("Answer")Answer a, ModelMap model) 
+	public String addAnswer(@ModelAttribute("Answer")Answer a, ModelMap model)
 	{
 		model.addAttribute("sentence", a.getSentence());
 		chatbot.addUserAnswer(a.getSentence());

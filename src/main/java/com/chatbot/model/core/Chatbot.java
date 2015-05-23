@@ -279,7 +279,7 @@ public class Chatbot {
         return PatternUtil.removeDots(output);
     }
 
-    private String getQuestionAboutOpinion(String sentenceWithReplacedQuestionMarks) throws UnrecognizeUserAnswerException, NotFoundResponsesForOpinionQuestion {
+    private String tryAnswerForOpinionQuestion(String sentenceWithReplacedQuestionMarks) throws UnrecognizedUserAnswerException, NotFoundResponsesForOpinionQuestion {
         String answerForOpinionQuestion = "";
         String opinionVerb = questionAboutOpinion(sentenceWithReplacedQuestionMarks);
         if (!opinionVerb.isEmpty()) {
@@ -294,17 +294,16 @@ public class Chatbot {
         try {
             if (sentences.length > 0) {
                 String sentenceWithReplacedQuestionMarks = sentences[0].replace("?", " ").toLowerCase();
-                String answerForOpinionQuestion = getQuestionAboutOpinion(sentenceWithReplacedQuestionMarks);
+                String answerForOpinionQuestion = tryAnswerForOpinionQuestion(sentenceWithReplacedQuestionMarks);
                 if (!answerForOpinionQuestion.isEmpty()) return answerForOpinionQuestion;
 
-                String[] wordsInSentence = sentenceWithReplacedQuestionMarks.split(" ");
-                if (isPersonalQuestion(wordsInSentence)) {
+                if (isPersonalQuestion(sentenceWithReplacedQuestionMarks)) {
                     return brain.getRandomAnswerForPersonalQuestion();
                 }
                 String answer = getAnswerForQuestion(sentenceWithReplacedQuestionMarks);
                 if (!answer.isEmpty()) return answer;
             }
-        } catch (UnrecognizeUserAnswerException e1) {
+        } catch (UnrecognizedUserAnswerException e1) {
             return "Bardzo proszę pisz jaśniej. Twoja wypowiedź jest bardzo chaotyczna.";
         } catch (NotFoundResponsesForOpinionQuestion notFoundResponsesForOpinionQuestion) {
             notFoundResponsesForOpinionQuestion.printStackTrace();
@@ -314,12 +313,19 @@ public class Chatbot {
         return "Sformułuj proszę pytanie inaczej.";
     }
 
-    private boolean isPersonalQuestion(String[] wordsInSentence) {
+    private boolean isAnswerForBackQuestion(String sentenceWithReplacedQuestionMarks) {
+
+        return sentenceWithReplacedQuestionMarks.contains("a ty");
+    }
+
+    private boolean isPersonalQuestion(String sentenceWithReplacedQuestionMarks) {
+        String[] wordsInSentence = sentenceWithReplacedQuestionMarks.split(" ");
         for (String word : wordsInSentence) {
             if (verbIsInDictionary(word) && verbIsInPerson(word, GrammaPerson.SECOND)) {
                 return true;
             }
         }
+        if (isAnswerForBackQuestion(sentenceWithReplacedQuestionMarks)) return true;
         return false;
     }
 
@@ -345,7 +351,7 @@ public class Chatbot {
         return answer;
     }
 
-    private String answerForQuestionAboutOpinion(String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizeUserAnswerException, NotFoundResponsesForOpinionQuestion {
+    private String answerForQuestionAboutOpinion(String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizedUserAnswerException, NotFoundResponsesForOpinionQuestion {
         PolishDictionary.Record record = findRecordWithVerbInDictionary(opinionVerb);
         String randomPattern = brain.getRandomAnswerForOpinionQuestion();
         String patternAnswer = randomPattern;
@@ -365,14 +371,14 @@ public class Chatbot {
         return patternAnswer;
     }
 
-    private String pharapraseQuestion(String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizeUserAnswerException {
+    private String pharapraseQuestion(String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizedUserAnswerException {
         String[] strings = sentenceWithReplacedQuestionMarks.split(opinionVerb);
         String readyToParaphrasize = strings.length >= 2 ? strings[1] : "";
         if (replacePolishCharsAndLowerCase(readyToParaphrasize).replace(",", "").startsWith(" ze")) {
             try {
                 readyToParaphrasize = readyToParaphrasize.substring(4);
             } catch (IndexOutOfBoundsException e) {
-                throw new UnrecognizeUserAnswerException();
+                throw new UnrecognizedUserAnswerException();
             }
         }
         String[] words = readyToParaphrasize.split(" ");

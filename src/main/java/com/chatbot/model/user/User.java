@@ -20,13 +20,6 @@ public class User {
 	private Personality personality = new Personality();
 	private int lcu = 0;
 
-	public void updatePersonality(PersonalityId id, int level){
-
-        double personalityLevel = personality.getById(id).getLevel() + level;
-		personality.setNewPersonalityType(id, personalityLevel);
-		
-	}
-
 	public void updatePersonality(PersonalityId id) {
 		double personalityLevel = personality.getById(id).getLevel() + 1;
 		personality.setNewPersonalityType(id, personalityLevel);
