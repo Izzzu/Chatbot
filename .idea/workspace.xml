@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/UnrecognizedUserAnswerException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/State.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/UnrecognizeUserAnswerException.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ActiveListening.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ActiveListening.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/Answer.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/Answer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/AnsweringQuestionTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/chatbot/AnsweringQuestionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/GrammaPerson.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/GrammaPerson.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/LanguagePart.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/LanguagePart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/NotFoundResponseForOneWordAnswer.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/NotFoundResponseForOneWordAnswer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/ParaphraseTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/chatbot/ParaphraseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/PolishDictionary.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/PolishDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/SingularOrPlural.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/SingularOrPlural.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/VerbForm.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/VerbForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/oppositePronouns.json" afterPath="$PROJECT_DIR$/src/main/resources/oppositePronouns.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
     <ignored path="Chatbot.iws" />
@@ -53,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NotFoundResponsesForFeelingSentence.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/NotFoundResponsesForFeelingSentence.java">
+      <file leaf-file-name="DomainConstants.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4050633" vertical-offset="0" max-vertical-offset="395">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4712042" vertical-offset="0" max-vertical-offset="382">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,7 +94,6 @@
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/UserMoodTest.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/QuickTest.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/FeelingAnswersTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/GrammaPerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/LanguagePart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/PolishDictionary.java" />
@@ -132,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/oppositePronouns.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java" />
       </list>
     </option>
   </component>
@@ -702,6 +683,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1783,7 +1802,7 @@
       <workItem from="1432401775287" duration="1871000" />
       <workItem from="1432403672883" duration="1804000" />
       <workItem from="1432405501068" duration="1546000" />
-      <workItem from="1432408058084" duration="798000" />
+      <workItem from="1432408058084" duration="992000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1903,7 +1922,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="573098000" />
+    <option name="totallyTimeSpent" value="573292000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2221,13 +2240,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/.~lock.chatbotanswers.csv#">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/questionsAboutOpinion.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
@@ -2738,10 +2750,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33246073" vertical-offset="913" max-vertical-offset="1740">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/NotFoundResponsesForFeelingSentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4050633" vertical-offset="0" max-vertical-offset="395">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1425161640985" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33246073" vertical-offset="3973" max-vertical-offset="13060">
-          <caret line="234" column="8" selection-start-line="234" selection-start-column="8" selection-end-line="234" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.3898305" vertical-offset="6162" max-vertical-offset="13060">
+          <caret line="344" column="43" selection-start-line="344" selection-start-column="43" selection-end-line="344" selection-end-column="43" />
           <folding>
             <marker date="1432405724381" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1432405724381" expanded="true" signature="-1:-1" placeholder="@{...}" />
@@ -2821,58 +2891,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33246073" vertical-offset="913" max-vertical-offset="1740">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/NotFoundResponsesForFeelingSentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4050633" vertical-offset="0" max-vertical-offset="395">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4712042" vertical-offset="0" max-vertical-offset="382">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
