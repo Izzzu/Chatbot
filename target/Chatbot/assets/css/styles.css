@@ -24,7 +24,6 @@ header title {
 	
 }
 
-
 div.container {
 	display: block;
     margin-top: 40px;
@@ -66,15 +65,13 @@ input {
 	height: 25px;
 }
 
-
-
 .btn{
 	color:#000000;
 	text-shadow: none;
 	text-decoration: none;
 	border:0 none;
 	opacity:0.8;
-	background-color: #FFFFCC; 
+	background-color: #FFFFCC;
 	height:30px;
 	width: 19%;
 	float:right;
@@ -83,38 +80,28 @@ input {
 	color:#000;
 	opacity:0.5;
 }
-/*
-.menu{
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	border:0 none;
-	opacity:0.7;
-	height:50px;
-	width: 50px;
-	float:right;
-	background: url(../images/b.png) no-repeat fixed center;
+
+input.reload {
+	background-image: url(../images/icon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
 }
 
-.menu:hover {
-	opacity:0.5;
-	background: rgba(124, 124, 111, 0.6);
-	border: 2px solid dodgerblue;
-}*/
+input.reload:hover {
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+	border-radius: 5px;
+}
+
 .menu{
 	float: right;
-	height: 25px;
-	width: 50%;
-	opacity: 0.5;
-}
-
-input.button_menu, input.button_menu:hover{
-	background: url(../images/b.png) no-repeat fixed center;
-
-	height:42px;
-	width: 42px;
-	margin: 4px 0px 0px 4px;
-	position: inherit;
+	margin-right: 0.5%;
 }
 
 footer {

@@ -30,16 +30,14 @@
 	<body onload="scrollBox();
 					keepFocus();">
 	<div class="menu">
-		<form:form method="GET" action="/reload" >
-			<input class="btn" type="submit" name="reload" value="Nowa rozmowa" title="Nowa rozmowa"/>
-		</form:form>
+			<form:form method="GET" action="/reload" >
+				<input class="reload" type="submit" name="reload" value="" title="Nowa rozmowa"/>
+			</form:form>
 	</div>
-	<%--<div class="menu">
-		<input type="submit" class="button_menu" title="Nowa rozmowa" value=""/>
-	</div>--%>
+
 	<br>
 	<header>
-		<title>Empatyczny Chatbot</title>
+		<title>Chatbot Eustachy</title>
 	</header>
 		<section id="main">
 			
