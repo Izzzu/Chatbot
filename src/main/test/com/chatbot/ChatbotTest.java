@@ -53,7 +53,7 @@ public class ChatbotTest {
                 "Interesujące.",
                 "."
         };
-        String toBeReturned = "Tylko_tyle?";
+        String toBeReturned = "Tylko tyle?";
         doReturn(toBeReturned).when(brain).getRandomPatternForOneWordAnswer();
         doReturn(toBeReturned).when(brain).getRandomSuitedAnswersForNote(anyInt());
         for (String userAnswer : userAnswers) {
@@ -63,10 +63,28 @@ public class ChatbotTest {
     }
 
     @Test
+    public void shouldAnswerForOneWordStatementIncludingWord() throws Exception {
+
+        String userAnswer =
+                "Tak.";
+
+
+        String toBeReturned = "Na pewno <word>?";
+        doReturn(toBeReturned).when(brain).getRandomPatternForOneWordAnswer();
+        doReturn(toBeReturned).when(brain).getRandomSuitedAnswersForNote(anyInt());
+
+            String answer = chatbot.prepareAnswer(userAnswer);
+            assertThat(answer).isEqualTo("Na pewno tak?");
+
+    }
+
+    @Test
     public void shouldAnswerForPersonalQuestion() throws Exception {
 
         String[] userAnswers = {
-                "Pomożesz mi?"
+                "Pomożesz mi?",
+                "Jestem kobieta, a Ty?"
+
         };
         String toBeReturned = "";
         //doReturn(toBeReturned).when(brain).getPatternsForPersonalQuestions();

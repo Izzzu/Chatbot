@@ -54,5 +54,10 @@ public class PreprocessString {
 		}
 	};
 
+	public static String removePunctuationMarks(String s) {
+		return s.replace("?","").replace(",","").replace(".","").replace(";","").replace("!","");
+
+	}
+
 
 }

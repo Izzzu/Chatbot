@@ -14,7 +14,7 @@ public class ActiveListeningTest {
         ActiveListening listening = new ActiveListening();
         String ja = listening.getOppositePronouns().get("ja");
         assertThat(ja).isEqualTo("ty");
-        assertThat(listening.getOppositePronouns()).hasSize(13);
+        assertThat(listening.getOppositePronouns()).hasSize(19);
     }
 
 }

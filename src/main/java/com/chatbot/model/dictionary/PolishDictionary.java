@@ -25,6 +25,7 @@ public class PolishDictionary {
     List<Record> verbs = new ArrayList<Record>();
     List<Record> pronouns = new ArrayList<>();
     Set<String> verbsToParaphrase = new HashSet<String>();
+    Set<String> conjuctions = new HashSet<>();
     private List<String> names = new ArrayList<String>();
     private Map<String, List<Record>> mainWordToOtherWords = new HashMap<>();
     List<Record> allRecords = new ArrayList<>();
@@ -101,6 +102,9 @@ public class PolishDictionary {
                 verbs.add(record);
             } else {
                 recordsWithoutVerbs.add(record);
+                if(record.getForm().getLanguagePart().equals(CONJUCTION)) {
+                    conjuctions.add(record.getWord());
+                }
             }
         } else {
             throw TooManyFieldsInRecordException();
@@ -321,6 +325,9 @@ public class PolishDictionary {
         }
     };
 
+    public boolean isConjuction(String s) {
+        return conjuctions.contains(s);
+    }
 
     @Getter
     @AllArgsConstructor

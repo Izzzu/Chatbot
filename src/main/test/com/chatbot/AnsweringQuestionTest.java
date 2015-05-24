@@ -85,6 +85,15 @@ public class AnsweringQuestionTest {
         Assertions.assertThat(chatbot.answerQuestion("Jaki jest twój zawód?")).isEqualTo("Pytasz jaki jest mój zawód.  ");
     }
 
+    @Test
+    public void shouldRemoveConjuctionFromBegginingOfQuestionIfParaphrase() throws Exception {
+        chatbot = new Chatbot(brain);
+        PolishDictionary dictionary = new PolishDictionary();
+        doReturn(" ").when(brain).getRandomSuitedAnswersForNote(anyInt());
+        doReturn(dictionary).when(brain).getDictionary();
+        Assertions.assertThat(chatbot.answerQuestion("A co mam mówić?")).isEqualTo("Pytasz co masz mówić.  ");
+    }
+
 
     @Test
     public void shouldRecognizeQuestion() throws IOException, SQLException {

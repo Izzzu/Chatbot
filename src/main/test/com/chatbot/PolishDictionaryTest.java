@@ -15,7 +15,7 @@ public class PolishDictionaryTest{
     public void shouldReturnRightDictionarySize()
     {
         PolishDictionary dictionary = new PolishDictionary();
-        assertEquals(78262, dictionary.getRecordsWithoutVerbs().size() );
+        assertEquals(78263, dictionary.getRecordsWithoutVerbs().size() );
     }
 
     @Test
@@ -23,13 +23,14 @@ public class PolishDictionaryTest{
     {
         PolishDictionary dictionary = new PolishDictionary();
         assertFalse(dictionary.getRecordsWithoutVerbs().isEmpty());
-        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getLanguagePart(), LanguagePart.SUBSTANTIV);
-        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGenre(), Genre.MALE);
-        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGrade(), Grade.DEFAULT);
-        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGrammaCase(), GrammaCase.NOMINATIV);
-        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getGrammaPerson(), GrammaPerson.DEFAULT);
-        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getSingularOrPlural(), SingularOrPlural.SINGULAR);
-        assertEquals(dictionary.getRecordsWithoutVerbs().get(0).getForm().getVerbForm(), VerbForm.DEFAULT);
+        PolishDictionary.Record record = dictionary.getRecordsWithoutVerbs().get(1);
+        assertEquals(record.getForm().getLanguagePart(), LanguagePart.SUBSTANTIV);
+        assertEquals(record.getForm().getGenre(), Genre.MALE);
+        assertEquals(record.getForm().getGrade(), Grade.DEFAULT);
+        assertEquals(record.getForm().getGrammaCase(), GrammaCase.NOMINATIV);
+        assertEquals(record.getForm().getGrammaPerson(), GrammaPerson.DEFAULT);
+        assertEquals(record.getForm().getSingularOrPlural(), SingularOrPlural.SINGULAR);
+        assertEquals(record.getForm().getVerbForm(), VerbForm.DEFAULT);
 
     }
 

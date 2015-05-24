@@ -202,6 +202,10 @@ public class Brain {
         return dictionary.convertToMainWordsWithoutPolishChars(userWord);
     }
 
+    public boolean isConjuction(String s) {
+        return dictionary.isConjuction(s);
+    }
+
   /*  public void getPersonalitiesFromDatabase(Connection conn) throws SQLException {
         String sql = "SELECT * FROM PERSONALITY";
 

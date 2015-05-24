@@ -15,6 +15,7 @@ import com.google.common.base.Function;
 import com.google.common.base.Predicate;
 import com.google.common.collect.FluentIterable;
 import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.Lists;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,6 +30,7 @@ import static com.chatbot.model.answer.TypeOfSentence.*;
 import static com.chatbot.model.dictionary.VerbForm.INFINITIVE;
 import static com.chatbot.model.user.Gender.*;
 import static com.chatbot.model.util.DomainConstants.OPENINGS_OF_QUESTION;
+import static com.chatbot.model.util.PreprocessString.removePunctuationMarks;
 import static com.chatbot.model.util.PreprocessString.replacePolishCharsAndLowerCase;
 
 @Getter
@@ -222,7 +224,7 @@ public class Chatbot {
             return getChatbotResponseForFeelingSentence(userAnswer);
         }
         if (typeOfSentence.equals(TypeOfSentence.SINGLE_WORD)) {
-            return answerForSingleWord(userAnswerToLowerCaseWithoutPolishChars);
+            return answerForSingleWord(removePunctuationMarks(userAnswerToLowerCaseWithoutPolishChars));
         }
         int userAnswerNote = catchUserAnswerNote(userAnswerToLowerCaseWithoutPolishChars);
         System.out.println("user answer note: " + userAnswerNote);
@@ -245,7 +247,7 @@ public class Chatbot {
     }
 
     private String answerForStandardDialog(String userAnswerToLowerCaseWithoutPolishChars) {
-        return brain.getRandomStandardAnswer(userAnswerToLowerCaseWithoutPolishChars.replace("?", ""));
+        return brain.getRandomStandardAnswer(removePunctuationMarks(userAnswerToLowerCaseWithoutPolishChars));
     }
 
     private String getChatbotAnswerFromChatbotPatterns(int userAnswerNote) throws NotFoundExceptionAnswer {
@@ -331,7 +333,8 @@ public class Chatbot {
 
     public String getAnswerForQuestion(String sentenceWithReplacedQuestionMarks) throws NotFoundExceptionAnswer {
         String answer = "";
-        String[] wordsInSentence = sentenceWithReplacedQuestionMarks.split(" ");
+        List<String> wordsInSentence = removeConjuctionFromBeginingOfQuestion(sentenceWithReplacedQuestionMarks.split(" "));
+
         Map<Integer, String> mapIndexToChangedVerb = findVerbsRightToParaphrasize(wordsInSentence);
         if (mapIndexToChangedVerb.values().contains("")) return "";
         String changedVerbs = changeVerbsIntoOpposite(wordsInSentence, mapIndexToChangedVerb, 0).toString();
@@ -343,12 +346,20 @@ public class Chatbot {
             return "";
         } else {
             List<String> questions = OPENINGS_OF_QUESTION;
-            if (wordsInSentence.length >= 1 && !questions.contains(wordsInSentence[0])) {
+            if (wordsInSentence.size() >= 1 && !questions.contains(wordsInSentence.get(0))) {
                 answer = "czy " + answer;
             }
             answer = "Pytasz " + answer;
         }
         return answer;
+    }
+
+    private List<String> removeConjuctionFromBeginingOfQuestion(String[] wordsInSentence) {
+        List<String> wordsList = Lists.newArrayList(wordsInSentence);
+        if(wordsList.size()>=1 && brain.isConjuction(wordsList.get(0))) {
+            wordsList.remove(0);
+        }
+        return wordsList;
     }
 
     private String answerForQuestionAboutOpinion(String sentenceWithReplacedQuestionMarks, String opinionVerb) throws UnrecognizedUserAnswerException, NotFoundResponsesForOpinionQuestion {
@@ -381,7 +392,7 @@ public class Chatbot {
                 throw new UnrecognizedUserAnswerException();
             }
         }
-        String[] words = readyToParaphrasize.split(" ");
+        List<String> words = Lists.newArrayList(readyToParaphrasize.split(" "));
         Map<Integer, String> verbsRightToParaphrasize = this.findVerbsRightToParaphrasize(words);
         if (verbsRightToParaphrasize.values().contains("")) return "";
         return changeVerbsIntoOpposite(words, verbsRightToParaphrasize, 0).toString();
@@ -435,7 +446,7 @@ public class Chatbot {
         String[] ar = {userAnswer};
         String[] sentences = divideIntoSentences(userAnswer, ar);
         for (int i = 0; i < sentences.length; i++) {
-            String[] words = sentences[i].split(" ");
+            List<String> words = Lists.newArrayList(sentences[i].split(" "));
             String changedVerb = "";
             Map<Integer, String> mapIndexToChangedVerb;
             mapIndexToChangedVerb = findVerbsRightToParaphrasize(words);
@@ -479,7 +490,7 @@ public class Chatbot {
     }
 
 
-    private Map<Integer, String> findVerbsRightToParaphrasize(String[] words) {
+    private Map<Integer, String> findVerbsRightToParaphrasize(List<String> words) {
         String changedVerb = "";
         Map<Integer, String> mapIndexToChangedVerb = new LinkedHashMap<Integer, String>();
         Set<String> verbsPrimarySecondaryForm = FluentIterable.from(brain.getDictionary().getVerbs())
@@ -494,8 +505,8 @@ public class Chatbot {
                         return record.getWord();
                     }
                 }).toSet();
-        for (int j = 0; j < words.length; j++) {
-            String tempWord = words[j].toLowerCase().replace(".", "").replace(",", "");
+        for (int j = 0; j < words.size(); j++) {
+            String tempWord = words.get(j).toLowerCase().replace(".", "").replace(",", "");
             if (verbsPrimarySecondaryForm.contains(tempWord)) {
                 changedVerb = findPharaprasizedVerbIfVerbIsInDictionary(tempWord);
                 mapIndexToChangedVerb.put(j, changedVerb);
@@ -504,7 +515,7 @@ public class Chatbot {
         return mapIndexToChangedVerb;
     }
 
-    private String createPharaprasizedAnswer(String[] words, Map<Integer, String> mapIndexToChangedVerb, String begin) {
+    private String createPharaprasizedAnswer(List<String> words, Map<Integer, String> mapIndexToChangedVerb, String begin) {
         StringBuffer sb = new StringBuffer();
         sb.append(begin);
 
@@ -529,18 +540,18 @@ public class Chatbot {
         return sb;
     }
 
-    private StringBuffer changeVerbsIntoOpposite(String[] words, Map<Integer, String> mapIndexToChangedVerb, int firstVerb) {
+    private StringBuffer changeVerbsIntoOpposite(List<String> words, Map<Integer, String> mapIndexToChangedVerb, int firstVerb) {
         StringBuffer sb = new StringBuffer();
 
         LinkedList<Integer> indexes = new LinkedList<Integer>(mapIndexToChangedVerb.keySet());
 
         //if(!indexes.isEmpty()) firstVerb =  indexes.getFirst();
 
-        for (int i = firstVerb; i < words.length; i++) {
+        for (int i = firstVerb; i < words.size(); i++) {
             if (indexes.contains(i)) {
                 sb.append(mapIndexToChangedVerb.get(i));
             } else {
-                sb.append(words[i]);
+                sb.append(words.get(i));
             }
             sb.append(" ");
         }
