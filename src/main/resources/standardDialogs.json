@@ -4,6 +4,10 @@
       "chatbotResponses": ["dobranoc", "Miłej nocy", "Kolorowych snów", "Dziękuję za rozmowę. Dobranoc."]
     },
   {
+    "userAnswer": "dziekuje",
+    "chatbotResponses": ["Cała przyjemniść po mojej stronie.", "Również Ci dziękuję.", "Nie dziękuj.", "Nie ma za co."]
+  },
+  {
     "userAnswer": "do widzenia",
     "chatbotResponses": ["Do widzenia", "Do zobaczenia", "Kolorowych snów", "Dziękuję za rozmowę."]
   },

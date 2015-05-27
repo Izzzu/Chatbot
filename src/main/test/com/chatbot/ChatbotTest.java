@@ -25,8 +25,6 @@ public class ChatbotTest {
 
     }
 
-    /*@Test
-    public void shouldThrowExceptionWhen*/
     @Test
     public void testPersonalityRecognizer() throws Exception {
 
@@ -67,8 +65,6 @@ public class ChatbotTest {
 
         String userAnswer =
                 "Tak.";
-
-
         String toBeReturned = "Na pewno <word>?";
         doReturn(toBeReturned).when(brain).getRandomPatternForOneWordAnswer();
         doReturn(toBeReturned).when(brain).getRandomSuitedAnswersForNote(anyInt());
@@ -112,6 +108,4 @@ public class ChatbotTest {
             assertThat(answer).isEqualTo(toBeReturned);
         }
     }
-
-
 }

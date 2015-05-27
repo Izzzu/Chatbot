@@ -215,7 +215,7 @@ public class Chatbot {
         String userAnswerToLowerCaseWithoutPolishChars = replacePolishCharsAndLowerCase(userAnswer).toLowerCase();
         TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswerToLowerCaseWithoutPolishChars);
         if (typeOfSentence.equals(TypeOfSentence.STANDARD_DIALOG)) {
-            return answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
+            return getAnswerForStadardDialog(userAnswerToLowerCaseWithoutPolishChars);
         }
         if (typeOfSentence.equals(TypeOfSentence.QUESTION)) {
             return answerQuestion(userAnswer.toLowerCase());
@@ -246,16 +246,36 @@ public class Chatbot {
         }
     }
 
+    private String getAnswerForStadardDialog(String userAnswerToLowerCaseWithoutPolishChars) {
+        String lastChatbotAnswer = tryToGetLasChatbotAnswer();
+        String answerForStandardDialog = answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
+        while(answerForStandardDialog.equals(lastChatbotAnswer)) {
+            answerForStandardDialog = answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
+        }
+        return answerForStandardDialog;
+    }
+
+    private String tryToGetLasChatbotAnswer() {
+        String lastChatbotAnswer;
+        try {
+            lastChatbotAnswer = conversation.getLastChatbotAnswer();
+        } catch (Exception e) {
+            lastChatbotAnswer = null;
+        }
+        return lastChatbotAnswer;
+    }
+
     private String answerForStandardDialog(String userAnswerToLowerCaseWithoutPolishChars) {
         return brain.getRandomStandardAnswer(removePunctuationMarks(userAnswerToLowerCaseWithoutPolishChars));
     }
 
     private String getChatbotAnswerFromChatbotPatterns(int userAnswerNote) throws NotFoundExceptionAnswer {
         String chatbotAnswerFromAnswerPatterns = "";
+        String lastChatbotAnswer = tryToGetLasChatbotAnswer();
         do {
             chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromAnswerPatterns(userAnswerNote);
         }
-        while (conversation.getLastChatbotAnswer().contains(chatbotAnswerFromAnswerPatterns));
+        while (lastChatbotAnswer.contains(chatbotAnswerFromAnswerPatterns));
         return chatbotAnswerFromAnswerPatterns;
     }
 

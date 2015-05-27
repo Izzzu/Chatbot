@@ -55,7 +55,6 @@ public class FeelingAnswersTest {
         doReturn(statement).when(brain).getRandomFeelingStatementForVerb(anyString());
 
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Chcę zarabiać więcej pieniędzy.")).isEqualTo("Czy to twoje najważniejsze pragnienie?");
-        assertThat(chatbot.getChatbotResponseForFeelingSentence("Chce zarabiać więcej pieniędzy.")).isEqualTo("Czy to twoje najważniejsze pragnienie?");
     }
 
     @Test
@@ -64,14 +63,12 @@ public class FeelingAnswersTest {
         user.setGender(Gender.FEMALE);
         Chatbot chatbot = new Chatbot(brain,user);
 
-
         doReturn(dictionary).when(brain).getDictionary();
         doReturn("").when(brain).startParaphrase();
         doReturn(false).when(brain).isPronoun(anyString());
 
         String statement = "To bardzo ważne, żeby głośno mówić o swoich uczuciach.";
         doReturn(statement).when(brain).getRandomFeelingStatementForVerb(anyString());
-
 
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Czuję się fatalnie.")).isEqualTo("To bardzo ważne, żeby głośno mówić o swoich uczuciach");
 
@@ -89,7 +86,6 @@ public class FeelingAnswersTest {
 
         String statement = "Co jest powodem tego, że<paraphrase>?";
         doReturn(statement).when(brain).getRandomFeelingStatementForVerb(anyString());
-
 
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Nie jestem piękna")).isEqualTo("Co jest powodem tego, że nie jesteś piękna?");
         assertThat(chatbot.getChatbotResponseForFeelingSentence("Nie chcę tego")).isEqualTo("Co jest powodem tego, że nie chcesz tego?");
