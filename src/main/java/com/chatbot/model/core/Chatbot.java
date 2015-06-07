@@ -71,8 +71,10 @@ public class Chatbot {
         String token = "";
         token = sc.findInLine("\\d+");
         if (token != null) {
-
-            user.setAge(Integer.parseInt(token));
+            int age = Integer.parseInt(token);
+            if (age> 100 || age <4) {
+                age = 0; }
+            user.setAge(age);
         }
         return token;
     }
@@ -238,7 +240,8 @@ public class Chatbot {
         switch (chooseAnswer) {
             //question:
             //case 7:
-            //    return pharaprasizedAnswer /*+ getNeutralEngagedAnswer()*/;
+            //    return pharaprasizedAnswer /*+ getNeutralEng
+            //dAnswer()*/;
             case 8:
                 return pharaprasizedAnswer.length() == 0 ? chatbotAnswerFromAnswerPatterns : pharaprasizedAnswer;
             default:

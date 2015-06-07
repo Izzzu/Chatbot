@@ -4,6 +4,22 @@
       "chatbotResponses": ["dobranoc", "Miłej nocy", "Kolorowych snów", "Dziękuję za rozmowę. Dobranoc."]
     },
   {
+    "userAnswer": "papa",
+    "chatbotResponses": ["Papa", "Dziękuję za rozmowę.", "Do widzenia", "Do następnego razu"]
+  },
+  {
+    "userAnswer": "musze konczyc",
+    "chatbotResponses": ["Papa", "Dziękuję za rozmowę.", "Do widzenia", "Do następnego razu"]
+  },
+  {
+    "userAnswer": "musze isc",
+    "chatbotResponses": ["Papa", "Dziękuję za rozmowę.", "Do widzenia", "Do następnego razu"]
+  },
+  {
+    "userAnswer": "dzieki za rozmowe",
+    "chatbotResponses": ["Papa", "Dziękuję za rozmowę.", "Do widzenia", "Do następnego razu"]
+  },
+  {
     "userAnswer": "dziekuje",
     "chatbotResponses": ["Cała przyjemniść po mojej stronie.", "Również Ci dziękuję.", "Nie dziękuj.", "Nie ma za co."]
   },
@@ -53,7 +69,7 @@
       "Witaj! Jestem empatycznym chatbotem. Nazywam się Zbyszek, a Ty?",
       "Dzień dobry, jestem Chatbot Zbyszek, jak Ci na imię?",
       "Hej, zapraszam do rozmowy. Mam na imię Zbyszek, a Ty?",
-      "Witaj, jestem Chatbotem. Chętnie z Tobę porozmawiam. Jak masz na imię?"
+      "Witaj, jestem Chatbotem. Chętnie z Tobą porozmawiam. Jak masz na imię?"
     ]
   },
   {

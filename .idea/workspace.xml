@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log.out" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/ChatbotTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/chatbot/ChatbotTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/FeelingAnswersTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/chatbot/FeelingAnswersTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/jsp/chat4.jsp" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/jsp/chat4.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/dictionary.txt" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/dictionary.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/standardDialogs.json" afterPath="$PROJECT_DIR$/src/main/resources/standardDialogs.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/useranswers.csv" afterPath="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/useranswers.csv" afterPath="$PROJECT_DIR$/target/classes/useranswers.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -38,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChatbotTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/test/com/chatbot/ChatbotTest.java">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6296296" vertical-offset="28" max-vertical-offset="2100">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2795031" vertical-offset="0" max-vertical-offset="644">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -66,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/konserwatywny.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/inspirujacy.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/hojny.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/harmonijny.csv" />
@@ -113,10 +117,11 @@
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/model/ActiveListeningTest.java" />
         <option value="/RegExp Fragment (PreprocessString.java:1634).regexp" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/PreprocessString.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/standardDialogs.json" />
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/FeelingAnswersTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/ChatbotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
+        <option value="$PROJECT_DIR$/src/main/resources/standardDialogs.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
       </list>
     </option>
   </component>
@@ -244,6 +249,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,30 +281,6 @@
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-webmvc:4.0.3.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-webmvc-4.0.3.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -304,155 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-context:4.0.3.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-context-4.0.3.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-context:4.0.3.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-context-4.0.3.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-context:4.0.3.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-context-4.0.3.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: com.google.guava:guava:18.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guava-18.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: com.google.guava:guava:18.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guava-18.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: com.google.guava:guava:18.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guava-18.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,6 +299,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,306 +321,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capabilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -837,82 +377,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dictionary" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -983,67 +447,8 @@
               <option name="myItemId" value="chatbot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Default" />
@@ -1963,7 +1368,12 @@
       <workItem from="1432507943552" duration="1658000" />
       <workItem from="1432592437846" duration="1587000" />
       <workItem from="1432757904935" duration="2059000" />
-      <workItem from="1432759990805" duration="707000" />
+      <workItem from="1432759990805" duration="1291000" />
+      <workItem from="1433626037831" duration="616000" />
+      <workItem from="1433628220577" duration="995000" />
+      <workItem from="1433630074238" duration="1580000" />
+      <workItem from="1433685742359" duration="1437000" />
+      <workItem from="1433688646330" duration="1762000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -2083,7 +1493,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="589058000" />
+    <option name="totallyTimeSpent" value="596032000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2107,38 +1517,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1370" height="740" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20930232" sideWeight="0.75294983" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0783309" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39983845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32713178" sideWeight="0.33038348" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03634895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29648608" sideWeight="0.4990177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20930232" sideWeight="0.75294983" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28683385" sideWeight="0.6135693" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30852714" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2979502" sideWeight="0.4990177" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20424597" sideWeight="0.50098234" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28683385" sideWeight="0.6135693" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30852714" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38557994" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2210,7 +1620,7 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>602</line>
+          <line>605</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -2228,7 +1638,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>586</line>
+          <line>589</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
@@ -2258,25 +1668,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>619</line>
+          <line>622</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>637</line>
+          <line>640</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>657</line>
+          <line>660</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>417</line>
+          <line>420</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
@@ -2288,31 +1698,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>480</line>
+          <line>483</line>
           <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>223</line>
+          <line>225</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>297</line>
+          <line>300</line>
           <properties />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>215</line>
+          <line>217</line>
           <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>725</line>
+          <line>728</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
@@ -2324,7 +1734,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>173</line>
+          <line>175</line>
           <properties />
           <option name="timeStamp" value="141" />
         </line-breakpoint>
@@ -2360,31 +1770,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>316</line>
+          <line>319</line>
           <properties />
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>176</line>
+          <line>178</line>
           <properties />
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>170</line>
+          <line>172</line>
           <properties />
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>188</line>
+          <line>190</line>
           <properties />
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>148</line>
+          <line>150</line>
           <properties />
           <option name="timeStamp" value="159" />
         </line-breakpoint>
@@ -2401,27 +1811,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/collect/Iterables.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4025" vertical-offset="4159" max-vertical-offset="8100">
-          <caret line="279" column="26" selection-start-line="279" selection-start-column="26" selection-end-line="279" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/collect/FluentIterable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43" vertical-offset="1088" max-vertical-offset="3540">
-          <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ActiveListening.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58795565" vertical-offset="709" max-vertical-offset="1340">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/standardQuestions.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="444">
@@ -2485,18 +1874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Chatbot-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5555556" vertical-offset="0" max-vertical-offset="620">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.775641" vertical-offset="256" max-vertical-offset="880">
           <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2554,7 +1935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16025642" vertical-offset="0" max-vertical-offset="840">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2606,7 +1986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46632123" vertical-offset="0" max-vertical-offset="386">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2614,7 +1993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.051813472" vertical-offset="60" max-vertical-offset="1220">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2630,18 +2008,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="58680">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dictionary.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3325301" vertical-offset="1157682" max-vertical-offset="1968500">
           <caret line="57891" column="7" selection-start-line="57891" selection-start-column="2" selection-end-line="57891" selection-end-column="7" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/personalityPhrases.json">
@@ -2655,27 +2032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7920">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotanswers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2396857" vertical-offset="631" max-vertical-offset="1140">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/useranswers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33264032" vertical-offset="4380" max-vertical-offset="6740">
-          <caret line="227" column="4" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/standardDialogs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2269807" vertical-offset="0" max-vertical-offset="1440">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -2707,7 +2063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19646366" vertical-offset="0" max-vertical-offset="920">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2715,7 +2070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8074656" vertical-offset="511" max-vertical-offset="1020">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2723,7 +2077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70726913" vertical-offset="0" max-vertical-offset="860">
           <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2739,7 +2092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.10412574" vertical-offset="653" max-vertical-offset="1260">
           <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2747,7 +2099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.8611112" vertical-offset="604" max-vertical-offset="2060">
           <caret line="107" column="59" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2755,140 +2106,211 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39814815" vertical-offset="1268" max-vertical-offset="1700">
           <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/chatbot/ChatbotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4310618" vertical-offset="28" max-vertical-offset="2100">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Chatbot-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48465267" vertical-offset="0" max-vertical-offset="620">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotanswers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.77018636" vertical-offset="496" max-vertical-offset="1140">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/useranswers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20292208" vertical-offset="3995" max-vertical-offset="6740">
+          <caret line="206" column="17" selection-start-line="206" selection-start-column="17" selection-end-line="206" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/standardDialogs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49833888" vertical-offset="0" max-vertical-offset="1760">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432409568165" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432409568165" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;dobranoc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;papa&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;musze konczyc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;musze isc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;dzieki za rozmowe&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;dziekuje&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;do widzenia&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;co slychac&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;co u ciebie&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;co porabiasz&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;ile masz lat&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;jaki jest twoj ulubiony kolor&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;jaki masz kolor oczu&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;kto cie stworzyl&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;kto cie napisał&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;czesc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;0&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;2&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="[...]" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="3576" max-vertical-offset="13640">
-          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4991708" vertical-offset="519" max-vertical-offset="13740">
+          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
           <folding>
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="(Function) (record) → { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="(Function) (record) → { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432759925990" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432759925990" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="(Function) (record) → { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="(Function) (record) → { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1433689732434" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1433689732434" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/chatbot/ChatbotTest.java">
+    <entry file="file://$PROJECT_DIR$/global-groovy.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6296296" vertical-offset="28" max-vertical-offset="2100">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3520">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424633000000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2795031" vertical-offset="0" max-vertical-offset="644">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding />
         </state>
       </provider>
