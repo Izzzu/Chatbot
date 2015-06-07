@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log.out" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/jsp/chat4.jsp" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/jsp/chat4.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/dictionary.txt" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/classes/dictionary.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/standardDialogs.json" afterPath="$PROJECT_DIR$/src/main/resources/standardDialogs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/useranswers.csv" afterPath="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/useranswers.csv" afterPath="$PROJECT_DIR$/target/classes/useranswers.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
     <ignored path="Chatbot.iws" />
@@ -1373,7 +1365,7 @@
       <workItem from="1433628220577" duration="995000" />
       <workItem from="1433630074238" duration="1580000" />
       <workItem from="1433685742359" duration="1437000" />
-      <workItem from="1433688646330" duration="1762000" />
+      <workItem from="1433688646330" duration="1957000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1493,7 +1485,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="596032000" />
+    <option name="totallyTimeSpent" value="596227000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
