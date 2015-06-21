@@ -216,6 +216,7 @@ public class Chatbot {
         String userAnswer = lastAnswer.replace("  ", " ").replace("_", " ");
         String userAnswerToLowerCaseWithoutPolishChars = replacePolishCharsAndLowerCase(userAnswer).toLowerCase();
         TypeOfSentence typeOfSentence = recognizeTypeOfSentence(userAnswerToLowerCaseWithoutPolishChars);
+
         if (typeOfSentence.equals(TypeOfSentence.STANDARD_DIALOG)) {
             return getAnswerForStadardDialog(userAnswerToLowerCaseWithoutPolishChars);
         }
@@ -228,6 +229,7 @@ public class Chatbot {
         if (typeOfSentence.equals(TypeOfSentence.SINGLE_WORD)) {
             return answerForSingleWord(removePunctuationMarks(userAnswerToLowerCaseWithoutPolishChars));
         }
+
         int userAnswerNote = catchUserAnswerNote(userAnswerToLowerCaseWithoutPolishChars);
         System.out.println("user answer note: " + userAnswerNote);
         int chooseAnswer = (int) (Math.random() * 10);
@@ -235,22 +237,38 @@ public class Chatbot {
         System.out.println("user answer :" + userAnswer.toLowerCase());
         //losowa logika - zwraca -1 gry nie zaleziono patternu - to nie blad
         String pharaprasizedAnswer = paraphrase(userAnswer.toLowerCase(), true);
+        String exclamation = "";
+        if (typeOfSentence.equals(TypeOfSentence.EXCLAMATION)) {
+            exclamation = getChatbotAnswerForExclamation();
+            if(pharaprasizedAnswer.isEmpty() && !exclamation.isEmpty()) {
+                return exclamation;
+            }
+        }
         String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromChatbotPatterns(userAnswerNote);
-        System.out.println("paraprase: " + pharaprasizedAnswer);
         switch (chooseAnswer) {
             //question:
             //case 7:
             //    return pharaprasizedAnswer /*+ getNeutralEng
             //dAnswer()*/;
             case 8:
-                return pharaprasizedAnswer.length() == 0 ? chatbotAnswerFromAnswerPatterns : pharaprasizedAnswer;
+                return pharaprasizedAnswer.isEmpty() ? chatbotAnswerFromAnswerPatterns : pharaprasizedAnswer;
             default:
-                return pharaprasizedAnswer + " " + chatbotAnswerFromAnswerPatterns;
+                return exclamation + pharaprasizedAnswer + " " + chatbotAnswerFromAnswerPatterns;
         }
     }
 
+    private String getChatbotAnswerForExclamation() {
+        String lastAnswer = getLastAnswer();
+        String answer = "";
+        do{
+            answer = brain.getRandomAnswerForExclamation();
+        }
+        while(lastAnswer.contains(answer));
+        return answer;
+    }
+
     private String getAnswerForStadardDialog(String userAnswerToLowerCaseWithoutPolishChars) {
-        String lastChatbotAnswer = tryToGetLasChatbotAnswer();
+        String lastChatbotAnswer = tryToGetLastChatbotAnswer();
         String answerForStandardDialog = answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
         while(answerForStandardDialog.equals(lastChatbotAnswer)) {
             answerForStandardDialog = answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
@@ -258,7 +276,7 @@ public class Chatbot {
         return answerForStandardDialog;
     }
 
-    private String tryToGetLasChatbotAnswer() {
+    private String tryToGetLastChatbotAnswer() {
         String lastChatbotAnswer;
         try {
             lastChatbotAnswer = conversation.getLastChatbotAnswer();
@@ -274,7 +292,7 @@ public class Chatbot {
 
     private String getChatbotAnswerFromChatbotPatterns(int userAnswerNote) throws NotFoundExceptionAnswer {
         String chatbotAnswerFromAnswerPatterns = "";
-        String lastChatbotAnswer = tryToGetLasChatbotAnswer();
+        String lastChatbotAnswer = tryToGetLastChatbotAnswer();
         do {
             chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromAnswerPatterns(userAnswerNote);
         }
@@ -466,7 +484,7 @@ public class Chatbot {
 
     public String paraphrase(String userAnswer, boolean addBeginParaphrase) {
 
-        String[] ar = {userAnswer};
+        String[] ar = {userAnswer.replace("!","").replace("?","")};
         String[] sentences = divideIntoSentences(userAnswer, ar);
         for (int i = 0; i < sentences.length; i++) {
             List<String> words = Lists.newArrayList(sentences[i].split(" "));
@@ -728,6 +746,7 @@ public class Chatbot {
     public TypeOfSentence recognizeTypeOfSentence(String s) {
         if (brain.standardDialogsContainsAnswer(s.replace("?", "").replace(".", ""))) return STANDARD_DIALOG;
         if (s.split(" ").length == 1) return SINGLE_WORD;
+        if (s.charAt(s.length()-1) == '!') return EXCLAMATION;
         if (s.contains("?")) return TypeOfSentence.QUESTION;
         if (s.contains("chce") || s.contains("czuje") || s.contains("jestem")) return FEELING_STATEMENT;
         return TypeOfSentence.OTHER;

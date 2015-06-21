@@ -6,13 +6,14 @@ import com.google.common.base.Optional;
 import com.google.common.base.Predicate;
 import com.google.common.collect.FluentIterable;
 import com.google.common.collect.ImmutableList;
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
 import lombok.Getter;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -28,7 +29,7 @@ public class ActiveListening {
         this.paraphraseStart = ImmutableList.copyOf(list);
     }
     public ActiveListening() throws IOException {
-        getParaphrases(new File("src/main/resources/paraphrases.csv"));
+        getParaphrases(new File("src/main/resources/paraphrases.json"));
         fillMapOppositePronouns();
     }
 
@@ -39,16 +40,11 @@ public class ActiveListening {
     }
 
     private void getParaphrases(File file) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String s = null;
-        List<String> list = new ArrayList<String>();
-        while ((s=br.readLine()) != null)
-        {
-            String [] tab = s.split(" ");
-            list.add(tab[0].replace("_", " "));
-        }
-        paraphraseStart = ImmutableList.copyOf(list);
-        br.close();
+        FileReader fileReader = new FileReader(file);
+
+        Gson gson = new Gson();
+        Type type = new TypeToken<List<String>>(){}.getType();
+        paraphraseStart = gson.fromJson(fileReader, type);
     }
 
     public String getOppositePronounOf(String word) {

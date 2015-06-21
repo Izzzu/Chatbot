@@ -19,6 +19,8 @@ import com.google.common.collect.FluentIterable;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import lombok.Getter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -33,6 +35,7 @@ public class Brain {
     private PersonalityRecognizer personalityRecognizer;
     private ActiveListening activeListening;
     private PolishDictionary dictionary = new PolishDictionary();
+    final static Logger logger = LoggerFactory.getLogger(Brain.class);
 
     public Brain() throws IOException, SQLException {
         try {
@@ -40,7 +43,7 @@ public class Brain {
             understandingCapability = new UnderstandingCapability();
             personalityRecognizer = new PersonalityRecognizer();
             activeListening = new ActiveListening();
-
+            logger.debug("Constructor of Brain class ");
         } finally {
 
         }
@@ -204,6 +207,13 @@ public class Brain {
 
     public boolean isConjuction(String s) {
         return dictionary.isConjuction(s);
+    }
+
+    public String getRandomAnswerForExclamation() {
+        List<String> answers = conversationCapability.getPatternAnswersForExclamations();
+        int size = answers.size();
+        int randomIndex = RandomSearching.generateRandomIndex(size);
+        return size==0 ? "" : answers.get(randomIndex);
     }
 
   /*  public void getPersonalitiesFromDatabase(Connection conn) throws SQLException {

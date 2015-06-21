@@ -6,10 +6,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -20,6 +17,7 @@ public class ConversationCapability {
     private List<String> patternsForOneWordAnswers = new LinkedList<>();
     private List<String> patternAnswersForPersonalQuestion = new LinkedList<String>();
     private List<String> patternAnswerForOpinionQuestion = new LinkedList<String>();
+    private List<String> patternAnswerForExclamations = new LinkedList<String>();
     List<StandardDialog> standardDialogs = new ArrayList<>();
     List<ChatbotAnswer> chatbotAnswers = new LinkedList<>();
     List<String> exceptionsChatbotAnswers = new LinkedList<String>();
@@ -31,9 +29,18 @@ public class ConversationCapability {
         fillPatternsForOneWordAnswer(new File("src/main/resources/chatbotAnswersForOneWord.csv"));
         fillPatternAnswersForPersonalQuestions(new File("src/main/resources/patternForPersonalQuestions.csv"));
         fillPatternAnswersForOpinionQuestions(new File("src/main/resources/patternAnswersForQuestionsAboutOpinion.csv"));
+        fillPatternAnswersForExclamations(new File("src/main/resources/answersForExclamations.json"));
         getChatbotAnswersFromFile(new File("src/main/resources/chatbotanswers.csv"));
         getExceptionAnswersFromFile(new File("src/main/resources/exceptionChatbotAnswers.csv"));
         getStandardDialogFromFile(new File("src/main/resources/standardDialogs.json"));
+    }
+
+    private void fillPatternAnswersForExclamations(File file) throws FileNotFoundException {
+        FileReader fileReader = new FileReader(file);
+
+        Gson gson = new Gson();
+        Type type = new TypeToken<List<String>>(){}.getType();
+        patternAnswerForExclamations = gson.fromJson(fileReader, type);
     }
 
     private void getStandardDialogFromFile(File file) throws IOException {
@@ -81,7 +88,6 @@ public class ConversationCapability {
         {
             String [] tab = s.split(" ");
             exceptionsChatbotAnswers.add(tab[0].replace("_", " "));
-
         }
         br.close();
     }
@@ -162,5 +168,9 @@ public class ConversationCapability {
             }
         }
         return "";
+    }
+
+    public List<String> getPatternAnswersForExclamations() {
+        return ImmutableList.copyOf(patternAnswerForExclamations);
     }
 }
