@@ -3,6 +3,7 @@ package com.chatbot.controller;
 import com.chatbot.model.answer.Answer;
 import com.chatbot.model.core.Brain;
 import com.chatbot.model.core.Chatbot;
+import com.chatbot.model.user.PersonalityType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;
@@ -15,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 @Scope("session")
 @Controller
@@ -42,6 +44,17 @@ public class ChatController {
 		model.addAttribute("answers",chatbot.getConversationCourse());
 
 		return new ModelAndView("chat4", "Answer", new Answer());
+	}
+
+	@RequestMapping(value = "/raport", method = RequestMethod.GET)
+	public ModelAndView raport() throws Exception {
+
+		ModelAndView mav = new ModelAndView("raport");
+			List<PersonalityType> personalities = chatbot.getUser().getPersonality().getTypes();
+
+		mav.addObject("personalityTypes",personalities);
+
+		return mav;
 	}
 
 

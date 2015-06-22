@@ -1,3 +1,8 @@
+@font-face {
+	font-family: boardFont;
+	src: url(../fonts/kimberly-geswein_kg-ten-thousand-reasons/KGTenThousandReasonsAlt.ttf);
+}
+
 html {
 	background:#505D6E url(../images/body6.jpg) no-repeat center center fixed; 
 	min-height:100%;
@@ -11,6 +16,7 @@ html {
  body {
 	overflow: hidden;
  }
+
 
 header title {
 

@@ -2,36 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/answersForExclamations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/paraphrases.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/resource.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/log4j.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/AnsweringQuestionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/AnsweringQuestionTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/BrainTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/BrainTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/ChatbotTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/ChatbotTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/DictionaryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/DictionaryTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/FeelingAnswersTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/FeelingAnswersTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/ParaphraseTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/ParaphraseTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/PersonalityTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/PersonalityTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/PolishDictionaryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/PolishDictionaryTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/QuickTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/QuickTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/UserMoodTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/UserMoodTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/model/ActiveListeningTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/ActiveListeningTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/model/InformationsAboutUserTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/InformationsAboutUserTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/model/capabilities/ConversationCapabilityTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/david-rakowski_eraser/EraserDust.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/david-rakowski_eraser/EraserRegular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/kimberly-geswein_kg-ten-thousand-reasons/KGTenThousandReasons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/kimberly-geswein_kg-ten-thousand-reasons/KGTenThousandReasonsAlt.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/body6_raport.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/kimberly-geswein_kg-ten-thousand-reasons/KGFonts-TOU.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ActiveListening.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ActiveListening.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Chatbot_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Chatbot_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Chatbot/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/paraphrases.csv" afterPath="$PROJECT_DIR$/src/main/resources/paraphrases.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/paraphrases.csv" afterPath="$PROJECT_DIR$/target/classes/paraphrases.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/assets/css/styles.css" afterPath="$PROJECT_DIR$/target/Chatbot/assets/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -64,16 +48,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.log" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/target/logs/application.log">
+      <file leaf-file-name="raport.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4465812" vertical-offset="677" max-vertical-offset="1280">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.82429904" vertical-offset="259" max-vertical-offset="1180">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -95,20 +76,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/SingularOrPlural.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/VerbForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/NotFoundResponseForOneWordAnswer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/UnrecognizeUserAnswerException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/exceptions/UnrecognizedUserAnswerException.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Chatbot-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/Answer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/oppositePronouns.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" />
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/AnsweringQuestionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/dictionary/PolishDictionary.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/chatbot/ParaphraseTest.java" />
@@ -146,6 +122,11 @@
         <option value="$PROJECT_DIR$/src/test/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp" />
       </list>
     </option>
   </component>
@@ -282,6 +263,102 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Chatbot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:spring-webmvc:4.0.3.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-webmvc-4.0.3.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework:spring-webmvc:4.0.3.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-webmvc-4.0.3.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.projectlombok:lombok:1.14.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok-1.14.4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.projectlombok:lombok:1.14.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok-1.14.4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -445,6 +522,220 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kimberly-geswein_kg-ten-thousand-reasons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="david-rakowski_eraser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -536,6 +827,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -567,6 +896,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -615,11 +948,11 @@
       <recent name="com.academicprojects.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/images" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/assets/images" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -1508,7 +1841,10 @@
       <workItem from="1434920692303" duration="824000" />
       <workItem from="1434924532036" duration="1858000" />
       <workItem from="1434926499865" duration="102000" />
-      <workItem from="1434926620343" duration="1135000" />
+      <workItem from="1434926620343" duration="1309000" />
+      <workItem from="1434928690228" duration="1860000" />
+      <workItem from="1434930574980" duration="1818000" />
+      <workItem from="1434932530122" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -1628,7 +1964,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="609491000" />
+    <option name="totallyTimeSpent" value="614312000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1652,39 +1988,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1370" height="740" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20930232" sideWeight="0.75294983" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0783309" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39983845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32713178" sideWeight="0.33038348" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03634895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10387597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28623718" sideWeight="0.4990177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20930232" sideWeight="0.75294983" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28527132" sideWeight="0.6135693" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30697674" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28623718" sideWeight="0.4990177" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38449612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20424597" sideWeight="0.50098234" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260188" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28527132" sideWeight="0.6135693" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30697674" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38449612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1838,7 +2175,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java</url>
-          <line>22</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="146" />
         </line-breakpoint>
@@ -1914,122 +2251,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/TypeOfSentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21978022" vertical-offset="0" max-vertical-offset="637">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotanswers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7786499" vertical-offset="496" max-vertical-offset="1140">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="3372" max-vertical-offset="21360">
-          <caret line="203" column="19" selection-start-line="203" selection-start-column="19" selection-end-line="203" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/util/DomainConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16025642" vertical-offset="0" max-vertical-offset="624">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/util/PreprocessString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35576922" vertical-offset="302" max-vertical-offset="1220">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/PatternUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5448718" vertical-offset="0" max-vertical-offset="640">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityTypes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="637">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/standardDialogs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8134454" vertical-offset="1136" max-vertical-offset="1760">
-          <caret line="81" column="2" selection-start-line="81" selection-start-column="2" selection-end-line="81" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="637">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityphrases.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7920">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/phrasesForPersonalities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="37240">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/useranswers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19623233" vertical-offset="3995" max-vertical-offset="6740">
-          <caret line="206" column="17" selection-start-line="206" selection-start-column="17" selection-end-line="206" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityPhrases.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="46560">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/answersForExclamations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32894737" vertical-offset="0" max-vertical-offset="608">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/paraphrases.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="637">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/paraphrases.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.098684214" vertical-offset="0" max-vertical-offset="608">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ActiveListening.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4871795" vertical-offset="616" max-vertical-offset="1240">
@@ -2097,7 +2318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5555556" vertical-offset="0" max-vertical-offset="396">
           <caret line="11" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2133,7 +2353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2141,7 +2360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23094688" vertical-offset="0" max-vertical-offset="2420">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2149,7 +2367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1847575" vertical-offset="0" max-vertical-offset="980">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2157,7 +2374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1847575" vertical-offset="0" max-vertical-offset="2100">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2165,7 +2381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17937219" vertical-offset="0" max-vertical-offset="640">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2181,7 +2396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1847575" vertical-offset="0" max-vertical-offset="2060">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2189,7 +2403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17937219" vertical-offset="0" max-vertical-offset="800">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2197,7 +2410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17937219" vertical-offset="0" max-vertical-offset="860">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2205,7 +2417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22421524" vertical-offset="0" max-vertical-offset="920">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2213,7 +2424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50808316" vertical-offset="0" max-vertical-offset="1140">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2221,7 +2431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17937219" vertical-offset="0" max-vertical-offset="520">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2229,7 +2438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17937219" vertical-offset="0" max-vertical-offset="446">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2237,7 +2445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3169572" vertical-offset="80" max-vertical-offset="1440">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2245,132 +2452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7389034" vertical-offset="497" max-vertical-offset="3740">
           <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89556134" vertical-offset="10037" max-vertical-offset="14080">
-          <caret line="564" column="26" selection-start-line="564" selection-start-column="26" selection-end-line="564" selection-end-column="26" />
-          <folding>
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="apply(record) → {" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="apply(record) → { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="apply(record) → {" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="apply(record) → { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1433797397961" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1433797397961" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2378,45 +2460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38799077" vertical-offset="212" max-vertical-offset="3780">
           <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding>
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder="}" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1434927566817" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1434927566817" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2424,27 +2468,156 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87759817" vertical-offset="0" max-vertical-offset="640">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/logs/application.log">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4465812" vertical-offset="677" max-vertical-offset="1280">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1280">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="509">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33159268" vertical-offset="12893" max-vertical-offset="14120">
+          <caret line="700" column="16" selection-start-line="700" selection-start-column="16" selection-end-line="700" selection-end-column="16" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.3.RELEASE/spring-webmvc-4.0.3.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3547486" vertical-offset="553" max-vertical-offset="2220">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.739899" vertical-offset="507" max-vertical-offset="1380">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.14.4/lombok-1.14.4.jar!/lombok/ToString.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2584814" vertical-offset="0" max-vertical-offset="619">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6196513" vertical-offset="29" max-vertical-offset="700">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/b.png">
+      <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body5.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.32890365" vertical-offset="498" max-vertical-offset="1520">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body7.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body6_raport.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.40554592" vertical-offset="254" max-vertical-offset="2500">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="26" />
+          <folding>
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1434933494444" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82429904" vertical-offset="259" max-vertical-offset="1180">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

@@ -18,6 +18,11 @@ public class PersonalityType {
     private String shortDescription;
     private String longDescription;
 
+    @Override
+    public String toString() {
+        return String.format("%s : %.2f%%", longDescription, level);
+    }
+
     public PersonalityType copyWithUpdatedType(double p) {
         double level = this.level + p;
         return new PersonalityType(id, shortDescription, longDescription, level);
