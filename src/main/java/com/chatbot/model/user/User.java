@@ -20,8 +20,8 @@ public class User {
 	private Personality personality = new Personality();
 	private int lcu = 0;
 
-	public void updatePersonality(PersonalityId id) {
-		double personalityLevel = personality.getById(id).getLevel() + 1;
+	public void updatePersonality(PersonalityId id, double toAdd) {
+		double personalityLevel = personality.getById(id).getLevel() + toAdd;
 		personality.setNewPersonalityType(id, personalityLevel);
 	}
 }

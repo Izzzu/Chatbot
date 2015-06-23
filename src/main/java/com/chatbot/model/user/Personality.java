@@ -15,6 +15,7 @@ import static com.chatbot.model.capabilities.PersonalityId.*;
 public class Personality {
 
     private Map<PersonalityId, PersonalityType> personalityTypes = new HashMap<>();
+    private Map<PersonalityId, Float> unitsForPersonalities = new HashMap<>();
 
     public double getWholePoints() {
 
@@ -30,6 +31,7 @@ public class Personality {
     public Personality() {
         try {
             getPersonalitiesFromFile(new File("src/main/resources/personalityTypes.csv"));
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -47,18 +49,33 @@ public class Personality {
     }
 
     public List<PersonalityType> getTypes() {
-        return ImmutableList.copyOf(personalityTypes.values());
+        List<PersonalityType> types = new ArrayList<>();
+        types.addAll(personalityTypes.values());
+        Collections.sort(types, new Personality.SortByPercentageLevel());
+        return ImmutableList.copyOf(types);
+    }
+
+    public static class SortByPercentageLevel implements Comparator<PersonalityType> {
+
+        @Override
+        public int compare(PersonalityType o, PersonalityType t1) {
+            return o.compareTo(t1);
+        }
     }
 
     public void setTypes(List<PersonalityType> types) {
     }
 
-
     public void setNewPersonalityType(PersonalityId id, double level) {
+        PersonalityType.wholePoints = getWholePoints();
         PersonalityType personalityType = personalityTypes.get(id);
         if(personalityType == null) throw new UnsupportedOperationException("This personality type doesn't exist");
         PersonalityType updatedType = personalityType.copyWithUpdatedType(level);
         personalityTypes.put(id, updatedType);
+    }
+
+    private double getUnitOfPersonalityType(PersonalityId id) {
+        return unitsForPersonalities.get(id);
     }
 
     public PersonalityType getById(PersonalityId id) {
@@ -122,4 +139,5 @@ public class Personality {
         double wholePoints = getWholePoints();
         return (int) (personalityType.getLevel()*100/ wholePoints);
     }
+
 }

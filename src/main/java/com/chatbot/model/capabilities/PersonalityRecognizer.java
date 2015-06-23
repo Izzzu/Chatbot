@@ -54,6 +54,10 @@ public class PersonalityRecognizer {
         return Sets.newHashSet();
     }
 
+    public Double getLevelByPersonality(PersonalityId id) {
+        return personalityLevels.get(id);
+    }
+
     @Data
     @JsonDeserialize
     public class Phrase {

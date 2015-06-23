@@ -216,14 +216,6 @@ public class Brain {
         return size==0 ? "" : answers.get(randomIndex);
     }
 
-  /*  public void getPersonalitiesFromDatabase(Connection conn) throws SQLException {
-        String sql = "SELECT * FROM PERSONALITY";
-
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ResultSet rs = ps.executeQuery();
-        while (rs.next()) personalityTypes.add(new PersonalityType(rs.getInt(1), rs.getNString(3), rs.getNString(2), 0));
-        System.out.println("size: "+personalityTypes.size());
-    }*/
-
-
-}
+    public Double getPersonalityToAdd(PersonalityId id) {
+        return personalityRecognizer.getLevelByPersonality(id);
+    }}

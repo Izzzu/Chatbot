@@ -202,7 +202,8 @@ public class Chatbot {
 
     private void updatePersonalities(List<PersonalityId> ids) {
         for (PersonalityId id : ids) {
-            user.updatePersonality(id);
+            Double toAdd = brain.getPersonalityToAdd(id);
+            user.updatePersonality(id, toAdd);
         }
     }
 

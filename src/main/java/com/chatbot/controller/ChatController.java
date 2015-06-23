@@ -53,6 +53,10 @@ public class ChatController {
 			List<PersonalityType> personalities = chatbot.getUser().getPersonality().getTypes();
 
 		mav.addObject("personalityTypes",personalities);
+		mav.addObject("name",chatbot.getUser().getName());
+		mav.addObject("age",chatbot.getUser().getAge());
+		mav.addObject("gender",chatbot.getUser().getGender());
+		mav.addObject("lcu",chatbot.getUser().getLcu());
 
 		return mav;
 	}
