@@ -34,16 +34,27 @@
 
 <div class="raport">
     <h1>Info</h1>
+
     <div>
 
-            <p>Imię:  <c:out value="${name}"/></p>
-            <p>Wiek:  <c:out value="${age}"/></p>
-            <p>Płeć:  <c:out value="${gender}"/></p>
-            <p>Poziom stresu w skali LCU:  <c:out value="${lcu}"/></p>
+        <p>Imię: <c:out value="${name}"/></p>
 
+        <p>Wiek: <c:out value="${age}"/></p>
+
+        <p>Płeć: <c:out value="${gender}"/></p>
+
+        <p>Poziom stresu w skali LCU: <c:out value="${lcu}"/></p>
+
+        <p>Stresory:
+            <c:forEach items="${topics}" var="topic">
+                <c:if test = "${topic ne 'INNE'}">  <p><c:out value="${topic}"/></p></c:if>
+
+            </c:forEach>
+        </p>
 
     </div>
     <h1>Analiza osobowości</h1>
+
     <div>
         <c:forEach items="${personalityTypes}" var="personalityType">
 

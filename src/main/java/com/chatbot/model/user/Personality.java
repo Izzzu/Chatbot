@@ -15,7 +15,6 @@ import static com.chatbot.model.capabilities.PersonalityId.*;
 public class Personality {
 
     private Map<PersonalityId, PersonalityType> personalityTypes = new HashMap<>();
-    private Map<PersonalityId, Float> unitsForPersonalities = new HashMap<>();
 
     public double getWholePoints() {
 
@@ -43,7 +42,7 @@ public class Personality {
         while ((s=br.readLine()) != null)
         {
             String [] tab = s.split(" ");
-            personalityTypes.put(Enum.valueOf(PersonalityId.class, tab[2].toUpperCase()), new PersonalityType(Integer.valueOf(tab[0]), tab[1], tab[2].toUpperCase(), 0));
+            personalityTypes.put(Enum.valueOf(PersonalityId.class, tab[2].toUpperCase()), new PersonalityType(Integer.valueOf(tab[0]), tab[1], Enum.valueOf(PersonalityId.class, tab[2].toUpperCase()), 0));
         }
         br.close();
     }
@@ -74,10 +73,6 @@ public class Personality {
         personalityTypes.put(id, updatedType);
     }
 
-    private double getUnitOfPersonalityType(PersonalityId id) {
-        return unitsForPersonalities.get(id);
-    }
-
     public PersonalityType getById(PersonalityId id) {
         return personalityTypes.get(id);
     }
@@ -93,7 +88,6 @@ public class Personality {
         }
         return mainType;
     }
-
     /**
      * @param unsortMap
      * @return

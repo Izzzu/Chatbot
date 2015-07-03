@@ -57,6 +57,7 @@ public class ChatController {
 		mav.addObject("age",chatbot.getUser().getAge());
 		mav.addObject("gender",chatbot.getUser().getGender());
 		mav.addObject("lcu",chatbot.getUser().getLcu());
+		mav.addObject("topics",chatbot.getUser().getTopics());
 
 		return mav;
 	}

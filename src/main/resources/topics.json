@@ -1,0 +1,52 @@
+[
+  {
+    "topicId": "ŚMIERĆ_MAŁŻONKA",
+    "topicDescription": "śmierć małżonka",
+    "lcu": 100
+  },
+  {
+    "topicId": "PROBLEMY_W_ZWIĄZKU",
+    "topicDescription": "problemy z partnerem",
+    "lcu": 73
+  },
+  {
+    "topicId": "KARA_WIEZIENIA",
+    "topicDescription": "kara więzienia",
+    "lcu": 30
+  },
+  {
+    "topicId": "ŚMIERĆ_CZŁONKA_RODZINY",
+    "topicDescription": "śmierć członka rodziny",
+    "lcu": 63
+  },
+  {
+    "topicId": "CHOROBA",
+    "topicDescription": "choroba własna bądź członka rodziny",
+    "lcu": 53
+  },
+  {
+    "topicId": "ŚLUB",
+    "topicDescription": "ślub",
+    "lcu": 50
+  },
+  {
+    "topicId": "BRAK_PRACY",
+    "topicDescription": "brak pracy",
+    "lcu": 47
+  },
+  {
+    "topicId": "PROBLEMY_FINANSOWE",
+    "topicDescription": "problemy finansowe",
+    "lcu": 38
+  },
+  {
+    "topicId": "NARODZINY_DZIECKA",
+    "topicDescription": "narodziny dziecka/ciąża",
+    "lcu": 50
+  },
+  {
+    "topicId": "INNE",
+    "topicDescription": "",
+    "lcu": 0
+  }
+]

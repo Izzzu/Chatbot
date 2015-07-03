@@ -1,5 +1,6 @@
 package com.chatbot.model.user;
 
+import com.chatbot.model.capabilities.PersonalityId;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
@@ -10,21 +11,21 @@ public class PersonalityType implements Comparable<PersonalityType> {
     private int id;
     private double level;
     private String shortDescription;
-    private String longDescription;
-    public PersonalityType(int id, String shortDescription, String longDescription, double level) {
+    private PersonalityId personalityId;
+    public PersonalityType(int id, String shortDescription, PersonalityId personalityId, double level) {
         this.id = id;
         this.level = level;
         this.shortDescription = shortDescription;
-        this.longDescription = longDescription;
+        this.personalityId = personalityId;
     }
 
     @Override
     public String toString() {
-        return String.format("%s : %.2f%%", longDescription, level/wholePoints*100);
+        return String.format("%s : %.2f%%", personalityId, level/wholePoints*100);
     }
 
     public PersonalityType copyWithUpdatedType(double level) {
-        return new PersonalityType(id, shortDescription, longDescription, level);
+        return new PersonalityType(id, shortDescription, personalityId, level);
     }
 
     @Override

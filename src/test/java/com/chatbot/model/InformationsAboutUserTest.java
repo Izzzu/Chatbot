@@ -3,17 +3,22 @@ package com.chatbot.model;
 import com.chatbot.model.capabilities.PersonalityId;
 import com.chatbot.model.core.Brain;
 import com.chatbot.model.core.Chatbot;
+import com.chatbot.model.core.Topic;
 import com.chatbot.model.user.Gender;
 import com.chatbot.model.user.Personality;
+import com.chatbot.model.user.User;
 import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.Sets;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static com.chatbot.model.capabilities.PersonalityId.FAWORYZUJACY;
 import static com.chatbot.model.capabilities.PersonalityId.WERYFIKUJACY;
 import static org.fest.assertions.api.Assertions.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class InformationsAboutUserTest {
 
@@ -27,6 +32,25 @@ public class InformationsAboutUserTest {
         chatbot = new Chatbot(brain);
 
     }
+
+    @Test
+    public void shouldUpdateTopicAndLcu() {
+        User user = new User("R", "sdfsd", 23, Gender.FEMALE, 23, new HashSet<Topic>(), null, 0);
+        Topic t = new Topic(("BRAK_PRACY"), 12, "cos tam");
+        user.updateTopicAndLcu(t);
+        assertTrue(user.getTopics().contains(t));
+        assertTrue(user.getLcu() == 12);
+    }
+
+    @Test
+    public void shouldNotUpdateTopicAndLcu() {
+        Topic t = new Topic(("BRAK_PRACY"), 12, "cos tam");
+        User user = new User("R", "sdfsd", 23, Gender.FEMALE, 23, Sets.newHashSet(t), null, 0);
+        user.updateTopicAndLcu(t);
+        assertTrue(user.getLcu() == 0);
+        assertTrue(user.getTopics().contains(t));
+    }
+
     @Test
     public void catchUserGender() {
         String userAnswer = "Widziałam dzisiaj diabła";
@@ -45,6 +69,7 @@ public class InformationsAboutUserTest {
         Set<PersonalityId> personalities = ImmutableSet.of(FAWORYZUJACY, WERYFIKUJACY);
         assertThat(personalities.contains(personality.getMainType()));
     }
+
     @Test
     public void updateUserPersonalityAfterConvertingToMainVerb() {
         String userAnswer = "promuje";

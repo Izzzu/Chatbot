@@ -72,8 +72,9 @@ public class Chatbot {
         token = sc.findInLine("\\d+");
         if (token != null) {
             int age = Integer.parseInt(token);
-            if (age> 100 || age <4) {
-                age = 0; }
+            if (age > 100 || age < 4) {
+                age = 0;
+            }
             user.setAge(age);
         }
         return token;
@@ -177,10 +178,10 @@ public class Chatbot {
         String[] userWords = userSentence.split("[\',;/.\\s]+");
         Set<String> convertedToMainWords = convertToMainWords(userWords);
         for (String mainWord : convertedToMainWords) {
-                Set<PersonalityId> ids = personalityMainWords.get(PreprocessString.replacePolishCharsAndLowerCase(mainWord));
-                if (ids != null) {
-                    idsToUpdate.addAll(ids);
-                }
+            Set<PersonalityId> ids = personalityMainWords.get(PreprocessString.replacePolishCharsAndLowerCase(mainWord));
+            if (ids != null) {
+                idsToUpdate.addAll(ids);
+            }
         }
         updatePersonalities(idsToUpdate);
         System.out.println(user.getPersonality());
@@ -190,7 +191,7 @@ public class Chatbot {
         Set<String> convertedToMainWords = new HashSet<>();
         for (String userWord : userWords) {
             ImmutableSet<String> mainWords = brain.toMainWords(userWord);
-            if(mainWords.isEmpty()) mainWords =  brain.toMainWordsWithoutPolishChars(userWord);
+            if (mainWords.isEmpty()) mainWords = brain.toMainWordsWithoutPolishChars(userWord);
             convertedToMainWords.addAll(mainWords);
         }
         return convertedToMainWords;
@@ -234,18 +235,22 @@ public class Chatbot {
         int userAnswerNote = catchUserAnswerNote(userAnswerToLowerCaseWithoutPolishChars);
         System.out.println("user answer note: " + userAnswerNote);
         int chooseAnswer = (int) (Math.random() * 10);
-        //System.out.println("chooseAnswer points:" + chooseAnswer);
         System.out.println("user answer :" + userAnswer.toLowerCase());
         //losowa logika - zwraca -1 gry nie zaleziono patternu - to nie blad
         String pharaprasizedAnswer = paraphrase(userAnswer.toLowerCase(), true);
         String exclamation = "";
         if (typeOfSentence.equals(TypeOfSentence.EXCLAMATION)) {
             exclamation = getChatbotAnswerForExclamation();
-            if(pharaprasizedAnswer.isEmpty() && !exclamation.isEmpty()) {
+            if (pharaprasizedAnswer.isEmpty() && !exclamation.isEmpty()) {
                 return exclamation;
             }
         }
         String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromChatbotPatterns(userAnswerNote);
+        if(mentionPersonality(chooseAnswer)) {
+            String referringPersonality = prepareAnswerReferringPersonality();
+            System.out.println("ref personality:"+referringPersonality);
+            if(!referringPersonality.isEmpty()) return referringPersonality;
+        }
         switch (chooseAnswer) {
             //question:
             //case 7:
@@ -258,20 +263,31 @@ public class Chatbot {
         }
     }
 
+    private boolean mentionPersonality(int chooseAnswer) {
+        return chooseAnswer%3==0 && user.getPersonality().getMainType().getLevel()!=0 && conversation.getCourse().size()>8;
+    }
+
+    private String prepareAnswerReferringPersonality() {
+
+        //String topic = user.getTopics().iterator().next().getTopicDescription();
+        String answerRefferingPersonality = brain.getAnswerRefferingPersonality(user.getPersonality().getMainType().getPersonalityId());
+        return answerRefferingPersonality;
+    }
+
     private String getChatbotAnswerForExclamation() {
         String lastAnswer = getLastAnswer();
         String answer = "";
-        do{
+        do {
             answer = brain.getRandomAnswerForExclamation();
         }
-        while(lastAnswer.contains(answer));
+        while (lastAnswer.contains(answer));
         return answer;
     }
 
     private String getAnswerForStadardDialog(String userAnswerToLowerCaseWithoutPolishChars) {
         String lastChatbotAnswer = tryToGetLastChatbotAnswer();
         String answerForStandardDialog = answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
-        while(answerForStandardDialog.equals(lastChatbotAnswer)) {
+        while (answerForStandardDialog.equals(lastChatbotAnswer)) {
             answerForStandardDialog = answerForStandardDialog(userAnswerToLowerCaseWithoutPolishChars);
         }
         return answerForStandardDialog;
@@ -398,7 +414,7 @@ public class Chatbot {
 
     private List<String> removeConjuctionFromBeginingOfQuestion(String[] wordsInSentence) {
         List<String> wordsList = Lists.newArrayList(wordsInSentence);
-        if(wordsList.size()>=1 && brain.isConjuction(wordsList.get(0))) {
+        if (wordsList.size() >= 1 && brain.isConjuction(wordsList.get(0))) {
             wordsList.remove(0);
         }
         return wordsList;
@@ -485,7 +501,7 @@ public class Chatbot {
 
     public String paraphrase(String userAnswer, boolean addBeginParaphrase) {
 
-        String[] ar = {userAnswer.replace("!","").replace("?","")};
+        String[] ar = {userAnswer.replace("!", "").replace("?", "")};
         String[] sentences = divideIntoSentences(userAnswer, ar);
         for (int i = 0; i < sentences.length; i++) {
             List<String> words = Lists.newArrayList(sentences[i].split(" "));
@@ -660,21 +676,27 @@ public class Chatbot {
         String tempAnswer = userAnswer;
         try {
             for (PatternAnswer pattern : brain.getComplexPatterns()) {
-                if (tempAnswer.contains(pattern.getSentence())) {
+                if (PreprocessString.computeLevenshteinDistance(tempAnswer, pattern.getSentence()) < 2) {
+                    //if (tempAnswer.contains(pattern.getSentence())) {
                     System.out.println(pattern.getSentence() + " : importance: " + pattern.getImportance());
                     noteSum += (pattern.getImportance() * pattern.getNote());
                     weights += pattern.getImportance();
                     tempAnswer = tempAnswer.replace(pattern.getSentence(), "");
+
+                    updateTopicsAndLcu(pattern);
                 }
             }
             String[] splittedWords = tempAnswer.split(" ");
             for (String word : splittedWords) {
                 PatternAnswer oneWord = brain.getOneWordPattern(word);
+
                 if (oneWord != null) {
                     System.out.println(oneWord.getSentence() + " : importance: " + oneWord.getImportance());
                     noteSum += (oneWord.getImportance() * oneWord.getNote());
                     weights += oneWord.getImportance();
                     tempAnswer = tempAnswer.replace(oneWord.getSentence(), "");
+
+                    updateTopicsAndLcu(oneWord);
                 }
             }
             if (weights != 0) {
@@ -683,12 +705,16 @@ public class Chatbot {
                 //TODO: jak nie znajduje patternu to nie rozmawia czy li w ogole nie rozmawia !!!!! AAAA
                 return -1;
             }
-
             return average;
         } catch (Exception e) {
-
+            System.out.println(e);
         }
         return average;
+    }
+
+    private void updateTopicsAndLcu(PatternAnswer pattern) {
+        Topic topic = brain.getTopic(pattern.getTopicId());
+        user.updateTopicAndLcu(topic);
     }
 
     public boolean isUserTurn() {
@@ -722,7 +748,7 @@ public class Chatbot {
                 conversation.addChatbotAnswerToCourse(commentMood());
                 break;
         /*case 4:
-			catchTopic();
+            catchTopic();
 			conversation.addChatbotAnswerToCourse(prepareAnswer(chatlevel, 0, conversation.getTopicID()));
 			break;*/
             default:
@@ -747,7 +773,7 @@ public class Chatbot {
     public TypeOfSentence recognizeTypeOfSentence(String s) {
         if (brain.standardDialogsContainsAnswer(s.replace("?", "").replace(".", ""))) return STANDARD_DIALOG;
         if (s.split(" ").length == 1) return SINGLE_WORD;
-        if (s.charAt(s.length()-1) == '!') return EXCLAMATION;
+        if (s.charAt(s.length() - 1) == '!') return EXCLAMATION;
         if (s.contains("?")) return TypeOfSentence.QUESTION;
         if (s.contains("chce") || s.contains("czuje") || s.contains("jestem")) return FEELING_STATEMENT;
         return TypeOfSentence.OTHER;

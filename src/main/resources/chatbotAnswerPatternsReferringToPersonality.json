@@ -1,0 +1,97 @@
+{
+  "MAKSYMALISTYCZNY": [
+    "Nie uznajesz kompromisów, prawda?",
+    "Jesteś osobą bardzo pozytywnie nastawioną do świata.",
+    "Zawsze starasz się robić wszystko jak najlepiej potrafisz, mam rację?",
+    "Czasami warto zaakceptować kompromisy."
+  ],
+  "MINIMALISTYCZNY": [
+    "Wydaje mi się, że jesteś minimalistą",
+    "Nie lubisz się angażować, prawda?"
+  ],
+  "DOMINUJACY": [
+    "Lubisz grać pierwsze skrypce, prawda?",
+    "Wydaje mi się, że dobrze się czujesz, kiedy masz wpływ na sytuację.",
+    "Mam wrażenie, że masz zdolności przywódcze.",
+    "Jesteś osobą zawsze skłonną do współpracy, zgadza się?"
+  ],
+  "DOSTOSOWUJACY": [
+    "Zasięgnij opinii innych.",
+    "Powiedz mi, kto jest Twoim największym autorytetem?",
+    "Mam wrażenie, że miewasz problemy z podejmowaniem decyzji.",
+    "Czasami trzeba podjąć decyzję samodzielnie, nawet jeśli to trudne."
+  ],
+  "ROWNOWAZACY": [
+    "Wydajesz się być osobą, która ceni sobie uczciwość.",
+    "Jesteś bardzo poukładaną osobą.",
+    "Mam wrażenie, że zawsze postępujesz według reguł.",
+    "Myślę, że zawsze starasz się utrzymywać wszystko w równowadze."
+  ],
+  "FAWORYZUJACY": [
+    "Myślę, że często dążysz do skrajności.",
+    "Mam wrażenie, że zawsze stosujesz się do własnych reguł i zasad.",
+    "Wydaje mi się, że jesteś bardzo tolerancyjną osobą.",
+    "Lubisz różnorodność, mam rację?"
+  ],
+  "INSPIRUJACY": [
+    "Mam wrażenie, że jesteś bardzo spontaniczną osobą.",
+    "Lubisz niespodzianki, mam rację?",
+    "Myślę, że lubisz innowacje.",
+    "Rutynowe zajęcia nie są dla Ciebie."
+  ],
+  "SYSTEMATYCZNY": [
+    "Jesteś systematyczną osobą.",
+    "Mam wrażenie, że lubisz mieć zaplanowane wszystko od początku do końca.",
+    "Nie przepadasz za niespodziankami, prawda?",
+    "Myślę, że czas opracować plan."
+  ],
+  "ODKRYWCZY": [
+    "Powinieneś skupić się na jakimś ciekawym projekcie.",
+    "Myślę, że potrzebujesz zmiany otoczenia.",
+    "Mam wrażenie, że jesteś typem eksperymentatora."
+  ],
+  "KONSERWATYWNY": [
+    "Cenisz sobie tradycje, mam rację?",
+    "Mam wrażenie, że lubisz monotonię.",
+    "Robi się sentymentalnie."
+  ],
+  "WERYFIKUJACY": [
+    "Zweryfikujmy to.",
+    "Nie lubisz przekręcania faktów, prawda?",
+    "Jesteś krytyczną osobą."
+  ],
+  "HARMONIJNY": [
+    "Zawsze dążysz do harmonii, mam rację?",
+    "Mam wrażenie, że masz bardzo pokojowy stosunek do świata.",
+    "Czasami nie warto ukrywać swojego zdania."
+  ],
+  "EMPATYCZNY": [
+    "Jesteś bardzo otwartą osobą.",
+    "Lubisz się otaczać ludźmi, mam rację?",
+    "Jesteś bardzo dobrym słuchaczem.",
+    "Myślę, że masz wielu przyjaciół."
+  ],
+  "RZECZOWY": [
+    "Jesteś bardzo konkretną osobą.",
+    "Niecierpliwość to jedna z Twoich cech, prawda?",
+    "Skupmy się na sednie sprawy.",
+    "Nie lubisz zostawiać niedokończonych spraw, prawda?"
+  ],
+  "ODWAZNY": [
+    "Lubisz adrenalinę, mam rację?",
+    "Czasami warto rzucić się na głęboką wodę.",
+    "Mam wrażenie, że lubisz podejmować trudne wyzwania?"
+  ],
+  "ASEKURACYJNY": [
+    "Lubisz mieć wszystko pod kontrolą, prawda?",
+    "Czasami nie warto ryzykować.",
+    "Mam wrażenie, że nie jesteś lekkomyślną osobą."
+  ],
+  "HOJNY": [
+    "Lubisz wydawać pieniądze, prawda?",
+    "Cenisz sobie luksusy, mam rację?"
+  ],
+  "OSZCZEDNY": [
+    "Jesteś gospodarną osobą, prawda?"
+  ]
+}

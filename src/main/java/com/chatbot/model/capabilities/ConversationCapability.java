@@ -8,9 +8,7 @@ import com.google.gson.Gson;
 
 import java.io.*;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ConversationCapability {
     private List<FeelingStatement> feelingStatements = new LinkedList<>();
@@ -21,6 +19,12 @@ public class ConversationCapability {
     List<StandardDialog> standardDialogs = new ArrayList<>();
     List<ChatbotAnswer> chatbotAnswers = new LinkedList<>();
     List<String> exceptionsChatbotAnswers = new LinkedList<String>();
+
+    public Map<PersonalityId, Set<String>> getAnswersReferringPersonality() {
+        return answersReferringPersonality;
+    }
+
+    private Map<PersonalityId, Set<String>> answersReferringPersonality = new HashMap<>();
 
     public ConversationCapability() throws IOException {
         fillFeelingStatementMap("jestem", new File("src/main/resources/patternAnswersForFeelingStatementsWithBe.csv"));
@@ -33,6 +37,16 @@ public class ConversationCapability {
         getChatbotAnswersFromFile(new File("src/main/resources/chatbotanswers.csv"));
         getExceptionAnswersFromFile(new File("src/main/resources/exceptionChatbotAnswers.csv"));
         getStandardDialogFromFile(new File("src/main/resources/standardDialogs.json"));
+        fillAnswersReferringToPersonality(new File("src/main/resources/chatbotAnswerPatternsReferringToPersonality.json"));
+    }
+
+    private void fillAnswersReferringToPersonality(File file) throws FileNotFoundException {
+        FileReader fileReader = new FileReader(file);
+
+        Gson gson = new Gson();
+        Type type = new TypeToken<Map<String,Set<String>>>(){}.getType();
+        answersReferringPersonality = gson.fromJson(fileReader, type);
+
     }
 
     private void fillPatternAnswersForExclamations(File file) throws FileNotFoundException {
@@ -172,5 +186,17 @@ public class ConversationCapability {
 
     public List<String> getPatternAnswersForExclamations() {
         return ImmutableList.copyOf(patternAnswerForExclamations);
+    }
+
+
+    public String getAnswerReferringPersonality(PersonalityId type) {
+
+        Set<String> strings = answersReferringPersonality.get(type.toString());
+        String next = "";
+        if(strings.iterator().hasNext()) {
+            next = strings.iterator().next();
+            strings.remove(next);
+        }
+        return next;
     }
 }

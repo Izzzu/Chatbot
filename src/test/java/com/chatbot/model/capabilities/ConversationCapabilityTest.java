@@ -1,6 +1,5 @@
 package com.chatbot.model.capabilities;
 
-import com.chatbot.model.capabilities.ConversationCapability;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +7,9 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
+import static junit.framework.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
+
 public class ConversationCapabilityTest{
 
     ConversationCapability conversationCapability;
@@ -48,5 +49,27 @@ public class ConversationCapabilityTest{
     @Test
     public void shouldFillStandardDialogs() {
         org.fest.assertions.api.Assertions.assertThat(conversationCapability.getStandardAnswersFor("dobranoc")).contains("dobranoc");        ;
+    }
+    @Test
+    public void shouldFillPatternsReferringPersonality() {
+        for (PersonalityId type: PersonalityId.values()) {
+
+        org.fest.assertions.api.Assertions.assertThat(conversationCapability.getAnswersReferringPersonality().keySet()).contains(type.toString());
+        }
+    }
+    @Test
+    public void shouldReturnEmptyCollectionWhenThereIsNoMoreAnswers() {
+        for (PersonalityId type: PersonalityId.values()) {
+
+            conversationCapability.getAnswersReferringPersonality().get(PersonalityId.ASEKURACYJNY.toString()).clear();
+        org.fest.assertions.api.Assertions.assertThat(conversationCapability.getAnswerReferringPersonality(PersonalityId.ASEKURACYJNY)).hasSize(0);
+        }
+    }
+
+    @Test
+    public void shouldgetAnswerById() {
+        String answerReferringPersonality = conversationCapability.getAnswerReferringPersonality(PersonalityId.DOSTOSOWUJACY);
+        assertNotNull(answerReferringPersonality);
+
     }
 }

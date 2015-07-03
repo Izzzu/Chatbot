@@ -30,6 +30,10 @@
 	<body onload="scrollBox();
 					keepFocus();">
 	<div class="menu">
+		<form:form method="GET" action="/raport" target="_blank">
+			<input class="raport" type="submit" name="raport" value="" title="Raport"/>
+		</form:form>
+
 		<form:form method="GET" action="/reload" >
 				<input class="reload" type="submit" name="reload" value="" title="Nowa rozmowa"/>
 			</form:form>

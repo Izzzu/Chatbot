@@ -2,37 +2,53 @@ package com.chatbot.model.capabilities;
 
 
 import com.chatbot.model.answer.PatternAnswer;
+import com.chatbot.model.core.Topic;
 import com.google.common.collect.ImmutableList;
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
 
-import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+
+import static com.chatbot.model.util.PreprocessString.computeLevenshteinDistance;
 
 public class UnderstandingCapability {
     List<PatternAnswer> complexPatterns = new ArrayList<PatternAnswer>();
     List<PatternAnswer> oneWordPatterns = new ArrayList<PatternAnswer>();
+    List<Topic> topics = new ArrayList<>();
 
     public UnderstandingCapability() throws IOException, SQLException {
-        getUserAnswersFromFile(new File("src/main/resources/useranswers.csv"));
+        getUserAnswersFromFile(new File("src/main/resources/userAnswers.json"));
+        getTopicsFromFile(new File("src/main/resources/topics.json"));
 
     }
+
+    private void getTopicsFromFile(File file) throws FileNotFoundException {
+        FileReader fileReader = new FileReader(file);
+
+        Gson gson = new Gson();
+        Type type = new TypeToken<List<Topic>>(){}.getType();
+        List<Topic> topics = gson.fromJson(fileReader, type);
+        this.topics = topics;
+    }
+
     private void getUserAnswersFromFile(File filePattern) throws IOException, SQLException {
-        BufferedReader br = new BufferedReader(new FileReader(filePattern));
-        String s = null;
-        while ((s=br.readLine()) != null)
-        {
-            String [] tab = s.split(" ");
-            if(tab[0].contains("_")) {
-                complexPatterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0].replace("_", " "), Integer.valueOf(tab[3])));
+        FileReader fileReader = new FileReader(filePattern);
+
+        Gson gson = new Gson();
+        Type type = new TypeToken<List<PatternAnswer>>(){}.getType();
+        List<PatternAnswer> patterns = gson.fromJson(fileReader, type);
+        for (PatternAnswer pattern : patterns) {
+            if (pattern.getSentence().contains(" ")) {
+                complexPatterns.add(pattern);
             }
             else {
-                oneWordPatterns.add(new PatternAnswer(Integer.valueOf(tab[1]), tab[0], Integer.valueOf(tab[3])));
+                oneWordPatterns.add(pattern);
             }
         }
         Comparator<PatternAnswer> comparator = new Comparator<PatternAnswer>() {
@@ -47,12 +63,13 @@ public class UnderstandingCapability {
         };
         Collections.sort(complexPatterns, comparator);
         Collections.sort(oneWordPatterns, comparator);
-        br.close();
     }
 
     public PatternAnswer getOneWordPattern(String word) {
         for(PatternAnswer answer: oneWordPatterns) {
-            if(answer.getSentence().equals(word)) {
+            if (computeLevenshteinDistance(word, answer.getSentence()) <= 2) {
+
+                //(answer.getSentence().equals(word)) {
                 return answer;
             }
         }
@@ -67,4 +84,14 @@ public class UnderstandingCapability {
         return ImmutableList.copyOf(oneWordPatterns);
     }
 
+    public Collection getTopics() {
+        return ImmutableList.copyOf(topics);
+    }
+
+    public Topic getTopic(String TopicId) {
+        for (Topic topic : topics) {
+            if (topic.getTopicId().equals(TopicId)) return topic;
+        }
+        return null;
+    }
 }

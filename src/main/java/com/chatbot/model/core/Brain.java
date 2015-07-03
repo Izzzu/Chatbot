@@ -218,4 +218,14 @@ public class Brain {
 
     public Double getPersonalityToAdd(PersonalityId id) {
         return personalityRecognizer.getLevelByPersonality(id);
-    }}
+    }
+
+    public Topic getTopic(String TopicId) {
+        return understandingCapability.getTopic(TopicId);
+    }
+
+    public String getAnswerRefferingPersonality(PersonalityId id) {
+        System.out.println("personalityId: " +id);
+        return conversationCapability.getAnswerReferringPersonality(id);
+    }
+}

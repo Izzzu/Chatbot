@@ -1,6 +1,5 @@
 package com.chatbot.model.capabilities;
 
-import com.chatbot.model.capabilities.UnderstandingCapability;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,7 +20,9 @@ public class UnderstandingCapabilityTest {
         Assert.assertEquals(275, understandingCapability.getComplexPatterns().size());
         Assert.assertEquals(56, understandingCapability.getOneWordPatterns().size());
     }
-
-
+    @Test
+    public void shouldFillTopicsListFromFile() throws IOException {
+        Assert.assertEquals(11, understandingCapability.getTopics().size());
+    }
 
 }
