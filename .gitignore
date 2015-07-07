@@ -13,6 +13,7 @@ target/
 **/*.iml
 **/.idea
 **/workspace.xml
+**/.idea/*.xml
 **/atlassian-ide-plugin.xml
 
 # FitNesse-generated files
@@ -27,3 +28,5 @@ target/
 
 # Never push any logs
 **/logs/*.log
+
+**/*.war

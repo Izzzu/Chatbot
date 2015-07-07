@@ -133,9 +133,10 @@ input.reload:hover, input.raport:hover {
 }
 
 .footer {
-    position: absolute;
+    text-align: center;
+    position: inherit;
     color: #FFFFCC;
-    padding-top: 12%;
+    padding-top: 112px;
     font-size: small;
     font-family: Helvetica, Arial, sans-serif;
 }
