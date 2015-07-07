@@ -732,7 +732,6 @@ public class Chatbot {
             case 1:
                 catchUserName();
                 answer = "Witaj " + getUserName() + ". Na początku naszej rozmowy chciałbym zadać Ci kilka pytań. Ile masz lat?";
-                System.out.print("Chatbot: "+answer);
                 conversation.addChatbotAnswerToCourse(answer);
                 break;
             case 2:
@@ -744,13 +743,11 @@ public class Chatbot {
                 else {
                     answer = brain.getRandomStandardAnswer("2");
                 }
-                System.out.print("Chatbot: "+answer);
                 conversation.addChatbotAnswerToCourse(answer);
                 break;
             case 3:
                 catchUserMood();
                 answer = commentMood();
-                System.out.print("Chatbot: "+answer);
                 conversation.addChatbotAnswerToCourse(answer);
                 break;
         /*case 4:
@@ -759,7 +756,6 @@ public class Chatbot {
 			break;*/
             default:
                 answer = prepareAnswer(conversation.getLastAnswer());
-                System.out.print("Chatbot: "+answer);
                 conversation.addChatbotAnswerToCourse(answer);
                 break;
         }

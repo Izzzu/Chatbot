@@ -225,7 +225,6 @@ public class Brain {
     }
 
     public String getAnswerRefferingPersonality(PersonalityId id) {
-        System.out.println("personalityId: " +id);
         return conversationCapability.getAnswerReferringPersonality(id);
     }
 }

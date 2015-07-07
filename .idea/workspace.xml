@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Chatbot.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="680">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3316062" vertical-offset="13052" max-vertical-offset="14700">
+              <caret line="704" column="12" selection-start-line="704" selection-start-column="12" selection-end-line="704" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -87,7 +90,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/PersonalityRecognizer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/useranswers.json" />
         <option value="$PROJECT_DIR$/src/main/resources/useranswers.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/userAnswersAll.csv" />
@@ -103,11 +105,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsWithTopicMentioned.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/Personality.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsReferringToPersonality.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
         <option value="$PROJECT_DIR$/src/main/resources/topics.json" />
         <option value="$PROJECT_DIR$/src/main/resources/userAnswers.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/UserMoodTest.java" />
@@ -115,6 +115,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
       </list>
     </option>
   </component>
@@ -2147,7 +2150,7 @@
       <workItem from="1436299890073" duration="1916000" />
       <workItem from="1436301833569" duration="1913000" />
       <workItem from="1436303772885" duration="37000" />
-      <workItem from="1436304447185" duration="419000" />
+      <workItem from="1436304447185" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -2267,7 +2270,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="689621000" />
+    <option name="totallyTimeSpent" value="690083000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2293,7 +2296,7 @@
     <frame x="-2" y="-3" width="1370" height="740" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7271318" sideWeight="0.69411767" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7271318" sideWeight="0.69411767" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0783309" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2311,6 +2314,7 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37984496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2324,7 +2328,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30542636" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10387597" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38087773" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2448,7 +2451,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java</url>
-          <line>781</line>
+          <line>777</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
@@ -2590,14 +2593,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="660">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/user/Personality.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.89238846" vertical-offset="0" max-vertical-offset="2740">
@@ -2661,22 +2656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6263982" vertical-offset="0" max-vertical-offset="7920">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4740" max-vertical-offset="14620">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80922097" vertical-offset="2176" max-vertical-offset="2805">
-          <caret line="228" column="44" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3022,8 +3001,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="680">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.85561496" vertical-offset="60" max-vertical-offset="680">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3316062" vertical-offset="312" max-vertical-offset="1500">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <marker date="1436305328106" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436305328106" expanded="true" signature="-1:-1" placeholder="@{...}" />
+            <marker date="1436305328106" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328106" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328106" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328106" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328106" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58549225" vertical-offset="3334" max-vertical-offset="3720">
+          <caret line="227" column="8" selection-start-line="227" selection-start-column="8" selection-end-line="227" selection-end-column="8" />
+          <folding>
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder="}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3316062" vertical-offset="13052" max-vertical-offset="14700">
+          <caret line="704" column="12" selection-start-line="704" selection-start-column="12" selection-end-line="704" selection-end-column="12" />
           <folding />
         </state>
       </provider>
