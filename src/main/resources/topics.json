@@ -45,6 +45,11 @@
     "lcu": 50
   },
   {
+    "topicId": "ZALAMANIE_NERWOWE",
+    "topicDescription": "załamanie nerwowe/depresja",
+    "lcu": 53
+  },
+  {
     "topicId": "INNE",
     "topicDescription": "",
     "lcu": 0
