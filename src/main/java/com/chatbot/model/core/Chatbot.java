@@ -184,7 +184,6 @@ public class Chatbot {
             }
         }
         updatePersonalities(idsToUpdate);
-        System.out.println(user.getPersonality());
     }
 
     private Set<String> convertToMainWords(String[] userWords) {
@@ -233,9 +232,7 @@ public class Chatbot {
         }
 
         int userAnswerNote = catchUserAnswerNote(userAnswerToLowerCaseWithoutPolishChars);
-        System.out.println("user answer note: " + userAnswerNote);
         int chooseAnswer = (int) (Math.random() * 10);
-        System.out.println("user answer :" + userAnswer.toLowerCase());
         //losowa logika - zwraca -1 gry nie zaleziono patternu - to nie blad
         String pharaprasizedAnswer = paraphrase(userAnswer.toLowerCase(), true);
         String exclamation = "";
@@ -248,7 +245,7 @@ public class Chatbot {
         String chatbotAnswerFromAnswerPatterns = getChatbotAnswerFromChatbotPatterns(userAnswerNote);
         if(mentionPersonality(chooseAnswer)) {
             String referringPersonality = prepareAnswerReferringPersonality();
-            System.out.println("ref personality:"+referringPersonality);
+            //System.out.println("ref personality:"+referringPersonality);
             if(!referringPersonality.isEmpty()) return referringPersonality;
         }
         switch (chooseAnswer) {
@@ -678,7 +675,6 @@ public class Chatbot {
             for (PatternAnswer pattern : brain.getComplexPatterns()) {
                 if (PreprocessString.computeLevenshteinDistance(tempAnswer, pattern.getSentence()) < 2) {
                     //if (tempAnswer.contains(pattern.getSentence())) {
-                    System.out.println(pattern.getSentence() + " : importance: " + pattern.getImportance());
                     noteSum += (pattern.getImportance() * pattern.getNote());
                     weights += pattern.getImportance();
                     tempAnswer = tempAnswer.replace(pattern.getSentence(), "");
@@ -691,7 +687,6 @@ public class Chatbot {
                 PatternAnswer oneWord = brain.getOneWordPattern(word);
 
                 if (oneWord != null) {
-                    System.out.println(oneWord.getSentence() + " : importance: " + oneWord.getImportance());
                     noteSum += (oneWord.getImportance() * oneWord.getNote());
                     weights += oneWord.getImportance();
                     tempAnswer = tempAnswer.replace(oneWord.getSentence(), "");
@@ -732,27 +727,40 @@ public class Chatbot {
     public void answer() throws Exception {
 
         int chatlevel = conversation.getChatLevel();
+        String answer ="";
         switch (chatlevel) {
             case 1:
                 catchUserName();
-                conversation.addChatbotAnswerToCourse("Witaj " + getUserName() + ". Na początku naszej rozmowy chciałbym zadać Ci kilka pytań. Ile masz lat?");
+                answer = "Witaj " + getUserName() + ". Na początku naszej rozmowy chciałbym zadać Ci kilka pytań. Ile masz lat?";
+                System.out.print("Chatbot: "+answer);
+                conversation.addChatbotAnswerToCourse(answer);
                 break;
             case 2:
                 catchUserAge();
-                if (user.getAge() == 0)
-                    conversation.addChatbotAnswerToCourse("Nie odpowiadaj jeśli nie chcesz. " + brain.getRandomStandardAnswer("2"));
-                else conversation.addChatbotAnswerToCourse(brain.getRandomStandardAnswer("2"));
+                answer = "";
+                if (user.getAge() == 0) {
+                    answer = "Nie odpowiadaj jeśli nie chcesz. "+brain.getRandomStandardAnswer("2");
+                }
+                else {
+                    answer = brain.getRandomStandardAnswer("2");
+                }
+                System.out.print("Chatbot: "+answer);
+                conversation.addChatbotAnswerToCourse(answer);
                 break;
             case 3:
                 catchUserMood();
-                conversation.addChatbotAnswerToCourse(commentMood());
+                answer = commentMood();
+                System.out.print("Chatbot: "+answer);
+                conversation.addChatbotAnswerToCourse(answer);
                 break;
         /*case 4:
             catchTopic();
 			conversation.addChatbotAnswerToCourse(prepareAnswer(chatlevel, 0, conversation.getTopicID()));
 			break;*/
             default:
-                conversation.addChatbotAnswerToCourse(prepareAnswer(conversation.getLastAnswer()));
+                answer = prepareAnswer(conversation.getLastAnswer());
+                System.out.print("Chatbot: "+answer);
+                conversation.addChatbotAnswerToCourse(answer);
                 break;
         }
         conversation.chatLevelUp();

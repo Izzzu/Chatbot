@@ -65,7 +65,6 @@ public class InformationsAboutUserTest {
 
         chatbot.updateInformationAboutUser(userAnswer);
         Personality personality = chatbot.getUser().getPersonality();
-        System.out.println(chatbot.getUser().getPersonality());
         Set<PersonalityId> personalities = ImmutableSet.of(FAWORYZUJACY, WERYFIKUJACY);
         assertThat(personalities.contains(personality.getMainType()));
     }
@@ -75,7 +74,6 @@ public class InformationsAboutUserTest {
         String userAnswer = "promuje";
         chatbot.updateInformationAboutUser(userAnswer);
         Personality personality = chatbot.getUser().getPersonality();
-        System.out.println(personality);
         assertThat(personality.getMainType().equals(FAWORYZUJACY));
     }
 
@@ -85,9 +83,7 @@ public class InformationsAboutUserTest {
 
         chatbot.updateInformationAboutUser(userAnswer);
         Personality personality = chatbot.getUser().getPersonality();
-        System.out.println(chatbot.getUser().getPersonality());
         assertThat(personality.getMainType().equals(FAWORYZUJACY));
-        System.out.println(personality.getById(FAWORYZUJACY).getLevel());
         assertThat(personality.getById(FAWORYZUJACY).getLevel()).isGreaterThan(0);
     }
 
@@ -97,8 +93,6 @@ public class InformationsAboutUserTest {
 
         chatbot.updateInformationAboutUser(userAnswer);
         Personality personality = chatbot.getUser().getPersonality();
-        System.out.println(chatbot.getUser().getPersonality());
         assertThat(personality.getMainType().equals(FAWORYZUJACY));
-        System.out.println(personality.getById(FAWORYZUJACY).getLevel());
     }
 }
