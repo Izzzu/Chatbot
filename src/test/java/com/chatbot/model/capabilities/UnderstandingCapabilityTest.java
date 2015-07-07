@@ -17,8 +17,8 @@ public class UnderstandingCapabilityTest {
     }
     @Test
     public void shouldFillPatternsUserAnswersListFromFile() throws IOException {
-        Assert.assertEquals(275, understandingCapability.getComplexPatterns().size());
-        Assert.assertEquals(56, understandingCapability.getOneWordPatterns().size());
+        Assert.assertEquals(280, understandingCapability.getComplexPatterns().size());
+        Assert.assertEquals(59, understandingCapability.getOneWordPatterns().size());
     }
     @Test
     public void shouldFillTopicsListFromFile() throws IOException {

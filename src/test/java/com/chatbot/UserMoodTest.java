@@ -39,7 +39,7 @@ public class UserMoodTest {
         String useranswer = "moja dziewczyna zaszla w ciaze";
         int actual = chatbot.catchUserAnswerNote(useranswer);
         //System.out.println("actual: "+ actual);
-        Assert.assertEquals(6, actual);
+        Assert.assertEquals(5, actual);
 
     }
 
