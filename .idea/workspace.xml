@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/images/report.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/answersTemp.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/userAnswersAll.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -2148,7 +2143,7 @@
       <workItem from="1436127543734" duration="1244000" />
       <workItem from="1436252728676" duration="363000" />
       <workItem from="1436299890073" duration="1916000" />
-      <workItem from="1436301833569" duration="1658000" />
+      <workItem from="1436301833569" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -2268,7 +2263,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="688910000" />
+    <option name="totallyTimeSpent" value="688950000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
