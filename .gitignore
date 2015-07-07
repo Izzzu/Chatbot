@@ -11,6 +11,7 @@
 # Idea-generated files
 **/*.iml
 **/.idea
+**/workspace.xml
 **/atlassian-ide-plugin.xml
 
 # FitNesse-generated files
