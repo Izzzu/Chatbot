@@ -1984,5 +1984,53 @@
     "importance": 2,
     "topicId": "PROBLEMY_FINANSOWE",
     "sentence": "problemy finansowe"
+  },
+  {
+    "note": 3,
+    "importance": 6,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "depresja"
+  },
+  {
+    "note": 3,
+    "importance": 6,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "załamany"
+  },
+  {
+    "note": 3,
+    "importance": 8,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "mam depresje"
+  },
+  {
+    "note": 4,
+    "importance": 6,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "załamanie"
+  },
+  {
+    "note": 4,
+    "importance": 6,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "załamanie nerwowe"
+  },
+  {
+    "note": 4,
+    "importance": 6,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "zycie nie ma sensu"
+  },
+  {
+    "note": 4,
+    "importance": 6,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "zycie jest bez sensu"
+  },
+  {
+    "note": 4,
+    "importance": 6,
+    "topicId": "ZALAMANIE_NERWOWE",
+    "sentence": "nic mnie nie cieszy"
   }
 ]

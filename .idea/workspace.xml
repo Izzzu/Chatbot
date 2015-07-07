@@ -2,32 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Topic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/TopicId.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsReferringToPersonality.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/topics.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/userAnswers.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/useranswers.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/useranswers.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chatbot-soapui-project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/global-groovy.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/soapui-errors.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/soapui.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/TopicId.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/changeTopicAnswers.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/paraphrases.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/resource.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/standardQuestions.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdb.script" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/chatbot/model/InformationsAboutUserTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/InformationsAboutUserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/PatternAnswer.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/PatternAnswer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/Personality.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/Personality.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/PreprocessString.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/PreprocessString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/chatbot/QuickTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/QuickTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/chatbot/UserMoodTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/UserMoodTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot/WEB-INF/jsp/chat4.jsp" afterPath="$PROJECT_DIR$/target/Chatbot/WEB-INF/jsp/chat4.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/topics.json" afterPath="$PROJECT_DIR$/src/main/resources/topics.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/userAnswers.json" afterPath="$PROJECT_DIR$/src/main/resources/userAnswers.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
@@ -60,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Chatbot.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
+      <file leaf-file-name="topics.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/topics.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44930875" vertical-offset="4545" max-vertical-offset="14620">
-              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7796258" vertical-offset="565" max-vertical-offset="1260">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -119,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/userAnswersAll.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/answersTemp.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/userAnswers.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/TopicId2.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/QuickTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/TopicId.java" />
@@ -128,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/model/InformationsAboutUserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Topic.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/topics.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/PreprocessString.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java" />
         <option value="$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsWithTopicMentioned.json" />
@@ -139,6 +132,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/topics.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/userAnswers.json" />
       </list>
     </option>
   </component>
@@ -266,9 +261,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -616,6 +608,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1261,6 +1267,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default" />
+      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -1274,7 +1283,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -1296,7 +1305,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/aghdpl_v2_0/images" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/aghdpl_v2_0/images/user.jpg" />
     <property name="LayoutCode.rearrangeEntriesJSP" value="false" />
   </component>
   <component name="RecentsManager">
@@ -2259,6 +2268,11 @@
       <workItem from="1435872917767" duration="1800000" />
       <workItem from="1435874976661" duration="2065000" />
       <workItem from="1435877070323" duration="1808000" />
+      <workItem from="1436120856359" duration="1694000" />
+      <workItem from="1436123185052" duration="1072000" />
+      <workItem from="1436125323485" duration="1561000" />
+      <workItem from="1436127543734" duration="1244000" />
+      <workItem from="1436252728676" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -2378,7 +2392,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="678663000" />
+    <option name="totallyTimeSpent" value="684597000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2402,40 +2416,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1370" height="740" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20775194" sideWeight="0.69411767" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0783309" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39983845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38401255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03634895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32248062" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20775194" sideWeight="0.69411767" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28372094" sideWeight="0.6135693" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30542636" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32576868" sideWeight="0.4990177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38087773" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20424597" sideWeight="0.50098234" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32248062" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28372094" sideWeight="0.6135693" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30542636" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10387597" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38087773" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2701,255 +2715,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/standardDialogs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/answersForExclamations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="392">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/changeTopicAnswers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25641027" vertical-offset="0" max-vertical-offset="1700">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/PatternUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09615385" vertical-offset="0" max-vertical-offset="640">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar!/com/google/gson/Gson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3529412" vertical-offset="4676" max-vertical-offset="9140">
-          <caret line="300" column="18" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31390134" vertical-offset="0" max-vertical-offset="446">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8683603" vertical-offset="484" max-vertical-offset="1480">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3488372" vertical-offset="830" max-vertical-offset="1600">
-          <caret line="52" column="89" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25083056" vertical-offset="689" max-vertical-offset="1560">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3043478" vertical-offset="0" max-vertical-offset="800">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/userAnswersAll.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6168831" vertical-offset="5680" max-vertical-offset="6740">
-          <caret line="303" column="23" selection-start-line="303" selection-start-column="23" selection-end-line="303" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityPhrasesUtils/minimalistyczny.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49689442" vertical-offset="0" max-vertical-offset="1160">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/answersTemp.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4878049" vertical-offset="37920" max-vertical-offset="39860">
-          <caret line="1911" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1987" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/PersonalityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.124223605" vertical-offset="0" max-vertical-offset="800">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/FeelingAnswersTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12678288" vertical-offset="0" max-vertical-offset="2060">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/QuickTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9399538" vertical-offset="453" max-vertical-offset="1340">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/ParaphraseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256352" vertical-offset="596" max-vertical-offset="1260">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/AnsweringQuestionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7020785" vertical-offset="1336" max-vertical-offset="2420">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/PatternAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53400505" vertical-offset="108" max-vertical-offset="520">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/InformationsAboutUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="272" max-vertical-offset="1840">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/TopicId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62780267" vertical-offset="0" max-vertical-offset="446">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Topic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49689442" vertical-offset="0" max-vertical-offset="644">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/topics.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39523" vertical-offset="28" max-vertical-offset="1160">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/util/PreprocessString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17908083" vertical-offset="307" max-vertical-offset="1340">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3961965" vertical-offset="790" max-vertical-offset="1580">
-          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/UserMoodTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="292" max-vertical-offset="980">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/userAnswers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48097825" vertical-offset="36943" max-vertical-offset="39860">
-          <caret line="1856" column="14" selection-start-line="1856" selection-start-column="14" selection-end-line="1856" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotanswers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37783375" vertical-offset="90" max-vertical-offset="1140">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/paraphrases.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="397">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/collect/ArrayListMultimap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9339934" vertical-offset="454" max-vertical-offset="1580">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/PersonalityIdentification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40302268" vertical-offset="0" max-vertical-offset="397">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/PersonalityRecognizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5729167" vertical-offset="280" max-vertical-offset="1540">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithBe.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityPhrasesUtils/harmonijny.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1900">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/personalityPhrases.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14527845" vertical-offset="0" max-vertical-offset="46560">
@@ -3001,26 +2766,278 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24844721" vertical-offset="0" max-vertical-offset="644">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/ChatbotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41204438" vertical-offset="100" max-vertical-offset="2100">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/java/util/AbstractCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33280507" vertical-offset="1950" max-vertical-offset="4440">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64285713" vertical-offset="641" max-vertical-offset="3940">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6082949" vertical-offset="956" max-vertical-offset="1440">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityphrases.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6263982" vertical-offset="0" max-vertical-offset="7920">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4740" max-vertical-offset="14620">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77812994" vertical-offset="3089" max-vertical-offset="3740">
+        <state vertical-scroll-proportion="0.80922097" vertical-offset="2176" max-vertical-offset="2805">
           <caret line="228" column="44" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java">
+    <entry file="uml://JAVA/com.chatbot.model.core">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.chatbot.model.core</OriginalElement>
+          <nodes>
+            <node x="" y="">com.chatbot.model.core.Topic</node>
+            <node x="" y="">com.chatbot.model.core.Chatbot</node>
+            <node x="" y="">com.chatbot.model.core.Brain</node>
+            <node x="" y="">com.chatbot.model.core.Conversation</node>
+            <node x="" y="">com.chatbot.model.core.PatternUtil</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.26201616333475114" x="1279.0" y="1166.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.chatbot.model.capabilities">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.chatbot.model.capabilities</OriginalElement>
+          <nodes>
+            <node x="" y="">com.chatbot.model.capabilities.PersonalityRecognizer</node>
+            <node x="" y="">com.chatbot.model.capabilities.PersonalityIdentification</node>
+            <node x="" y="">com.chatbot.model.capabilities.FeelingStatement</node>
+            <node x="" y="">com.chatbot.model.capabilities.StandardDialog</node>
+            <node x="" y="">com.chatbot.model.capabilities.ConversationCapability</node>
+            <node x="" y="">com.chatbot.model.capabilities.PersonalityId</node>
+            <node x="" y="">com.chatbot.model.capabilities.ActiveListening</node>
+            <node x="" y="">com.chatbot.model.capabilities.UnderstandingCapability</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5371894960965223" x="719.0" y="563.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.chatbot.model.user">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.chatbot.model.user</OriginalElement>
+          <nodes>
+            <node x="" y="">com.chatbot.model.user.PersonalityType</node>
+            <node x="" y="">com.chatbot.model.user.User</node>
+            <node x="" y="">com.chatbot.model.user.Personality</node>
+            <node x="" y="">com.chatbot.model.user.Gender</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7287553648068669" x="548.0" y="413.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.chatbot.model.util">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.chatbot.model.util</OriginalElement>
+          <nodes>
+            <node x="" y="">com.chatbot.model.util.PreprocessString</node>
+            <node x="" y="">com.chatbot.model.util.RandomSearching</node>
+            <node x="" y="">com.chatbot.model.util.DomainConstants</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="202.0" y="173.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.chatbot.controller">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.chatbot.controller</OriginalElement>
+          <nodes>
+            <node x="" y="">com.chatbot.controller.ChatController</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="331.0" y="147.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/answer/PatternAnswer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24844721" vertical-offset="0" max-vertical-offset="644">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.44720498" vertical-offset="0" max-vertical-offset="644">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ActiveListening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34865293" vertical-offset="0" max-vertical-offset="1116">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Topic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2795031" vertical-offset="0" max-vertical-offset="644">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/userAnswers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32520324" vertical-offset="2820" max-vertical-offset="40820">
+          <caret line="151" column="3" selection-start-line="151" selection-start-column="3" selection-end-line="151" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/answersTemp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="27247" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/standardDialogs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;dobranoc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;papa&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;musze konczyc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;musze isc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;dzieki za rozmowe&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;dziekuje&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;do widzenia&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;co slychac&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;co u ciebie&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;co porabiasz&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;ile masz lat&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;jaki jest twoj ulubiony kolor&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;jaki masz kolor oczu&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;kto cie stworzyl&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;kto cie napisał&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;czesc&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;0&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="{&quot;userAnswer&quot;: &quot;2&quot;...}" />
+            <marker date="1433688740134" expanded="true" signature="-1:-1" placeholder="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927658805" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/paraphrases.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1433798191389" expanded="true" signature="-1:-1" placeholder="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsReferringToPersonality.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37560976" vertical-offset="289" max-vertical-offset="2040">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.83739835" vertical-offset="145" max-vertical-offset="2040">
+          <caret line="33" column="37" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="37" />
           <folding>
             <marker date="1435876911477" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1435876911477" expanded="true" signature="-1:-1" placeholder="[...]" />
@@ -3045,123 +3062,216 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/ChatbotTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/answersForExclamations.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41204438" vertical-offset="100" max-vertical-offset="2100">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434926222429" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1434926222429" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433796909797" expanded="true" signature="-1:-1" placeholder="[...]" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/java/util/AbstractCollection.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotAnswersForOneWord.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33280507" vertical-offset="1950" max-vertical-offset="4440">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-          <folding>
-            <marker date="1429165634000" expanded="false" signature="-1:-1" placeholder="/.../" />
-            <marker date="1429165634000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1429165634000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1429165634000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429165634000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64285713" vertical-offset="641" max-vertical-offset="3940">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder=" { " />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder=" }" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877844485" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6082949" vertical-offset="956" max-vertical-offset="1440">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding>
-            <marker date="1435877924381" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1435877924381" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityphrases.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6263982" vertical-offset="0" max-vertical-offset="7920">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/exceptionChatbotAnswers.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44930875" vertical-offset="4545" max-vertical-offset="14620">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForQuestionsAboutOpinion.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithWant.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithFeel.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body5.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1435096072192" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1340">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startServer-heroku.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3740">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434927105000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/topics.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7796258" vertical-offset="565" max-vertical-offset="1260">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="33" />
           <folding />
         </state>
       </provider>
