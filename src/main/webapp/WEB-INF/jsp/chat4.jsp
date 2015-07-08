@@ -61,7 +61,7 @@
 		
 					<form:form class="submit" modelAttribute="Answer" method="POST" action="/" >
 						<form:input class="form-control" path="sentence" id="answerArea"/>
-						<input class="btn" type="submit" value="Submit"/>
+						<input class="btn" type="submit" value="Wyślij"/>
 					</form:form>
 			</div>
 

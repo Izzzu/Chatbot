@@ -88,9 +88,9 @@ public class UnderstandingCapability {
         return ImmutableList.copyOf(topics);
     }
 
-    public Topic getTopic(String TopicId) {
+    public Topic getTopic(String topicId) {
         for (Topic topic : topics) {
-            if (topic.getTopicId().equals(TopicId)) return topic;
+            if (topic.getTopicId().equals(topicId)) return topic;
         }
         return null;
     }

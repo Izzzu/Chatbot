@@ -673,7 +673,7 @@ public class Chatbot {
         String tempAnswer = userAnswer;
         try {
             for (PatternAnswer pattern : brain.getComplexPatterns()) {
-                if (PreprocessString.computeLevenshteinDistance(tempAnswer, pattern.getSentence()) < 2) {
+                if (tempAnswer.contains(pattern.getSentence())) {
                     //if (tempAnswer.contains(pattern.getSentence())) {
                     noteSum += (pattern.getImportance() * pattern.getNote());
                     weights += pattern.getImportance();

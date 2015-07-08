@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ad8bf5-d095-4984-9843-4963488c58e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Chatbot.war" afterPath="$PROJECT_DIR$/target/Chatbot.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="58cf22c9-f10d-470a-b4f1-5d07dc1264c7" name="New changelist" comment="" />
     <ignored path="Chatbot.iws" />
@@ -34,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Conversation.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java">
+      <file leaf-file-name="Chatbot.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3316062" vertical-offset="672" max-vertical-offset="1700">
-              <caret line="63" column="112" selection-start-line="63" selection-start-column="112" selection-end-line="63" selection-end-column="112" />
+            <state vertical-scroll-proportion="0.09029345" vertical-offset="0" max-vertical-offset="15320">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -96,7 +102,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/model/InformationsAboutUserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Topic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/util/PreprocessString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java" />
         <option value="$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsWithTopicMentioned.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/user/Personality.java" />
@@ -106,14 +111,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/topics.json" />
         <option value="$PROJECT_DIR$/src/main/resources/userAnswers.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/chatbot/UserMoodTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java" />
       </list>
     </option>
   </component>
@@ -138,10 +144,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="-3" />
-    <option name="width" value="1370" />
-    <option name="height" value="740" />
+    <option name="width" value="1364" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -241,9 +245,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -432,40 +433,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: com.google.guava:guava:18.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guava-18.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Maven: com.google.code.gson:gson:2.3.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
@@ -510,115 +477,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.7 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.7 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.7 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.7 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -741,14 +600,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -768,115 +619,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1095,53 +838,14 @@
               <option name="myItemId" value="chatbot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
         <subPane subId="Default" />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -1177,6 +881,22 @@
     <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/aghdpl_v2_0/images/user.jpg" />
     <property name="LayoutCode.rearrangeEntriesJSP" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="92" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="102" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="107" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1016" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="92" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="102" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="107" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1016" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1219,7 +939,7 @@
       <recent name="com.academicprojects.model.exceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Chatbot">
+  <component name="RunManager" selected="JUnit.UnderstandingCapabilityTest.shouldFindRightTopic">
     <configuration default="false" name="All in Chatbot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Chatbot" />
@@ -1274,34 +994,6 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConversationCapabilityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.chatbot.model.capabilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Chatbot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.chatbot.model.capabilities" />
-      <option name="MAIN_CLASS_NAME" value="com.chatbot.model.capabilities.ConversationCapabilityTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1370,6 +1062,34 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UnderstandingCapabilityTest.shouldFindRightTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.chatbot.model.capabilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Chatbot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.chatbot.model.capabilities" />
+      <option name="MAIN_CLASS_NAME" value="com.chatbot.model.capabilities.UnderstandingCapabilityTest" />
+      <option name="METHOD_NAME" value="shouldFindRightTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1716,17 +1436,17 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.FeelingAnswersTest.shouldResponseForChce" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All in Chatbot" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldFillPatternsReferringPersonality" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldgetAnswerById" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldReturnEmptyCollectionWhenThereIsNoMoreAnswers" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldgetAnswerById" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldReturnEmptyCollectionWhenThereIsNoMoreAnswers" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.UnderstandingCapabilityTest.shouldFindRightTopic" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Chatbot" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldReturnEmptyCollectionWhenThereIsNoMoreAnswers" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldFillPatternsReferringPersonality" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldgetAnswerById" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UnderstandingCapabilityTest.shouldFindRightTopic" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Chatbot" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldReturnEmptyCollectionWhenThereIsNoMoreAnswers" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldFillPatternsReferringPersonality" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ConversationCapabilityTest.shouldgetAnswerById" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -2147,7 +1867,9 @@
       <workItem from="1436301833569" duration="1913000" />
       <workItem from="1436303772885" duration="37000" />
       <workItem from="1436304447185" duration="1130000" />
-      <workItem from="1436305601575" duration="752000" />
+      <workItem from="1436305601575" duration="1412000" />
+      <workItem from="1436310310402" duration="1437000" />
+      <workItem from="1436312162830" duration="1576000" />
     </task>
     <task id="LOCAL-00001" summary="changes, added brain, changed database">
       <created>1407456806388</created>
@@ -2267,7 +1989,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="691084000" />
+    <option name="totallyTimeSpent" value="694757000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2290,41 +2012,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-3" width="1370" height="740" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1364" height="733" extended-state="4" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7271318" sideWeight="0.69411767" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28372094" sideWeight="0.6135693" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0783309" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39983845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38401255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03634895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32576868" sideWeight="0.4990177" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37984496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32248062" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7271318" sideWeight="0.69411767" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28369907" sideWeight="0.6135693" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30407524" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16074188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3257353" sideWeight="0.4990177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20424597" sideWeight="0.50098234" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32248062" sideWeight="0.6696165" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30542636" sideWeight="0.52064896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10387597" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37984496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2590,115 +2312,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityTypes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/phrasesForPersonalities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0968523" vertical-offset="0" max-vertical-offset="37240">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/collect/AbstractListMultimap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35674158" vertical-offset="193" max-vertical-offset="760">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/ChatbotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41204438" vertical-offset="100" max-vertical-offset="2100">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/java/util/AbstractCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33280507" vertical-offset="1950" max-vertical-offset="4440">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/ConversationCapability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64285713" vertical-offset="641" max-vertical-offset="3940">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/ConversationCapabilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6082949" vertical-offset="956" max-vertical-offset="1440">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityphrases.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6263982" vertical-offset="0" max-vertical-offset="7920">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.chatbot.model.core">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.chatbot.model.core</OriginalElement>
-          <nodes>
-            <node x="" y="">com.chatbot.model.core.Topic</node>
-            <node x="" y="">com.chatbot.model.core.Chatbot</node>
-            <node x="" y="">com.chatbot.model.core.Brain</node>
-            <node x="" y="">com.chatbot.model.core.Conversation</node>
-            <node x="" y="">com.chatbot.model.core.PatternUtil</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.26201616333475114" x="1279.0" y="1166.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.chatbot.model.capabilities">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.chatbot.model.capabilities</OriginalElement>
-          <nodes>
-            <node x="" y="">com.chatbot.model.capabilities.PersonalityRecognizer</node>
-            <node x="" y="">com.chatbot.model.capabilities.PersonalityIdentification</node>
-            <node x="" y="">com.chatbot.model.capabilities.FeelingStatement</node>
-            <node x="" y="">com.chatbot.model.capabilities.StandardDialog</node>
-            <node x="" y="">com.chatbot.model.capabilities.ConversationCapability</node>
-            <node x="" y="">com.chatbot.model.capabilities.PersonalityId</node>
-            <node x="" y="">com.chatbot.model.capabilities.ActiveListening</node>
-            <node x="" y="">com.chatbot.model.capabilities.UnderstandingCapability</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5371894960965223" x="719.0" y="563.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/com.chatbot.model.user">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -2778,77 +2391,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Topic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2795031" vertical-offset="0" max-vertical-offset="644">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/userAnswers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32520324" vertical-offset="2820" max-vertical-offset="40820">
-          <caret line="151" column="3" selection-start-line="151" selection-start-column="3" selection-end-line="151" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/standardDialogs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/paraphrases.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsReferringToPersonality.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83739835" vertical-offset="145" max-vertical-offset="2040">
-          <caret line="33" column="37" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/answersForExclamations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotAnswersForOneWord.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/exceptionChatbotAnswers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/patternForPersonalQuestions.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForQuestionsAboutOpinion.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2863,13 +2406,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForFeelingStatementsWithFeel.csv">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/body2.jpg">
@@ -2938,13 +2481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/topics.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7796258" vertical-offset="565" max-vertical-offset="1260">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/ActiveListeningTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15686275" vertical-offset="0" max-vertical-offset="510">
@@ -2960,24 +2496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41834453" vertical-offset="113" max-vertical-offset="560">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/raport.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3986711" vertical-offset="0" max-vertical-offset="1560">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6677741" vertical-offset="938" max-vertical-offset="1600">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -2989,49 +2511,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58549225" vertical-offset="3334" max-vertical-offset="3720">
-          <caret line="227" column="8" selection-start-line="227" selection-start-column="8" selection-end-line="227" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64248705" vertical-offset="13052" max-vertical-offset="14700">
-          <caret line="710" column="35" selection-start-line="710" selection-start-column="35" selection-end-line="710" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39506173" vertical-offset="2396" max-vertical-offset="3040">
           <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
-          <folding>
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1436305454682" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3039,14 +2522,622 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.80213904" vertical-offset="0" max-vertical-offset="740">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Conversation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3316062" vertical-offset="672" max-vertical-offset="1700">
-          <caret line="63" column="112" selection-start-line="63" selection-start-column="112" selection-end-line="63" selection-end-column="112" />
+        <state vertical-scroll-proportion="0.5388601" vertical-offset="672" max-vertical-offset="1740">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chat4.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5826331" vertical-offset="1132" max-vertical-offset="1600">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/user/PersonalityType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31088084" vertical-offset="0" max-vertical-offset="800">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/user/Personality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20725389" vertical-offset="0" max-vertical-offset="2540">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityTypes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20050125" vertical-offset="0" max-vertical-offset="480">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityphrases.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6265664" vertical-offset="30" max-vertical-offset="7920">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/personalityPhrases.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="46560">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/questionsAboutOpinion.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/standardDialogs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/paraphrases.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="370">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patternAnswersForQuestionsAboutOpinion.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/exceptionChatbotAnswers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33153638" vertical-offset="77" max-vertical-offset="580">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotAnswersForOneWord.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.3.RELEASE/spring-webmvc-4.0.3.RELEASE.jar!/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="386">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/answersForExclamations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10810811" vertical-offset="0" max-vertical-offset="370">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotAnswerPatternsReferringToPersonality.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3918918" vertical-offset="145" max-vertical-offset="2040">
+          <caret line="33" column="37" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/chatbotanswers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6616541" vertical-offset="496" max-vertical-offset="1140">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/answersTemp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="0" column="18399" selection-start-line="0" selection-start-column="18399" selection-end-line="0" selection-end-column="18399" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/topics.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46052632" vertical-offset="360" max-vertical-offset="1260">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;ŚMIERĆ_MAŁŻONKA&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;PROBLEMY_W_ZWIĄZKU&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;KARA_WIEZIENIA&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;ŚMIERĆ_CZŁONKA_RODZINY&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;CHOROBA&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;ŚLUB&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;BRAK_PRACY&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;PROBLEMY_FINANSOWE&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;NARODZINY_DZIECKA&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;ZALAMANIE_NERWOWE&quot;...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;topicId&quot;: &quot;INNE&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/userAnswers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31743422" vertical-offset="27027" max-vertical-offset="40820">
+          <caret line="1361" column="22" selection-start-line="1361" selection-start-column="17" selection-end-line="1361" selection-end-column="22" />
+          <folding>
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 6...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 6...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 6...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 6...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 6...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 6...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 6...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 0...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 9...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 9...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 9...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 9...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 7...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 8...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 9...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 9...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 0...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 0...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 1...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 2...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 5...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 3...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+            <marker date="1436298203502" expanded="true" signature="-1:-1" placeholder="{&quot;note&quot;: 4...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Brain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67948717" vertical-offset="3096" max-vertical-offset="3760">
+          <caret line="223" column="43" selection-start-line="223" selection-start-column="43" selection-end-line="223" selection-end-column="43" />
+          <folding>
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder="(Predicate) (record) → {" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder="}" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder=" { " />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder=" }" />
+            <marker date="1436305328118" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/capabilities/UnderstandingCapability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61538464" vertical-offset="956" max-vertical-offset="1580">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+          <folding>
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder="&lt;~&gt;" />
+            <marker date="1436312453073" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436312453073" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436312453073" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder="(s, t1) → {" />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder="}" />
+            <marker date="1436312453073" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1436312453073" expanded="false" signature="-1:-1" placeholder=" }" />
+            <marker date="1436312453073" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Topic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27088037" vertical-offset="0" max-vertical-offset="560">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <marker date="1435850960394" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435850960394" expanded="false" signature="-1:-1" placeholder=" { " />
+            <marker date="1435850960394" expanded="false" signature="-1:-1" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/chatbot/model/capabilities/UnderstandingCapabilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26636568" vertical-offset="162" max-vertical-offset="700">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <marker date="1436312529209" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1436312529209" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436312529209" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436312529209" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1436312529209" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatbot/model/core/Chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09029345" vertical-offset="0" max-vertical-offset="15320">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
           <folding />
         </state>
       </provider>
